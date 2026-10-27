@@ -348,587 +348,43 @@
     }
   ],
   "cards": {
-    "Barricade": {
-      "id": "Barricade",
-      "name": "Barricade",
-      "cn": "壁垒",
-      "tier": "T1",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Battle Trance": {
-      "id": "Battle Trance",
-      "name": "Battle Trance",
-      "cn": "战斗专注",
-      "tier": "T1",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Berserk": {
-      "id": "Berserk",
-      "name": "Berserk",
-      "cn": "狂暴",
-      "tier": "T3",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Bloodletting": {
-      "id": "Bloodletting",
-      "name": "Bloodletting",
-      "cn": "放血",
-      "tier": "T3",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Body Slam": {
-      "id": "Body Slam",
-      "name": "Body Slam",
-      "cn": "全身撞击",
-      "tier": "T1",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Burning Pact": {
-      "id": "Burning Pact",
-      "name": "Burning Pact",
-      "cn": "燃烧契约",
-      "tier": "T2",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Corruption": {
-      "id": "Corruption",
-      "name": "Corruption",
-      "cn": "腐化",
+    "Wraith Form v2": {
+      "id": "Wraith Form v2",
+      "name": "Wraith Form",
+      "cn": "幽魂形态",
       "tier": "T0",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Dark Embrace": {
-      "id": "Dark Embrace",
-      "name": "Dark Embrace",
-      "cn": "黑暗之拥",
-      "tier": "T0",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Demon Form": {
-      "id": "Demon Form",
-      "name": "Demon Form",
-      "cn": "恶魔形态",
-      "tier": "T0",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Entrench": {
-      "id": "Entrench",
-      "name": "Entrench",
-      "cn": "巩固",
-      "tier": "T1",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Feel No Pain": {
-      "id": "Feel No Pain",
-      "name": "Feel No Pain",
-      "cn": "无惧疼痛",
-      "tier": "T0",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Flame Barrier": {
-      "id": "Flame Barrier",
-      "name": "Flame Barrier",
-      "cn": "火焰屏障",
-      "tier": "T2",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Flex": {
-      "id": "Flex",
-      "name": "Flex",
-      "cn": "活动肌肉",
-      "tier": "T2",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Heavy Blade": {
-      "id": "Heavy Blade",
-      "name": "Heavy Blade",
-      "cn": "重刃",
-      "tier": "T1",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Inflame": {
-      "id": "Inflame",
-      "name": "Inflame",
-      "cn": "燃烧",
-      "tier": "T1",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Juggernaut": {
-      "id": "Juggernaut",
-      "name": "Juggernaut",
-      "cn": "势不可当",
-      "tier": "T2",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Limit Break": {
-      "id": "Limit Break",
-      "name": "Limit Break",
-      "cn": "突破极限",
-      "tier": "T0",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Metallicize": {
-      "id": "Metallicize",
-      "name": "Metallicize",
-      "cn": "金属化",
-      "tier": "T2",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Offering": {
-      "id": "Offering",
-      "name": "Offering",
-      "cn": "祭品",
-      "tier": "T1",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Reaper": {
-      "id": "Reaper",
-      "name": "Reaper",
-      "cn": "死亡收割",
-      "tier": "T1",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Rupture": {
-      "id": "Rupture",
-      "name": "Rupture",
-      "cn": "撕裂",
-      "tier": "T3",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Sentinel": {
-      "id": "Sentinel",
-      "name": "Sentinel",
-      "cn": "哨卫",
-      "tier": "T2",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Shrug It Off": {
-      "id": "Shrug It Off",
-      "name": "Shrug It Off",
-      "cn": "耸肩无视",
-      "tier": "T1",
-      "builds": [
-        "i|腐化消耗流",
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Spot Weakness": {
-      "id": "Spot Weakness",
-      "name": "Spot Weakness",
-      "cn": "观察弱点",
-      "tier": "T1",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Sword Boomerang": {
-      "id": "Sword Boomerang",
-      "name": "Sword Boomerang",
-      "cn": "飞剑回旋镖",
-      "tier": "T3",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "True Grit": {
-      "id": "True Grit",
-      "name": "True Grit",
-      "cn": "坚毅",
-      "tier": "T2",
-      "builds": [
-        "i|腐化消耗流",
-        "i|格挡堡垒流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Twin Strike": {
-      "id": "Twin Strike",
-      "name": "Twin Strike",
-      "cn": "双重打击",
-      "tier": "T2",
-      "builds": [
-        "i|力量流",
-        "i|撕裂自伤流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Whirlwind": {
-      "id": "Whirlwind",
-      "name": "Whirlwind",
-      "cn": "旋风斩",
-      "tier": "T1",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "guide",
-      "char": "i"
-    },
-    "Accuracy": {
-      "id": "Accuracy",
-      "name": "Accuracy",
-      "cn": "精准",
-      "tier": "T1",
-      "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Acrobatics": {
-      "id": "Acrobatics",
-      "name": "Acrobatics",
-      "cn": "杂技",
-      "tier": "T2",
-      "builds": [
-        "s|毒流",
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "guide",
-      "char": "s"
+      "builds": [],
+      "char": "s",
+      "type": "power",
+      "rating": 100,
+      "consensus": 67,
+      "votes": 52
     },
     "Adrenaline": {
       "id": "Adrenaline",
       "name": "Adrenaline",
       "cn": "肾上腺素",
-      "tier": "T1",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "After Image": {
-      "id": "After Image",
-      "name": "After Image",
-      "cn": "余像",
       "tier": "T0",
       "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Backflip": {
-      "id": "Backflip",
-      "name": "Backflip",
-      "cn": "后空翻",
-      "tier": "T1",
-      "builds": [
-        "s|毒流",
         "s|无限流"
       ],
-      "src": "guide",
-      "char": "s"
+      "char": "s",
+      "type": "skill",
+      "rating": 100,
+      "consensus": 66,
+      "votes": 55
     },
-    "Blade Dance": {
-      "id": "Blade Dance",
-      "name": "Blade Dance",
-      "cn": "刀刃之舞",
-      "tier": "T1",
-      "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Bouncing Flask": {
-      "id": "Bouncing Flask",
-      "name": "Bouncing Flask",
-      "cn": "弹跳药瓶",
-      "tier": "T1",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Burst": {
-      "id": "Burst",
-      "name": "Burst",
-      "cn": "爆发",
-      "tier": "T2",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Calculated Gamble": {
-      "id": "Calculated Gamble",
-      "name": "Calculated Gamble",
-      "cn": "计算下注",
-      "tier": "T2",
-      "builds": [
-        "s|弃牌流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Catalyst": {
-      "id": "Catalyst",
-      "name": "Catalyst",
-      "cn": "催化剂",
+    "Seek": {
+      "id": "Seek",
+      "name": "Seek",
+      "cn": "搜寻",
       "tier": "T0",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Cloak And Dagger": {
-      "id": "Cloak And Dagger",
-      "name": "Cloak and Dagger",
-      "cn": "斗篷与匕首",
-      "tier": "T2",
-      "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Corpse Explosion": {
-      "id": "Corpse Explosion",
-      "name": "Corpse Explosion",
-      "cn": "尸爆",
-      "tier": "T1",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Deadly Poison": {
-      "id": "Deadly Poison",
-      "name": "Deadly Poison",
-      "cn": "致命毒药",
-      "tier": "T1",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Envenom": {
-      "id": "Envenom",
-      "name": "Envenom",
-      "cn": "涂毒",
-      "tier": "T2",
-      "builds": [
-        "s|毒流",
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Eviscerate": {
-      "id": "Eviscerate",
-      "name": "Eviscerate",
-      "cn": "内脏切除",
-      "tier": "T3",
-      "builds": [
-        "s|弃牌流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Finisher": {
-      "id": "Finisher",
-      "name": "Finisher",
-      "cn": "终结技",
-      "tier": "T2",
-      "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Grand Finale": {
-      "id": "Grand Finale",
-      "name": "Grand Finale",
-      "cn": "华丽收场",
-      "tier": "T3",
-      "builds": [
-        "s|弃牌流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Infinite Blades": {
-      "id": "Infinite Blades",
-      "name": "Infinite Blades",
-      "cn": "无限刀刃",
-      "tier": "T1",
-      "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Noxious Fumes": {
-      "id": "Noxious Fumes",
-      "name": "Noxious Fumes",
-      "cn": "毒雾",
-      "tier": "T0",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Prepared": {
-      "id": "Prepared",
-      "name": "Prepared",
-      "cn": "早有准备",
-      "tier": "T3",
-      "builds": [
-        "s|弃牌流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Reflex": {
-      "id": "Reflex",
-      "name": "Reflex",
-      "cn": "本能反应",
-      "tier": "T2",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Storm of Steel": {
-      "id": "Storm of Steel",
-      "name": "Storm of Steel",
-      "cn": "钢铁风暴",
-      "tier": "T2",
-      "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "Tactician": {
-      "id": "Tactician",
-      "name": "Tactician",
-      "cn": "战术大师",
-      "tier": "T1",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "guide",
-      "char": "s"
-    },
-    "A Thousand Cuts": {
-      "id": "A Thousand Cuts",
-      "name": "Thousand Cuts",
-      "cn": "凌迟",
-      "tier": "T1",
-      "builds": [
-        "s|小刀流"
-      ],
-      "src": "guide",
-      "char": "s"
+      "builds": [],
+      "char": "d",
+      "type": "skill",
+      "rating": 98,
+      "consensus": 68,
+      "votes": 28
     },
     "Well Laid Plans": {
       "id": "Well Laid Plans",
@@ -939,63 +395,683 @@
         "s|弃牌流",
         "s|无限流"
       ],
-      "src": "guide",
-      "char": "s"
+      "char": "s",
+      "type": "power",
+      "rating": 96,
+      "consensus": 61,
+      "votes": 58
     },
-    "Wraith Form v2": {
-      "id": "Wraith Form v2",
-      "name": "Wraith Form",
-      "cn": "幽魂形态",
-      "tier": "T0",
+    "Offering": {
+      "id": "Offering",
+      "name": "Offering",
+      "cn": "祭品",
+      "tier": "T1",
       "builds": [
-        "s|毒流"
+        "i|撕裂自伤流"
       ],
-      "src": "guide",
-      "char": "s"
+      "char": "i",
+      "type": "skill",
+      "rating": 96,
+      "consensus": 65,
+      "votes": 24
     },
-    "All For One": {
-      "id": "All For One",
-      "name": "All For One",
-      "cn": "万物一心",
-      "tier": "T2",
-      "builds": [
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
+    "Venomology": {
+      "id": "Venomology",
+      "name": "Alchemize",
+      "cn": "炼制药水",
+      "tier": "T1",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 95,
+      "consensus": 59,
+      "votes": 60
     },
-    "Ball Lightning": {
-      "id": "Ball Lightning",
-      "name": "Ball Lightning",
-      "cn": "球状闪电",
-      "tier": "T2",
+    "Corruption": {
+      "id": "Corruption",
+      "name": "Corruption",
+      "cn": "腐化",
+      "tier": "T1",
       "builds": [
-        "d|闪电球流"
+        "i|腐化消耗流"
       ],
-      "src": "guide",
-      "char": "d"
+      "char": "i",
+      "type": "power",
+      "rating": 95,
+      "consensus": 64,
+      "votes": 25
+    },
+    "Feed": {
+      "id": "Feed",
+      "name": "Feed",
+      "cn": "狂宴",
+      "tier": "T1",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 94,
+      "consensus": 63,
+      "votes": 23
+    },
+    "Scrawl": {
+      "id": "Scrawl",
+      "name": "Scrawl",
+      "cn": "潦草急就",
+      "tier": "T1",
+      "builds": [
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 93,
+      "consensus": 63,
+      "votes": 16
+    },
+    "After Image": {
+      "id": "After Image",
+      "name": "After Image",
+      "cn": "余像",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流"
+      ],
+      "char": "s",
+      "type": "power",
+      "rating": 93,
+      "consensus": 57,
+      "votes": 57
     },
     "Biased Cognition": {
       "id": "Biased Cognition",
       "name": "Biased Cognition",
       "cn": "偏差认知",
-      "tier": "T0",
+      "tier": "T1",
       "builds": [
+        "d|冰霜坦克流",
         "d|能力流"
       ],
-      "src": "guide",
-      "char": "d"
+      "char": "d",
+      "type": "power",
+      "rating": 93,
+      "consensus": 60,
+      "votes": 27
     },
-    "Blizzard": {
-      "id": "Blizzard",
-      "name": "Blizzard",
-      "cn": "暴雪",
+    "Defragment": {
+      "id": "Defragment",
+      "name": "Defragment",
+      "cn": "碎片整理",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 92,
+      "consensus": 60,
+      "votes": 25
+    },
+    "Immolate": {
+      "id": "Immolate",
+      "name": "Immolate",
+      "cn": "燔祭",
+      "tier": "T1",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 92,
+      "consensus": 60,
+      "votes": 22
+    },
+    "Echo Form": {
+      "id": "Echo Form",
+      "name": "Echo Form",
+      "cn": "回响形态",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 91,
+      "consensus": 57,
+      "votes": 28
+    },
+    "Apotheosis": {
+      "id": "Apotheosis",
+      "name": "Apotheosis",
+      "cn": "神化",
+      "tier": "T1",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 91,
+      "consensus": 58,
+      "votes": 19
+    },
+    "Genetic Algorithm": {
+      "id": "Genetic Algorithm",
+      "name": "Genetic Algorithm",
+      "cn": "遗传算法",
       "tier": "T1",
       "builds": [
         "d|冰霜坦克流"
       ],
-      "src": "guide",
-      "char": "d"
+      "char": "d",
+      "type": "skill",
+      "rating": 91,
+      "consensus": 60,
+      "votes": 26
+    },
+    "Self Repair": {
+      "id": "Self Repair",
+      "name": "Self Repair",
+      "cn": "自我修复",
+      "tier": "T1",
+      "builds": [
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 89,
+      "consensus": 57,
+      "votes": 28
+    },
+    "Footwork": {
+      "id": "Footwork",
+      "name": "Footwork",
+      "cn": "灵动步法",
+      "tier": "T1",
+      "builds": [],
+      "char": "s",
+      "type": "power",
+      "rating": 89,
+      "consensus": 53,
+      "votes": 54
+    },
+    "Calculated Gamble": {
+      "id": "Calculated Gamble",
+      "name": "Calculated Gamble",
+      "cn": "计算下注",
+      "tier": "T1",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 89,
+      "consensus": 53,
+      "votes": 52
+    },
+    "Adaptation": {
+      "id": "Adaptation",
+      "name": "Rushdown",
+      "cn": "猛虎下山",
+      "tier": "T1",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "power",
+      "rating": 89,
+      "consensus": 58,
+      "votes": 21
+    },
+    "Malaise": {
+      "id": "Malaise",
+      "name": "Malaise",
+      "cn": "萎靡",
+      "tier": "T1",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 87,
+      "consensus": 51,
+      "votes": 52
+    },
+    "Core Surge": {
+      "id": "Core Surge",
+      "name": "Core Surge",
+      "cn": "核心电涌",
+      "tier": "T1",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 87,
+      "consensus": 55,
+      "votes": 27
+    },
+    "Terror": {
+      "id": "Terror",
+      "name": "Terror",
+      "cn": "恐怖",
+      "tier": "T1",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 87,
+      "consensus": 51,
+      "votes": 57
+    },
+    "FearNoEvil": {
+      "id": "FearNoEvil",
+      "name": "Fear No Evil",
+      "cn": "不惧妖邪",
+      "tier": "T1",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "attack",
+      "rating": 86,
+      "consensus": 55,
+      "votes": 18
+    },
+    "InnerPeace": {
+      "id": "InnerPeace",
+      "name": "Inner Peace",
+      "cn": "内心宁静",
+      "tier": "T1",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 86,
+      "consensus": 57,
+      "votes": 16
+    },
+    "Corpse Explosion": {
+      "id": "Corpse Explosion",
+      "name": "Corpse Explosion",
+      "cn": "尸爆术",
+      "tier": "T1",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 86,
+      "consensus": 50,
+      "votes": 54
+    },
+    "Catalyst": {
+      "id": "Catalyst",
+      "name": "Catalyst",
+      "cn": "催化剂",
+      "tier": "T1",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 85,
+      "consensus": 48,
+      "votes": 50
+    },
+    "Electrodynamics": {
+      "id": "Electrodynamics",
+      "name": "Electrodynamics",
+      "cn": "电动力学",
+      "tier": "T1",
+      "builds": [
+        "d|闪电球流",
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 85,
+      "consensus": 51,
+      "votes": 27
+    },
+    "Reaper": {
+      "id": "Reaper",
+      "name": "Reaper",
+      "cn": "死亡收割",
+      "tier": "T1",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 84,
+      "consensus": 53,
+      "votes": 23
+    },
+    "Battle Trance": {
+      "id": "Battle Trance",
+      "name": "Battle Trance",
+      "cn": "战斗专注",
+      "tier": "T1",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 83,
+      "consensus": 52,
+      "votes": 26
+    },
+    "Blade Dance": {
+      "id": "Blade Dance",
+      "name": "Blade Dance",
+      "cn": "刀刃之舞",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 83,
+      "consensus": 46,
+      "votes": 59
+    },
+    "Fission": {
+      "id": "Fission",
+      "name": "Fission",
+      "cn": "裂变",
+      "tier": "T1",
+      "builds": [],
+      "char": "d",
+      "type": "skill",
+      "rating": 82,
+      "consensus": 47,
+      "votes": 26
+    },
+    "Feel No Pain": {
+      "id": "Feel No Pain",
+      "name": "Feel No Pain",
+      "cn": "无惧疼痛",
+      "tier": "T1",
+      "builds": [
+        "i|腐化消耗流",
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 82,
+      "consensus": 47,
+      "votes": 26
+    },
+    "Glass Knife": {
+      "id": "Glass Knife",
+      "name": "Glass Knife",
+      "cn": "玻璃刀刃",
+      "tier": "T1",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 82,
+      "consensus": 48,
+      "votes": 51
+    },
+    "MentalFortress": {
+      "id": "MentalFortress",
+      "name": "Mental Fortress",
+      "cn": "心灵堡垒",
+      "tier": "T1",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "power",
+      "rating": 81,
+      "consensus": 51,
+      "votes": 18
+    },
+    "Tantrum": {
+      "id": "Tantrum",
+      "name": "Tantrum",
+      "cn": "发泄",
+      "tier": "T1",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "attack",
+      "rating": 81,
+      "consensus": 51,
+      "votes": 17
+    },
+    "PiercingWail": {
+      "id": "PiercingWail",
+      "name": "Piercing Wail",
+      "cn": "尖啸",
+      "tier": "T1",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 81,
+      "consensus": 44,
+      "votes": 58
+    },
+    "Acrobatics": {
+      "id": "Acrobatics",
+      "name": "Acrobatics",
+      "cn": "杂技",
+      "tier": "T1",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 81,
+      "consensus": 44,
+      "votes": 53
+    },
+    "Dark Embrace": {
+      "id": "Dark Embrace",
+      "name": "Dark Embrace",
+      "cn": "黑暗之拥",
+      "tier": "T1",
+      "builds": [
+        "i|腐化消耗流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 81,
+      "consensus": 47,
+      "votes": 26
+    },
+    "Hologram": {
+      "id": "Hologram",
+      "name": "Hologram",
+      "cn": "全息影像",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 81,
+      "consensus": 51,
+      "votes": 26
+    },
+    "Dark Shackles": {
+      "id": "Dark Shackles",
+      "name": "Dark Shackles",
+      "cn": "黑暗镣铐",
+      "tier": "T1",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 80,
+      "consensus": 45,
+      "votes": 21
+    },
+    "Coolheaded": {
+      "id": "Coolheaded",
+      "name": "Coolheaded",
+      "cn": "冷静头脑",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 80,
+      "consensus": 48,
+      "votes": 24
+    },
+    "Omniscience": {
+      "id": "Omniscience",
+      "name": "Omniscience",
+      "cn": "通晓万物",
+      "tier": "T1",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 79,
+      "consensus": 50,
+      "votes": 15
+    },
+    "Backflip": {
+      "id": "Backflip",
+      "name": "Backflip",
+      "cn": "后空翻",
+      "tier": "T1",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 79,
+      "consensus": 43,
+      "votes": 54
+    },
+    "Master of Strategy": {
+      "id": "Master of Strategy",
+      "name": "Master of Strategy",
+      "cn": "战略大师",
+      "tier": "T1",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 79,
+      "consensus": 47,
+      "votes": 20
+    },
+    "Shrug It Off": {
+      "id": "Shrug It Off",
+      "name": "Shrug It Off",
+      "cn": "耸肩无视",
+      "tier": "T1",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 79,
+      "consensus": 46,
+      "votes": 25
+    },
+    "Impervious": {
+      "id": "Impervious",
+      "name": "Impervious",
+      "cn": "岿然不动",
+      "tier": "T1",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 79,
+      "consensus": 48,
+      "votes": 24
+    },
+    "Glacier": {
+      "id": "Glacier",
+      "name": "Glacier",
+      "cn": "冰川",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 79,
+      "consensus": 47,
+      "votes": 23
+    },
+    "Vault": {
+      "id": "Vault",
+      "name": "Vault",
+      "cn": "腾跃",
+      "tier": "T1",
+      "builds": [
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 79,
+      "consensus": 46,
+      "votes": 20
+    },
+    "Pommel Strike": {
+      "id": "Pommel Strike",
+      "name": "Pommel Strike",
+      "cn": "剑柄打击",
+      "tier": "T1",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 79,
+      "consensus": 49,
+      "votes": 26
+    },
+    "HandOfGreed": {
+      "id": "HandOfGreed",
+      "name": "Hand of Greed",
+      "cn": "贪婪之手",
+      "tier": "T1",
+      "builds": [],
+      "char": "c",
+      "type": "attack",
+      "rating": 78,
+      "consensus": 48,
+      "votes": 20
+    },
+    "LessonLearned": {
+      "id": "LessonLearned",
+      "name": "Lesson Learned",
+      "cn": "勤学精进",
+      "tier": "T1",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 78,
+      "consensus": 44,
+      "votes": 15
+    },
+    "Burst": {
+      "id": "Burst",
+      "name": "Burst",
+      "cn": "爆发",
+      "tier": "T1",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 78,
+      "consensus": 42,
+      "votes": 54
+    },
+    "WheelKick": {
+      "id": "WheelKick",
+      "name": "Wheel Kick",
+      "cn": "回环踢",
+      "tier": "T1",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 78,
+      "consensus": 45,
+      "votes": 16
     },
     "Buffer": {
       "id": "Buffer",
@@ -1006,645 +1082,37 @@
         "d|冰霜坦克流",
         "d|能力流"
       ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Capacitor": {
-      "id": "Capacitor",
-      "name": "Capacitor",
-      "cn": "扩容",
-      "tier": "T1",
-      "builds": [
-        "d|冰霜坦克流",
-        "d|闪电球流",
-        "d|能力流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Conserve Battery": {
-      "id": "Conserve Battery",
-      "name": "Charge Battery",
-      "cn": "充电",
-      "tier": "T2",
-      "builds": [
-        "d|闪电球流"
-      ],
-      "src": "guide",
-      "char": "d"
+      "char": "d",
+      "type": "power",
+      "rating": 77,
+      "consensus": 46,
+      "votes": 26
     },
     "Chill": {
       "id": "Chill",
       "name": "Chill",
       "cn": "冰寒",
-      "tier": "T2",
-      "builds": [
-        "d|冰霜坦克流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Gash": {
-      "id": "Gash",
-      "name": "Claw",
-      "cn": "爪击",
-      "tier": "T2",
-      "builds": [
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Coolheaded": {
-      "id": "Coolheaded",
-      "name": "Coolheaded",
-      "cn": "冷静头脑",
       "tier": "T1",
       "builds": [
         "d|冰霜坦克流"
       ],
-      "src": "guide",
-      "char": "d"
+      "char": "d",
+      "type": "skill",
+      "rating": 77,
+      "consensus": 46,
+      "votes": 25
     },
-    "Darkness": {
-      "id": "Darkness",
-      "name": "Darkness",
-      "cn": "漆黑",
-      "tier": "T2",
-      "builds": [
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Defragment": {
-      "id": "Defragment",
-      "name": "Defragment",
-      "cn": "碎片整理",
-      "tier": "T0",
-      "builds": [
-        "d|冰霜坦克流",
-        "d|闪电球流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Echo Form": {
-      "id": "Echo Form",
-      "name": "Echo Form",
-      "cn": "回响形态",
-      "tier": "T0",
-      "builds": [
-        "d|冰霜坦克流",
-        "d|能力流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Electrodynamics": {
-      "id": "Electrodynamics",
-      "name": "Electrodynamics",
-      "cn": "电动力学",
-      "tier": "T0",
-      "builds": [
-        "d|闪电球流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Fusion": {
-      "id": "Fusion",
-      "name": "Fusion",
-      "cn": "聚变",
-      "tier": "T2",
-      "builds": [
-        "d|能力流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Glacier": {
-      "id": "Glacier",
-      "name": "Glacier",
-      "cn": "冰川",
+    "Skim": {
+      "id": "Skim",
+      "name": "Skim",
+      "cn": "快速检索",
       "tier": "T1",
-      "builds": [
-        "d|冰霜坦克流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Heatsinks": {
-      "id": "Heatsinks",
-      "name": "Heatsinks",
-      "cn": "散热片",
-      "tier": "T1",
-      "builds": [
-        "d|能力流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Loop": {
-      "id": "Loop",
-      "name": "Loop",
-      "cn": "循环",
-      "tier": "T1",
-      "builds": [
-        "d|冰霜坦克流",
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Machine Learning": {
-      "id": "Machine Learning",
-      "name": "Machine Learning",
-      "cn": "机器学习",
-      "tier": "T3",
-      "builds": [
-        "d|能力流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Multi-Cast": {
-      "id": "Multi-Cast",
-      "name": "Multi-Cast",
-      "cn": "多重释放",
-      "tier": "T1",
-      "builds": [
-        "d|冰霜坦克流",
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Steam Power": {
-      "id": "Steam Power",
-      "name": "Overclock",
-      "cn": "超频",
-      "tier": "T3",
-      "builds": [
-        "d|闪电球流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Reboot": {
-      "id": "Reboot",
-      "name": "Reboot",
-      "cn": "重启",
-      "tier": "T3",
-      "builds": [
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Redo": {
-      "id": "Redo",
-      "name": "Recursion",
-      "cn": "递归",
-      "tier": "T2",
-      "builds": [
-        "d|冰霜坦克流",
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Steam": {
-      "id": "Steam",
-      "name": "Steam Barrier",
-      "cn": "蒸汽护壁",
-      "tier": "T3",
-      "builds": [
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Storm": {
-      "id": "Storm",
-      "name": "Storm",
-      "cn": "雷暴",
-      "tier": "T2",
-      "builds": [
-        "d|闪电球流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Thunder Strike": {
-      "id": "Thunder Strike",
-      "name": "Thunder Strike",
-      "cn": "雷霆打击",
-      "tier": "T2",
-      "builds": [
-        "d|闪电球流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Turbo": {
-      "id": "Turbo",
-      "name": "Turbo",
-      "cn": "内核加速",
-      "tier": "T2",
-      "builds": [
-        "d|暗球 / 爪击流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Zap": {
-      "id": "Zap",
-      "name": "Zap",
-      "cn": "电击",
-      "tier": "T2",
-      "builds": [
-        "d|闪电球流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Creative AI": {
-      "id": "Creative AI",
-      "name": "Creative AI",
-      "cn": "创造性AI",
-      "tier": "T1",
-      "builds": [
-        "d|能力流"
-      ],
-      "src": "guide",
-      "char": "d"
-    },
-    "Blasphemy": {
-      "id": "Blasphemy",
-      "name": "Blasphemy",
-      "cn": "渎神",
-      "tier": "T3",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Brilliance": {
-      "id": "Brilliance",
-      "name": "Brilliance",
-      "cn": "光辉",
-      "tier": "T1",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "DevaForm": {
-      "id": "DevaForm",
-      "name": "Deva Form",
-      "cn": "天人形态",
-      "tier": "T3",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Devotion": {
-      "id": "Devotion",
-      "name": "Devotion",
-      "cn": "虔信",
-      "tier": "T1",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "EmptyFist": {
-      "id": "EmptyFist",
-      "name": "Empty Fist",
-      "cn": "化拳为空",
-      "tier": "T1",
-      "builds": [
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "EmptyMind": {
-      "id": "EmptyMind",
-      "name": "Empty Mind",
-      "cn": "化智为空",
-      "tier": "T1",
-      "builds": [
-        "w|姿态循环无限流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Eruption": {
-      "id": "Eruption",
-      "name": "Eruption",
-      "cn": "暴怒",
-      "tier": "T0",
-      "builds": [
-        "w|姿态循环无限流",
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Establishment": {
-      "id": "Establishment",
-      "name": "Establishment",
-      "cn": "确立基础",
-      "tier": "T2",
-      "builds": [
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "FearNoEvil": {
-      "id": "FearNoEvil",
-      "name": "Fear No Evil",
-      "cn": "不惧妖邪",
-      "tier": "T1",
-      "builds": [
-        "w|姿态循环无限流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "FlurryOfBlows": {
-      "id": "FlurryOfBlows",
-      "name": "Flurry of Blows",
-      "cn": "疾风连击",
-      "tier": "T2",
-      "builds": [
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "InnerPeace": {
-      "id": "InnerPeace",
-      "name": "Inner Peace",
-      "cn": "内心宁静",
-      "tier": "T1",
-      "builds": [
-        "w|姿态循环无限流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "LikeWater": {
-      "id": "LikeWater",
-      "name": "Like Water",
-      "cn": "如水",
-      "tier": "T2",
-      "builds": [
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Meditate": {
-      "id": "Meditate",
-      "name": "Meditate",
-      "cn": "冥想",
-      "tier": "T2",
-      "builds": [
-        "w|姿态舞（常规）",
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "MentalFortress": {
-      "id": "MentalFortress",
-      "name": "Mental Fortress",
-      "cn": "心灵堡垒",
-      "tier": "T0",
-      "builds": [
-        "w|姿态循环无限流",
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Omniscience": {
-      "id": "Omniscience",
-      "name": "Omniscience",
-      "cn": "通晓万物",
-      "tier": "T1",
-      "builds": [
-        "w|神格真言流",
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Perseverance": {
-      "id": "Perseverance",
-      "name": "Perseverance",
-      "cn": "坚韧",
-      "tier": "T2",
-      "builds": [
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Pray": {
-      "id": "Pray",
-      "name": "Pray",
-      "cn": "祈祷",
-      "tier": "T2",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "PathToVictory": {
-      "id": "PathToVictory",
-      "name": "Pressure Points",
-      "cn": "点穴",
-      "tier": "T2",
-      "builds": [
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Prostrate": {
-      "id": "Prostrate",
-      "name": "Prostrate",
-      "cn": "五体投地",
-      "tier": "T3",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Ragnarok": {
-      "id": "Ragnarok",
-      "name": "Ragnarok",
-      "cn": "诸神之黄昏",
-      "tier": "T3",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Adaptation": {
-      "id": "Adaptation",
-      "name": "Rushdown",
-      "cn": "猛虎下山",
-      "tier": "T0",
-      "builds": [
-        "w|姿态循环无限流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "SandsOfTime": {
-      "id": "SandsOfTime",
-      "name": "Sands of Time",
-      "cn": "时之沙",
-      "tier": "T2",
-      "builds": [
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Scrawl": {
-      "id": "Scrawl",
-      "name": "Scrawl",
-      "cn": "潦草急就",
-      "tier": "T0",
-      "builds": [
-        "w|姿态循环无限流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "SignatureMove": {
-      "id": "SignatureMove",
-      "name": "Signature Move",
-      "cn": "招牌技",
-      "tier": "T3",
-      "builds": [
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Tantrum": {
-      "id": "Tantrum",
-      "name": "Tantrum",
-      "cn": "发泄",
-      "tier": "T1",
-      "builds": [
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "TalkToTheHand": {
-      "id": "TalkToTheHand",
-      "name": "Talk to the Hand",
-      "cn": "以手拒之",
-      "tier": "T0",
-      "builds": [
-        "w|姿态循环无限流",
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Vault": {
-      "id": "Vault",
-      "name": "Vault",
-      "cn": "腾跃",
-      "tier": "T1",
-      "builds": [
-        "w|姿态循环无限流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Vigilance": {
-      "id": "Vigilance",
-      "name": "Vigilance",
-      "cn": "警惕",
-      "tier": "T0",
-      "builds": [
-        "w|姿态舞（常规）"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Wallop": {
-      "id": "Wallop",
-      "name": "Wallop",
-      "cn": "当头棒喝",
-      "tier": "T2",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "WaveOfTheHand": {
-      "id": "WaveOfTheHand",
-      "name": "Wave of the Hand",
-      "cn": "摆手",
-      "tier": "T2",
-      "builds": [
-        "w|点穴 / 保留流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Worship": {
-      "id": "Worship",
-      "name": "Worship",
-      "cn": "敬拜",
-      "tier": "T1",
-      "builds": [
-        "w|神格真言流"
-      ],
-      "src": "guide",
-      "char": "w"
-    },
-    "Feed": {
-      "id": "Feed",
-      "name": "Feed",
-      "cn": "狂宴",
-      "tier": "T0",
       "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Immolate": {
-      "id": "Immolate",
-      "name": "Immolate",
-      "cn": "燔祭",
-      "tier": "T0",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
+      "char": "d",
+      "type": "skill",
+      "rating": 76,
+      "consensus": 44,
+      "votes": 25
     },
     "Disarm": {
       "id": "Disarm",
@@ -1652,542 +1120,38 @@
       "cn": "缴械",
       "tier": "T1",
       "builds": [],
-      "src": "spirespy",
       "char": "i",
-      "type": "skill"
+      "type": "skill",
+      "rating": 75,
+      "consensus": 43,
+      "votes": 21
     },
-    "Uppercut": {
-      "id": "Uppercut",
-      "name": "Uppercut",
-      "cn": "上勾拳",
+    "CutThroughFate": {
+      "id": "CutThroughFate",
+      "name": "Cut Through Fate",
+      "cn": "斩破命运",
       "tier": "T1",
       "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
+      "char": "w",
+      "type": "attack",
+      "rating": 75,
+      "consensus": 47,
+      "votes": 22
     },
-    "Carnage": {
-      "id": "Carnage",
-      "name": "Carnage",
-      "cn": "残杀",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Clothesline": {
-      "id": "Clothesline",
-      "name": "Clothesline",
-      "cn": "金刚臂",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Fiend Fire": {
-      "id": "Fiend Fire",
-      "name": "Fiend Fire",
-      "cn": "恶魔之焰",
-      "tier": "T2",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Impervious": {
-      "id": "Impervious",
-      "name": "Impervious",
-      "cn": "岿然不动",
-      "tier": "T2",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Shockwave": {
-      "id": "Shockwave",
-      "name": "Shockwave",
-      "cn": "震荡波",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Bludgeon": {
-      "id": "Bludgeon",
-      "name": "Bludgeon",
-      "cn": "重锤",
-      "tier": "T2",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Double Tap": {
-      "id": "Double Tap",
-      "name": "Double Tap",
-      "cn": "双发",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Ghostly Armor": {
-      "id": "Ghostly Armor",
-      "name": "Ghostly Armor",
-      "cn": "幽灵铠甲",
-      "tier": "T2",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Seeing Red": {
-      "id": "Seeing Red",
-      "name": "Seeing Red",
-      "cn": "盛怒",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Brutality": {
-      "id": "Brutality",
-      "name": "Brutality",
-      "cn": "残暴",
-      "tier": "T2",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "power"
-    },
-    "Reckless Charge": {
-      "id": "Reckless Charge",
-      "name": "Reckless Charge",
-      "cn": "无谋冲锋",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Warcry": {
-      "id": "Warcry",
-      "name": "Warcry",
-      "cn": "战吼",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Anger": {
-      "id": "Anger",
-      "name": "Anger",
-      "cn": "愤怒",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Armaments": {
-      "id": "Armaments",
-      "name": "Armaments",
-      "cn": "武装",
-      "tier": "T3",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Fire Breathing": {
-      "id": "Fire Breathing",
-      "name": "Fire Breathing",
-      "cn": "火焰吐息",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "power"
-    },
-    "Headbutt": {
-      "id": "Headbutt",
-      "name": "Headbutt",
-      "cn": "头槌",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Hemokinesis": {
-      "id": "Hemokinesis",
-      "name": "Hemokinesis",
-      "cn": "御血术",
-      "tier": "T3",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Sever Soul": {
-      "id": "Sever Soul",
-      "name": "Sever Soul",
-      "cn": "断魂斩",
-      "tier": "T3",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Wild Strike": {
-      "id": "Wild Strike",
-      "name": "Wild Strike",
-      "cn": "狂野打击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Bash": {
-      "id": "Bash",
-      "name": "Bash",
-      "cn": "痛击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Cleave": {
-      "id": "Cleave",
-      "name": "Cleave",
-      "cn": "顺劈斩",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Evolve": {
-      "id": "Evolve",
-      "name": "Evolve",
-      "cn": "进化",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "power"
-    },
-    "Exhume": {
-      "id": "Exhume",
-      "name": "Exhume",
-      "cn": "发掘",
-      "tier": "T3",
-      "builds": [
-        "i|腐化消耗流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Infernal Blade": {
-      "id": "Infernal Blade",
-      "name": "Infernal Blade",
-      "cn": "地狱之刃",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Iron Wave": {
-      "id": "Iron Wave",
-      "name": "Iron Wave",
-      "cn": "铁斩波",
-      "tier": "T3",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Pummel": {
-      "id": "Pummel",
-      "name": "Pummel",
-      "cn": "连续拳",
-      "tier": "T3",
-      "builds": [
-        "i|力量流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Rampage": {
-      "id": "Rampage",
-      "name": "Rampage",
-      "cn": "暴走",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Thunderclap": {
-      "id": "Thunderclap",
-      "name": "Thunderclap",
-      "cn": "闪电霹雳",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Combust": {
-      "id": "Combust",
-      "name": "Combust",
-      "cn": "自燃",
-      "tier": "T3",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "power"
-    },
-    "Havoc": {
-      "id": "Havoc",
-      "name": "Havoc",
-      "cn": "破灭",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Intimidate": {
-      "id": "Intimidate",
-      "name": "Intimidate",
-      "cn": "威吓",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Perfected Strike": {
-      "id": "Perfected Strike",
-      "name": "Perfected Strike",
-      "cn": "完美打击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Pommel Strike": {
-      "id": "Pommel Strike",
-      "name": "Pommel Strike",
-      "cn": "剑柄打击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Power Through": {
-      "id": "Power Through",
-      "name": "Power Through",
-      "cn": "硬撑",
-      "tier": "T3",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Blood for Blood": {
-      "id": "Blood for Blood",
-      "name": "Blood for Blood",
-      "cn": "以血还血",
-      "tier": "T3",
-      "builds": [
-        "i|撕裂自伤流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Dual Wield": {
-      "id": "Dual Wield",
-      "name": "Dual Wield",
-      "cn": "双持",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Rage": {
-      "id": "Rage",
-      "name": "Rage",
-      "cn": "狂怒",
-      "tier": "T3",
-      "builds": [
-        "i|格挡堡垒流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Searing Blow": {
-      "id": "Searing Blow",
-      "name": "Searing Blow",
-      "cn": "灼热攻击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Second Wind": {
-      "id": "Second Wind",
-      "name": "Second Wind",
-      "cn": "重振精神",
-      "tier": "T3",
-      "builds": [
-        "i|腐化消耗流",
-        "i|格挡堡垒流"
-      ],
-      "src": "spirespy",
-      "char": "i",
-      "type": "skill"
-    },
-    "Clash": {
-      "id": "Clash",
-      "name": "Clash",
-      "cn": "交锋",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Dropkick": {
-      "id": "Dropkick",
-      "name": "Dropkick",
-      "cn": "飞身踢",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "i",
-      "type": "attack"
-    },
-    "Footwork": {
-      "id": "Footwork",
-      "name": "Footwork",
-      "cn": "灵动步法",
+    "Tools of the Trade": {
+      "id": "Tools of the Trade",
+      "name": "Tools of the Trade",
+      "cn": "必备工具",
       "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ],
       "char": "s",
-      "type": "power"
-    },
-    "Malaise": {
-      "id": "Malaise",
-      "name": "Malaise",
-      "cn": "萎靡",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "PiercingWail": {
-      "id": "PiercingWail",
-      "name": "Piercing Wail",
-      "cn": "尖啸",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Terror": {
-      "id": "Terror",
-      "name": "Terror",
-      "cn": "恐怖",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Venomology": {
-      "id": "Venomology",
-      "name": "Alchemize",
-      "cn": "炼制药水",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Backstab": {
-      "id": "Backstab",
-      "name": "Backstab",
-      "cn": "背刺",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Caltrops": {
-      "id": "Caltrops",
-      "name": "Caltrops",
-      "cn": "铁蒺藜",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "power"
-    },
-    "Dash": {
-      "id": "Dash",
-      "name": "Dash",
-      "cn": "冲刺",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
+      "type": "power",
+      "rating": 75,
+      "consensus": 41,
+      "votes": 55
     },
     "Die Die Die": {
       "id": "Die Die Die",
@@ -2195,19 +1159,77 @@
       "cn": "死吧死吧死吧",
       "tier": "T1",
       "builds": [],
-      "src": "spirespy",
       "char": "s",
-      "type": "attack"
+      "type": "attack",
+      "rating": 74,
+      "consensus": 43,
+      "votes": 53
     },
-    "Glass Knife": {
-      "id": "Glass Knife",
-      "name": "Glass Knife",
-      "cn": "玻璃刀刃",
+    "Fiend Fire": {
+      "id": "Fiend Fire",
+      "name": "Fiend Fire",
+      "cn": "恶魔之焰",
+      "tier": "T1",
+      "builds": [
+        "i|腐化消耗流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 74,
+      "consensus": 41,
+      "votes": 22
+    },
+    "Undo": {
+      "id": "Undo",
+      "name": "Equilibrium",
+      "cn": "均衡",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 74,
+      "consensus": 43,
+      "votes": 23
+    },
+    "Night Terror": {
+      "id": "Night Terror",
+      "name": "Nightmare",
+      "cn": "夜魇",
       "tier": "T1",
       "builds": [],
-      "src": "spirespy",
       "char": "s",
-      "type": "attack"
+      "type": "skill",
+      "rating": 74,
+      "consensus": 41,
+      "votes": 54
+    },
+    "Spot Weakness": {
+      "id": "Spot Weakness",
+      "name": "Spot Weakness",
+      "cn": "观察弱点",
+      "tier": "T1",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 73,
+      "consensus": 44,
+      "votes": 24
+    },
+    "Shockwave": {
+      "id": "Shockwave",
+      "name": "Shockwave",
+      "cn": "震荡波",
+      "tier": "T1",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 73,
+      "consensus": 40,
+      "votes": 30
     },
     "Leg Sweep": {
       "id": "Leg Sweep",
@@ -2215,523 +1237,122 @@
       "cn": "扫腿",
       "tier": "T1",
       "builds": [],
-      "src": "spirespy",
       "char": "s",
-      "type": "skill"
+      "type": "skill",
+      "rating": 72,
+      "consensus": 39,
+      "votes": 54
     },
-    "Bullet Time": {
-      "id": "Bullet Time",
-      "name": "Bullet Time",
-      "cn": "子弹时间",
-      "tier": "T2",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Predator": {
-      "id": "Predator",
-      "name": "Predator",
-      "cn": "猎杀者",
-      "tier": "T2",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Skewer": {
-      "id": "Skewer",
-      "name": "Skewer",
-      "cn": "串刺",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Survivor": {
-      "id": "Survivor",
-      "name": "Survivor",
-      "cn": "生存者",
-      "tier": "T2",
-      "builds": [
-        "s|弃牌流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Tools of the Trade": {
-      "id": "Tools of the Trade",
-      "name": "Tools of the Trade",
-      "cn": "必备工具",
-      "tier": "T2",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "power"
-    },
-    "Crippling Poison": {
-      "id": "Crippling Poison",
-      "name": "Crippling Cloud",
-      "cn": "致残毒云",
-      "tier": "T2",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Dagger Spray": {
-      "id": "Dagger Spray",
-      "name": "Dagger Spray",
-      "cn": "匕首雨",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Dodge and Roll": {
-      "id": "Dodge and Roll",
-      "name": "Dodge and Roll",
-      "cn": "闪躲翻滚",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Neutralize": {
-      "id": "Neutralize",
-      "name": "Neutralize",
-      "cn": "中和",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Night Terror": {
-      "id": "Night Terror",
-      "name": "Nightmare",
-      "cn": "夜魇",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Quick Slash": {
-      "id": "Quick Slash",
-      "name": "Quick Slash",
-      "cn": "快斩",
-      "tier": "T2",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Sucker Punch": {
-      "id": "Sucker Punch",
-      "name": "Sucker Punch",
-      "cn": "突然一拳",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Unload": {
-      "id": "Unload",
-      "name": "Unload",
-      "cn": "乾坤一掷",
-      "tier": "T2",
-      "builds": [
-        "s|弃牌流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "All Out Attack": {
-      "id": "All Out Attack",
-      "name": "All-Out Attack",
-      "cn": "全力攻击",
-      "tier": "T2",
-      "builds": [
-        "s|弃牌流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Dagger Throw": {
-      "id": "Dagger Throw",
-      "name": "Dagger Throw",
-      "cn": "投掷匕首",
-      "tier": "T2",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Flying Knee": {
-      "id": "Flying Knee",
-      "name": "Flying Knee",
-      "cn": "飞膝",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Masterful Stab": {
-      "id": "Masterful Stab",
-      "name": "Masterful Stab",
-      "cn": "精巧刺击",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Poisoned Stab": {
-      "id": "Poisoned Stab",
-      "name": "Poisoned Stab",
-      "cn": "带毒刺击",
-      "tier": "T2",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Slice": {
-      "id": "Slice",
-      "name": "Slice",
-      "cn": "切割",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Bane": {
-      "id": "Bane",
-      "name": "Bane",
-      "cn": "灾祸",
-      "tier": "T3",
-      "builds": [
-        "s|毒流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Blur": {
-      "id": "Blur",
-      "name": "Blur",
-      "cn": "残影",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Endless Agony": {
-      "id": "Endless Agony",
-      "name": "Endless Agony",
-      "cn": "无尽苦痛",
-      "tier": "T3",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Phantasmal Killer": {
-      "id": "Phantasmal Killer",
-      "name": "Phantasmal Killer",
-      "cn": "幻影杀手",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Riddle With Holes": {
-      "id": "Riddle With Holes",
-      "name": "Riddle with Holes",
-      "cn": "千穿百刺",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Deflect": {
-      "id": "Deflect",
-      "name": "Deflect",
-      "cn": "偏折",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Escape Plan": {
-      "id": "Escape Plan",
-      "name": "Escape Plan",
-      "cn": "逃脱计划",
-      "tier": "T3",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Expertise": {
-      "id": "Expertise",
-      "name": "Expertise",
-      "cn": "独门技术",
-      "tier": "T3",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Choke": {
-      "id": "Choke",
-      "name": "Choke",
-      "cn": "勒脖",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Distraction": {
-      "id": "Distraction",
-      "name": "Distraction",
-      "cn": "声东击西",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Doppelganger": {
-      "id": "Doppelganger",
-      "name": "Doppelganger",
-      "cn": "双重存在",
-      "tier": "T3",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Flechettes": {
-      "id": "Flechettes",
-      "name": "Flechettes",
-      "cn": "飞镖",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Outmaneuver": {
-      "id": "Outmaneuver",
-      "name": "Outmaneuver",
-      "cn": "抢占先机",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Heel Hook": {
-      "id": "Heel Hook",
-      "name": "Heel Hook",
-      "cn": "足跟勾",
-      "tier": "T3",
-      "builds": [
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Setup": {
-      "id": "Setup",
-      "name": "Setup",
-      "cn": "部署",
-      "tier": "T3",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Concentrate": {
-      "id": "Concentrate",
-      "name": "Concentrate",
-      "cn": "全神贯注",
-      "tier": "T3",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "skill"
-    },
-    "Underhanded Strike": {
-      "id": "Underhanded Strike",
-      "name": "Sneaky Strike",
-      "cn": "隐秘打击",
-      "tier": "T3",
-      "builds": [
-        "s|弃牌流",
-        "s|无限流"
-      ],
-      "src": "spirespy",
-      "char": "s",
-      "type": "attack"
-    },
-    "Seek": {
-      "id": "Seek",
-      "name": "Seek",
-      "cn": "搜寻",
-      "tier": "T0",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Self Repair": {
-      "id": "Self Repair",
-      "name": "Self Repair",
-      "cn": "自我修复",
+    "Doom and Gloom": {
+      "id": "Doom and Gloom",
+      "name": "Doom and Gloom",
+      "cn": "愁云惨淡",
       "tier": "T1",
       "builds": [
-        "d|能力流"
+        "d|暗球 / 爪击流"
       ],
-      "src": "spirespy",
       "char": "d",
-      "type": "power"
+      "type": "attack",
+      "rating": 71,
+      "consensus": 43,
+      "votes": 24
     },
-    "BootSequence": {
-      "id": "BootSequence",
-      "name": "Boot Sequence",
-      "cn": "启动流程",
+    "Reboot": {
+      "id": "Reboot",
+      "name": "Reboot",
+      "cn": "重启",
       "tier": "T1",
       "builds": [
-        "d|冰霜坦克流"
+        "d|暗球 / 爪击流"
       ],
-      "src": "spirespy",
       "char": "d",
-      "type": "skill"
+      "type": "skill",
+      "rating": 71,
+      "consensus": 43,
+      "votes": 26
     },
-    "Streamline": {
-      "id": "Streamline",
-      "name": "Streamline",
-      "cn": "精简改良",
+    "TalkToTheHand": {
+      "id": "TalkToTheHand",
+      "name": "Talk to the Hand",
+      "cn": "以手拒之",
       "tier": "T1",
       "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
+      "char": "w",
+      "type": "attack",
+      "rating": 71,
+      "consensus": 40,
+      "votes": 18
     },
-    "Hologram": {
-      "id": "Hologram",
-      "name": "Hologram",
-      "cn": "全息影像",
+    "Flame Barrier": {
+      "id": "Flame Barrier",
+      "name": "Flame Barrier",
+      "cn": "火焰屏障",
+      "tier": "T1",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 70,
+      "consensus": 42,
+      "votes": 24
+    },
+    "Ball Lightning": {
+      "id": "Ball Lightning",
+      "name": "Ball Lightning",
+      "cn": "球状闪电",
+      "tier": "T1",
+      "builds": [
+        "d|闪电球流"
+      ],
+      "char": "d",
+      "type": "attack",
+      "rating": 70,
+      "consensus": 45,
+      "votes": 28
+    },
+    "Whirlwind": {
+      "id": "Whirlwind",
+      "name": "Whirlwind",
+      "cn": "旋风斩",
+      "tier": "T1",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 70,
+      "consensus": 41,
+      "votes": 29
+    },
+    "Burning Pact": {
+      "id": "Burning Pact",
+      "name": "Burning Pact",
+      "cn": "燃烧契约",
       "tier": "T2",
       "builds": [
-        "d|冰霜坦克流"
+        "i|腐化消耗流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "i",
+      "type": "skill",
+      "rating": 69,
+      "consensus": 40,
+      "votes": 22
     },
-    "Reinforced Body": {
-      "id": "Reinforced Body",
-      "name": "Reinforced Body",
-      "cn": "硬化机体",
+    "Second Wind": {
+      "id": "Second Wind",
+      "name": "Second Wind",
+      "cn": "重振精神",
       "tier": "T2",
       "builds": [
-        "d|冰霜坦克流"
+        "i|腐化消耗流",
+        "i|格挡堡垒流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Static Discharge": {
-      "id": "Static Discharge",
-      "name": "Static Discharge",
-      "cn": "静电释放",
-      "tier": "T2",
-      "builds": [
-        "d|闪电球流",
-        "d|能力流"
-      ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "power"
-    },
-    "FTL": {
-      "id": "FTL",
-      "name": "FTL",
-      "cn": "超越光速",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
-    },
-    "Barrage": {
-      "id": "Barrage",
-      "name": "Barrage",
-      "cn": "弹幕齐射",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
-    },
-    "Beam Cell": {
-      "id": "Beam Cell",
-      "name": "Beam Cell",
-      "cn": "光束射线",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
+      "char": "i",
+      "type": "skill",
+      "rating": 69,
+      "consensus": 40,
+      "votes": 25
     },
     "Cold Snap": {
       "id": "Cold Snap",
@@ -2741,61 +1362,356 @@
       "builds": [
         "d|冰霜坦克流"
       ],
-      "src": "spirespy",
       "char": "d",
-      "type": "attack"
+      "type": "attack",
+      "rating": 67,
+      "consensus": 42,
+      "votes": 29
     },
-    "Dualcast": {
-      "id": "Dualcast",
-      "name": "Dualcast",
-      "cn": "双重释放",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Fission": {
-      "id": "Fission",
-      "name": "Fission",
-      "cn": "裂变",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Go for the Eyes": {
-      "id": "Go for the Eyes",
-      "name": "Go for the Eyes",
-      "cn": "眼部攻击",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
-    },
-    "Hello World": {
-      "id": "Hello World",
-      "name": "Hello World",
-      "cn": "你好，世界",
+    "Inflame": {
+      "id": "Inflame",
+      "name": "Inflame",
+      "cn": "燃烧",
       "tier": "T2",
       "builds": [
-        "d|能力流"
+        "i|力量流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "power"
+      "char": "i",
+      "type": "power",
+      "rating": 67,
+      "consensus": 39,
+      "votes": 23
     },
-    "Hyperbeam": {
-      "id": "Hyperbeam",
-      "name": "Hyperbeam",
-      "cn": "超能光束",
+    "Wallop": {
+      "id": "Wallop",
+      "name": "Wallop",
+      "cn": "当头棒喝",
       "tier": "T2",
       "builds": [],
-      "src": "spirespy",
+      "char": "w",
+      "type": "attack",
+      "rating": 67,
+      "consensus": 37,
+      "votes": 16
+    },
+    "Tactician": {
+      "id": "Tactician",
+      "name": "Tactician",
+      "cn": "战术大师",
+      "tier": "T2",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 66,
+      "consensus": 35,
+      "votes": 57
+    },
+    "Compile Driver": {
+      "id": "Compile Driver",
+      "name": "Compile Driver",
+      "cn": "编译冲击",
+      "tier": "T2",
+      "builds": [],
       "char": "d",
-      "type": "attack"
+      "type": "attack",
+      "rating": 66,
+      "consensus": 45,
+      "votes": 24
+    },
+    "Backstab": {
+      "id": "Backstab",
+      "name": "Backstab",
+      "cn": "背刺",
+      "tier": "T2",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 66,
+      "consensus": 37,
+      "votes": 53
+    },
+    "Meditate": {
+      "id": "Meditate",
+      "name": "Meditate",
+      "cn": "冥想",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流",
+        "w|点穴 / 保留流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 66,
+      "consensus": 39,
+      "votes": 17
+    },
+    "Uppercut": {
+      "id": "Uppercut",
+      "name": "Uppercut",
+      "cn": "上勾拳",
+      "tier": "T2",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 65,
+      "consensus": 42,
+      "votes": 25
+    },
+    "Predator": {
+      "id": "Predator",
+      "name": "Predator",
+      "cn": "猎杀者",
+      "tier": "T2",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 65,
+      "consensus": 37,
+      "votes": 52
+    },
+    "Noxious Fumes": {
+      "id": "Noxious Fumes",
+      "name": "Noxious Fumes",
+      "cn": "毒雾",
+      "tier": "T2",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "power",
+      "rating": 65,
+      "consensus": 36,
+      "votes": 55
+    },
+    "Dash": {
+      "id": "Dash",
+      "name": "Dash",
+      "cn": "冲刺",
+      "tier": "T2",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 65,
+      "consensus": 37,
+      "votes": 55
+    },
+    "Crippling Poison": {
+      "id": "Crippling Poison",
+      "name": "Crippling Cloud",
+      "cn": "致残毒云",
+      "tier": "T2",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 64,
+      "consensus": 38,
+      "votes": 56
+    },
+    "EmptyFist": {
+      "id": "EmptyFist",
+      "name": "Empty Fist",
+      "cn": "化拳为空",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "attack",
+      "rating": 64,
+      "consensus": 41,
+      "votes": 22
+    },
+    "Sunder": {
+      "id": "Sunder",
+      "name": "Sunder",
+      "cn": "分离",
+      "tier": "T2",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 63,
+      "consensus": 40,
+      "votes": 23
+    },
+    "True Grit": {
+      "id": "True Grit",
+      "name": "True Grit",
+      "cn": "坚毅",
+      "tier": "T2",
+      "builds": [
+        "i|腐化消耗流",
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 62,
+      "consensus": 39,
+      "votes": 25
+    },
+    "Bouncing Flask": {
+      "id": "Bouncing Flask",
+      "name": "Bouncing Flask",
+      "cn": "弹跳药瓶",
+      "tier": "T2",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 62,
+      "consensus": 34,
+      "votes": 56
+    },
+    "Reinforced Body": {
+      "id": "Reinforced Body",
+      "name": "Reinforced Body",
+      "cn": "硬化机体",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 62,
+      "consensus": 36,
+      "votes": 27
+    },
+    "Phantasmal Killer": {
+      "id": "Phantasmal Killer",
+      "name": "Phantasmal Killer",
+      "cn": "幻影杀手",
+      "tier": "T2",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 62,
+      "consensus": 32,
+      "votes": 54
+    },
+    "Trip": {
+      "id": "Trip",
+      "name": "Trip",
+      "cn": "绊倒",
+      "tier": "T2",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 62,
+      "consensus": 34,
+      "votes": 20
+    },
+    "DeceiveReality": {
+      "id": "DeceiveReality",
+      "name": "Deceive Reality",
+      "cn": "欺瞒现实",
+      "tier": "T2",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 61,
+      "consensus": 41,
+      "votes": 15
+    },
+    "Loop": {
+      "id": "Loop",
+      "name": "Loop",
+      "cn": "循环",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|能力流",
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 61,
+      "consensus": 36,
+      "votes": 23
+    },
+    "Blur": {
+      "id": "Blur",
+      "name": "Blur",
+      "cn": "残影",
+      "tier": "T2",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 61,
+      "consensus": 32,
+      "votes": 54
+    },
+    "Seeing Red": {
+      "id": "Seeing Red",
+      "name": "Seeing Red",
+      "cn": "盛怒",
+      "tier": "T2",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 60,
+      "consensus": 34,
+      "votes": 24
+    },
+    "Brilliance": {
+      "id": "Brilliance",
+      "name": "Brilliance",
+      "cn": "光辉",
+      "tier": "T2",
+      "builds": [
+        "w|神格真言流"
+      ],
+      "char": "w",
+      "type": "attack",
+      "rating": 60,
+      "consensus": 35,
+      "votes": 16
+    },
+    "Power Through": {
+      "id": "Power Through",
+      "name": "Power Through",
+      "cn": "硬撑",
+      "tier": "T2",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 60,
+      "consensus": 38,
+      "votes": 26
+    },
+    "Wireheading": {
+      "id": "Wireheading",
+      "name": "Foresight",
+      "cn": "先见之明",
+      "tier": "T2",
+      "builds": [],
+      "char": "w",
+      "type": "power",
+      "rating": 60,
+      "consensus": 31,
+      "votes": 17
+    },
+    "ThirdEye": {
+      "id": "ThirdEye",
+      "name": "Third Eye",
+      "cn": "天眼",
+      "tier": "T2",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 58,
+      "consensus": 36,
+      "votes": 16
     },
     "Rainbow": {
       "id": "Rainbow",
@@ -2807,423 +1723,462 @@
         "d|闪电球流",
         "d|暗球 / 爪击流"
       ],
-      "src": "spirespy",
       "char": "d",
-      "type": "skill"
+      "type": "skill",
+      "rating": 58,
+      "consensus": 37,
+      "votes": 25
     },
-    "Rip and Tear": {
-      "id": "Rip and Tear",
-      "name": "Rip and Tear",
-      "cn": "狂乱撕扯",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
-    },
-    "Undo": {
-      "id": "Undo",
-      "name": "Equilibrium",
-      "cn": "均衡",
+    "Brutality": {
+      "id": "Brutality",
+      "name": "Brutality",
+      "cn": "残暴",
       "tier": "T2",
       "builds": [
-        "d|冰霜坦克流"
+        "i|撕裂自伤流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "i",
+      "type": "power",
+      "rating": 58,
+      "consensus": 35,
+      "votes": 23
     },
-    "Core Surge": {
-      "id": "Core Surge",
-      "name": "Core Surge",
-      "cn": "核心电涌",
+    "Capacitor": {
+      "id": "Capacitor",
+      "name": "Capacitor",
+      "cn": "扩容",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 57,
+      "consensus": 33,
+      "votes": 24
+    },
+    "Hyperbeam": {
+      "id": "Hyperbeam",
+      "name": "Hyperbeam",
+      "cn": "超能光束",
       "tier": "T2",
       "builds": [],
-      "src": "spirespy",
       "char": "d",
-      "type": "attack"
+      "type": "attack",
+      "rating": 57,
+      "consensus": 34,
+      "votes": 28
     },
-    "Auto Shields": {
-      "id": "Auto Shields",
-      "name": "Auto-Shields",
-      "cn": "自动护盾",
-      "tier": "T3",
-      "builds": [
-        "d|冰霜坦克流"
-      ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Consume": {
-      "id": "Consume",
-      "name": "Consume",
-      "cn": "耗尽",
-      "tier": "T3",
-      "builds": [
-        "d|冰霜坦克流"
-      ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Double Energy": {
-      "id": "Double Energy",
-      "name": "Double Energy",
-      "cn": "双倍能量",
-      "tier": "T3",
+    "Panacea": {
+      "id": "Panacea",
+      "name": "Panacea",
+      "cn": "万能药",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "c",
+      "type": "skill",
+      "rating": 57,
+      "consensus": 32,
+      "votes": 19
     },
-    "Leap": {
-      "id": "Leap",
-      "name": "Leap",
-      "cn": "飞跃",
-      "tier": "T3",
-      "builds": [
-        "d|冰霜坦克流"
-      ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Melter": {
-      "id": "Melter",
-      "name": "Melter",
-      "cn": "熔化",
-      "tier": "T3",
+    "Carnage": {
+      "id": "Carnage",
+      "name": "Carnage",
+      "cn": "残杀",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
+      "char": "i",
+      "type": "attack",
+      "rating": 57,
+      "consensus": 38,
+      "votes": 22
     },
-    "Rebound": {
-      "id": "Rebound",
-      "name": "Rebound",
-      "cn": "弹回",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
-    },
-    "Skim": {
-      "id": "Skim",
-      "name": "Skim",
-      "cn": "快速检索",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Stack": {
-      "id": "Stack",
-      "name": "Stack",
-      "cn": "堆栈",
-      "tier": "T3",
+    "Dagger Throw": {
+      "id": "Dagger Throw",
+      "name": "Dagger Throw",
+      "cn": "投掷匕首",
+      "tier": "T2",
       "builds": [
-        "d|冰霜坦克流"
+        "s|弃牌流",
+        "s|无限流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "s",
+      "type": "attack",
+      "rating": 57,
+      "consensus": 33,
+      "votes": 53
     },
-    "Tempest": {
-      "id": "Tempest",
-      "name": "Tempest",
-      "cn": "暴风雨",
-      "tier": "T3",
+    "Exhume": {
+      "id": "Exhume",
+      "name": "Exhume",
+      "cn": "发掘",
+      "tier": "T2",
       "builds": [
-        "d|闪电球流"
+        "i|腐化消耗流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "i",
+      "type": "skill",
+      "rating": 57,
+      "consensus": 33,
+      "votes": 24
     },
-    "Compile Driver": {
-      "id": "Compile Driver",
-      "name": "Compile Driver",
-      "cn": "编译冲击",
-      "tier": "T3",
+    "Indignation": {
+      "id": "Indignation",
+      "name": "Indignation",
+      "cn": "义愤填膺",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 56,
+      "consensus": 35,
+      "votes": 17
+    },
+    "Headbutt": {
+      "id": "Headbutt",
+      "name": "Headbutt",
+      "cn": "头槌",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
+      "char": "i",
+      "type": "attack",
+      "rating": 56,
+      "consensus": 40,
+      "votes": 25
     },
-    "Doom and Gloom": {
-      "id": "Doom and Gloom",
-      "name": "Doom and Gloom",
-      "cn": "愁云惨淡",
-      "tier": "T3",
-      "builds": [
-        "d|暗球 / 爪击流"
-      ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
+    "Anger": {
+      "id": "Anger",
+      "name": "Anger",
+      "cn": "愤怒",
+      "tier": "T2",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 55,
+      "consensus": 32,
+      "votes": 28
     },
     "Recycle": {
       "id": "Recycle",
       "name": "Recycle",
       "cn": "回收",
-      "tier": "T3",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
       "char": "d",
-      "type": "skill"
+      "type": "skill",
+      "rating": 55,
+      "consensus": 34,
+      "votes": 24
     },
-    "Sunder": {
-      "id": "Sunder",
-      "name": "Sunder",
-      "cn": "分离",
-      "tier": "T3",
+    "Go for the Eyes": {
+      "id": "Go for the Eyes",
+      "name": "Go for the Eyes",
+      "cn": "眼部攻击",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
       "char": "d",
-      "type": "attack"
+      "type": "attack",
+      "rating": 55,
+      "consensus": 35,
+      "votes": 25
+    },
+    "Limit Break": {
+      "id": "Limit Break",
+      "name": "Limit Break",
+      "cn": "突破极限",
+      "tier": "T2",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 55,
+      "consensus": 40,
+      "votes": 23
+    },
+    "Bloodletting": {
+      "id": "Bloodletting",
+      "name": "Bloodletting",
+      "cn": "放血",
+      "tier": "T2",
+      "builds": [
+        "i|撕裂自伤流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 55,
+      "consensus": 33,
+      "votes": 26
+    },
+    "DeusExMachina": {
+      "id": "DeusExMachina",
+      "name": "Deus Ex Machina",
+      "cn": "机械降神",
+      "tier": "T2",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 54,
+      "consensus": 33,
+      "votes": 23
+    },
+    "Accuracy": {
+      "id": "Accuracy",
+      "name": "Accuracy",
+      "cn": "精准",
+      "tier": "T2",
+      "builds": [
+        "s|小刀流"
+      ],
+      "char": "s",
+      "type": "power",
+      "rating": 54,
+      "consensus": 31,
+      "votes": 54
+    },
+    "Conserve Battery": {
+      "id": "Conserve Battery",
+      "name": "Charge Battery",
+      "cn": "充电",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 54,
+      "consensus": 38,
+      "votes": 25
+    },
+    "Pummel": {
+      "id": "Pummel",
+      "name": "Pummel",
+      "cn": "连续拳",
+      "tier": "T2",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 54,
+      "consensus": 38,
+      "votes": 23
+    },
+    "Escape Plan": {
+      "id": "Escape Plan",
+      "name": "Escape Plan",
+      "cn": "逃脱计划",
+      "tier": "T2",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 54,
+      "consensus": 34,
+      "votes": 51
+    },
+    "Blasphemy": {
+      "id": "Blasphemy",
+      "name": "Blasphemy",
+      "cn": "渎神",
+      "tier": "T2",
+      "builds": [
+        "w|神格真言流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 53,
+      "consensus": 33,
+      "votes": 20
+    },
+    "Violence": {
+      "id": "Violence",
+      "name": "Violence",
+      "cn": "暴力",
+      "tier": "T2",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 53,
+      "consensus": 31,
+      "votes": 17
+    },
+    "Secret Technique": {
+      "id": "Secret Technique",
+      "name": "Secret Technique",
+      "cn": "秘密技法",
+      "tier": "T2",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 52,
+      "consensus": 27,
+      "votes": 19
     },
     "Sweeping Beam": {
       "id": "Sweeping Beam",
       "name": "Sweeping Beam",
       "cn": "扫荡射线",
-      "tier": "T3",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
       "char": "d",
-      "type": "attack"
+      "type": "attack",
+      "rating": 52,
+      "consensus": 35,
+      "votes": 26
     },
-    "Chaos": {
-      "id": "Chaos",
-      "name": "Chaos",
-      "cn": "混沌",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Genetic Algorithm": {
-      "id": "Genetic Algorithm",
-      "name": "Genetic Algorithm",
-      "cn": "遗传算法",
-      "tier": "T3",
+    "Bullet Time": {
+      "id": "Bullet Time",
+      "name": "Bullet Time",
+      "cn": "子弹时间",
+      "tier": "T2",
       "builds": [
-        "d|冰霜坦克流"
+        "s|无限流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "s",
+      "type": "skill",
+      "rating": 52,
+      "consensus": 30,
+      "votes": 53
     },
-    "Lockon": {
-      "id": "Lockon",
-      "name": "Bullseye",
-      "cn": "瞄准靶心",
-      "tier": "T3",
+    "Secret Weapon": {
+      "id": "Secret Weapon",
+      "name": "Secret Weapon",
+      "cn": "秘密武器",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
+      "char": "c",
+      "type": "skill",
+      "rating": 52,
+      "consensus": 32,
+      "votes": 20
     },
-    "Aggregate": {
-      "id": "Aggregate",
-      "name": "Aggregate",
-      "cn": "汇集",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Scrape": {
-      "id": "Scrape",
-      "name": "Scrape",
-      "cn": "刮削",
-      "tier": "T3",
+    "Crescendo": {
+      "id": "Crescendo",
+      "name": "Crescendo",
+      "cn": "渐强",
+      "tier": "T2",
       "builds": [
-        "d|暗球 / 爪击流"
+        "w|姿态舞（常规）"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
+      "char": "w",
+      "type": "skill",
+      "rating": 51,
+      "consensus": 32,
+      "votes": 20
     },
-    "White Noise": {
-      "id": "White Noise",
-      "name": "White Noise",
-      "cn": "白噪声",
-      "tier": "T3",
+    "Dropkick": {
+      "id": "Dropkick",
+      "name": "Dropkick",
+      "cn": "飞身踢",
+      "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "i",
+      "type": "attack",
+      "rating": 51,
+      "consensus": 35,
+      "votes": 22
     },
-    "Force Field": {
-      "id": "Force Field",
-      "name": "Force Field",
-      "cn": "力场",
-      "tier": "T3",
+    "Underhanded Strike": {
+      "id": "Underhanded Strike",
+      "name": "Sneaky Strike",
+      "cn": "隐秘打击",
+      "tier": "T2",
       "builds": [
-        "d|冰霜坦克流"
+        "s|弃牌流",
+        "s|无限流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
+      "char": "s",
+      "type": "attack",
+      "rating": 51,
+      "consensus": 34,
+      "votes": 52
     },
-    "Amplify": {
-      "id": "Amplify",
-      "name": "Amplify",
-      "cn": "增幅",
-      "tier": "T3",
+    "FlurryOfBlows": {
+      "id": "FlurryOfBlows",
+      "name": "Flurry of Blows",
+      "cn": "疾风连击",
+      "tier": "T2",
       "builds": [
-        "d|能力流"
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
       ],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Reprogram": {
-      "id": "Reprogram",
-      "name": "Reprogram",
-      "cn": "重编程",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "skill"
-    },
-    "Meteor Strike": {
-      "id": "Meteor Strike",
-      "name": "Meteor Strike",
-      "cn": "陨石打击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "d",
-      "type": "attack"
-    },
-    "SpiritShield": {
-      "id": "SpiritShield",
-      "name": "Spirit Shield",
-      "cn": "精神护盾",
-      "tier": "T0",
-      "builds": [],
-      "src": "spirespy",
       "char": "w",
-      "type": "skill"
+      "type": "attack",
+      "rating": 50,
+      "consensus": 37,
+      "votes": 18
     },
-    "LessonLearned": {
-      "id": "LessonLearned",
-      "name": "Lesson Learned",
-      "cn": "勤学精进",
-      "tier": "T0",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "Wireheading": {
-      "id": "Wireheading",
-      "name": "Foresight",
-      "cn": "先见之明",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "power"
-    },
-    "CutThroughFate": {
-      "id": "CutThroughFate",
-      "name": "Cut Through Fate",
-      "cn": "斩破命运",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "Protect": {
-      "id": "Protect",
-      "name": "Protect",
-      "cn": "护身",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "WindmillStrike": {
-      "id": "WindmillStrike",
-      "name": "Windmill Strike",
-      "cn": "旋转打击",
-      "tier": "T1",
+    "Prepared": {
+      "id": "Prepared",
+      "name": "Prepared",
+      "cn": "早有准备",
+      "tier": "T2",
       "builds": [
-        "w|点穴 / 保留流"
+        "s|弃牌流",
+        "s|无限流"
       ],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
+      "char": "s",
+      "type": "skill",
+      "rating": 50,
+      "consensus": 32,
+      "votes": 47
     },
-    "Conclude": {
-      "id": "Conclude",
-      "name": "Conclude",
-      "cn": "结末",
+    "FollowUp": {
+      "id": "FollowUp",
+      "name": "Follow-Up",
+      "cn": "追击",
       "tier": "T2",
       "builds": [],
-      "src": "spirespy",
       "char": "w",
-      "type": "attack"
+      "type": "attack",
+      "rating": 50,
+      "consensus": 37,
+      "votes": 19
     },
-    "DeceiveReality": {
-      "id": "DeceiveReality",
-      "name": "Deceive Reality",
-      "cn": "欺瞒现实",
+    "Rebound": {
+      "id": "Rebound",
+      "name": "Rebound",
+      "cn": "弹回",
       "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
+      "char": "d",
+      "type": "attack",
+      "rating": 50,
+      "consensus": 37,
+      "votes": 26
     },
-    "Fasting2": {
-      "id": "Fasting2",
-      "name": "Fasting",
-      "cn": "斋戒",
+    "Blood for Blood": {
+      "id": "Blood for Blood",
+      "name": "Blood for Blood",
+      "cn": "以血还血",
       "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "power"
+      "builds": [
+        "i|撕裂自伤流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 50,
+      "consensus": 30,
+      "votes": 25
     },
-    "Judgement": {
-      "id": "Judgement",
-      "name": "Judgment",
-      "cn": "审判",
+    "Eviscerate": {
+      "id": "Eviscerate",
+      "name": "Eviscerate",
+      "cn": "内脏切除",
       "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "Nirvana": {
-      "id": "Nirvana",
-      "name": "Nirvana",
-      "cn": "涅槃",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "power"
-    },
-    "ReachHeaven": {
-      "id": "ReachHeaven",
-      "name": "Reach Heaven",
-      "cn": "立地升天",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
+      "builds": [
+        "s|弃牌流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 50,
+      "consensus": 33,
+      "votes": 52
     },
     "ClearTheMind": {
       "id": "ClearTheMind",
@@ -3234,206 +2189,265 @@
         "w|姿态舞（常规）",
         "w|姿态循环无限流"
       ],
-      "src": "spirespy",
       "char": "w",
-      "type": "skill"
+      "type": "skill",
+      "rating": 50,
+      "consensus": 37,
+      "votes": 19
     },
-    "WheelKick": {
-      "id": "WheelKick",
-      "name": "Wheel Kick",
-      "cn": "回环踢",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "BattleHymn": {
-      "id": "BattleHymn",
-      "name": "Battle Hymn",
-      "cn": "战歌",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "power"
-    },
-    "Consecrate": {
-      "id": "Consecrate",
-      "name": "Consecrate",
-      "cn": "供奉",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "Crescendo": {
-      "id": "Crescendo",
-      "name": "Crescendo",
-      "cn": "渐强",
-      "tier": "T2",
-      "builds": [
-        "w|姿态舞（常规）"
-      ],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "CrushJoints": {
-      "id": "CrushJoints",
-      "name": "Crush Joints",
-      "cn": "粉碎关节",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "DeusExMachina": {
-      "id": "DeusExMachina",
-      "name": "Deus Ex Machina",
-      "cn": "机械降神",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "Evaluate": {
-      "id": "Evaluate",
-      "name": "Evaluate",
-      "cn": "评估",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "MasterReality": {
-      "id": "MasterReality",
-      "name": "Master Reality",
-      "cn": "操控现实",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "power"
-    },
-    "SashWhip": {
-      "id": "SashWhip",
-      "name": "Sash Whip",
-      "cn": "腰带抽打",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "Vengeance": {
-      "id": "Vengeance",
-      "name": "Simmering Fury",
-      "cn": "怒火中烧",
+    "EmptyMind": {
+      "id": "EmptyMind",
+      "name": "Empty Mind",
+      "cn": "化智为空",
       "tier": "T2",
       "builds": [
         "w|姿态舞（常规）",
         "w|姿态循环无限流"
       ],
-      "src": "spirespy",
       "char": "w",
-      "type": "skill"
+      "type": "skill",
+      "rating": 50,
+      "consensus": 32,
+      "votes": 17
     },
-    "ThirdEye": {
-      "id": "ThirdEye",
-      "name": "Third Eye",
-      "cn": "天眼",
+    "Devotion": {
+      "id": "Devotion",
+      "name": "Devotion",
+      "cn": "虔信",
+      "tier": "T2",
+      "builds": [
+        "w|神格真言流"
+      ],
+      "char": "w",
+      "type": "power",
+      "rating": 50,
+      "consensus": 30,
+      "votes": 16
+    },
+    "White Noise": {
+      "id": "White Noise",
+      "name": "White Noise",
+      "cn": "白噪声",
       "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
+      "char": "d",
+      "type": "skill",
+      "rating": 49,
+      "consensus": 33,
+      "votes": 26
     },
-    "Wish": {
-      "id": "Wish",
-      "name": "Wish",
-      "cn": "许愿",
+    "Turbo": {
+      "id": "Turbo",
+      "name": "TURBO",
+      "cn": "内核加速",
+      "tier": "T2",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 49,
+      "consensus": 32,
+      "votes": 27
+    },
+    "Evolve": {
+      "id": "Evolve",
+      "name": "Evolve",
+      "cn": "进化",
       "tier": "T2",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
+      "char": "i",
+      "type": "power",
+      "rating": 49,
+      "consensus": 36,
+      "votes": 24
     },
-    "BowlingBash": {
-      "id": "BowlingBash",
-      "name": "Bowling Bash",
-      "cn": "碰撞连击",
+    "Hemokinesis": {
+      "id": "Hemokinesis",
+      "name": "Hemokinesis",
+      "cn": "御血术",
+      "tier": "T2",
+      "builds": [
+        "i|撕裂自伤流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 48,
+      "consensus": 36,
+      "votes": 25
+    },
+    "Barricade": {
+      "id": "Barricade",
+      "name": "Barricade",
+      "cn": "壁垒",
+      "tier": "T2",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 48,
+      "consensus": 29,
+      "votes": 27
+    },
+    "Dramatic Entrance": {
+      "id": "Dramatic Entrance",
+      "name": "Dramatic Entrance",
+      "cn": "闪亮登场",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
+      "char": "c",
+      "type": "attack",
+      "rating": 47,
+      "consensus": 31,
+      "votes": 20
     },
-    "FlyingSleeves": {
-      "id": "FlyingSleeves",
-      "name": "Flying Sleeves",
-      "cn": "流云飞袖",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "Halt": {
-      "id": "Halt",
-      "name": "Halt",
-      "cn": "停顿",
+    "BootSequence": {
+      "id": "BootSequence",
+      "name": "Boot Sequence",
+      "cn": "启动流程",
       "tier": "T3",
       "builds": [
-        "w|姿态舞（常规）"
+        "d|冰霜坦克流"
       ],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
+      "char": "d",
+      "type": "skill",
+      "rating": 47,
+      "consensus": 31,
+      "votes": 25
     },
-    "Study": {
-      "id": "Study",
-      "name": "Study",
-      "cn": "研习",
+    "Aggregate": {
+      "id": "Aggregate",
+      "name": "Aggregate",
+      "cn": "汇集",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "power"
+      "char": "d",
+      "type": "skill",
+      "rating": 47,
+      "consensus": 30,
+      "votes": 24
     },
-    "Swivel": {
-      "id": "Swivel",
-      "name": "Swivel",
-      "cn": "旋身",
+    "Blind": {
+      "id": "Blind",
+      "name": "Blind",
+      "cn": "致盲",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
+      "char": "c",
+      "type": "skill",
+      "rating": 47,
+      "consensus": 32,
+      "votes": 20
     },
-    "Weave": {
-      "id": "Weave",
-      "name": "Weave",
-      "cn": "迂回",
+    "Ghostly Armor": {
+      "id": "Ghostly Armor",
+      "name": "Ghostly Armor",
+      "cn": "幽灵铠甲",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 46,
+      "consensus": 38,
+      "votes": 24
+    },
+    "Prostrate": {
+      "id": "Prostrate",
+      "name": "Prostrate",
+      "cn": "五体投地",
+      "tier": "T3",
+      "builds": [
+        "w|神格真言流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 46,
+      "consensus": 32,
+      "votes": 14
+    },
+    "Bandage Up": {
+      "id": "Bandage Up",
+      "name": "Bandage Up",
+      "cn": "包扎",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
+      "char": "c",
+      "type": "skill",
+      "rating": 46,
+      "consensus": 26,
+      "votes": 20
     },
-    "CarveReality": {
-      "id": "CarveReality",
-      "name": "Carve Reality",
-      "cn": "改造现实",
+    "Cloak And Dagger": {
+      "id": "Cloak And Dagger",
+      "name": "Cloak and Dagger",
+      "cn": "斗篷与匕首",
+      "tier": "T3",
+      "builds": [
+        "s|小刀流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 46,
+      "consensus": 31,
+      "votes": 50
+    },
+    "SandsOfTime": {
+      "id": "SandsOfTime",
+      "name": "Sands of Time",
+      "cn": "时之沙",
+      "tier": "T3",
+      "builds": [
+        "w|点穴 / 保留流"
+      ],
+      "char": "w",
+      "type": "attack",
+      "rating": 45,
+      "consensus": 31,
+      "votes": 17
+    },
+    "Reflex": {
+      "id": "Reflex",
+      "name": "Reflex",
+      "cn": "本能反应",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 45,
+      "consensus": 30,
+      "votes": 55
+    },
+    "Consume": {
+      "id": "Consume",
+      "name": "Consume",
+      "cn": "耗尽",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 44,
+      "consensus": 30,
+      "votes": 24
+    },
+    "Ragnarok": {
+      "id": "Ragnarok",
+      "name": "Ragnarok",
+      "cn": "诸神之黄昏",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
       "char": "w",
-      "type": "attack"
+      "type": "attack",
+      "rating": 43,
+      "consensus": 34,
+      "votes": 15
     },
     "EmptyBody": {
       "id": "EmptyBody",
@@ -3444,321 +2458,99 @@
         "w|姿态舞（常规）",
         "w|姿态循环无限流"
       ],
-      "src": "spirespy",
       "char": "w",
-      "type": "skill"
+      "type": "skill",
+      "rating": 43,
+      "consensus": 32,
+      "votes": 21
     },
-    "Sanctity": {
-      "id": "Sanctity",
-      "name": "Sanctity",
-      "cn": "圣洁",
+    "Conclude": {
+      "id": "Conclude",
+      "name": "Conclude",
+      "cn": "结末",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
       "char": "w",
-      "type": "skill"
+      "type": "attack",
+      "rating": 43,
+      "consensus": 32,
+      "votes": 17
     },
-    "FollowUp": {
-      "id": "FollowUp",
-      "name": "Follow-Up",
-      "cn": "追击",
+    "All Out Attack": {
+      "id": "All Out Attack",
+      "name": "All-Out Attack",
+      "cn": "全力攻击",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 43,
+      "consensus": 30,
+      "votes": 56
+    },
+    "A Thousand Cuts": {
+      "id": "A Thousand Cuts",
+      "name": "A Thousand Cuts",
+      "cn": "凌迟",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
+      "char": "s",
+      "type": "power",
+      "rating": 43,
+      "consensus": 27,
+      "votes": 56
     },
-    "JustLucky": {
-      "id": "JustLucky",
-      "name": "Just Lucky",
-      "cn": "幸运一击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "attack"
-    },
-    "WreathOfFlame": {
-      "id": "WreathOfFlame",
-      "name": "Wreath of Flame",
-      "cn": "火焰纹",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "Collect": {
-      "id": "Collect",
-      "name": "Collect",
-      "cn": "收集",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "ConjureBlade": {
-      "id": "ConjureBlade",
-      "name": "Conjure Blade",
-      "cn": "聚能成刃",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "ForeignInfluence": {
-      "id": "ForeignInfluence",
-      "name": "Foreign Influence",
-      "cn": "他山之石",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "Alpha": {
-      "id": "Alpha",
-      "name": "Alpha",
-      "cn": "阿尔法",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "w",
-      "type": "skill"
-    },
-    "Indignation": {
-      "id": "Indignation",
-      "name": "Indignation",
-      "cn": "义愤填膺",
+    "Halt": {
+      "id": "Halt",
+      "name": "Halt",
+      "cn": "停顿",
       "tier": "T3",
       "builds": [
         "w|姿态舞（常规）"
       ],
-      "src": "spirespy",
       "char": "w",
-      "type": "skill"
-    },
-    "Bandage Up": {
-      "id": "Bandage Up",
-      "name": "Bandage Up",
-      "cn": "包扎",
-      "tier": "T0",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Apotheosis": {
-      "id": "Apotheosis",
-      "name": "Apotheosis",
-      "cn": "神化",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Dramatic Entrance": {
-      "id": "Dramatic Entrance",
-      "name": "Dramatic Entrance",
-      "cn": "闪亮登场",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "attack"
-    },
-    "Master of Strategy": {
-      "id": "Master of Strategy",
-      "name": "Master of Strategy",
-      "cn": "战略大师",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Secret Technique": {
-      "id": "Secret Technique",
-      "name": "Secret Technique",
-      "cn": "秘密技法",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Secret Weapon": {
-      "id": "Secret Weapon",
-      "name": "Secret Weapon",
-      "cn": "秘密武器",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Dark Shackles": {
-      "id": "Dark Shackles",
-      "name": "Dark Shackles",
-      "cn": "黑暗镣铐",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Magnetism": {
-      "id": "Magnetism",
-      "name": "Magnetism",
-      "cn": "磁力",
-      "tier": "T1",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "power"
-    },
-    "Discovery": {
-      "id": "Discovery",
-      "name": "Discovery",
-      "cn": "发现",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Sadistic Nature": {
-      "id": "Sadistic Nature",
-      "name": "Sadistic Nature",
-      "cn": "残虐天性",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "power"
+      "type": "skill",
+      "rating": 43,
+      "consensus": 33,
+      "votes": 18
     },
     "Thinking Ahead": {
       "id": "Thinking Ahead",
       "name": "Thinking Ahead",
       "cn": "深谋远虑",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "HandOfGreed": {
-      "id": "HandOfGreed",
-      "name": "Hand of Greed",
-      "cn": "贪婪之手",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "attack"
-    },
-    "Metamorphosis": {
-      "id": "Metamorphosis",
-      "name": "Metamorphosis",
-      "cn": "羽化",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Panacea": {
-      "id": "Panacea",
-      "name": "Panacea",
-      "cn": "万能药",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Chrysalis": {
-      "id": "Chrysalis",
-      "name": "Chrysalis",
-      "cn": "结茧",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Violence": {
-      "id": "Violence",
-      "name": "Violence",
-      "cn": "暴力",
-      "tier": "T2",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Blind": {
-      "id": "Blind",
-      "name": "Blind",
-      "cn": "致盲",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
       "char": "c",
-      "type": "skill"
+      "type": "skill",
+      "rating": 43,
+      "consensus": 28,
+      "votes": 19
     },
-    "Flash of Steel": {
-      "id": "Flash of Steel",
-      "name": "Flash of Steel",
-      "cn": "亮剑",
+    "Wish": {
+      "id": "Wish",
+      "name": "Wish",
+      "cn": "许愿",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "attack"
+      "char": "w",
+      "type": "skill",
+      "rating": 43,
+      "consensus": 29,
+      "votes": 18
     },
-    "Good Instincts": {
-      "id": "Good Instincts",
-      "name": "Good Instincts",
-      "cn": "优秀直觉",
+    "Dodge and Roll": {
+      "id": "Dodge and Roll",
+      "name": "Dodge and Roll",
+      "cn": "闪躲翻滚",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Transmutation": {
-      "id": "Transmutation",
-      "name": "Transmutation",
-      "cn": "转化",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Trip": {
-      "id": "Trip",
-      "name": "Trip",
-      "cn": "绊倒",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "PanicButton": {
-      "id": "PanicButton",
-      "name": "Panic Button",
-      "cn": "应急按钮",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
+      "char": "s",
+      "type": "skill",
+      "rating": 42,
+      "consensus": 33,
+      "votes": 49
     },
     "Finesse": {
       "id": "Finesse",
@@ -3766,119 +2558,35 @@
       "cn": "妙计",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
       "char": "c",
-      "type": "skill"
+      "type": "skill",
+      "rating": 42,
+      "consensus": 29,
+      "votes": 20
     },
-    "Jack Of All Trades": {
-      "id": "Jack Of All Trades",
-      "name": "Jack of All Trades",
-      "cn": "花样百出",
+    "Beam Cell": {
+      "id": "Beam Cell",
+      "name": "Beam Cell",
+      "cn": "光束射线",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
+      "char": "d",
+      "type": "attack",
+      "rating": 42,
+      "consensus": 38,
+      "votes": 26
     },
-    "Madness": {
-      "id": "Madness",
-      "name": "Madness",
-      "cn": "疯狂",
+    "Dagger Spray": {
+      "id": "Dagger Spray",
+      "name": "Dagger Spray",
+      "cn": "匕首雨",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Mind Blast": {
-      "id": "Mind Blast",
-      "name": "Mind Blast",
-      "cn": "心灵震慑",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "attack"
-    },
-    "Swift Strike": {
-      "id": "Swift Strike",
-      "name": "Swift Strike",
-      "cn": "迅捷打击",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "attack"
-    },
-    "Impatience": {
-      "id": "Impatience",
-      "name": "Impatience",
-      "cn": "急躁",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Forethought": {
-      "id": "Forethought",
-      "name": "Forethought",
-      "cn": "预谋",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Enlightenment": {
-      "id": "Enlightenment",
-      "name": "Enlightenment",
-      "cn": "开悟",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Panache": {
-      "id": "Panache",
-      "name": "Panache",
-      "cn": "神气制胜",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "power"
-    },
-    "The Bomb": {
-      "id": "The Bomb",
-      "name": "The Bomb",
-      "cn": "炸弹",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Deep Breath": {
-      "id": "Deep Breath",
-      "name": "Deep Breath",
-      "cn": "深呼吸",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "skill"
-    },
-    "Mayhem": {
-      "id": "Mayhem",
-      "name": "Mayhem",
-      "cn": "乱战",
-      "tier": "T3",
-      "builds": [],
-      "src": "spirespy",
-      "char": "c",
-      "type": "power"
+      "char": "s",
+      "type": "attack",
+      "rating": 42,
+      "consensus": 33,
+      "votes": 53
     },
     "Purity": {
       "id": "Purity",
@@ -3886,9 +2594,1966 @@
       "cn": "净化",
       "tier": "T3",
       "builds": [],
-      "src": "spirespy",
       "char": "c",
-      "type": "skill"
+      "type": "skill",
+      "rating": 42,
+      "consensus": 30,
+      "votes": 18
+    },
+    "FTL": {
+      "id": "FTL",
+      "name": "FTL",
+      "cn": "超越光速",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 42,
+      "consensus": 35,
+      "votes": 24
+    },
+    "Deadly Poison": {
+      "id": "Deadly Poison",
+      "name": "Deadly Poison",
+      "cn": "致命毒药",
+      "tier": "T3",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 41,
+      "consensus": 32,
+      "votes": 55
+    },
+    "Sanctity": {
+      "id": "Sanctity",
+      "name": "Sanctity",
+      "cn": "圣洁",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 41,
+      "consensus": 31,
+      "votes": 16
+    },
+    "Demon Form": {
+      "id": "Demon Form",
+      "name": "Demon Form",
+      "cn": "恶魔形态",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 41,
+      "consensus": 31,
+      "votes": 22
+    },
+    "Establishment": {
+      "id": "Establishment",
+      "name": "Establishment",
+      "cn": "确立基础",
+      "tier": "T3",
+      "builds": [
+        "w|点穴 / 保留流"
+      ],
+      "char": "w",
+      "type": "power",
+      "rating": 41,
+      "consensus": 32,
+      "votes": 17
+    },
+    "SpiritShield": {
+      "id": "SpiritShield",
+      "name": "Spirit Shield",
+      "cn": "精神护盾",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 41,
+      "consensus": 32,
+      "votes": 17
+    },
+    "Doppelganger": {
+      "id": "Doppelganger",
+      "name": "Doppelganger",
+      "cn": "双重存在",
+      "tier": "T3",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 41,
+      "consensus": 33,
+      "votes": 55
+    },
+    "Panache": {
+      "id": "Panache",
+      "name": "Panache",
+      "cn": "神气制胜",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "power",
+      "rating": 40,
+      "consensus": 34,
+      "votes": 21
+    },
+    "WaveOfTheHand": {
+      "id": "WaveOfTheHand",
+      "name": "Wave of the Hand",
+      "cn": "摆手",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 40,
+      "consensus": 33,
+      "votes": 18
+    },
+    "Combust": {
+      "id": "Combust",
+      "name": "Combust",
+      "cn": "自燃",
+      "tier": "T3",
+      "builds": [
+        "i|撕裂自伤流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 40,
+      "consensus": 35,
+      "votes": 26
+    },
+    "Finisher": {
+      "id": "Finisher",
+      "name": "Finisher",
+      "cn": "终结技",
+      "tier": "T3",
+      "builds": [
+        "s|小刀流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 40,
+      "consensus": 29,
+      "votes": 54
+    },
+    "Flash of Steel": {
+      "id": "Flash of Steel",
+      "name": "Flash of Steel",
+      "cn": "亮剑",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "attack",
+      "rating": 40,
+      "consensus": 29,
+      "votes": 18
+    },
+    "Machine Learning": {
+      "id": "Machine Learning",
+      "name": "Machine Learning",
+      "cn": "机器学习",
+      "tier": "T3",
+      "builds": [
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 40,
+      "consensus": 32,
+      "votes": 27
+    },
+    "PanicButton": {
+      "id": "PanicButton",
+      "name": "Panic Button",
+      "cn": "应急按钮",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 39,
+      "consensus": 31,
+      "votes": 20
+    },
+    "Armaments": {
+      "id": "Armaments",
+      "name": "Armaments",
+      "cn": "武装",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 39,
+      "consensus": 33,
+      "votes": 25
+    },
+    "Consecrate": {
+      "id": "Consecrate",
+      "name": "Consecrate",
+      "cn": "供奉",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 39,
+      "consensus": 34,
+      "votes": 20
+    },
+    "Dual Wield": {
+      "id": "Dual Wield",
+      "name": "Dual Wield",
+      "cn": "双持",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 39,
+      "consensus": 34,
+      "votes": 24
+    },
+    "Meteor Strike": {
+      "id": "Meteor Strike",
+      "name": "Meteor Strike",
+      "cn": "陨石打击",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 39,
+      "consensus": 31,
+      "votes": 26
+    },
+    "All For One": {
+      "id": "All For One",
+      "name": "All for One",
+      "cn": "万物一心",
+      "tier": "T3",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "attack",
+      "rating": 39,
+      "consensus": 32,
+      "votes": 25
+    },
+    "Darkness": {
+      "id": "Darkness",
+      "name": "Darkness",
+      "cn": "漆黑",
+      "tier": "T3",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 39,
+      "consensus": 35,
+      "votes": 26
+    },
+    "CarveReality": {
+      "id": "CarveReality",
+      "name": "Carve Reality",
+      "cn": "改造现实",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 39,
+      "consensus": 32,
+      "votes": 16
+    },
+    "BowlingBash": {
+      "id": "BowlingBash",
+      "name": "Bowling Bash",
+      "cn": "碰撞连击",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 38,
+      "consensus": 36,
+      "votes": 20
+    },
+    "Twin Strike": {
+      "id": "Twin Strike",
+      "name": "Twin Strike",
+      "cn": "双重打击",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 38,
+      "consensus": 35,
+      "votes": 27
+    },
+    "SashWhip": {
+      "id": "SashWhip",
+      "name": "Sash Whip",
+      "cn": "腰带抽打",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 37,
+      "consensus": 38,
+      "votes": 20
+    },
+    "Heatsinks": {
+      "id": "Heatsinks",
+      "name": "Heatsinks",
+      "cn": "散热片",
+      "tier": "T3",
+      "builds": [
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 37,
+      "consensus": 33,
+      "votes": 26
+    },
+    "Poisoned Stab": {
+      "id": "Poisoned Stab",
+      "name": "Poisoned Stab",
+      "cn": "带毒刺击",
+      "tier": "T3",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 37,
+      "consensus": 36,
+      "votes": 51
+    },
+    "Endless Agony": {
+      "id": "Endless Agony",
+      "name": "Endless Agony",
+      "cn": "无尽苦痛",
+      "tier": "T3",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 37,
+      "consensus": 34,
+      "votes": 52
+    },
+    "Double Energy": {
+      "id": "Double Energy",
+      "name": "Double Energy",
+      "cn": "双倍能量",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "skill",
+      "rating": 37,
+      "consensus": 33,
+      "votes": 23
+    },
+    "Envenom": {
+      "id": "Envenom",
+      "name": "Envenom",
+      "cn": "涂毒",
+      "tier": "T3",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "power",
+      "rating": 37,
+      "consensus": 33,
+      "votes": 56
+    },
+    "Double Tap": {
+      "id": "Double Tap",
+      "name": "Double Tap",
+      "cn": "双发",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 36,
+      "consensus": 31,
+      "votes": 25
+    },
+    "Flying Knee": {
+      "id": "Flying Knee",
+      "name": "Flying Knee",
+      "cn": "飞膝",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 36,
+      "consensus": 33,
+      "votes": 48
+    },
+    "Intimidate": {
+      "id": "Intimidate",
+      "name": "Intimidate",
+      "cn": "威吓",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 36,
+      "consensus": 33,
+      "votes": 25
+    },
+    "Sucker Punch": {
+      "id": "Sucker Punch",
+      "name": "Sucker Punch",
+      "cn": "突然一拳",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 36,
+      "consensus": 34,
+      "votes": 50
+    },
+    "Deflect": {
+      "id": "Deflect",
+      "name": "Deflect",
+      "cn": "偏折",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 35,
+      "consensus": 35,
+      "votes": 54
+    },
+    "LikeWater": {
+      "id": "LikeWater",
+      "name": "Like Water",
+      "cn": "如水",
+      "tier": "T3",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "power",
+      "rating": 35,
+      "consensus": 34,
+      "votes": 19
+    },
+    "Weave": {
+      "id": "Weave",
+      "name": "Weave",
+      "cn": "迂回",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 35,
+      "consensus": 35,
+      "votes": 18
+    },
+    "Bludgeon": {
+      "id": "Bludgeon",
+      "name": "Bludgeon",
+      "cn": "重锤",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 35,
+      "consensus": 32,
+      "votes": 25
+    },
+    "Sword Boomerang": {
+      "id": "Sword Boomerang",
+      "name": "Sword Boomerang",
+      "cn": "飞剑回旋镖",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 35,
+      "consensus": 35,
+      "votes": 27
+    },
+    "Creative AI": {
+      "id": "Creative AI",
+      "name": "Creative AI",
+      "cn": "创造性AI",
+      "tier": "T3",
+      "builds": [
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 34,
+      "consensus": 34,
+      "votes": 27
+    },
+    "Steam": {
+      "id": "Steam",
+      "name": "Steam Barrier",
+      "cn": "蒸汽护壁",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 34,
+      "consensus": 36,
+      "votes": 26
+    },
+    "Sadistic Nature": {
+      "id": "Sadistic Nature",
+      "name": "Sadistic Nature",
+      "cn": "残虐天性",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "power",
+      "rating": 34,
+      "consensus": 36,
+      "votes": 21
+    },
+    "Leap": {
+      "id": "Leap",
+      "name": "Leap",
+      "cn": "飞跃",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 34,
+      "consensus": 34,
+      "votes": 24
+    },
+    "Multi-Cast": {
+      "id": "Multi-Cast",
+      "name": "Multi-Cast",
+      "cn": "多重释放",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 33,
+      "consensus": 37,
+      "votes": 26
+    },
+    "Vengeance": {
+      "id": "Vengeance",
+      "name": "Simmering Fury",
+      "cn": "怒火中烧",
+      "tier": "T3",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 33,
+      "consensus": 33,
+      "votes": 19
+    },
+    "Unload": {
+      "id": "Unload",
+      "name": "Unload",
+      "cn": "乾坤一掷",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 33,
+      "consensus": 32,
+      "votes": 56
+    },
+    "Melter": {
+      "id": "Melter",
+      "name": "Melter",
+      "cn": "熔化",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 33,
+      "consensus": 32,
+      "votes": 26
+    },
+    "Evaluate": {
+      "id": "Evaluate",
+      "name": "Evaluate",
+      "cn": "评估",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 33,
+      "consensus": 35,
+      "votes": 17
+    },
+    "Streamline": {
+      "id": "Streamline",
+      "name": "Streamline",
+      "cn": "精简改良",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 33,
+      "consensus": 37,
+      "votes": 30
+    },
+    "Pray": {
+      "id": "Pray",
+      "name": "Pray",
+      "cn": "祈祷",
+      "tier": "T3",
+      "builds": [
+        "w|神格真言流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 33,
+      "consensus": 37,
+      "votes": 14
+    },
+    "Auto Shields": {
+      "id": "Auto Shields",
+      "name": "Auto-Shields",
+      "cn": "自动护盾",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 32,
+      "consensus": 34,
+      "votes": 26
+    },
+    "Protect": {
+      "id": "Protect",
+      "name": "Protect",
+      "cn": "护身",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 32,
+      "consensus": 35,
+      "votes": 19
+    },
+    "Fire Breathing": {
+      "id": "Fire Breathing",
+      "name": "Fire Breathing",
+      "cn": "火焰吐息",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "power",
+      "rating": 32,
+      "consensus": 36,
+      "votes": 25
+    },
+    "Clothesline": {
+      "id": "Clothesline",
+      "name": "Clothesline",
+      "cn": "金刚臂",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 32,
+      "consensus": 39,
+      "votes": 27
+    },
+    "Heavy Blade": {
+      "id": "Heavy Blade",
+      "name": "Heavy Blade",
+      "cn": "重刃",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 32,
+      "consensus": 39,
+      "votes": 25
+    },
+    "Judgement": {
+      "id": "Judgement",
+      "name": "Judgment",
+      "cn": "审判",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 32,
+      "consensus": 31,
+      "votes": 15
+    },
+    "DevaForm": {
+      "id": "DevaForm",
+      "name": "Deva Form",
+      "cn": "天人形态",
+      "tier": "T3",
+      "builds": [
+        "w|姿态循环无限流"
+      ],
+      "char": "w",
+      "type": "power",
+      "rating": 32,
+      "consensus": 34,
+      "votes": 14
+    },
+    "CrushJoints": {
+      "id": "CrushJoints",
+      "name": "Crush Joints",
+      "cn": "粉碎关节",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 32,
+      "consensus": 39,
+      "votes": 21
+    },
+    "Skewer": {
+      "id": "Skewer",
+      "name": "Skewer",
+      "cn": "串刺",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 31,
+      "consensus": 37,
+      "votes": 55
+    },
+    "Tempest": {
+      "id": "Tempest",
+      "name": "Tempest",
+      "cn": "暴风雨",
+      "tier": "T3",
+      "builds": [
+        "d|闪电球流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 31,
+      "consensus": 32,
+      "votes": 26
+    },
+    "ForeignInfluence": {
+      "id": "ForeignInfluence",
+      "name": "Foreign Influence",
+      "cn": "他山之石",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 31,
+      "consensus": 33,
+      "votes": 16
+    },
+    "Amplify": {
+      "id": "Amplify",
+      "name": "Amplify",
+      "cn": "增幅",
+      "tier": "T3",
+      "builds": [
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 31,
+      "consensus": 35,
+      "votes": 27
+    },
+    "Berserk": {
+      "id": "Berserk",
+      "name": "Berserk",
+      "cn": "狂暴",
+      "tier": "T3",
+      "builds": [
+        "i|撕裂自伤流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 31,
+      "consensus": 34,
+      "votes": 29
+    },
+    "Impatience": {
+      "id": "Impatience",
+      "name": "Impatience",
+      "cn": "急躁",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 31,
+      "consensus": 35,
+      "votes": 20
+    },
+    "Infernal Blade": {
+      "id": "Infernal Blade",
+      "name": "Infernal Blade",
+      "cn": "地狱之刃",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 31,
+      "consensus": 34,
+      "votes": 28
+    },
+    "Cleave": {
+      "id": "Cleave",
+      "name": "Cleave",
+      "cn": "顺劈斩",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 31,
+      "consensus": 38,
+      "votes": 26
+    },
+    "Quick Slash": {
+      "id": "Quick Slash",
+      "name": "Quick Slash",
+      "cn": "快斩",
+      "tier": "T3",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 30,
+      "consensus": 36,
+      "votes": 52
+    },
+    "Static Discharge": {
+      "id": "Static Discharge",
+      "name": "Static Discharge",
+      "cn": "静电释放",
+      "tier": "T3",
+      "builds": [
+        "d|闪电球流",
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 30,
+      "consensus": 34,
+      "votes": 27
+    },
+    "Mayhem": {
+      "id": "Mayhem",
+      "name": "Mayhem",
+      "cn": "乱战",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "power",
+      "rating": 30,
+      "consensus": 37,
+      "votes": 18
+    },
+    "Swift Strike": {
+      "id": "Swift Strike",
+      "name": "Swift Strike",
+      "cn": "迅捷打击",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "attack",
+      "rating": 28,
+      "consensus": 34,
+      "votes": 20
+    },
+    "Caltrops": {
+      "id": "Caltrops",
+      "name": "Caltrops",
+      "cn": "铁蒺藜",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "power",
+      "rating": 28,
+      "consensus": 38,
+      "votes": 54
+    },
+    "Good Instincts": {
+      "id": "Good Instincts",
+      "name": "Good Instincts",
+      "cn": "优秀直觉",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 28,
+      "consensus": 36,
+      "votes": 20
+    },
+    "WindmillStrike": {
+      "id": "WindmillStrike",
+      "name": "Windmill Strike",
+      "cn": "旋转打击",
+      "tier": "T3",
+      "builds": [
+        "w|点穴 / 保留流"
+      ],
+      "char": "w",
+      "type": "attack",
+      "rating": 28,
+      "consensus": 34,
+      "votes": 21
+    },
+    "Metallicize": {
+      "id": "Metallicize",
+      "name": "Metallicize",
+      "cn": "金属化",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 28,
+      "consensus": 37,
+      "votes": 26
+    },
+    "Wild Strike": {
+      "id": "Wild Strike",
+      "name": "Wild Strike",
+      "cn": "狂野打击",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 28,
+      "consensus": 35,
+      "votes": 29
+    },
+    "Rip and Tear": {
+      "id": "Rip and Tear",
+      "name": "Rip and Tear",
+      "cn": "狂乱撕扯",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 27,
+      "consensus": 37,
+      "votes": 24
+    },
+    "ReachHeaven": {
+      "id": "ReachHeaven",
+      "name": "Reach Heaven",
+      "cn": "立地升天",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 27,
+      "consensus": 39,
+      "votes": 14
+    },
+    "Lockon": {
+      "id": "Lockon",
+      "name": "Bullseye",
+      "cn": "瞄准靶心",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 27,
+      "consensus": 35,
+      "votes": 23
+    },
+    "Slice": {
+      "id": "Slice",
+      "name": "Slice",
+      "cn": "切割",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 27,
+      "consensus": 38,
+      "votes": 50
+    },
+    "Masterful Stab": {
+      "id": "Masterful Stab",
+      "name": "Masterful Stab",
+      "cn": "精巧刺击",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 27,
+      "consensus": 38,
+      "votes": 52
+    },
+    "Thunderclap": {
+      "id": "Thunderclap",
+      "name": "Thunderclap",
+      "cn": "闪电霹雳",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 27,
+      "consensus": 39,
+      "votes": 27
+    },
+    "Perseverance": {
+      "id": "Perseverance",
+      "name": "Perseverance",
+      "cn": "坚韧",
+      "tier": "T3",
+      "builds": [
+        "w|点穴 / 保留流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 26,
+      "consensus": 36,
+      "votes": 19
+    },
+    "Chaos": {
+      "id": "Chaos",
+      "name": "Chaos",
+      "cn": "混沌",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "skill",
+      "rating": 26,
+      "consensus": 40,
+      "votes": 24
+    },
+    "Body Slam": {
+      "id": "Body Slam",
+      "name": "Body Slam",
+      "cn": "全身撞击",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 25,
+      "consensus": 39,
+      "votes": 28
+    },
+    "Flechettes": {
+      "id": "Flechettes",
+      "name": "Flechettes",
+      "cn": "飞镖",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 25,
+      "consensus": 38,
+      "votes": 50
+    },
+    "Metamorphosis": {
+      "id": "Metamorphosis",
+      "name": "Metamorphosis",
+      "cn": "羽化",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 25,
+      "consensus": 35,
+      "votes": 20
+    },
+    "Enlightenment": {
+      "id": "Enlightenment",
+      "name": "Enlightenment",
+      "cn": "开悟",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 24,
+      "consensus": 37,
+      "votes": 18
+    },
+    "Gash": {
+      "id": "Gash",
+      "name": "Claw",
+      "cn": "爪击",
+      "tier": "T3",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "attack",
+      "rating": 24,
+      "consensus": 37,
+      "votes": 26
+    },
+    "Expertise": {
+      "id": "Expertise",
+      "name": "Expertise",
+      "cn": "独门技术",
+      "tier": "T3",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 24,
+      "consensus": 38,
+      "votes": 50
+    },
+    "BattleHymn": {
+      "id": "BattleHymn",
+      "name": "Battle Hymn",
+      "cn": "战歌",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "power",
+      "rating": 24,
+      "consensus": 39,
+      "votes": 19
+    },
+    "Redo": {
+      "id": "Redo",
+      "name": "Recursion",
+      "cn": "递归",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 24,
+      "consensus": 39,
+      "votes": 23
+    },
+    "Juggernaut": {
+      "id": "Juggernaut",
+      "name": "Juggernaut",
+      "cn": "势不可当",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 24,
+      "consensus": 40,
+      "votes": 25
+    },
+    "Barrage": {
+      "id": "Barrage",
+      "name": "Barrage",
+      "cn": "弹幕齐射",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "attack",
+      "rating": 24,
+      "consensus": 38,
+      "votes": 29
+    },
+    "JustLucky": {
+      "id": "JustLucky",
+      "name": "Just Lucky",
+      "cn": "幸运一击",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 23,
+      "consensus": 39,
+      "votes": 22
+    },
+    "Deep Breath": {
+      "id": "Deep Breath",
+      "name": "Deep Breath",
+      "cn": "深呼吸",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 22,
+      "consensus": 36,
+      "votes": 19
+    },
+    "Rupture": {
+      "id": "Rupture",
+      "name": "Rupture",
+      "cn": "撕裂",
+      "tier": "T3",
+      "builds": [
+        "i|力量流",
+        "i|撕裂自伤流"
+      ],
+      "char": "i",
+      "type": "power",
+      "rating": 22,
+      "consensus": 42,
+      "votes": 27
+    },
+    "Rage": {
+      "id": "Rage",
+      "name": "Rage",
+      "cn": "狂怒",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 22,
+      "consensus": 42,
+      "votes": 24
+    },
+    "Concentrate": {
+      "id": "Concentrate",
+      "name": "Concentrate",
+      "cn": "全神贯注",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 22,
+      "consensus": 41,
+      "votes": 47
+    },
+    "Flex": {
+      "id": "Flex",
+      "name": "Flex",
+      "cn": "活动肌肉",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 21,
+      "consensus": 38,
+      "votes": 23
+    },
+    "The Bomb": {
+      "id": "The Bomb",
+      "name": "The Bomb",
+      "cn": "炸弹",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 21,
+      "consensus": 39,
+      "votes": 20
+    },
+    "Steam Power": {
+      "id": "Steam Power",
+      "name": "Overclock",
+      "cn": "超频",
+      "tier": "T3",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 21,
+      "consensus": 40,
+      "votes": 23
+    },
+    "Blizzard": {
+      "id": "Blizzard",
+      "name": "Blizzard",
+      "cn": "暴雪",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "attack",
+      "rating": 20,
+      "consensus": 40,
+      "votes": 26
+    },
+    "Storm of Steel": {
+      "id": "Storm of Steel",
+      "name": "Storm of Steel",
+      "cn": "钢铁风暴",
+      "tier": "T3",
+      "builds": [
+        "s|小刀流",
+        "s|弃牌流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 20,
+      "consensus": 42,
+      "votes": 53
+    },
+    "Sentinel": {
+      "id": "Sentinel",
+      "name": "Sentinel",
+      "cn": "哨卫",
+      "tier": "T3",
+      "builds": [
+        "i|腐化消耗流",
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 20,
+      "consensus": 44,
+      "votes": 25
+    },
+    "Iron Wave": {
+      "id": "Iron Wave",
+      "name": "Iron Wave",
+      "cn": "铁斩波",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 19,
+      "consensus": 43,
+      "votes": 25
+    },
+    "Study": {
+      "id": "Study",
+      "name": "Study",
+      "cn": "研习",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "power",
+      "rating": 19,
+      "consensus": 40,
+      "votes": 19
+    },
+    "Madness": {
+      "id": "Madness",
+      "name": "Madness",
+      "cn": "疯狂",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 19,
+      "consensus": 41,
+      "votes": 14
+    },
+    "Collect": {
+      "id": "Collect",
+      "name": "Collect",
+      "cn": "收集",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 19,
+      "consensus": 41,
+      "votes": 21
+    },
+    "Hello World": {
+      "id": "Hello World",
+      "name": "Hello World",
+      "cn": "你好，世界",
+      "tier": "T3",
+      "builds": [
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 19,
+      "consensus": 41,
+      "votes": 24
+    },
+    "Entrench": {
+      "id": "Entrench",
+      "name": "Entrench",
+      "cn": "巩固",
+      "tier": "T3",
+      "builds": [
+        "i|格挡堡垒流"
+      ],
+      "char": "i",
+      "type": "skill",
+      "rating": 18,
+      "consensus": 43,
+      "votes": 25
+    },
+    "Sever Soul": {
+      "id": "Sever Soul",
+      "name": "Sever Soul",
+      "cn": "断魂斩",
+      "tier": "T3",
+      "builds": [
+        "i|腐化消耗流"
+      ],
+      "char": "i",
+      "type": "attack",
+      "rating": 18,
+      "consensus": 45,
+      "votes": 25
+    },
+    "Chrysalis": {
+      "id": "Chrysalis",
+      "name": "Chrysalis",
+      "cn": "结茧",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 17,
+      "consensus": 41,
+      "votes": 19
+    },
+    "Worship": {
+      "id": "Worship",
+      "name": "Worship",
+      "cn": "敬拜",
+      "tier": "T3",
+      "builds": [
+        "w|神格真言流",
+        "w|点穴 / 保留流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 17,
+      "consensus": 43,
+      "votes": 17
+    },
+    "Reprogram": {
+      "id": "Reprogram",
+      "name": "Reprogram",
+      "cn": "重编程",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "skill",
+      "rating": 17,
+      "consensus": 44,
+      "votes": 24
+    },
+    "Infinite Blades": {
+      "id": "Infinite Blades",
+      "name": "Infinite Blades",
+      "cn": "无限刀刃",
+      "tier": "T3",
+      "builds": [
+        "s|小刀流"
+      ],
+      "char": "s",
+      "type": "power",
+      "rating": 17,
+      "consensus": 45,
+      "votes": 53
+    },
+    "Thunder Strike": {
+      "id": "Thunder Strike",
+      "name": "Thunder Strike",
+      "cn": "雷霆打击",
+      "tier": "T3",
+      "builds": [
+        "d|闪电球流"
+      ],
+      "char": "d",
+      "type": "attack",
+      "rating": 17,
+      "consensus": 43,
+      "votes": 28
+    },
+    "Rampage": {
+      "id": "Rampage",
+      "name": "Rampage",
+      "cn": "暴走",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 17,
+      "consensus": 47,
+      "votes": 23
+    },
+    "Nirvana": {
+      "id": "Nirvana",
+      "name": "Nirvana",
+      "cn": "涅槃",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "power",
+      "rating": 16,
+      "consensus": 43,
+      "votes": 17
+    },
+    "SignatureMove": {
+      "id": "SignatureMove",
+      "name": "Signature Move",
+      "cn": "招牌技",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 16,
+      "consensus": 42,
+      "votes": 17
+    },
+    "FlyingSleeves": {
+      "id": "FlyingSleeves",
+      "name": "Flying Sleeves",
+      "cn": "流云飞袖",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "attack",
+      "rating": 15,
+      "consensus": 47,
+      "votes": 19
+    },
+    "Force Field": {
+      "id": "Force Field",
+      "name": "Force Field",
+      "cn": "力场",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 15,
+      "consensus": 47,
+      "votes": 23
+    },
+    "MasterReality": {
+      "id": "MasterReality",
+      "name": "Master Reality",
+      "cn": "操控现实",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "power",
+      "rating": 15,
+      "consensus": 44,
+      "votes": 18
+    },
+    "Storm": {
+      "id": "Storm",
+      "name": "Storm",
+      "cn": "雷暴",
+      "tier": "T3",
+      "builds": [
+        "d|闪电球流",
+        "d|能力流"
+      ],
+      "char": "d",
+      "type": "power",
+      "rating": 14,
+      "consensus": 46,
+      "votes": 27
+    },
+    "Jack Of All Trades": {
+      "id": "Jack Of All Trades",
+      "name": "Jack of All Trades",
+      "cn": "花样百出",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 14,
+      "consensus": 44,
+      "votes": 22
+    },
+    "Havoc": {
+      "id": "Havoc",
+      "name": "Havoc",
+      "cn": "破灭",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 14,
+      "consensus": 46,
+      "votes": 23
+    },
+    "Choke": {
+      "id": "Choke",
+      "name": "Choke",
+      "cn": "勒脖",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 14,
+      "consensus": 48,
+      "votes": 52
+    },
+    "Perfected Strike": {
+      "id": "Perfected Strike",
+      "name": "Perfected Strike",
+      "cn": "完美打击",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 13,
+      "consensus": 46,
+      "votes": 25
+    },
+    "Swivel": {
+      "id": "Swivel",
+      "name": "Swivel",
+      "cn": "旋身",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 13,
+      "consensus": 48,
+      "votes": 16
+    },
+    "Scrape": {
+      "id": "Scrape",
+      "name": "Scrape",
+      "cn": "刮削",
+      "tier": "T3",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ],
+      "char": "d",
+      "type": "attack",
+      "rating": 13,
+      "consensus": 47,
+      "votes": 24
+    },
+    "Fasting2": {
+      "id": "Fasting2",
+      "name": "Fasting",
+      "cn": "斋戒",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "power",
+      "rating": 12,
+      "consensus": 48,
+      "votes": 15
+    },
+    "Forethought": {
+      "id": "Forethought",
+      "name": "Forethought",
+      "cn": "预谋",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 12,
+      "consensus": 46,
+      "votes": 20
+    },
+    "Warcry": {
+      "id": "Warcry",
+      "name": "Warcry",
+      "cn": "战吼",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "skill",
+      "rating": 12,
+      "consensus": 47,
+      "votes": 24
+    },
+    "Reckless Charge": {
+      "id": "Reckless Charge",
+      "name": "Reckless Charge",
+      "cn": "无谋冲锋",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 12,
+      "consensus": 47,
+      "votes": 23
+    },
+    "Bane": {
+      "id": "Bane",
+      "name": "Bane",
+      "cn": "灾祸",
+      "tier": "T3",
+      "builds": [
+        "s|毒流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 12,
+      "consensus": 50,
+      "votes": 54
+    },
+    "Mind Blast": {
+      "id": "Mind Blast",
+      "name": "Mind Blast",
+      "cn": "心灵震慑",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "attack",
+      "rating": 12,
+      "consensus": 47,
+      "votes": 20
+    },
+    "Discovery": {
+      "id": "Discovery",
+      "name": "Discovery",
+      "cn": "发现",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 12,
+      "consensus": 50,
+      "votes": 15
+    },
+    "Alpha": {
+      "id": "Alpha",
+      "name": "Alpha",
+      "cn": "阿尔法",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 11,
+      "consensus": 47,
+      "votes": 18
+    },
+    "Magnetism": {
+      "id": "Magnetism",
+      "name": "Magnetism",
+      "cn": "磁力",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "power",
+      "rating": 9,
+      "consensus": 49,
+      "votes": 19
+    },
+    "Transmutation": {
+      "id": "Transmutation",
+      "name": "Transmutation",
+      "cn": "转化",
+      "tier": "T3",
+      "builds": [],
+      "char": "c",
+      "type": "skill",
+      "rating": 9,
+      "consensus": 50,
+      "votes": 19
+    },
+    "Outmaneuver": {
+      "id": "Outmaneuver",
+      "name": "Outmaneuver",
+      "cn": "抢占先机",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 9,
+      "consensus": 51,
+      "votes": 53
+    },
+    "Stack": {
+      "id": "Stack",
+      "name": "Stack",
+      "cn": "堆栈",
+      "tier": "T3",
+      "builds": [
+        "d|冰霜坦克流"
+      ],
+      "char": "d",
+      "type": "skill",
+      "rating": 8,
+      "consensus": 51,
+      "votes": 27
+    },
+    "Setup": {
+      "id": "Setup",
+      "name": "Setup",
+      "cn": "部署",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "skill",
+      "rating": 7,
+      "consensus": 53,
+      "votes": 54
+    },
+    "ConjureBlade": {
+      "id": "ConjureBlade",
+      "name": "Conjure Blade",
+      "cn": "聚能成刃",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 7,
+      "consensus": 51,
+      "votes": 21
+    },
+    "Heel Hook": {
+      "id": "Heel Hook",
+      "name": "Heel Hook",
+      "cn": "足跟勾",
+      "tier": "T3",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 7,
+      "consensus": 53,
+      "votes": 51
+    },
+    "Riddle With Holes": {
+      "id": "Riddle With Holes",
+      "name": "Riddle with Holes",
+      "cn": "千穿百刺",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "attack",
+      "rating": 7,
+      "consensus": 53,
+      "votes": 49
+    },
+    "Grand Finale": {
+      "id": "Grand Finale",
+      "name": "Grand Finale",
+      "cn": "华丽收场",
+      "tier": "T3",
+      "builds": [
+        "s|无限流"
+      ],
+      "char": "s",
+      "type": "attack",
+      "rating": 6,
+      "consensus": 53,
+      "votes": 56
+    },
+    "Searing Blow": {
+      "id": "Searing Blow",
+      "name": "Searing Blow",
+      "cn": "灼热攻击",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 5,
+      "consensus": 56,
+      "votes": 23
+    },
+    "WreathOfFlame": {
+      "id": "WreathOfFlame",
+      "name": "Wreath of Flame",
+      "cn": "火焰纹",
+      "tier": "T3",
+      "builds": [],
+      "char": "w",
+      "type": "skill",
+      "rating": 3,
+      "consensus": 56,
+      "votes": 20
+    },
+    "Fusion": {
+      "id": "Fusion",
+      "name": "Fusion",
+      "cn": "聚变",
+      "tier": "T3",
+      "builds": [],
+      "char": "d",
+      "type": "skill",
+      "rating": 3,
+      "consensus": 57,
+      "votes": 23
+    },
+    "Clash": {
+      "id": "Clash",
+      "name": "Clash",
+      "cn": "交锋",
+      "tier": "T3",
+      "builds": [],
+      "char": "i",
+      "type": "attack",
+      "rating": 2,
+      "consensus": 58,
+      "votes": 27
+    },
+    "PathToVictory": {
+      "id": "PathToVictory",
+      "name": "Pressure Points",
+      "cn": "点穴",
+      "tier": "T3",
+      "builds": [
+        "w|点穴 / 保留流"
+      ],
+      "char": "w",
+      "type": "skill",
+      "rating": 2,
+      "consensus": 58,
+      "votes": 19
+    },
+    "Distraction": {
+      "id": "Distraction",
+      "name": "Distraction",
+      "cn": "声东击西",
+      "tier": "T3",
+      "builds": [],
+      "char": "s",
+      "type": "skill",
+      "rating": 0,
+      "consensus": 60,
+      "votes": 54
     }
   },
   "relics": {
@@ -5408,8 +6073,8 @@
   },
   "stats": {
     "builds": 16,
-    "cards": 327,
-    "cardsWithTier": 327,
+    "cards": 320,
+    "cardsWithTier": 320,
     "relics": 179,
     "relicsWithTier": 179,
     "relicMapGroups": 3,
@@ -5424,24 +6089,23 @@
     "missingCardIds": [],
     "missingRelicIds": [],
     "missingBuildCardIds": [],
-    "cardsGuide": 114,
-    "cardsSpireSpy": 213,
-    "unmappedSpireSpy": []
+    "tiers": {
+      "T0": 3,
+      "T1": 70,
+      "T2": 72,
+      "T3": 175
+    },
+    "unmappedUnduel": []
   },
   "meta": {
-    "cardTierSources": {
-      "guide": "原创速查表，114 张卡优先保留原 T 度",
-      "spirespy": "SpireSpy Slay the Spire 1 卡牌梯队（maybelatergames.co.uk/tools/slaythespire），S/A/B/C/D 映射为 T0-T3"
-    },
-    "spirespySource": "SpireSpy Slay the Spire 1 card tier lists (maybelatergames.co.uk/tools/slaythespire). Not Slay the Spire 2.",
-    "spirespyUrls": {
-      "ironclad": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/ironclad/",
-      "silent": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/silent/",
-      "defect": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/defect/",
-      "watcher": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/watcher/",
-      "colorless": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/colorless/"
-    },
-    "spirespyRetrieved": "2026-10-27",
-    "archetypeNote": "原有卡牌保留速查表流派标签；新增卡牌的流派标签由杀戮尖塔一代卡牌文本规则推导，未使用二代数据。"
+    "cardTierSource": "Unduel community tier list: The Best Slay the Spire Cards",
+    "cardTierUrl": "https://unduel.com/t/slay-the-spire/the-best-slay-the-spire-cards-2W3WSTcjk91rLIipyd0x3x/tier-list",
+    "cardTierVoters": 85,
+    "cardTierVotes": 9300,
+    "cardTierUpdated": "3 weeks before 2026-10-27",
+    "cardTierRetrieved": "2026-10-27",
+    "cardTierMapping": "S -> T0, A -> T1, B -> T2, C/D/F -> T3",
+    "cardTierNote": "320 可获取卡牌；不包含不会出现在卡牌奖励/商店的基础牌、状态、诅咒和 token。",
+    "archetypeNote": "所有卡牌流派标签均由杀戮尖塔一代卡牌文本规则推导；未使用二代数据。"
   }
 }

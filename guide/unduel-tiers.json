@@ -1,0 +1,3859 @@
+{
+  "_source": "Unduel community tier list: The Best Slay the Spire Cards",
+  "_url": "https://unduel.com/t/slay-the-spire/the-best-slay-the-spire-cards-2W3WSTcjk91rLIipyd0x3x/tier-list",
+  "_voters": 85,
+  "_votes": 9300,
+  "_updated": "3 weeks before 2026-10-27",
+  "_retrieved": "2026-10-27",
+  "_tiers": {
+    "1": "F",
+    "2": "D",
+    "3": "C",
+    "4": "B",
+    "5": "A",
+    "6": "S"
+  },
+  "_mapping": "S -> T0, A -> T1, B -> T2, C/D/F -> T3",
+  "cards": [
+    {
+      "name": "Wraith Form",
+      "tierValue": 6,
+      "rating": 100,
+      "consensus": 67,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Adrenaline",
+      "tierValue": 6,
+      "rating": 100,
+      "consensus": 66,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Seek",
+      "tierValue": 6,
+      "rating": 98,
+      "consensus": 68,
+      "voterCount": 28,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Well-Laid Plans",
+      "tierValue": 5,
+      "rating": 96,
+      "consensus": 61,
+      "voterCount": 58,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Offering",
+      "tierValue": 5,
+      "rating": 96,
+      "consensus": 65,
+      "voterCount": 24,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Alchemize",
+      "tierValue": 5,
+      "rating": 95,
+      "consensus": 59,
+      "voterCount": 60,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Corruption",
+      "tierValue": 5,
+      "rating": 95,
+      "consensus": 64,
+      "voterCount": 25,
+      "tags": [
+        "Rare",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Feed",
+      "tierValue": 5,
+      "rating": 94,
+      "consensus": 63,
+      "voterCount": 23,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Scrawl",
+      "tierValue": 5,
+      "rating": 93,
+      "consensus": 63,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "After Image",
+      "tierValue": 5,
+      "rating": 93,
+      "consensus": 57,
+      "voterCount": 57,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Biased Cognition",
+      "tierValue": 5,
+      "rating": 93,
+      "consensus": 60,
+      "voterCount": 27,
+      "tags": [
+        "Rare",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Defragment",
+      "tierValue": 5,
+      "rating": 92,
+      "consensus": 60,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Immolate",
+      "tierValue": 5,
+      "rating": 92,
+      "consensus": 60,
+      "voterCount": 22,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Echo Form",
+      "tierValue": 5,
+      "rating": 91,
+      "consensus": 57,
+      "voterCount": 28,
+      "tags": [
+        "Rare",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Apotheosis",
+      "tierValue": 5,
+      "rating": 91,
+      "consensus": 58,
+      "voterCount": 19,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Genetic Algorithm",
+      "tierValue": 5,
+      "rating": 91,
+      "consensus": 60,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Self Repair",
+      "tierValue": 5,
+      "rating": 89,
+      "consensus": 57,
+      "voterCount": 28,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Footwork",
+      "tierValue": 5,
+      "rating": 89,
+      "consensus": 53,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Calculated Gamble",
+      "tierValue": 5,
+      "rating": 89,
+      "consensus": 53,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Rushdown",
+      "tierValue": 5,
+      "rating": 89,
+      "consensus": 58,
+      "voterCount": 21,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Malaise",
+      "tierValue": 5,
+      "rating": 87,
+      "consensus": 51,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Core Surge",
+      "tierValue": 5,
+      "rating": 87,
+      "consensus": 55,
+      "voterCount": 27,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Terror",
+      "tierValue": 5,
+      "rating": 87,
+      "consensus": 51,
+      "voterCount": 57,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Fear No Evil",
+      "tierValue": 5,
+      "rating": 86,
+      "consensus": 55,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Inner Peace",
+      "tierValue": 5,
+      "rating": 86,
+      "consensus": 57,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Corpse Explosion",
+      "tierValue": 5,
+      "rating": 86,
+      "consensus": 50,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Catalyst",
+      "tierValue": 5,
+      "rating": 85,
+      "consensus": 48,
+      "voterCount": 50,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Electrodynamics",
+      "tierValue": 5,
+      "rating": 85,
+      "consensus": 51,
+      "voterCount": 27,
+      "tags": [
+        "Rare",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Reaper",
+      "tierValue": 5,
+      "rating": 84,
+      "consensus": 53,
+      "voterCount": 23,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Battle Trance",
+      "tierValue": 5,
+      "rating": 83,
+      "consensus": 52,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Blade Dance",
+      "tierValue": 5,
+      "rating": 83,
+      "consensus": 46,
+      "voterCount": 59,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Fission",
+      "tierValue": 5,
+      "rating": 82,
+      "consensus": 47,
+      "voterCount": 26,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Feel No Pain",
+      "tierValue": 5,
+      "rating": 82,
+      "consensus": 47,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Glass Knife",
+      "tierValue": 5,
+      "rating": 82,
+      "consensus": 48,
+      "voterCount": 51,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Mental Fortress",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 51,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Tantrum",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 51,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Piercing Wail",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 44,
+      "voterCount": 58,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Acrobatics",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 44,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Dark Embrace",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 47,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Hologram",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 51,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Dark Shackles",
+      "tierValue": 5,
+      "rating": 80,
+      "consensus": 45,
+      "voterCount": 21,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Coolheaded",
+      "tierValue": 5,
+      "rating": 80,
+      "consensus": 48,
+      "voterCount": 24,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Omniscience",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 50,
+      "voterCount": 15,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Backflip",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 43,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Master of Strategy",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 47,
+      "voterCount": 20,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Shrug It Off",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 46,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Impervious",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 48,
+      "voterCount": 24,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Glacier",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 47,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Vault",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 46,
+      "voterCount": 20,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Pommel Strike",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 49,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Hand of Greed",
+      "tierValue": 5,
+      "rating": 78,
+      "consensus": 48,
+      "voterCount": 20,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Lesson Learned",
+      "tierValue": 5,
+      "rating": 78,
+      "consensus": 44,
+      "voterCount": 15,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Burst",
+      "tierValue": 5,
+      "rating": 78,
+      "consensus": 42,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Wheel Kick",
+      "tierValue": 5,
+      "rating": 78,
+      "consensus": 45,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Buffer",
+      "tierValue": 5,
+      "rating": 77,
+      "consensus": 46,
+      "voterCount": 26,
+      "tags": [
+        "Rare",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Chill",
+      "tierValue": 5,
+      "rating": 77,
+      "consensus": 46,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Skim",
+      "tierValue": 5,
+      "rating": 76,
+      "consensus": 44,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Disarm",
+      "tierValue": 5,
+      "rating": 75,
+      "consensus": 43,
+      "voterCount": 21,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Cut Through Fate",
+      "tierValue": 5,
+      "rating": 75,
+      "consensus": 47,
+      "voterCount": 22,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Tools of the Trade",
+      "tierValue": 5,
+      "rating": 75,
+      "consensus": 41,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Die Die Die",
+      "tierValue": 5,
+      "rating": 74,
+      "consensus": 43,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Fiend Fire",
+      "tierValue": 5,
+      "rating": 74,
+      "consensus": 41,
+      "voterCount": 22,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Equilibrium",
+      "tierValue": 5,
+      "rating": 74,
+      "consensus": 43,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Nightmare",
+      "tierValue": 5,
+      "rating": 74,
+      "consensus": 41,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Spot Weakness",
+      "tierValue": 5,
+      "rating": 73,
+      "consensus": 44,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Shockwave",
+      "tierValue": 5,
+      "rating": 73,
+      "consensus": 40,
+      "voterCount": 30,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Leg Sweep",
+      "tierValue": 5,
+      "rating": 72,
+      "consensus": 39,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Doom and Gloom",
+      "tierValue": 5,
+      "rating": 71,
+      "consensus": 43,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Reboot",
+      "tierValue": 5,
+      "rating": 71,
+      "consensus": 43,
+      "voterCount": 26,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Talk to the Hand",
+      "tierValue": 5,
+      "rating": 71,
+      "consensus": 40,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Flame Barrier",
+      "tierValue": 5,
+      "rating": 70,
+      "consensus": 42,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Ball Lightning",
+      "tierValue": 5,
+      "rating": 70,
+      "consensus": 45,
+      "voterCount": 28,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Whirlwind",
+      "tierValue": 5,
+      "rating": 70,
+      "consensus": 41,
+      "voterCount": 29,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Burning Pact",
+      "tierValue": 4,
+      "rating": 69,
+      "consensus": 40,
+      "voterCount": 22,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Second Wind",
+      "tierValue": 4,
+      "rating": 69,
+      "consensus": 40,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Cold Snap",
+      "tierValue": 4,
+      "rating": 67,
+      "consensus": 42,
+      "voterCount": 29,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Inflame",
+      "tierValue": 4,
+      "rating": 67,
+      "consensus": 39,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Wallop",
+      "tierValue": 4,
+      "rating": 67,
+      "consensus": 37,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Tactician",
+      "tierValue": 4,
+      "rating": 66,
+      "consensus": 35,
+      "voterCount": 57,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Compile Driver",
+      "tierValue": 4,
+      "rating": 66,
+      "consensus": 45,
+      "voterCount": 24,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Backstab",
+      "tierValue": 4,
+      "rating": 66,
+      "consensus": 37,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Meditate",
+      "tierValue": 4,
+      "rating": 66,
+      "consensus": 39,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Uppercut",
+      "tierValue": 4,
+      "rating": 65,
+      "consensus": 42,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Predator",
+      "tierValue": 4,
+      "rating": 65,
+      "consensus": 37,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Noxious Fumes",
+      "tierValue": 4,
+      "rating": 65,
+      "consensus": 36,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Dash",
+      "tierValue": 4,
+      "rating": 65,
+      "consensus": 37,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Crippling Cloud",
+      "tierValue": 4,
+      "rating": 64,
+      "consensus": 38,
+      "voterCount": 56,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Empty Fist",
+      "tierValue": 4,
+      "rating": 64,
+      "consensus": 41,
+      "voterCount": 22,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Sunder",
+      "tierValue": 4,
+      "rating": 63,
+      "consensus": 40,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "True Grit",
+      "tierValue": 4,
+      "rating": 62,
+      "consensus": 39,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Bouncing Flask",
+      "tierValue": 4,
+      "rating": 62,
+      "consensus": 34,
+      "voterCount": 56,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Reinforced Body",
+      "tierValue": 4,
+      "rating": 62,
+      "consensus": 36,
+      "voterCount": 27,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Phantasmal Killer",
+      "tierValue": 4,
+      "rating": 62,
+      "consensus": 32,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Trip",
+      "tierValue": 4,
+      "rating": 62,
+      "consensus": 34,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Deceive Reality",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 41,
+      "voterCount": 15,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Loop",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 36,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Blur",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 32,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Seeing Red",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 34,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Brilliance",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 35,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Power Through",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 38,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Foresight",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 31,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Third Eye",
+      "tierValue": 4,
+      "rating": 58,
+      "consensus": 36,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Rainbow",
+      "tierValue": 4,
+      "rating": 58,
+      "consensus": 37,
+      "voterCount": 25,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Brutality",
+      "tierValue": 4,
+      "rating": 58,
+      "consensus": 35,
+      "voterCount": 23,
+      "tags": [
+        "Rare",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Capacitor",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 33,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Hyperbeam",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 34,
+      "voterCount": 28,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Panacea",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 32,
+      "voterCount": 19,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Carnage",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 38,
+      "voterCount": 22,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Dagger Throw",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 33,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Exhume",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 33,
+      "voterCount": 24,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Indignation",
+      "tierValue": 4,
+      "rating": 56,
+      "consensus": 35,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Headbutt",
+      "tierValue": 4,
+      "rating": 56,
+      "consensus": 40,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Anger",
+      "tierValue": 4,
+      "rating": 55,
+      "consensus": 32,
+      "voterCount": 28,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Recycle",
+      "tierValue": 4,
+      "rating": 55,
+      "consensus": 34,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Go for the Eyes",
+      "tierValue": 4,
+      "rating": 55,
+      "consensus": 35,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Limit Break",
+      "tierValue": 4,
+      "rating": 55,
+      "consensus": 40,
+      "voterCount": 23,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Bloodletting",
+      "tierValue": 4,
+      "rating": 55,
+      "consensus": 33,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Deus Ex Machina",
+      "tierValue": 4,
+      "rating": 54,
+      "consensus": 33,
+      "voterCount": 23,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Accuracy",
+      "tierValue": 4,
+      "rating": 54,
+      "consensus": 31,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Charge Battery",
+      "tierValue": 4,
+      "rating": 54,
+      "consensus": 38,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Pummel",
+      "tierValue": 4,
+      "rating": 54,
+      "consensus": 38,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Escape Plan",
+      "tierValue": 4,
+      "rating": 54,
+      "consensus": 34,
+      "voterCount": 51,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Blasphemy",
+      "tierValue": 4,
+      "rating": 53,
+      "consensus": 33,
+      "voterCount": 20,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Violence",
+      "tierValue": 4,
+      "rating": 53,
+      "consensus": 31,
+      "voterCount": 17,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Secret Technique",
+      "tierValue": 4,
+      "rating": 52,
+      "consensus": 27,
+      "voterCount": 19,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Sweeping Beam",
+      "tierValue": 4,
+      "rating": 52,
+      "consensus": 35,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Bullet Time",
+      "tierValue": 4,
+      "rating": 52,
+      "consensus": 30,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Secret Weapon",
+      "tierValue": 4,
+      "rating": 52,
+      "consensus": 32,
+      "voterCount": 20,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Crescendo",
+      "tierValue": 4,
+      "rating": 51,
+      "consensus": 32,
+      "voterCount": 20,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Dropkick",
+      "tierValue": 4,
+      "rating": 51,
+      "consensus": 35,
+      "voterCount": 22,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Sneaky Strike",
+      "tierValue": 4,
+      "rating": 51,
+      "consensus": 34,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Flurry of Blows",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 37,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Prepared",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 32,
+      "voterCount": 47,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Follow-Up",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 37,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Rebound",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 37,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Blood for Blood",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 30,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Eviscerate",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 33,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Tranquility",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 37,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Empty Mind",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 32,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Devotion",
+      "tierValue": 4,
+      "rating": 50,
+      "consensus": 30,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "White Noise",
+      "tierValue": 4,
+      "rating": 49,
+      "consensus": 33,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "TURBO",
+      "tierValue": 4,
+      "rating": 49,
+      "consensus": 32,
+      "voterCount": 27,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Evolve",
+      "tierValue": 4,
+      "rating": 49,
+      "consensus": 36,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Hemokinesis",
+      "tierValue": 4,
+      "rating": 48,
+      "consensus": 36,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Barricade",
+      "tierValue": 4,
+      "rating": 48,
+      "consensus": 29,
+      "voterCount": 27,
+      "tags": [
+        "Rare",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Dramatic Entrance",
+      "tierValue": 3,
+      "rating": 47,
+      "consensus": 31,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Boot Sequence",
+      "tierValue": 3,
+      "rating": 47,
+      "consensus": 31,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Aggregate",
+      "tierValue": 3,
+      "rating": 47,
+      "consensus": 30,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Blind",
+      "tierValue": 3,
+      "rating": 47,
+      "consensus": 32,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Ghostly Armor",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 38,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Prostrate",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 32,
+      "voterCount": 14,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Bandage Up",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 26,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Cloak and Dagger",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 31,
+      "voterCount": 50,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Sands of Time",
+      "tierValue": 3,
+      "rating": 45,
+      "consensus": 31,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Reflex",
+      "tierValue": 3,
+      "rating": 45,
+      "consensus": 30,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Consume",
+      "tierValue": 3,
+      "rating": 44,
+      "consensus": 30,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Ragnarok",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 34,
+      "voterCount": 15,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Empty Body",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 32,
+      "voterCount": 21,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Conclude",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 32,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "All-Out Attack",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 30,
+      "voterCount": 56,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "A Thousand Cuts",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 27,
+      "voterCount": 56,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Halt",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 33,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Thinking Ahead",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 28,
+      "voterCount": 19,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Wish",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 29,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Dodge and Roll",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 33,
+      "voterCount": 49,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Finesse",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 29,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Beam Cell",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 38,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Dagger Spray",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 33,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Purity",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 30,
+      "voterCount": 18,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "FTL",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 35,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Deadly Poison",
+      "tierValue": 3,
+      "rating": 41,
+      "consensus": 32,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Sanctity",
+      "tierValue": 3,
+      "rating": 41,
+      "consensus": 31,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Demon Form",
+      "tierValue": 3,
+      "rating": 41,
+      "consensus": 31,
+      "voterCount": 22,
+      "tags": [
+        "Rare",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Establishment",
+      "tierValue": 3,
+      "rating": 41,
+      "consensus": 32,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Spirit Shield",
+      "tierValue": 3,
+      "rating": 41,
+      "consensus": 32,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Doppelganger",
+      "tierValue": 3,
+      "rating": 41,
+      "consensus": 33,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Panache",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 34,
+      "voterCount": 21,
+      "tags": [
+        "Rare",
+        "Colorless",
+        "Power"
+      ]
+    },
+    {
+      "name": "Wave of the Hand",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 33,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Combust",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 35,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Finisher",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 29,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Flash of Steel",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 29,
+      "voterCount": 18,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 32,
+      "voterCount": 27,
+      "tags": [
+        "Rare",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Panic Button",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 31,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Armaments",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 33,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Consecrate",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 34,
+      "voterCount": 20,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Dual Wield",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 34,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Meteor Strike",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 31,
+      "voterCount": 26,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "All for One",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 32,
+      "voterCount": 25,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Darkness",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 35,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Carve Reality",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 32,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Bowling Bash",
+      "tierValue": 3,
+      "rating": 38,
+      "consensus": 36,
+      "voterCount": 20,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Twin Strike",
+      "tierValue": 3,
+      "rating": 38,
+      "consensus": 35,
+      "voterCount": 27,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Sash Whip",
+      "tierValue": 3,
+      "rating": 37,
+      "consensus": 38,
+      "voterCount": 20,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Heatsinks",
+      "tierValue": 3,
+      "rating": 37,
+      "consensus": 33,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Poisoned Stab",
+      "tierValue": 3,
+      "rating": 37,
+      "consensus": 36,
+      "voterCount": 51,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Endless Agony",
+      "tierValue": 3,
+      "rating": 37,
+      "consensus": 34,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Double Energy",
+      "tierValue": 3,
+      "rating": 37,
+      "consensus": 33,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Envenom",
+      "tierValue": 3,
+      "rating": 37,
+      "consensus": 33,
+      "voterCount": 56,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Double Tap",
+      "tierValue": 3,
+      "rating": 36,
+      "consensus": 31,
+      "voterCount": 25,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Flying Knee",
+      "tierValue": 3,
+      "rating": 36,
+      "consensus": 33,
+      "voterCount": 48,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Intimidate",
+      "tierValue": 3,
+      "rating": 36,
+      "consensus": 33,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Sucker Punch",
+      "tierValue": 3,
+      "rating": 36,
+      "consensus": 34,
+      "voterCount": 50,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Deflect",
+      "tierValue": 3,
+      "rating": 35,
+      "consensus": 35,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Like Water",
+      "tierValue": 3,
+      "rating": 35,
+      "consensus": 34,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Weave",
+      "tierValue": 3,
+      "rating": 35,
+      "consensus": 35,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Bludgeon",
+      "tierValue": 3,
+      "rating": 35,
+      "consensus": 32,
+      "voterCount": 25,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Sword Boomerang",
+      "tierValue": 3,
+      "rating": 35,
+      "consensus": 35,
+      "voterCount": 27,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Creative AI",
+      "tierValue": 3,
+      "rating": 34,
+      "consensus": 34,
+      "voterCount": 27,
+      "tags": [
+        "Rare",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Steam Barrier",
+      "tierValue": 3,
+      "rating": 34,
+      "consensus": 36,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Sadistic Nature",
+      "tierValue": 3,
+      "rating": 34,
+      "consensus": 36,
+      "voterCount": 21,
+      "tags": [
+        "Rare",
+        "Colorless",
+        "Power"
+      ]
+    },
+    {
+      "name": "Leap",
+      "tierValue": 3,
+      "rating": 34,
+      "consensus": 34,
+      "voterCount": 24,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Multi-Cast",
+      "tierValue": 3,
+      "rating": 33,
+      "consensus": 37,
+      "voterCount": 26,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Simmering Fury",
+      "tierValue": 3,
+      "rating": 33,
+      "consensus": 33,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Unload",
+      "tierValue": 3,
+      "rating": 33,
+      "consensus": 32,
+      "voterCount": 56,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Melter",
+      "tierValue": 3,
+      "rating": 33,
+      "consensus": 32,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Evaluate",
+      "tierValue": 3,
+      "rating": 33,
+      "consensus": 35,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Streamline",
+      "tierValue": 3,
+      "rating": 33,
+      "consensus": 37,
+      "voterCount": 30,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Pray",
+      "tierValue": 3,
+      "rating": 33,
+      "consensus": 37,
+      "voterCount": 14,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Auto-Shields",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 34,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Protect",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 35,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Fire Breathing",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 36,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Clothesline",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 39,
+      "voterCount": 27,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Heavy Blade",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 39,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Judgment",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 31,
+      "voterCount": 15,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Deva Form",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 34,
+      "voterCount": 14,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Crush Joints",
+      "tierValue": 3,
+      "rating": 32,
+      "consensus": 39,
+      "voterCount": 21,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Skewer",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 37,
+      "voterCount": 55,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Tempest",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 32,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Foreign Influence",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 33,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Amplify",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 35,
+      "voterCount": 27,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Berserk",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 34,
+      "voterCount": 29,
+      "tags": [
+        "Rare",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Impatience",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 35,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Infernal Blade",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 34,
+      "voterCount": 28,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Cleave",
+      "tierValue": 3,
+      "rating": 31,
+      "consensus": 38,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Quick Slash",
+      "tierValue": 3,
+      "rating": 30,
+      "consensus": 36,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Static Discharge",
+      "tierValue": 3,
+      "rating": 30,
+      "consensus": 34,
+      "voterCount": 27,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Mayhem",
+      "tierValue": 3,
+      "rating": 30,
+      "consensus": 37,
+      "voterCount": 18,
+      "tags": [
+        "Rare",
+        "Colorless",
+        "Power"
+      ]
+    },
+    {
+      "name": "Swift Strike",
+      "tierValue": 2,
+      "rating": 28,
+      "consensus": 34,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Caltrops",
+      "tierValue": 2,
+      "rating": 28,
+      "consensus": 38,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Good Instincts",
+      "tierValue": 2,
+      "rating": 28,
+      "consensus": 36,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Windmill Strike",
+      "tierValue": 2,
+      "rating": 28,
+      "consensus": 34,
+      "voterCount": 21,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Metallicize",
+      "tierValue": 2,
+      "rating": 28,
+      "consensus": 37,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Wild Strike",
+      "tierValue": 2,
+      "rating": 28,
+      "consensus": 35,
+      "voterCount": 29,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Rip and Tear",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 37,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Reach Heaven",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 39,
+      "voterCount": 14,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Bullseye",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 35,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Slice",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 38,
+      "voterCount": 50,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Masterful Stab",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 38,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Thunderclap",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 39,
+      "voterCount": 27,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Perseverance",
+      "tierValue": 2,
+      "rating": 26,
+      "consensus": 36,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Chaos",
+      "tierValue": 2,
+      "rating": 26,
+      "consensus": 40,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Body Slam",
+      "tierValue": 2,
+      "rating": 25,
+      "consensus": 39,
+      "voterCount": 28,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Flechettes",
+      "tierValue": 2,
+      "rating": 25,
+      "consensus": 38,
+      "voterCount": 50,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Metamorphosis",
+      "tierValue": 2,
+      "rating": 25,
+      "consensus": 35,
+      "voterCount": 20,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Enlightenment",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 37,
+      "voterCount": 18,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Claw",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 37,
+      "voterCount": 26,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Expertise",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 38,
+      "voterCount": 50,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Battle Hymn",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 39,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Recursion",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 39,
+      "voterCount": 23,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Juggernaut",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 40,
+      "voterCount": 25,
+      "tags": [
+        "Rare",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Barrage",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 38,
+      "voterCount": 29,
+      "tags": [
+        "Common",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Just Lucky",
+      "tierValue": 2,
+      "rating": 23,
+      "consensus": 39,
+      "voterCount": 22,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Deep Breath",
+      "tierValue": 2,
+      "rating": 22,
+      "consensus": 36,
+      "voterCount": 19,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Rupture",
+      "tierValue": 2,
+      "rating": 22,
+      "consensus": 42,
+      "voterCount": 27,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Rage",
+      "tierValue": 2,
+      "rating": 22,
+      "consensus": 42,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Concentrate",
+      "tierValue": 2,
+      "rating": 22,
+      "consensus": 41,
+      "voterCount": 47,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Flex",
+      "tierValue": 2,
+      "rating": 21,
+      "consensus": 38,
+      "voterCount": 23,
+      "tags": [
+        "Common",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "The Bomb",
+      "tierValue": 2,
+      "rating": 21,
+      "consensus": 39,
+      "voterCount": 20,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Overclock",
+      "tierValue": 2,
+      "rating": 21,
+      "consensus": 40,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Blizzard",
+      "tierValue": 2,
+      "rating": 20,
+      "consensus": 40,
+      "voterCount": 26,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Storm of Steel",
+      "tierValue": 2,
+      "rating": 20,
+      "consensus": 42,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Sentinel",
+      "tierValue": 2,
+      "rating": 20,
+      "consensus": 44,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Iron Wave",
+      "tierValue": 2,
+      "rating": 19,
+      "consensus": 43,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Study",
+      "tierValue": 2,
+      "rating": 19,
+      "consensus": 40,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Madness",
+      "tierValue": 2,
+      "rating": 19,
+      "consensus": 41,
+      "voterCount": 14,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Collect",
+      "tierValue": 2,
+      "rating": 19,
+      "consensus": 41,
+      "voterCount": 21,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Hello World",
+      "tierValue": 2,
+      "rating": 19,
+      "consensus": 41,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Entrench",
+      "tierValue": 2,
+      "rating": 18,
+      "consensus": 43,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Sever Soul",
+      "tierValue": 2,
+      "rating": 18,
+      "consensus": 45,
+      "voterCount": 25,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Chrysalis",
+      "tierValue": 2,
+      "rating": 17,
+      "consensus": 41,
+      "voterCount": 19,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Worship",
+      "tierValue": 2,
+      "rating": 17,
+      "consensus": 43,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Reprogram",
+      "tierValue": 2,
+      "rating": 17,
+      "consensus": 44,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Infinite Blades",
+      "tierValue": 2,
+      "rating": 17,
+      "consensus": 45,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Thunder Strike",
+      "tierValue": 2,
+      "rating": 17,
+      "consensus": 43,
+      "voterCount": 28,
+      "tags": [
+        "Rare",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Rampage",
+      "tierValue": 2,
+      "rating": 17,
+      "consensus": 47,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Nirvana",
+      "tierValue": 2,
+      "rating": 16,
+      "consensus": 43,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Signature Move",
+      "tierValue": 2,
+      "rating": 16,
+      "consensus": 42,
+      "voterCount": 17,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Flying Sleeves",
+      "tierValue": 2,
+      "rating": 15,
+      "consensus": 47,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Force Field",
+      "tierValue": 2,
+      "rating": 15,
+      "consensus": 47,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Master Reality",
+      "tierValue": 2,
+      "rating": 15,
+      "consensus": 44,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Power"
+      ]
+    },
+    {
+      "name": "Storm",
+      "tierValue": 2,
+      "rating": 14,
+      "consensus": 46,
+      "voterCount": 27,
+      "tags": [
+        "Uncommon",
+        "Power",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Jack of All Trades",
+      "tierValue": 2,
+      "rating": 14,
+      "consensus": 44,
+      "voterCount": 22,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Havoc",
+      "tierValue": 2,
+      "rating": 14,
+      "consensus": 46,
+      "voterCount": 23,
+      "tags": [
+        "Common",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Choke",
+      "tierValue": 2,
+      "rating": 14,
+      "consensus": 48,
+      "voterCount": 52,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Perfected Strike",
+      "tierValue": 2,
+      "rating": 13,
+      "consensus": 46,
+      "voterCount": 25,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Swivel",
+      "tierValue": 2,
+      "rating": 13,
+      "consensus": 48,
+      "voterCount": 16,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Scrape",
+      "tierValue": 2,
+      "rating": 13,
+      "consensus": 47,
+      "voterCount": 24,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Fasting",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 48,
+      "voterCount": 15,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Power"
+      ]
+    },
+    {
+      "name": "Forethought",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 46,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Warcry",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 47,
+      "voterCount": 24,
+      "tags": [
+        "Common",
+        "Skill",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Reckless Charge",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 47,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Bane",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 50,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Common",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Mind Blast",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 47,
+      "voterCount": 20,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Discovery",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 50,
+      "voterCount": 15,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Alpha",
+      "tierValue": 2,
+      "rating": 11,
+      "consensus": 47,
+      "voterCount": 18,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Magnetism",
+      "tierValue": 1,
+      "rating": 9,
+      "consensus": 49,
+      "voterCount": 19,
+      "tags": [
+        "Rare",
+        "Colorless",
+        "Power"
+      ]
+    },
+    {
+      "name": "Transmutation",
+      "tierValue": 1,
+      "rating": 9,
+      "consensus": 50,
+      "voterCount": 19,
+      "tags": [
+        "Rare",
+        "Skill",
+        "Colorless"
+      ]
+    },
+    {
+      "name": "Outmaneuver",
+      "tierValue": 1,
+      "rating": 9,
+      "consensus": 51,
+      "voterCount": 53,
+      "tags": [
+        "Silent",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Stack",
+      "tierValue": 1,
+      "rating": 8,
+      "consensus": 51,
+      "voterCount": 27,
+      "tags": [
+        "Common",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Setup",
+      "tierValue": 1,
+      "rating": 7,
+      "consensus": 53,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Conjure Blade",
+      "tierValue": 1,
+      "rating": 7,
+      "consensus": 51,
+      "voterCount": 21,
+      "tags": [
+        "Watcher",
+        "Rare",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Heel Hook",
+      "tierValue": 1,
+      "rating": 7,
+      "consensus": 53,
+      "voterCount": 51,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Riddle with Holes",
+      "tierValue": 1,
+      "rating": 7,
+      "consensus": 53,
+      "voterCount": 49,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Grand Finale",
+      "tierValue": 1,
+      "rating": 6,
+      "consensus": 53,
+      "voterCount": 56,
+      "tags": [
+        "Silent",
+        "Rare",
+        "Attack"
+      ]
+    },
+    {
+      "name": "Searing Blow",
+      "tierValue": 1,
+      "rating": 5,
+      "consensus": 56,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Wreath of Flame",
+      "tierValue": 1,
+      "rating": 3,
+      "consensus": 56,
+      "voterCount": 20,
+      "tags": [
+        "Watcher",
+        "Uncommon",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Fusion",
+      "tierValue": 1,
+      "rating": 3,
+      "consensus": 57,
+      "voterCount": 23,
+      "tags": [
+        "Uncommon",
+        "Skill",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Clash",
+      "tierValue": 1,
+      "rating": 2,
+      "consensus": 58,
+      "voterCount": 27,
+      "tags": [
+        "Common",
+        "Attack",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Pressure Points",
+      "tierValue": 1,
+      "rating": 2,
+      "consensus": 58,
+      "voterCount": 19,
+      "tags": [
+        "Watcher",
+        "Common",
+        "Skill"
+      ]
+    },
+    {
+      "name": "Distraction",
+      "tierValue": 1,
+      "rating": 0,
+      "consensus": 60,
+      "voterCount": 54,
+      "tags": [
+        "Silent",
+        "Uncommon",
+        "Skill"
+      ]
+    }
+  ]
+}

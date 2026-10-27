@@ -1,20 +1,16 @@
 /*
- * Expands CrawlGuide/data.json from the curated guide cards to the full
- * Slay the Spire 1 card pool.
+ * Builds CrawlGuide/data.json for the full Slay the Spire 1 card pool.
  *
- * Tier sources:
- *  - Cards already in the guide keep the guide's tier and build tags.
- *  - Remaining cards use SpireSpy's Slay the Spire 1 tier lists
- *    (maybelatergames.co.uk/tools/slaythespire), mapped S/A/B/C -> T0/T1/T2/T3.
- *  - Build tags for new cards are derived from Slay the Spire 1 card text only.
- *
- * No Slay the Spire 2 data is used.
+ * Single tier source: Unduel community tier list (85 voters / 9.3K votes),
+ * S/A/B/C/D/F mapped to T0/T1/T2/T3. No guide-card exceptions.
+ * Archetype tags: derived from Slay the Spire 1 card text with the 16 build
+ * definitions kept in the guide. No Slay the Spire 2 data is used.
  */
 const fs = require('fs');
 const path = require('path');
 
 const basePath = process.argv[2] || 'CrawlGuide/data.json';
-const tiersPath = process.argv[3] || 'guide/spirespy-tiers.json';
+const tiersPath = process.argv[3] || 'guide/unduel-tiers.json';
 const locDir = process.argv[4] || '.build/localization';
 
 const base = JSON.parse(fs.readFileSync(basePath, 'utf8'));
@@ -34,19 +30,12 @@ const cnName = id => (zhs[id] && zhs[id].NAME) || officialName(id);
 const description = id => (eng[id] && eng[id].DESCRIPTION) || '';
 
 const buildKeys = new Set(base.builds.map(b => b.key));
-const charOfClass = { ironclad: 'i', silent: 's', defect: 'd', watcher: 'w', colorless: 'c' };
+const charOfTag = { Ironclad: 'i', Silent: 's', Defect: 'd', Watcher: 'w', Colorless: 'c' };
 
-// Tokens, event-only cards and basics are not part of the normal reward/shop pool.
-const excluded = new Set([
-  'shiv', 'smite', 'miracle', 'safety', 'insight', 'throughviolence', 'beta', 'omega',
-  'jax', 'bite', 'apparition', 'ritualdagger', 'strike', 'defend',
-].map(norm));
-
-function mapGrade(grade) {
-  const first = String(grade || '').trim().toUpperCase().charAt(0);
-  if (first === 'S') return 'T0';
-  if (first === 'A') return 'T1';
-  if (first === 'B') return 'T2';
+function mapTier(value) {
+  if (value >= 6) return 'T0';
+  if (value === 5) return 'T1';
+  if (value === 4) return 'T2';
   return 'T3';
 }
 
@@ -109,8 +98,7 @@ function classify(char, name, type, text) {
   }
 
   if (char === 'd') {
-    if (/frost/.test(t)
-        || (/focus/.test(t) && !/lose .*focus/.test(t))
+    if (/frost/.test(t) || /gain .*focus/.test(t)
         || is('glacier', 'coolheaded', 'chill', 'blizzard', 'capacitor', 'defragment', 'buffer',
               'loop', 'recursion', 'multi-cast', 'echo form', 'biased cognition')
         || (/gain .*block/.test(t) && isType('skill'))) {
@@ -156,71 +144,66 @@ function classify(char, name, type, text) {
   return out;
 }
 
-let guideCards = 0;
-for (const card of Object.values(base.cards)) {
-  card.src = 'guide';
-  const keyChar = card.builds.length > 0 ? card.builds[0].split('|')[0] : null;
-  if (!card.char) card.char = keyChar;
-  guideCards++;
-}
-
-let added = 0;
+const cards = {};
 const unmapped = [];
-for (const [cls, list] of Object.entries(tiers.classes)) {
-  const char = charOfClass[cls];
-  for (const entry of list) {
-    if (excluded.has(norm(entry.name))) continue;
-    const id = nameToId[norm(entry.name)] || idNorm[norm(entry.name)];
-    if (!id) {
-      unmapped.push(cls + ':' + entry.name);
-      continue;
-    }
-    if (base.cards[id]) continue;
-    const name = officialName(id);
-    base.cards[id] = {
-      id,
-      name,
-      cn: cnName(id),
-      tier: mapGrade(entry.grade),
-      builds: classify(char, name, entry.type, description(id)),
-      src: 'spirespy',
-      char,
-      type: entry.type,
-    };
-    added++;
+for (const entry of tiers.cards) {
+  const id = nameToId[norm(entry.name)] || idNorm[norm(entry.name)];
+  if (!id) {
+    unmapped.push(entry.name);
+    continue;
   }
+  const tags = entry.tags || [];
+  const char = tags.map(t => charOfTag[t]).find(Boolean);
+  if (!char) {
+    unmapped.push(entry.name + ' (no class tag)');
+    continue;
+  }
+  const typeTag = tags.find(t => t === 'Attack' || t === 'Skill' || t === 'Power');
+  const name = officialName(id);
+  cards[id] = {
+    id,
+    name,
+    cn: cnName(id),
+    tier: mapTier(entry.tierValue),
+    builds: classify(char, name, typeTag || '', description(id)),
+    char,
+    type: (typeTag || '').toLowerCase(),
+    rating: entry.rating,
+    consensus: entry.consensus,
+    votes: entry.voterCount,
+  };
 }
 
-const cards = Object.values(base.cards);
-const tierCounts = { guide: 0, spirespy: 0, default: 0 };
+const list = Object.values(cards);
+const tierCounts = { T0: 0, T1: 0, T2: 0, T3: 0 };
 const tagCounts = {};
 for (const b of base.builds) tagCounts[b.key] = 0;
-for (const c of cards) {
-  tierCounts[c.src === 'guide' ? 'guide' : 'spirespy']++;
+for (const c of list) {
+  tierCounts[c.tier]++;
   for (const k of c.builds) {
     if (tagCounts[k] != null) tagCounts[k]++;
   }
 }
 
+base.cards = cards;
 base.meta = {
-  cardTierSources: {
-    guide: '原创速查表，114 张卡优先保留原 T 度',
-    spirespy: 'SpireSpy Slay the Spire 1 卡牌梯队（maybelatergames.co.uk/tools/slaythespire），S/A/B/C/D 映射为 T0-T3',
-  },
-  spirespySource: tiers._source,
-  spirespyUrls: tiers._urls,
-  spirespyRetrieved: tiers._retrieved,
-  archetypeNote: '原有卡牌保留速查表流派标签；新增卡牌的流派标签由杀戮尖塔一代卡牌文本规则推导，未使用二代数据。',
+  cardTierSource: 'Unduel community tier list: The Best Slay the Spire Cards',
+  cardTierUrl: tiers._url,
+  cardTierVoters: tiers._voters,
+  cardTierVotes: tiers._votes,
+  cardTierUpdated: tiers._updated,
+  cardTierRetrieved: tiers._retrieved,
+  cardTierMapping: tiers._mapping,
+  cardTierNote: '320 可获取卡牌；不包含不会出现在卡牌奖励/商店的基础牌、状态、诅咒和 token。',
+  archetypeNote: '所有卡牌流派标签均由杀戮尖塔一代卡牌文本规则推导；未使用二代数据。',
 };
-base.stats.cards = cards.length;
-base.stats.cardsWithTier = cards.filter(c => c.tier).length;
-base.stats.cardsGuide = guideCards;
-base.stats.cardsSpireSpy = added;
-base.stats.unmappedSpireSpy = unmapped;
+base.stats.cards = list.length;
+base.stats.cardsWithTier = list.filter(c => c.tier).length;
+base.stats.tiers = tierCounts;
+base.stats.unmappedUnduel = unmapped;
 
 fs.writeFileSync(basePath, JSON.stringify(base, null, 2), 'utf8');
 
-console.log('cards total=' + cards.length + ' guide=' + guideCards + ' added=' + added);
-console.log('tier sources=' + JSON.stringify(tierCounts));
+console.log('cards total=' + list.length + ' tiers=' + JSON.stringify(tierCounts));
 console.log('unmapped=' + (unmapped.length ? unmapped.join(', ') : 'none'));
 console.log('tag counts=' + JSON.stringify(tagCounts));

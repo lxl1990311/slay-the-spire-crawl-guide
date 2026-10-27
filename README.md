@@ -18,18 +18,18 @@
 
 ## 当前数据
 
-- 327 张卡牌：铁甲战士 / 静默猎手 / 故障机器人 / 观者各 73 张，无色 35 张
+- 320 张可获取卡牌：铁甲战士 72、静默猎手 71、故障机器人 71、观者 71、无色 35
 - 179 件遗物
 - 16 套流派（四职业各 4 套）
 
-不含基础打击/防御、状态、诅咒和正常流程中无法获得的 token 卡。
+不包含不会出现在卡牌奖励/商店的基础打击防御、状态、诅咒和 token 卡。
 
 ### T 度与流派来源
 
-- 原速查表收录的 114 张卡：保留原表的 T 度与流派标签。
-- 其余 213 张卡：T 度来自 [SpireSpy 的《杀戮尖塔 1》卡牌梯队](https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/ironclad/)，`S/A/B/C/D` 映射为 `T0–T3`（S→T0，A→T1，B→T2，C/D→T3）。
-- 新增卡牌的流派标签由《杀戮尖塔 1》卡牌文本规则推导；无色牌通常只显示 T 度。
-- 全程没有使用《杀戮尖塔 2》的卡牌或评分数据。
+- 全部 320 张卡的 T 度统一来自 [Unduel 的《Slay the Spire》全卡社区共识榜](https://unduel.com/t/slay-the-spire/the-best-slay-the-spire-cards-2W3WSTcjk91rLIipyd0x3x/tier-list)：85 位投票者、约 9.3K 次评分，抓取于 2026-10-27。
+- 映射规则固定：`S→T0`、`A→T1`、`B→T2`、`C/D/F→T3`，不再混用其他榜单。
+- 所有卡的流派标签都由《杀戮尖塔 1》卡牌文本规则推导；无色牌通常只显示 T 度。
+- 没有使用《杀戮尖塔 2》的任何卡牌或评分数据。
 
 ## 从源码构建
 
@@ -44,12 +44,12 @@
 .\tools\build.ps1 -StsDir "C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire" -JdkDir "C:\Java\jdk8"
 ```
 
-脚本会从游戏 jar 提取中英文卡牌/遗物映射，合并 `guide/spirespy-tiers.json` 的全卡池 T 度，重新生成 `CrawlGuide/data.json` 与 `GuideData.java`，编译并输出 `dist/crawlguide.jar`。
+脚本会从游戏 jar 提取中英文卡牌/遗物映射，合并 `guide/unduel-tiers.json` 的全卡池 T 度，重新生成 `CrawlGuide/data.json` 与 `GuideData.java`，编译并输出 `dist/crawlguide.jar`。
 
 ## 说明
 
-- 原表 114 张的 T 度是作者主观排序；其余卡来自 SpireSpy 社区梯队，两套评分可能不一致。
-- 新增卡牌的流派标签是规则推导，不是原表逐张手写，可能有偏差。
+- T 度是社区投票共识，不是官方数据；样本量为 85 位投票者、约 9.3K 次评分。
+- 流派标签是规则推导，不是逐张手写，可能有偏差。
 - 「卡组倾向」是启发式打分（核心件 4 分、关键件 2 分），仅作参考。
 - 使用 mod 启动会禁用游戏成就。
 - 本项目与 Mega Crit Games 无关；卡牌与遗物名称、图片版权归其所有。
