@@ -38,12 +38,17 @@ New-Item -ItemType Directory -Force $locDir | Out-Null
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $zip = [IO.Compression.ZipFile]::OpenRead($desktopJar)
 try {
-    foreach ($name in @("cards.json", "relics.json")) {
-        $entry = $zip.Entries | Where-Object { $_.FullName -eq "localization/eng/$name" }
+    $files = @(
+        @{ Path = "localization/eng/cards.json"; Out = "cards.json.eng.json" },
+        @{ Path = "localization/eng/relics.json"; Out = "relics.json.eng.json" },
+        @{ Path = "localization/zhs/cards.json"; Out = "cards.json.zhs.json" }
+    )
+    foreach ($file in $files) {
+        $entry = $zip.Entries | Where-Object { $_.FullName -eq $file.Path }
         if (-not $entry) {
-            throw "localization/eng/$name not found in desktop-1.0.jar"
+            throw "$($file.Path) not found in desktop-1.0.jar"
         }
-        [IO.Compression.ZipFileExtensions]::ExtractToFile($entry, (Join-Path $locDir "$name.eng.json"), $true)
+        [IO.Compression.ZipFileExtensions]::ExtractToFile($entry, (Join-Path $locDir $file.Out), $true)
     }
 } finally {
     $zip.Dispose()
@@ -51,9 +56,21 @@ try {
 
 Write-Host "==> Building data.json from $GuidePath"
 & node "tools/extract-data.js" $GuidePath "CrawlGuide/data.json" $locDir
+if ($LASTEXITCODE -ne 0) {
+    throw "extract-data.js failed"
+}
+
+Write-Host "==> Expanding to the full Slay the Spire 1 card pool"
+& node "tools/build-full-data.js" "CrawlGuide/data.json" "guide/spirespy-tiers.json" $locDir
+if ($LASTEXITCODE -ne 0) {
+    throw "build-full-data.js failed"
+}
 
 Write-Host "==> Generating GuideData.java"
 & node "tools/gen-java.js" "CrawlGuide/data.json" "CrawlGuide/src/crawlguide/GuideData.java"
+if ($LASTEXITCODE -ne 0) {
+    throw "gen-java.js failed"
+}
 
 Write-Host "==> Compiling"
 $classes = Join-Path $root "build\classes"

@@ -1,0 +1,2069 @@
+{
+  "_source": "SpireSpy Slay the Spire 1 card tier lists (maybelatergames.co.uk/tools/slaythespire). Not Slay the Spire 2.",
+  "_retrieved": "2026-10-27",
+  "_urls": {
+    "ironclad": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/ironclad/",
+    "silent": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/silent/",
+    "defect": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/defect/",
+    "watcher": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/watcher/",
+    "colorless": "https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/colorless/"
+  },
+  "classes": {
+    "ironclad": [
+      {
+        "name": "Feed",
+        "type": "attack",
+        "grade": "S+",
+        "tierClass": "s"
+      },
+      {
+        "name": "Immolate",
+        "type": "attack",
+        "grade": "S-",
+        "tierClass": "s"
+      },
+      {
+        "name": "Corruption",
+        "type": "power",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Offering",
+        "type": "skill",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Battle Trance",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Demon Form",
+        "type": "power",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Disarm",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Reaper",
+        "type": "attack",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Berserk",
+        "type": "power",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Shrug It Off",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Uppercut",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Carnage",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Clothesline",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Fiend Fire",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Impervious",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Inflame",
+        "type": "power",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Shockwave",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Spot Weakness",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Whirlwind",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Bludgeon",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Body Slam",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Double Tap",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Flame Barrier",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Ghostly Armor",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Seeing Red",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Bloodletting",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Brutality",
+        "type": "power",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Reckless Charge",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Warcry",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Anger",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Armaments",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Fire Breathing",
+        "type": "power",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Headbutt",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Hemokinesis",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Sever Soul",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Twin Strike",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Wild Strike",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Bash",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Cleave",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Evolve",
+        "type": "power",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Exhume",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Heavy Blade",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Infernal Blade",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Iron Wave",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Juggernaut",
+        "type": "power",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Metallicize",
+        "type": "power",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Pummel",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Rampage",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Thunderclap",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "True Grit",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Combust",
+        "type": "power",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Havoc",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Intimidate",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Perfected Strike",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Pommel Strike",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Power Through",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Sword Boomerang",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Barricade",
+        "type": "power",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Blood for Blood",
+        "type": "attack",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Dark Embrace",
+        "type": "power",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Dual Wield",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Rage",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Searing Blow",
+        "type": "attack",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Second Wind",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Burning Pact",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Feel No Pain",
+        "type": "power",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Flex",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Limit Break",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Clash",
+        "type": "attack",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Dropkick",
+        "type": "attack",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Entrench",
+        "type": "skill",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Rupture",
+        "type": "power",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Sentinel",
+        "type": "skill",
+        "grade": "E+",
+        "tierClass": "e"
+      }
+    ],
+    "silent": [
+      {
+        "name": "Adrenaline",
+        "type": "skill",
+        "grade": "S+",
+        "tierClass": "s"
+      },
+      {
+        "name": "Wraith Form",
+        "type": "power",
+        "grade": "S",
+        "tierClass": "s"
+      },
+      {
+        "name": "Well-Laid Plans",
+        "type": "power",
+        "grade": "S-",
+        "tierClass": "s"
+      },
+      {
+        "name": "After Image",
+        "type": "power",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Noxious Fumes",
+        "type": "power",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Backflip",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Envenom",
+        "type": "power",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Footwork",
+        "type": "power",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Malaise",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Piercing Wail",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Terror",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Alchemize",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Backstab",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Caltrops",
+        "type": "power",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Catalyst",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Corpse Explosion",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Dash",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Die Die Die",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Glass Knife",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Leg Sweep",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Bouncing Flask",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Bullet Time",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Cloak And Dagger",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Infinite Blades",
+        "type": "power",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Predator",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Skewer",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Survivor",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Tools of the Trade",
+        "type": "power",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "A Thousand Cuts",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Burst",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Crippling Cloud",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Dagger Spray",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Dodge and Roll",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Neutralize",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Nightmare",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Quick Slash",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Sucker Punch",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Unload",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Acrobatics",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "All-Out Attack",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Calculated Gamble",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Dagger Throw",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Flying Knee",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Masterful Stab",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Poisoned Stab",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Slice",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Storm of Steel",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Bane",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Blade Dance",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Blur",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Deadly Poison",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Endless Agony",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Phantasmal Killer",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Riddle with Holes",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Deflect",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Escape Plan",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Expertise",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Finisher",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Prepared",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Choke",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Distraction",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Accuracy",
+        "type": "power",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Doppelganger",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Flechettes",
+        "type": "attack",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Outmaneuver",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Heel Hook",
+        "type": "attack",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Setup",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Reflex",
+        "type": "skill",
+        "grade": "E+",
+        "tierClass": "e"
+      },
+      {
+        "name": "Tactician",
+        "type": "skill",
+        "grade": "E+",
+        "tierClass": "e"
+      },
+      {
+        "name": "Concentrate",
+        "type": "skill",
+        "grade": "E",
+        "tierClass": "e"
+      },
+      {
+        "name": "Eviscerate",
+        "type": "attack",
+        "grade": "E",
+        "tierClass": "e"
+      },
+      {
+        "name": "Sneaky Strike",
+        "type": "attack",
+        "grade": "E",
+        "tierClass": "e"
+      },
+      {
+        "name": "Grand Finale",
+        "type": "attack",
+        "grade": "E-",
+        "tierClass": "e"
+      }
+    ],
+    "defect": [
+      {
+        "name": "Seek",
+        "type": "skill",
+        "grade": "S",
+        "tierClass": "s"
+      },
+      {
+        "name": "Echo Form",
+        "type": "power",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Biased Cognition",
+        "type": "power",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Self Repair",
+        "type": "power",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Boot Sequence",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Chill",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Coolheaded",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Streamline",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Defragment",
+        "type": "power",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Glacier",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Hologram",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Machine Learning",
+        "type": "power",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Reboot",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Reinforced Body",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Static Discharge",
+        "type": "power",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Steam Barrier",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "TURBO",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Electrodynamics",
+        "type": "power",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Creative AI",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "FTL",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Multi-Cast",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Barrage",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Beam Cell",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Buffer",
+        "type": "power",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Capacitor",
+        "type": "power",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Cold Snap",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Charge Battery",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Dualcast",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Fission",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Fusion",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Go for the Eyes",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Hello World",
+        "type": "power",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Hyperbeam",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Loop",
+        "type": "power",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Rainbow",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Rip and Tear",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Equilibrium",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Core Surge",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Auto-Shields",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Ball Lightning",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Consume",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Double Energy",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Leap",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Melter",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Overclock",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Rebound",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Skim",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Stack",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Tempest",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Compile Driver",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "All For One",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Claw",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Doom and Gloom",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Recycle",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Sunder",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Sweeping Beam",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Chaos",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Genetic Algorithm",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Bullseye",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Recursion",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Zap",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Aggregate",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Darkness",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Scrape",
+        "type": "attack",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "White Noise",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Force Field",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Amplify",
+        "type": "skill",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Reprogram",
+        "type": "skill",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Thunder Strike",
+        "type": "attack",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Blizzard",
+        "type": "attack",
+        "grade": "E+",
+        "tierClass": "e"
+      },
+      {
+        "name": "Heatsinks",
+        "type": "power",
+        "grade": "E+",
+        "tierClass": "e"
+      },
+      {
+        "name": "Storm",
+        "type": "power",
+        "grade": "E",
+        "tierClass": "e"
+      },
+      {
+        "name": "Meteor Strike",
+        "type": "attack",
+        "grade": "F+",
+        "tierClass": "f"
+      }
+    ],
+    "watcher": [
+      {
+        "name": "Blasphemy",
+        "type": "skill",
+        "grade": "S",
+        "tierClass": "s"
+      },
+      {
+        "name": "Spirit Shield",
+        "type": "skill",
+        "grade": "S",
+        "tierClass": "s"
+      },
+      {
+        "name": "Lesson Learned",
+        "type": "attack",
+        "grade": "S-",
+        "tierClass": "s"
+      },
+      {
+        "name": "Foresight",
+        "type": "power",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Vault",
+        "type": "skill",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Cut Through Fate",
+        "type": "attack",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Establishment",
+        "type": "power",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Protect",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Ragnarok",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Scrawl",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Talk to the Hand",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Tantrum",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Windmill Strike",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Conclude",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Fear No Evil",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Flurry Of Blows",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Inner Peace",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Meditate",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Sands of Time",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Deceive Reality",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Devotion",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Empty Mind",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Fasting",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Judgment",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Like Water",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Mental Fortress",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Nirvana",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Reach Heaven",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Tranquility",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Wallop",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Wheel Kick",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Battle Hymn",
+        "type": "power",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Consecrate",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Crescendo",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Crush Joints",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Deus Ex Machina",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Empty Fist",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Evaluate",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Master Reality",
+        "type": "power",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Sash Whip",
+        "type": "attack",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Simmering Fury",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Third Eye",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Wish",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Bowling Bash",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Flying Sleeves",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Halt",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Omniscience",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Prostrate",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Study",
+        "type": "power",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Swivel",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Weave",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Carve Reality",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Deva Form",
+        "type": "power",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Empty Body",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Eruption",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Rushdown",
+        "type": "power",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Sanctity",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Vigilance",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Brilliance",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Follow-Up",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Just Lucky",
+        "type": "attack",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Wave of the Hand",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Worship",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Wreath of Flame",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Collect",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Conjure Blade",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Foreign Influence",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Pray",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Alpha",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Indignation",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Perseverance",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Pressure Points",
+        "type": "skill",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Signature Move",
+        "type": "attack",
+        "grade": "E",
+        "tierClass": "e"
+      },
+      {
+        "name": "Defend",
+        "type": "skill",
+        "grade": "F",
+        "tierClass": "f"
+      },
+      {
+        "name": "Strike",
+        "type": "attack",
+        "grade": "F",
+        "tierClass": "f"
+      }
+    ],
+    "colorless": [
+      {
+        "name": "Through Violence",
+        "type": "attack",
+        "grade": "S+",
+        "tierClass": "s"
+      },
+      {
+        "name": "Omega",
+        "type": "power",
+        "grade": "S",
+        "tierClass": "s"
+      },
+      {
+        "name": "Bandage Up",
+        "type": "skill",
+        "grade": "S-",
+        "tierClass": "s"
+      },
+      {
+        "name": "Insight",
+        "type": "skill",
+        "grade": "S-",
+        "tierClass": "s"
+      },
+      {
+        "name": "Apotheosis",
+        "type": "skill",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Dramatic Entrance",
+        "type": "attack",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Master of Strategy",
+        "type": "skill",
+        "grade": "A+",
+        "tierClass": "a"
+      },
+      {
+        "name": "Secret Technique",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Secret Weapon",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Miracle",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Safety",
+        "type": "skill",
+        "grade": "A",
+        "tierClass": "a"
+      },
+      {
+        "name": "Dark Shackles",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Magnetism",
+        "type": "power",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Apparition",
+        "type": "skill",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Smite",
+        "type": "attack",
+        "grade": "A-",
+        "tierClass": "a"
+      },
+      {
+        "name": "Bite",
+        "type": "attack",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "J.A.X.",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Discovery",
+        "type": "skill",
+        "grade": "B+",
+        "tierClass": "b"
+      },
+      {
+        "name": "Sadistic Nature",
+        "type": "power",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Shiv",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Thinking Ahead",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Hand of Greed",
+        "type": "attack",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Metamorphosis",
+        "type": "skill",
+        "grade": "B",
+        "tierClass": "b"
+      },
+      {
+        "name": "Panacea",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Chrysalis",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Violence",
+        "type": "skill",
+        "grade": "B-",
+        "tierClass": "b"
+      },
+      {
+        "name": "Blind",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Flash of Steel",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Good Instincts",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Transmutation",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Trip",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Ritual Dagger",
+        "type": "attack",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Panic Button",
+        "type": "skill",
+        "grade": "C+",
+        "tierClass": "c"
+      },
+      {
+        "name": "Finesse",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Jack Of All Trades",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Madness",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Mind Blast",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Swift Strike",
+        "type": "attack",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Impatience",
+        "type": "skill",
+        "grade": "C",
+        "tierClass": "c"
+      },
+      {
+        "name": "Forethought",
+        "type": "skill",
+        "grade": "C-",
+        "tierClass": "c"
+      },
+      {
+        "name": "Enlightenment",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Panache",
+        "type": "power",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "The Bomb",
+        "type": "skill",
+        "grade": "D+",
+        "tierClass": "d"
+      },
+      {
+        "name": "Deep Breath",
+        "type": "skill",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Mayhem",
+        "type": "power",
+        "grade": "D",
+        "tierClass": "d"
+      },
+      {
+        "name": "Purity",
+        "type": "skill",
+        "grade": "D-",
+        "tierClass": "d"
+      },
+      {
+        "name": "Beta",
+        "type": "skill",
+        "grade": "E",
+        "tierClass": "e"
+      }
+    ]
+  }
+}

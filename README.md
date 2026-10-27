@@ -18,13 +18,18 @@
 
 ## 当前数据
 
-数据由 `guide/index.html` 自动生成：
-
-- 16 套流派（四职业各 4 套）
-- 114 张有评分的卡牌
+- 327 张卡牌：铁甲战士 / 静默猎手 / 故障机器人 / 观者各 73 张，无色 35 张
 - 179 件遗物
+- 16 套流派（四职业各 4 套）
 
-攻略表未收录的卡牌不会显示标签。拿到完整版速查表后，用它覆盖 `guide/index.html`，重新执行构建即可更新 mod。
+不含基础打击/防御、状态、诅咒和正常流程中无法获得的 token 卡。
+
+### T 度与流派来源
+
+- 原速查表收录的 114 张卡：保留原表的 T 度与流派标签。
+- 其余 213 张卡：T 度来自 [SpireSpy 的《杀戮尖塔 1》卡牌梯队](https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/ironclad/)，`S/A/B/C/D` 映射为 `T0–T3`（S→T0，A→T1，B→T2，C/D→T3）。
+- 新增卡牌的流派标签由《杀戮尖塔 1》卡牌文本规则推导；无色牌通常只显示 T 度。
+- 全程没有使用《杀戮尖塔 2》的卡牌或评分数据。
 
 ## 从源码构建
 
@@ -39,11 +44,12 @@
 .\tools\build.ps1 -StsDir "C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire" -JdkDir "C:\Java\jdk8"
 ```
 
-脚本会从游戏 jar 提取英文卡牌/遗物 ID 映射，重新生成 `CrawlGuide/data.json` 与 `GuideData.java`，编译并输出 `dist/crawlguide.jar`。
+脚本会从游戏 jar 提取中英文卡牌/遗物映射，合并 `guide/spirespy-tiers.json` 的全卡池 T 度，重新生成 `CrawlGuide/data.json` 与 `GuideData.java`，编译并输出 `dist/crawlguide.jar`。
 
 ## 说明
 
-- T 度来自速查表作者的社区共识向主观排序，不是绝对强度。
+- 原表 114 张的 T 度是作者主观排序；其余卡来自 SpireSpy 社区梯队，两套评分可能不一致。
+- 新增卡牌的流派标签是规则推导，不是原表逐张手写，可能有偏差。
 - 「卡组倾向」是启发式打分（核心件 4 分、关键件 2 分），仅作参考。
 - 使用 mod 启动会禁用游戏成就。
 - 本项目与 Mega Crit Games 无关；卡牌与遗物名称、图片版权归其所有。
