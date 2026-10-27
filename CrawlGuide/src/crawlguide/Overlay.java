@@ -132,6 +132,11 @@ public final class Overlay {
                 return;
             }
 
+            if (screen == AbstractDungeon.CurrentScreen.SHOP) {
+                shopRelicHeader(relic, info, sb);
+                return;
+            }
+
             float scale = Settings.scale;
             float half = 64f * relic.scale;
             float tierFont = 0.80f;
@@ -166,6 +171,52 @@ public final class Overlay {
             }
         } catch (Throwable t) {
             logOnce(t);
+        }
+    }
+
+    private static void shopRelicHeader(AbstractRelic relic, GuideData.Relic info, SpriteBatch sb) {
+        float scale = Settings.scale;
+        float half = 64f * relic.scale;
+        float rowY = relic.currentY + half + 20f * scale;
+        float gap = 5f * scale;
+        float h = 26f * scale;
+
+        float tierFont = 0.86f;
+        float tierW = 0f;
+        if (info.tier != null && info.tier.length() > 0) {
+            tierW = Math.max(34f * scale, measure(FontHelper.cardTitleFont, info.tier, tierFont) + 14f * scale);
+        }
+
+        GuideData.Build build = info.builds.length > 0 ? GuideData.BUILD_BY_KEY.get(info.builds[0]) : null;
+        DeckFit fit = build == null ? null : DeckFit.current();
+        boolean match = build != null && fit != null && fit.matches(info.builds);
+        String tagText = build == null ? null : (match ? "*" : ">") + (zh() ? build.shortCn : build.shortEn);
+        float tagFont = 0.78f;
+        float maxTotal = 160f * Settings.scale;
+        float maxTagW = maxTotal - (tierW > 0f ? tierW + gap : 0f);
+        float tagW = 0f;
+        if (tagText != null) {
+            tagW = measure(FontHelper.cardTitleFont, tagText, tagFont) + 12f * scale;
+            while (tagW > maxTagW && tagFont > 0.52f) {
+                tagFont -= 0.04f;
+                tagW = measure(FontHelper.cardTitleFont, tagText, tagFont) + 12f * scale;
+            }
+            if (tagW > maxTagW) {
+                tagText = null;
+                tagW = 0f;
+            }
+        }
+
+        float total = tierW + (tagW > 0f ? gap + tagW : 0f);
+        float x = relic.currentX - total * 0.5f;
+        if (tierW > 0f) {
+            pill(sb, x + tierW * 0.5f, rowY, tierW, h, tierColor(info.tier), TIER_TEXT, info.tier,
+                    FontHelper.cardTitleFont, tierFont, false);
+            x += tierW + gap;
+        }
+        if (tagW > 0f) {
+            pill(sb, x + tagW * 0.5f, rowY, tagW, h, PILL_BG, match ? GOLD : TEXT, tagText,
+                    FontHelper.cardTitleFont, tagFont, true);
         }
     }
 
