@@ -1,0 +1,2190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0a12">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>爬塔速查 · 杀戮尖塔一代</title>
+<style>
+  :root{
+    --bg:#0d0a12;
+    --bg-soft:#120e1a;
+    --surface:#191322;
+    --surface2:#1f1829;
+    --line:#2c2338;
+    --line-soft:#241c2e;
+    --text:#ece7f4;
+    --text-dim:#a79eb8;
+    --text-mute:#7d7490;
+    --gold:#e8c474;
+    --gold-dim:#a58a4a;
+    --t0:#f2c94c;
+    --t1:#c58fe0;
+    --t2:#5fa8dc;
+    --t3:#7d8494;
+    --ironclad:#c8524a;
+    --silent:#4fa85f;
+    --defect:#4a9fd8;
+    --watcher:#a878d8;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(900px 500px at 50% -180px, rgba(168,120,216,.18), transparent 70%),
+      radial-gradient(600px 400px at 90% 10%, rgba(200,82,74,.08), transparent 70%),
+      var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:14px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:104px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 14px;}
+
+  /* ---------- Header ---------- */
+  header{padding:26px 0 10px;text-align:center;position:relative;}
+  .kicker{
+    font-size:10px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--gold-dim);font-weight:600;
+  }
+  h1{
+    font-family:"Songti SC","Noto Serif SC",Georgia,serif;
+    font-size:30px;line-height:1.2;margin:8px 0 6px;letter-spacing:.06em;
+    background:linear-gradient(180deg,#fff6dc 0%,#e8c474 55%,#b08a3e 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    font-weight:700;
+  }
+  .sub{font-size:12px;color:var(--text-mute);letter-spacing:.04em;}
+  .edition{
+    display:inline-flex;align-items:center;gap:6px;margin-top:10px;
+    padding:4px 10px;border-radius:999px;
+    border:1px solid rgba(232,196,116,.28);
+    background:rgba(232,196,116,.07);
+    font-size:10.5px;color:var(--gold);letter-spacing:.06em;
+  }
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);}
+
+  /* ---------- Nav ---------- */
+  nav.chars{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;
+    position:sticky;top:0;z-index:40;
+    background:rgba(13,10,18,.94);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    padding:8px 14px;margin:4px -14px 10px;
+    border-bottom:1px solid transparent;
+  }
+  nav.chars.stuck{border-bottom-color:var(--line-soft);}
+  .char{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:12px;padding:9px 3px 8px;text-align:center;cursor:pointer;
+    transition:.22s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;min-width:0;
+  }
+  .char::after{
+    content:"";position:absolute;inset:auto 0 0 0;height:2px;background:var(--c,transparent);
+    opacity:0;transition:.22s;
+  }
+  .char .cn{font-size:11.5px;font-weight:600;color:var(--text-dim);transition:.22s;white-space:nowrap;letter-spacing:-.02em;overflow:hidden;}
+  .char .en{font-size:7.5px;letter-spacing:.08em;color:var(--text-mute);text-transform:uppercase;margin-top:1px;overflow:hidden;}
+  .char.active{background:var(--surface2);border-color:var(--c);}
+  .char.active::after{opacity:1;}
+  .char.active .cn{color:var(--c);}
+  .char.active .en{color:var(--c);opacity:.7;}
+
+  .views{display:flex;gap:3px;background:var(--bg-soft);border:1px solid var(--line-soft);border-radius:10px;padding:3px;margin-bottom:16px;}
+  .view{flex:1;text-align:center;padding:7px 0;font-size:11.5px;border-radius:7px;cursor:pointer;color:var(--text-mute);transition:.2s;font-weight:500;white-space:nowrap;}
+  .view.active{background:var(--surface2);color:var(--gold);box-shadow:0 1px 0 rgba(255,255,255,.03) inset;}
+
+  /* ---------- Character head ---------- */
+  .chead{
+    border:1px solid var(--line);border-radius:var(--radius);
+    background:linear-gradient(140deg,var(--tint,rgba(255,255,255,.03)),var(--surface) 55%);
+    padding:14px 15px;margin-bottom:14px;position:relative;overflow:hidden;
+  }
+  .chead::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c);
+    box-shadow:0 0 14px var(--c);
+  }
+  .chead .row{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+  .chead h2{margin:0;font-size:20px;font-family:"Songti SC","Noto Serif SC",Georgia,serif;color:var(--c);letter-spacing:.04em;}
+  .chead .cname-en{font-size:9.5px;letter-spacing:.16em;color:var(--text-mute);text-transform:uppercase;margin-top:1px;}
+  .power{font-size:10px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--text-dim);white-space:nowrap;}
+  .chead .tagline{margin:8px 0 0;font-size:12.5px;color:var(--text-dim);}
+  .chead .start{
+    margin-top:9px;padding-top:9px;border-top:1px dashed var(--line);
+    font-size:11.5px;color:var(--text-mute);display:flex;gap:6px;flex-wrap:wrap;
+  }
+  .chead .start b{color:var(--gold);font-weight:600;}
+
+  /* ---------- Filters ---------- */
+  .filters{display:flex;gap:6px;margin:0 0 13px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none;}
+  .filters::-webkit-scrollbar{display:none;}
+  .chip{
+    flex:0 0 auto;font-size:11px;padding:5px 12px;border-radius:999px;
+    border:1px solid var(--line);background:transparent;color:var(--text-mute);
+    cursor:pointer;transition:.2s;font-weight:600;letter-spacing:.03em;
+  }
+  .chip.on{background:var(--tintc,rgba(232,196,116,.12));border-color:var(--tintb,var(--gold));color:var(--tintt,var(--gold));}
+
+  /* ---------- Build card ---------- */
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    margin-bottom:12px;overflow:hidden;transition:.25s;
+  }
+  .card:active{transform:scale(.995);}
+  .card-top{padding:13px 34px 11px 15px;cursor:pointer;position:relative;}
+  .chev{
+    position:absolute;right:16px;top:17px;width:8px;height:8px;
+    border-right:1.5px solid var(--text-mute);border-bottom:1.5px solid var(--text-mute);
+    transform:rotate(-135deg);transition:transform .25s;opacity:.55;
+  }
+  .card.collapsed .chev{transform:rotate(45deg);}
+  .card-top::after{
+    content:"";position:absolute;left:0;right:0;top:0;height:1px;
+    background:linear-gradient(90deg,transparent,var(--tc),transparent);opacity:.35;
+  }
+  .title-row{display:flex;align-items:center;gap:9px;}
+  .tier{
+    flex:0 0 auto;font-size:10.5px;font-weight:800;letter-spacing:.04em;
+    padding:3px 8px;border-radius:6px;color:#120e1a;background:var(--tc);
+    box-shadow:0 0 12px -4px var(--tc);
+  }
+  .bname{font-size:15px;font-weight:700;letter-spacing:.02em;}
+  .bname small{display:block;font-size:9px;font-weight:500;letter-spacing:.09em;color:var(--text-mute);text-transform:uppercase;margin-top:1px;}
+  .role{margin:8px 0 0;font-size:12.5px;color:var(--text-dim);line-height:1.55;}
+  .card-body{
+    display:grid;grid-template-rows:1fr;transition:grid-template-rows .28s ease, opacity .2s;
+  }
+  .card.collapsed .card-body{grid-template-rows:0fr;opacity:0;}
+  .card-body-inner{overflow:hidden;min-height:0;}
+  .spec{padding:0 15px 14px;}
+  .spec-row{display:flex;gap:8px;padding:7px 0;border-top:1px solid var(--line-soft);}
+  .spec-row:first-child{border-top:none;}
+  .spec-k{
+    flex:0 0 58px;font-size:10.5px;color:var(--text-mute);letter-spacing:.06em;padding-top:2px;
+  }
+  .spec-v{flex:1;display:flex;flex-wrap:wrap;gap:4px;}
+  .tag{
+    font-size:10.5px;padding:2px 7px;border-radius:6px;line-height:1.5;
+    background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--text-dim);
+    max-width:100%;overflow-wrap:anywhere;
+  }
+  .tag.core{background:rgba(232,196,116,.1);border-color:rgba(232,196,116,.32);color:#f0d390;font-weight:600;}
+  .tag.relic{background:rgba(168,120,216,.11);border-color:rgba(168,120,216,.3);color:#cfaae8;}
+  .tag.relic-core{background:rgba(168,120,216,.2);border-color:rgba(168,120,216,.55);color:#e0c2f5;font-weight:600;}
+  .prose{padding:9px 11px;border-radius:9px;background:rgba(255,255,255,.025);font-size:12.5px;color:var(--text-dim);line-height:1.62;}
+  .prose b{color:var(--text);font-weight:600;}
+  .prose.warn{background:rgba(200,82,74,.08);border:1px solid rgba(200,82,74,.18);}
+  .prose.warn b{color:#e59b95;}
+  .block{padding:9px 0 2px;border-top:1px solid var(--line-soft);}
+  .mini-label{
+    font-size:10px;color:var(--text-mute);letter-spacing:.1em;margin:0 0 5px;font-weight:500;
+  }
+
+  /* ---------- Relic list ---------- */
+  .tier-group{margin-bottom:18px;}
+  .tier-head{display:flex;align-items:center;gap:8px;margin:0 0 8px;}
+  .tier-head .badge{
+    font-size:11px;font-weight:800;padding:3px 9px;border-radius:6px;color:#120e1a;background:var(--tc);
+  }
+  .tier-head .desc{font-size:11px;color:var(--text-mute);letter-spacing:.03em;}
+  .relic{
+    display:flex;gap:9px;padding:9px 12px;background:var(--surface);
+    border:1px solid var(--line);border-radius:10px;margin-bottom:5px;
+  }
+  .relic .rn{flex:0 0 82px;font-size:12.5px;font-weight:600;color:var(--text);line-height:1.4;}
+  .relic .rn em{display:block;font-style:normal;font-size:8.5px;letter-spacing:.05em;color:var(--text-mute);text-transform:uppercase;font-weight:500;}
+  .relic .rd{flex:1;min-width:0;font-size:11.5px;color:var(--text-dim);line-height:1.55;}
+  .relic .who{
+    flex:0 0 auto;font-size:9px;color:var(--text-mute);border:1px solid var(--line);
+    border-radius:4px;padding:0 4px;height:16px;line-height:15px;margin-top:1px;white-space:nowrap;
+  }
+  .who.i{color:#e08078;border-color:rgba(200,82,74,.4);}
+  .who.s{color:#6fbf7c;border-color:rgba(79,168,95,.4);}
+  .who.d{color:#6fb6e8;border-color:rgba(74,159,216,.4);}
+  .who.w{color:#bd97e6;border-color:rgba(168,120,216,.4);}
+  .who.a{color:var(--gold);border-color:rgba(232,196,116,.35);}
+
+  /* ---------- Relic reverse lookup ---------- */
+  .rmap-group{margin-bottom:20px;scroll-margin-top:66px;}
+  .rmap-gtitle{
+    display:flex;align-items:baseline;gap:8px;margin:0 0 2px;
+    padding-bottom:7px;border-bottom:1px solid var(--line);
+  }
+  .rmap-gtitle h3{margin:0;font-size:14px;letter-spacing:.04em;color:var(--gold);}
+  .rmap-gtitle .cnt{font-size:10px;color:var(--text-mute);}
+  .rmap-gtitle .hint{font-size:10.5px;color:var(--text-mute);margin-left:auto;text-align:right;}
+  .rm{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid var(--line-soft);}
+  .rm-body{flex:1;min-width:0;}
+  .rm:last-child{border-bottom:none;}
+  .rm-top{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;}
+  .rm-name{font-size:13.5px;font-weight:700;color:var(--text);letter-spacing:.01em;}
+  .rm-name em{
+    font-style:normal;font-size:9px;letter-spacing:.05em;color:var(--text-mute);
+    text-transform:uppercase;margin-left:5px;font-weight:500;
+  }
+  .rm-rar{
+    font-size:8.5px;padding:1px 5px;border-radius:4px;line-height:1.6;
+    border:1px solid var(--line);color:var(--text-mute);white-space:nowrap;
+  }
+  .rm-rar.boss{color:#e8c474;border-color:rgba(232,196,116,.35);background:rgba(232,196,116,.07);}
+  .rm-rar.shop{color:#79c9b6;border-color:rgba(121,201,182,.3);}
+  .rm-rar.rare{color:#9db4e0;border-color:rgba(157,180,224,.3);}
+  .rm-eff{font-size:11.5px;color:var(--text-dim);margin:4px 0 7px;line-height:1.58;}
+  .blinks{display:flex;flex-wrap:wrap;gap:5px;}
+  .blink{
+    font-size:10.5px;padding:2px 8px;border-radius:5px;cursor:pointer;
+    background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--text-dim);
+    transition:.18s;line-height:1.6;
+  }
+  .blink:active{transform:scale(.96);}
+  .blink.i{color:#e08078;border-color:rgba(200,82,74,.42);background:rgba(200,82,74,.09);}
+  .blink.s{color:#6fbf7c;border-color:rgba(79,168,95,.42);background:rgba(79,168,95,.09);}
+  .blink.d{color:#6fb6e8;border-color:rgba(74,159,216,.42);background:rgba(74,159,216,.09);}
+  .blink.w{color:#bd97e6;border-color:rgba(168,120,216,.42);background:rgba(168,120,216,.09);}
+  .blink.any{color:var(--text-mute);}
+  .rm-verdict{font-size:11px;color:var(--text-mute);margin-top:7px;line-height:1.58;}
+  .rm-verdict b{color:var(--gold);font-weight:600;}
+
+  /* ---------- 卡牌 / 遗物 居中详情 ---------- */
+  #tipmask{
+    position:fixed;inset:0;z-index:190;display:none;
+    background:radial-gradient(circle at 50% 42%,rgba(22,14,34,.74),rgba(4,2,8,.92));
+    backdrop-filter:blur(7px) saturate(.85);-webkit-backdrop-filter:blur(7px) saturate(.85);
+  }
+  #tipmask.on{display:block;animation:maskIn .22s ease both;}
+  @media (hover:hover){ #tipmask{pointer-events:none;} }
+  @keyframes maskIn{from{opacity:0;}to{opacity:1;}}
+
+  #tipbox{
+    position:fixed;z-index:200;display:none;
+    left:50%;top:50%;transform:translate(-50%,-50%);
+    width:316px;max-width:calc(100vw - 36px);max-height:88vh;overflow-y:auto;
+    background:
+      radial-gradient(130% 70% at 50% 0%,var(--tint,rgba(255,255,255,.05)),transparent 64%),
+      linear-gradient(180deg,#251d33,#141019 78%);
+    border:1px solid #493a63;border-radius:20px;
+    box-shadow:
+      0 34px 90px rgba(0,0,0,.86),
+      0 0 0 1px rgba(255,255,255,.045) inset,
+      0 0 80px -34px var(--glow,#e8c474);
+    padding:18px 18px 17px;text-align:center;
+    -webkit-overflow-scrolling:touch;
+  }
+  #tipbox.on{display:block;animation:popIn .26s cubic-bezier(.2,.9,.25,1) both;}
+  #tipbox::-webkit-scrollbar{width:0;}
+  @keyframes popIn{
+    from{opacity:0;transform:translate(-50%,-46%) scale(.92);}
+    to{opacity:1;transform:translate(-50%,-50%) scale(1);}
+  }
+
+  .art{
+    position:relative;width:200px;height:258px;margin:1px auto 16px;
+    border-radius:12px;overflow:hidden;background:transparent;
+    box-shadow:0 18px 44px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.075);
+  }
+  .art.relic{
+    width:106px;height:106px;border-radius:18px;margin-bottom:13px;
+    box-shadow:0 16px 38px rgba(0,0,0,.62),0 0 0 1px rgba(255,255,255,.08),
+               0 0 52px -14px var(--glow,#e8c474);
+  }
+  .art img{
+    display:block;width:100%;height:100%;object-fit:cover;position:relative;z-index:2;
+    opacity:0;transition:opacity .28s ease;
+  }
+  .art img.ready{opacity:1;}
+  .art-fb{
+    position:absolute;inset:0;z-index:1;display:grid;place-items:center;color:var(--mc2,#9a92ad);
+    background:linear-gradient(168deg,var(--mc1,rgba(255,255,255,.05)),#100c18 78%);
+  }
+  .art-fb svg{opacity:.8;filter:drop-shadow(0 0 12px currentColor);}
+  .art.relic .art-fb svg{width:44px;height:44px;}
+
+  .tip-name{
+    font-family:"Songti SC","Noto Serif SC",Georgia,serif;
+    font-size:19px;font-weight:700;letter-spacing:.05em;line-height:1.25;color:#f6f1e2;
+  }
+  .tip-name em{
+    display:block;font-style:normal;font-family:inherit;font-size:8px;
+    letter-spacing:.22em;color:var(--text-mute);text-transform:uppercase;
+    margin-top:5px;font-weight:500;
+  }
+  .tip-meta{
+    display:flex;justify-content:center;flex-wrap:wrap;gap:5px;margin-top:10px;
+  }
+  .tip-meta span{
+    font-size:9.5px;padding:2px 8px;border-radius:5px;letter-spacing:.04em;
+    border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--text-dim);
+  }
+  .tip-meta span.ttier{
+    background:var(--tc);color:#140f1c;border-color:transparent;font-weight:800;
+    letter-spacing:.02em;box-shadow:0 0 16px -5px var(--tc);
+  }
+  .tip-meta span.hi{
+    color:var(--gold);border-color:rgba(232,196,116,.32);
+    background:rgba(232,196,116,.09);font-weight:700;
+  }
+  .tip-eff{
+    margin-top:14px;padding-top:13px;border-top:1px solid #33294a;
+    font-size:12.5px;line-height:1.7;color:var(--text);text-align:left;
+  }
+  .tip-up{
+    margin-top:9px;padding:7px 10px;border-radius:7px;text-align:left;
+    background:rgba(232,196,116,.06);border:1px solid rgba(232,196,116,.13);
+    font-size:10.5px;color:#e3d0a2;line-height:1.55;
+  }
+  .tip-up span{
+    display:inline-block;margin-right:6px;padding:0 5px;border-radius:3px;
+    background:rgba(232,196,116,.18);color:var(--gold);font-size:8.5px;letter-spacing:.08em;
+  }
+  .tip-builds{
+    display:flex;flex-wrap:wrap;gap:5px;justify-content:center;
+    margin-top:12px;padding-top:11px;border-top:1px solid #33294a;
+  }
+  .tip-builds-k{
+    width:100%;text-align:center;font-size:9px;letter-spacing:.14em;
+    color:var(--text-mute);margin-bottom:1px;
+  }
+  .tip-close{
+    position:absolute;top:9px;right:9px;width:26px;height:26px;border-radius:50%;
+    border:1px solid var(--line);background:rgba(12,9,18,.72);color:var(--text-mute);
+    font-size:13px;line-height:1;display:none;place-items:center;cursor:pointer;
+    padding:0;z-index:4;font-family:inherit;
+  }
+  @media (hover:none){ .tip-close{display:grid;} }
+
+  .tag.tappable{cursor:pointer;}
+  .tag.tappable:active{transform:scale(.97);}
+  .rdot{
+    position:relative;overflow:hidden;
+    flex:0 0 32px;width:32px;height:32px;border-radius:8px;display:grid;place-items:center;
+    border:1px solid var(--rc);background:linear-gradient(160deg,var(--rc)22,#0d0a12 82%);
+    color:var(--rc);margin-top:0;flex-shrink:0;
+  }
+  .rdot-fb{position:absolute;inset:0;display:grid;place-items:center;opacity:.85;}
+  .rdot img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:2;
+    background:#0d0a12;padding:1px;
+  }
+
+  /* ---------- Tips ---------- */
+  .tip{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:10px;}
+  .tip h3{margin:0 0 6px;font-size:13px;color:var(--gold);letter-spacing:.03em;}
+  .tip p{margin:0;font-size:12.5px;color:var(--text-dim);line-height:1.68;}
+  .tip ul{margin:6px 0 0;padding-left:16px;font-size:12.5px;color:var(--text-dim);}
+  .tip li{margin-bottom:4px;}
+  .tip li b{color:var(--text);}
+
+  footer{margin-top:26px;padding:16px 0 8px;text-align:center;font-size:10.5px;color:var(--text-mute);line-height:1.9;border-top:1px solid var(--line-soft);}
+  footer .warnbox{
+    display:inline-block;margin-bottom:8px;padding:6px 11px;border-radius:8px;
+    border:1px dashed rgba(200,82,74,.3);background:rgba(200,82,74,.06);color:#d99b95;font-size:10.5px;
+  }
+
+  .hidden{display:none !important;}
+  #toTop{
+    position:fixed;right:20px;
+    bottom:calc(82px + env(safe-area-inset-bottom, 0px));
+    width:40px;height:40px;border-radius:50%;opacity:.78;
+    background:var(--surface2);border:1px solid var(--line);color:var(--gold);
+    font-size:17px;line-height:1;display:none;place-items:center;z-index:60;
+    box-shadow:0 8px 24px rgba(0,0,0,.55);cursor:pointer;padding:0;
+    font-family:inherit;
+  }
+  #toTop.show{display:grid;}
+  #toTop:active{transform:scale(.94);}
+
+  /* ---------- 搜索 ---------- */
+  #searchBar{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    background:linear-gradient(180deg,rgba(13,10,18,.72) 0%,#0d0a12 22%);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    border-top:1px solid var(--line-soft);
+    box-shadow:0 -14px 28px -18px rgba(0,0,0,.9);
+  }
+  .s-inner{
+    display:flex;align-items:center;gap:9px;height:42px;border-radius:12px;
+    background:var(--surface);border:1px solid var(--line);padding:0 13px;
+    color:var(--text-mute);font-size:12.5px;cursor:pointer;
+    transition:border-color .2s, background .2s;
+    max-width:720px;margin:0 auto;
+  }
+  .s-inner:active{background:var(--surface2);border-color:rgba(232,196,116,.4);}
+  .s-inner svg{color:var(--gold);opacity:.85;flex:0 0 auto;}
+  .s-kbd{
+    margin-left:auto;font-size:10px;padding:2px 7px;border-radius:5px;
+    border:1px solid var(--line);color:var(--text-mute);line-height:1.3;
+  }
+  #searchLayer{
+    position:fixed;inset:0;z-index:150;display:none;flex-direction:column;
+    background:rgba(10,7,15,.97);
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  }
+  #searchLayer.on{display:flex;animation:maskIn .18s ease both;}
+  .s-bar{display:flex;gap:9px;align-items:center;padding:14px 14px 11px;border-bottom:1px solid var(--line-soft);max-width:760px;width:100%;margin:0 auto;}
+  #sInput{
+    flex:1;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    color:var(--text);font-size:14px;padding:10px 13px;outline:none;font-family:inherit;
+    -webkit-appearance:none;
+  }
+  #sInput:focus{border-color:rgba(232,196,116,.45);box-shadow:0 0 0 3px rgba(232,196,116,.07);}
+  #sInput::placeholder{color:var(--text-mute);}
+  .s-cancel{background:none;border:none;color:var(--text-dim);font-size:13px;padding:6px 2px;cursor:pointer;font-family:inherit;white-space:nowrap;}
+  .s-filters{
+    display:flex;gap:6px;padding:10px 14px 6px;overflow-x:auto;max-width:760px;width:100%;margin:0 auto;
+    scrollbar-width:none;-ms-overflow-style:none;
+  }
+  .s-filters::-webkit-scrollbar{display:none;}
+  .s-f{
+    flex:0 0 auto;font-size:11.5px;padding:5px 13px;border-radius:999px;
+    border:1px solid var(--line);background:transparent;color:var(--text-mute);
+    cursor:pointer;font-family:inherit;transition:.18s;white-space:nowrap;
+  }
+  .s-f.on{
+    background:rgba(232,196,116,.12);border-color:rgba(232,196,116,.45);
+    color:var(--gold);font-weight:600;
+  }
+  #sResults{flex:1;min-height:0;overflow-y:auto;padding:4px 14px 40px;-webkit-overflow-scrolling:touch;max-width:760px;width:100%;margin:0 auto;}
+  .s-item{display:flex;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;}
+  .s-item:active{opacity:.65;}
+  .s-ico{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;flex:0 0 34px;}
+  .s-name{font-size:13px;font-weight:600;color:var(--text);display:flex;align-items:center;gap:6px;}
+  .s-kind{font-size:8.5px;padding:1px 5px;border-radius:4px;border:1px solid var(--line);color:var(--text-mute);font-weight:400;}
+  .s-sub{
+    font-size:10.5px;color:var(--text-mute);margin-top:3px;line-height:1.45;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+  .s-empty{padding:44px 0;text-align:center;color:var(--text-mute);font-size:12.5px;line-height:1.9;}
+  .s-count{font-size:10px;color:var(--text-mute);padding:9px 0 4px;letter-spacing:.06em;}
+  .fadein{animation:fade .32s ease both;}
+  @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+  @media(min-width:680px){
+    body{font-size:14.5px;}
+    h1{font-size:34px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Slay the Spire</div>
+    <h1>爬塔速查</h1>
+    <div class="sub">四职业 Build × 遗物适配 · T0–T3</div>
+    <div class="edition"><span class="dot"></span>仅收录一代 · 4 职业</div>
+  </header>
+
+  <nav class="chars" id="chars"></nav>
+  <div class="views" id="views">
+    <div class="view active" data-view="build">Build 图鉴</div>
+    <div class="view" data-view="rmap">遗物反查</div>
+    <div class="view" data-view="relic">遗物总榜</div>
+    <div class="view" data-view="tips">实战要点</div>
+  </div>
+
+  <main id="main"></main>
+
+  <button id="toTop" aria-label="回到顶部">↑</button>
+
+  <div id="searchBar">
+    <div class="s-inner" id="searchBarBtn" role="button" aria-label="搜索">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16 16"/></svg>
+      <span>搜索卡牌 / 遗物 / 流派</span>
+      <span class="s-kbd">/</span>
+    </div>
+  </div>
+
+  <div id="searchLayer">
+    <div class="s-bar">
+      <input id="sInput" type="search" placeholder="搜卡牌 / 遗物 / 流派" autocomplete="off" spellcheck="false">
+      <button class="s-cancel" id="sCancel">取消</button>
+    </div>
+    <div class="s-filters" id="sFilters">
+      <button class="s-f on" data-f="all">全部</button>
+      <button class="s-f" data-f="card">卡牌</button>
+      <button class="s-f" data-f="relic">遗物</button>
+      <button class="s-f" data-f="build">流派</button>
+    </div>
+    <div id="sResults"></div>
+  </div>
+
+  <div id="tipmask"></div>
+  <div id="tipbox" role="tooltip"></div>
+
+  <footer>
+    <div class="warnbox">本页只覆盖《杀戮尖塔》一代（2019 正式版）</div>
+    <div>二代《Slay the Spire 2》的角色（Necrobinder / Regent 等）、<br>遗物与机制完全不同，请勿混用本页结论。</div>
+    <div style="margin-top:6px;opacity:.7">梯队为社区共识向的高进阶（A15–A20）主观排序，非绝对强度</div>
+    <div style="margin-top:8px;opacity:.55;font-size:10px">卡图与遗物图标素材来自 slaythespire.wiki.gg，版权归 Mega Crit Games 所有，仅供个人查阅<br>首次查看需联网加载图片，离线时自动显示为手绘图标</div>
+  </footer>
+</div>
+
+<script>
+/* ============================================================
+   数据层：仅一代（Slay the Spire 1）
+   ============================================================ */
+
+const CHARS = {
+  ironclad: {
+    cn:'铁甲战士', en:'Ironclad', color:'var(--ironclad)', tint:'rgba(200,82,74,.10)',
+    power:'综合 A 级 · 新手最友好',
+    tagline:'用血量换节奏的暴力职业，靠燃烧之血把伤害当资源花。',
+    start:['初始遗物：燃烧之血，「战斗结束回复 6 点生命」','基础血量 80，全职业最高（进阶会降低）'],
+    builds:[
+      {
+        tier:'T0', name:'腐化消耗流', en:'Corruption Exhaust',
+        role:'全游戏最强引擎之一：把技能牌烧成 0 费，再用烧牌换抽牌和格挡，卡组越打越薄越强。',
+        core:['腐化 Corruption','黑暗之拥 Dark Embrace','无惧疼痛 Feel No Pain'],
+        key:['战斗专注 Battle Trance','燃烧契约 Burning Pact','耸肩无视 Shrug It Off','坚毅 True Grit','哨卫 Sentinel'],
+        rc:['枯木树枝 Dead Branch'],
+        rg:['卡戎之灰 Charon\'s Ashes','干瘪之手 Mummified Hand','鸟面瓮 Bird-Faced Urn','符文金字塔 Runic Pyramid','医药箱 Medical Kit'],
+        play:'腐化落地后技能牌全变 0 费并消耗 → 每消耗一张触发无痛给格挡、黑暗之拥抽牌 → 卡组迅速被烧成只剩攻击牌。有<b>枯木树枝</b>时每消耗一张随机补一张牌，等于永动机，这是全游戏公认最强的牌组 combo。',
+        trap:'成型前很脆，第 1 幕别硬追消耗件；没有腐化时不要堆一堆「消耗时触发」的牌，它们只会变成白板。打长线 Boss 注意别把自己的格挡来源提前烧光。'
+      },
+      {
+        tier:'T1', name:'力量流', en:'Strength Stack',
+        role:'最稳定的上分路线：力量每点让每次攻击 +1，多段攻击能重复吃加成，收益是乘法级的。',
+        core:['恶魔形态 Demon Form','燃烧 Inflame','观察弱点 Spot Weakness','突破极限 Limit Break'],
+        key:['重刃 Heavy Blade','旋风斩 Whirlwind','飞剑回旋镖 Sword Boomerang','双重打击 Twin Strike','活动肌肉 Flex'],
+        rc:['金刚杵 Vajra','红头骨 Red Skull'],
+        rg:['突变之力 Mutagenic Strength','手里剑 Shuriken','赤牛 Akabeko','贤者之石 Philosopher\'s Stone'],
+        play:'前两回合先保命，等恶魔形态起来后用突破极限翻倍，再靠<b>重刃</b>（力量吃 3 次，升级 5 次）或旋风斩收尾。判断起手：燃烧=稳定底座、观察弱点=便宜高效但要读意图、恶魔形态=上限高但 3 费那回合很痛。',
+        trap:'慢启动是死因。第 1 幕精英不会等你叠力量；只有力量没有放大器（多段 / 重刃）时，力量牌就是慢热 Buff。'
+      },
+      {
+        tier:'T2', name:'格挡堡垒流', en:'Barricade · Body Slam',
+        role:'格挡不清空，然后把格挡直接转换成伤害。极安全，但非常吃关键稀有牌。',
+        core:['壁垒 Barricade','巩固 Entrench','全身撞击 Body Slam','势不可当 Juggernaut'],
+        key:['金属化 Metallicize','坚毅 True Grit','耸肩无视 Shrug It Off','火焰屏障 Flame Barrier'],
+        rc:['外卡钳 Calipers','锚 Anchor'],
+        rg:['铜制鳞片 Bronze Scales','船夹板 Horn Cleat','结实绷带 Tough Bandages'],
+        play:'壁垒让格挡跨回合保留，巩固直接翻倍，全身撞击把当前格挡全砸出去。成型后基本不掉血，适合对付多段攻击的精英。',
+        trap:'没有壁垒时这套等于半套废牌，别为了它硬拿；外卡钳只是替代品，且会被打穿。爆发不足，遇到高血量 Boss 容易拖到自己先崩。'
+      },
+      {
+        tier:'T3', name:'撕裂自伤流', en:'Rupture · Self-Damage',
+        role:'主动掉血换力量，走高风险高回报。娱乐性很强，A20 稳定性差。',
+        core:['撕裂 Rupture','放血 Bloodletting','祭品 Offering','狂暴 Berserk'],
+        key:['燃烧之血 Burning Blood','死亡收割 Reaper','双重打击 Twin Strike'],
+        rc:['自成型黏土 Self-Forming Clay'],
+        rg:['符文立方体 Runic Cube','小血瓶 Blood Vial','带骨肉 Meat on the Bone','神圣树皮 Sacred Bark'],
+        play:'撕裂在场时每次自伤都转成力量，靠放血 / 献祭反复触发，再用收割把血吸回来。',
+        trap:'极度依赖撕裂，没有它就是自杀流；遇到无法回复的场合（如某些 Boss 连战）容易翻车。不推荐作为冲分路线。'
+      }
+    ]
+  },
+
+  silent: {
+    cn:'静默猎手', en:'Silent', color:'var(--silent)', tint:'rgba(79,168,95,.10)',
+    power:'综合 S 级 · 上限最高',
+    tagline:'血量最少但手段最多，毒、飞刀、弃牌三套体系都能通 A20。',
+    start:['初始遗物：蛇之戒指，「每场战斗开始抽 2 张牌」','基础血量 70，全职业最低（进阶会降低）'],
+    builds:[
+      {
+        tier:'T0', name:'毒流', en:'Poison',
+        role:'无视格挡的穿透伤害，跨回合自动结算，是所有流派里容错最高的。',
+        core:['毒雾 Noxious Fumes','催化剂 Catalyst','致命毒药 Deadly Poison','弹跳药瓶 Bouncing Flask'],
+        key:['尸爆 Corpse Explosion','涂毒 Envenom','幽魂形态 Wraith Form','后空翻 Backflip','杂技 Acrobatics','爆发 Burst'],
+        rc:['异蛇头骨 Snecko Skull','扭曲漏斗 Twisted Funnel'],
+        rg:['生物样本 The Specimen','纸鹤 Paper Krane','螺类化石 Fossilized Helix','香炉 Incense Burner'],
+        play:'先把毒叠到基数，再用<b>催化剂</b>翻倍（升级后三倍），两三轮就能堆到几百层。之后全力防守拖回合，让毒自己结算。优先升级催化剂，是质变。',
+        trap:'前期没有毒雾 / 催化剂时很弱。敌人有<b>人工制品</b>会直接吃掉毒层；时间吞噬者限制出牌数，别把关键牌留到最后。'
+      },
+      {
+        tier:'T1', name:'小刀流', en:'Shiv',
+        role:'用海量 0 费小刀堆触发次数，配合精准和手里剑/苦无滚雪球。',
+        core:['刀刃之舞 Blade Dance','无限刀刃 Infinite Blades','精准 Accuracy','终结技 Finisher'],
+        key:['斗篷与匕首 Cloak and Dagger','钢铁风暴 Storm of Steel','余像 After Image','涂毒 Envenom','凌迟 Thousand Cuts'],
+        rc:['手里剑 Shuriken','苦无 Kunai','袖剑 Wrist Blade'],
+        rg:['不休陀螺 Unceasing Top','精致折扇 Ornamental Fan','赤牛 Akabeko'],
+        play:'靠攻击次数触发成长：每回合打满 3 次攻击就涨力量/敏捷，刀越多越强。终结技在出刀后打出，伤害按本回合出牌数翻倍。',
+        trap:'单把刀伤害低，遇到高格挡敌人很吃力；怕时间吞噬者（每回合 12 张上限）和臃肿卡组。'
+      },
+      {
+        tier:'T1', name:'弃牌流', en:'Discard',
+        role:'把弃牌变成收益，用战术大师和反射反复回能量、抽牌，节奏极快。',
+        core:['杂技 Acrobatics','计算下注 Calculated Gamble','战术大师 Tactician','本能反应 Reflex'],
+        key:['内脏切除 Eviscerate','华丽收场 Grand Finale','计划妥当 Well-Laid Plans','早有准备 Prepared','肾上腺素 Adrenaline'],
+        rc:['铜钹 Tingsha','结实绷带 Tough Bandages'],
+        rg:['悬浮风筝 Hovering Kite','符文金字塔 Runic Pyramid'],
+        play:'先用杂技之类的牌制造弃牌，战术大师被弃时给能量、反射被弃时抽牌，形成「弃→抽→再弃」的循环，最后用内脏切除收尾。',
+        trap:'上手门槛最高。弃牌出口不够时会「弃了一堆牌却没能量打」；卡组必须精简，否则循环不起来。'
+      },
+      {
+        tier:'T2', name:'无限流', en:'Infinite Draw',
+        role:'高进阶专用：把卡组压到极小，用两张牌互相抽循环，实现单回合无限。',
+        core:['杂技 Acrobatics','本能反应 Reflex','战术大师 Tactician','后空翻 Backflip'],
+        key:['肾上腺素 Adrenaline','计划妥当 Well-Laid Plans'],
+        rc:['符文金字塔 Runic Pyramid','空鸟笼 Empty Cage'],
+        rg:['怀表 Pocketwatch','问号牌 Question Card'],
+        play:'目标是把非消耗牌压到 6 张以内，靠抽牌牌与弃牌牌互为循环。成型即无条件胜利。',
+        trap:'路上任何诅咒 / 状态牌都会断链；成型前基本是残废卡组，需要极高路线规划能力。'
+      }
+    ]
+  },
+
+  defect: {
+    cn:'故障机器人', en:'Defect', color:'var(--defect)', tint:'rgba(74,159,216,.10)',
+    power:'综合 A 级 · 后期最强',
+    tagline:'充能球职业，前两幕最难受，一旦集中叠起来就是自动化的杀戮机器。',
+    start:['初始遗物：破损核心，「战斗开始生成 1 个闪电球」','基础血量 75（进阶会降低）'],
+    builds:[
+      {
+        tier:'T0', name:'冰霜坦克流', en:'Frost Orb',
+        role:'A20 最稳的通关路线：冰霜球每回合自动给格挡，集中越高越厚，几乎不掉血。',
+        core:['冰川 Glacier','冷静头脑 Coolheaded','暴雪 Blizzard','扩容 Capacitor','碎片整理 Defragment'],
+        key:['冰寒 Chill','回响形态 Echo Form','缓冲 Buffer','循环 Loop','递归 Recursion','多重释放 Multi-Cast'],
+        rc:['数据磁盘 Data Disk','符文电容器 Runic Capacitor'],
+        rg:['机械臂 Inserter','冻结核心 Frozen Core','镀金缆线 Gold-Plated Cables','核能电池 Nuclear Battery'],
+        play:'优先堆集中（碎片整理是地基，比任何单张攻击牌都值），再用冰川 / 冷静铺满冰霜球。每回合自动获得几十点格挡后，用<b>暴雪</b>按本场冰霜球数量做全屏清算。',
+        trap:'节奏慢，怕需要极限爆发的场合；集中被削弱（如某些敌人）时格挡会骤降。别混一堆雷电流的牌进冰霜卡组稀释核心。'
+      },
+      {
+        tier:'T1', name:'闪电球流', en:'Lightning Orb',
+        role:'最直接的输出形态：多个闪电球每回合自动打伤害，电动力学一开就是全屏。',
+        core:['电动力学 Electrodynamics','电击 Zap','球状闪电 Ball Lightning','雷霆打击 Thunder Strike'],
+        key:['雷暴 Storm','碎片整理 Defragment','扩容 Capacitor','超频 Overclock','充电 Charge Battery'],
+        rc:['数据磁盘 Data Disk'],
+        rg:['镀金缆线 Gold-Plated Cables','核能电池 Nuclear Battery','符文电容器 Runic Capacitor','冰淇淋 Ice Cream'],
+        play:'电动力学把闪电的随机单体变成全体，是这套的关键质变牌；之后靠风暴（每打能力牌生成闪电球）+ 多球位滚输出。',
+        trap:'没有电动力学时打群怪非常痛苦；防御全靠临场找格挡牌，容易暴毙。'
+      },
+      {
+        tier:'T2', name:'能力流', en:'Power / Creative AI',
+        role:'把能力牌当平 A 打，靠创意 AI 每回合白送能力，数值滚雪球。',
+        core:['创造性AI Creative AI','散热片 Heatsinks','回响形态 Echo Form','缓冲 Buffer'],
+        key:['偏差认知 Biased Cognition','扩容 Capacitor','机器学习 Machine Learning','聚变 Fusion'],
+        rc:['干瘪之手 Mummified Hand','鸟面瓮 Bird-Faced Urn'],
+        rg:['符文圆顶 Runic Dome','冰淇淋 Ice Cream','问号牌 Question Card'],
+        play:'创意 AI 每回合送一张能力牌，散热片让每张能力牌都抽牌，干瘪之手让手牌随机变 0 费，形成一回合打出十几张牌的滚雪球。',
+        trap:'唯一的天敌是第三幕 Boss<b>觉醒者</b>：你每打一张能力牌它就加力量，几乎必死。偏差认知没有神器 / 橙色药丸兜底会掉集中。'
+      },
+      {
+        tier:'T3', name:'暗球 / 爪击流', en:'Dark Orb · Claw',
+        role:'两套偏娱乐的爆发路线：暗球蓄力一发秒 Boss，或 0 费爪击无限成长。',
+        core:['漆黑 Darkness','多重释放 Multi-Cast','爪击 Claw','万物一心 All For One'],
+        key:['递归 Recursion','循环 Loop','蒸汽护壁 Steam Barrier','重启 Reboot','内核加速 Turbo'],
+        rc:['共生病毒 Symbiotic Virus'],
+        rg:['手里剑 Shuriken','镀金缆线 Gold-Plated Cables','化学物X Chemical X'],
+        play:'暗球靠黑暗叠伤害，多重释放一次引爆；爪击流靠 Claw 每次打出提升本场所有爪击的伤害，万物一心回收 0 费牌反复打。',
+        trap:'两套都极度吃牌序，爪击流在没凑齐前伤害惨不忍睹；暗球对群体无力。冲分不建议作为主路线。'
+      }
+    ]
+  },
+
+  watcher: {
+    cn:'观者', en:'Watcher', color:'var(--watcher)', tint:'rgba(168,120,216,.10)',
+    power:'综合 S+ 级 · 上限最高',
+    tagline:'姿态切换职业，愤怒双倍伤害、平静退出回能量，是全游戏最容易打出无限的角色。',
+    start:['初始遗物：至纯之水，「战斗开始将 1 张奇迹放入手牌」','基础血量 72（进阶会降低）'],
+    builds:[
+      {
+        tier:'T0', name:'姿态循环无限流', en:'Stance Infinite',
+        role:'全游戏最强的单回合斩杀：两张 1 费牌互相切换姿态，每循环净赚能量并抽 2 张，直接一回合打死。',
+        core:['暴怒 Eruption','内心宁静 Inner Peace','不惧妖邪 Fear No Evil','猛虎下山 Rushdown'],
+        key:['心灵堡垒 Mental Fortress','以手拒之 Talk to the Hand','化智为空 Empty Mind','腾跃 Vault','潦草急就 Scrawl'],
+        rc:['紫色莲花 Violet Lotus'],
+        rg:['泪滴吊坠盒 Teardrop Locket','符文金字塔 Runic Pyramid','空鸟笼 Empty Cage','怀表 Pocketwatch'],
+        play:'把卡组删到 6 张以下（先删 4 张防御，再删打击）。升级爆发后它只花 1 费：平静 → 愤怒得 2 能量、突袭抽 2 张 → 抽回的两张正是平静牌和爆发 → 循环成立，爆发本身带伤害，一回合带走。',
+        trap:'必须极度精简，路上任何诅咒 / 状态牌都会断链；没有紫色莲花时不能用 2 费的警惕替代。这是一套「强迫成型」的打法，其他角色别学。'
+      },
+      {
+        tier:'T1', name:'姿态舞（常规）', en:'Stance Dance',
+        role:'不追求无限，靠平静攒能量、愤怒打爆发、及时退出姿态的安全打法。',
+        core:['暴怒 Eruption','警惕 Vigilance','发泄 Tantrum','化拳为空 Empty Fist'],
+        key:['疾风连击 Flurry of Blows','以手拒之 Talk to the Hand','心灵堡垒 Mental Fortress','冥想 Meditate','如水 Like Water'],
+        rc:['紫色莲花 Violet Lotus','泪滴吊坠盒 Teardrop Locket'],
+        rg:['赤牛 Akabeko','金刚杵 Vajra','香炉 Incense Burner','钨合金棍 Tungsten Rod'],
+        play:'核心循环：平静状态攒能量 → 进愤怒打双倍伤害 → 用化拳为空 / 化智为空退出姿态。发泄会自己回到抽牌堆，是免费重复的愤怒入口。',
+        trap:'<b>绝对不要以愤怒姿态结束回合</b>，你受到的伤害也是双倍。永远在打出爆发前先确认手里有退出手段或能斩杀。'
+      },
+      {
+        tier:'T2', name:'神格真言流', en:'Divinity · Mantra',
+        role:'攒 10 点真言进入神格（三倍伤害 + 3 能量），打一波超高爆发。',
+        core:['虔信 Devotion','敬拜 Worship','祈祷 Pray','五体投地 Prostrate','光辉 Brilliance'],
+        key:['诸神之黄昏 Ragnarok','渎神 Blasphemy','天人形态 Deva Form','通晓万物 Omniscience','当头棒喝 Wallop'],
+        rc:['手摇鼓 Damaru'],
+        rg:['紫色莲花 Violet Lotus','神圣树皮 Sacred Bark','冰淇淋 Ice Cream'],
+        play:'常见组合是敬拜（一次给 5 点真言）配合全知复制，单回合直接进神格；光辉的伤害随真言层数成长。',
+        trap:'太慢，需要足够防御撑到神格；渎神（下回合死亡）是赌命牌，没有斩杀把握别用。'
+      },
+      {
+        tier:'T3', name:'点穴 / 保留流', en:'Pressure Points · Retain',
+        role:'点穴无视格挡叠标记，保留流靠时之沙跨回合成长，都是偏单体的打法。',
+        core:['点穴 Pressure Points','时之沙 Sands of Time','冥想 Meditate','确立基础 Establishment'],
+        key:['坚韧 Perseverance','招牌技 Signature Move','摆手 Wave of the Hand','通晓万物 Omniscience'],
+        rc:['泪滴吊坠盒 Teardrop Locket'],
+        rg:['符文金字塔 Runic Pyramid','怀表 Pocketwatch','香炉 Incense Burner'],
+        play:'点穴每层让目标每次触发多掉血，配合多张点穴可快速叠层；保留流靠冥想 / 确立基础把牌留在手上，让时之沙每回合自动减费。',
+        trap:'对群体几乎无解，点穴还要逐目标叠；A20 下不稳定，属于知道就好的备选。'
+      }
+    ]
+  }
+};
+
+/* ============================================================
+   卡牌 / 遗物 详情库（一代）
+   卡牌格式：[中文名, 费用, 类型, 职业, 效果, 升级效果]
+   遗物格式：[中文名, 稀有度, 效果]
+   ============================================================ */
+const CARD_DB = {
+/* ---- 铁甲战士 ---- */
+"Barricade":['壁垒',3,'能力','i','格挡在回合开始时不再被移除。','费用 2'],
+"Battle Trance":['战斗专注',0,'技能','i','抽 3 张牌，本回合不能再抽牌。','抽 4 张'],
+"Berserk":['狂暴',0,'能力','i','获得 2 层易伤，每回合开始时 +1 能量。','易伤降为 1 层'],
+"Bloodletting":['放血',0,'技能','i','失去 3 点生命，获得 2 能量。','3 能量'],
+"Body Slam":['全身撞击',1,'攻击','i','造成等同于你当前格挡的伤害。','费用 0'],
+"Burning Pact":['燃烧契约',1,'技能','i','消耗一张手牌，抽 2 张牌。','抽 3 张'],
+"Corruption":['腐化',3,'能力','i','技能牌费用变为 0，但使用后被消耗。','费用 2'],
+"Dark Embrace":['黑暗之拥',2,'能力','i','每当一张牌被消耗，抽 1 张牌。','费用 1'],
+"Demon Form":['恶魔形态',3,'能力','i','每回合开始时获得 2 点力量。','3 点力量'],
+"Entrench":['巩固',2,'技能','i','将你的格挡翻倍。','费用 1'],
+"Feel No Pain":['无惧疼痛',1,'能力','i','每当一张牌被消耗，获得 3 点格挡。','4 点格挡'],
+"Flame Barrier":['火焰屏障',2,'技能','i','获得 12 点格挡；本回合受到攻击时对攻击者造成 4 点伤害。','16 格挡 / 6 伤害'],
+"Flex":['活动肌肉',0,'技能','i','获得 2 点力量，本回合结束时失去。','4 点力量'],
+"Heavy Blade":['重刃',2,'攻击','i','造成 14 点伤害，力量对其生效 3 次。','力量生效 5 次'],
+"Inflame":['燃烧',1,'能力','i','获得 2 点力量。','3 点力量'],
+"Juggernaut":['势不可当',2,'能力','i','每当你获得格挡，对随机敌人造成 5 点伤害。','7 点伤害'],
+"Limit Break":['突破极限',1,'技能','i','将你的力量翻倍。消耗。','不再消耗'],
+"Metallicize":['金属化',1,'能力','i','回合结束时获得 3 点格挡。','4 点格挡'],
+"Offering":['祭品',0,'技能','i','失去 6 点生命，获得 2 能量，抽 3 张牌。消耗。','抽 5 张'],
+"Reaper":['死亡收割',2,'攻击','i','对所有敌人造成 4 点伤害，回复等量生命。消耗。','5 点伤害'],
+"Rupture":['撕裂',1,'能力','i','每当你失去生命，获得 1 点力量。','2 点力量'],
+"Sentinel":['哨卫',1,'技能','i','获得 5 点格挡；若被消耗，获得 2 能量。','8 格挡 / 3 能量'],
+"Shrug It Off":['耸肩无视',1,'技能','i','获得 8 点格挡，抽 1 张牌。','11 点格挡'],
+"Spot Weakness":['观察弱点',1,'技能','i','若目标有攻击意图，获得 3 点力量。','4 点力量'],
+"Sword Boomerang":['飞剑回旋镖',1,'攻击','i','随机对敌人造成 3 点伤害，共 3 次。','4 次'],
+"True Grit":['坚毅',1,'技能','i','获得 7 点格挡，随机消耗一张手牌。','9 格挡，改为自选'],
+"Twin Strike":['双重打击',1,'攻击','i','造成 5 点伤害 2 次。','7 点伤害'],
+"Whirlwind":['旋风斩','X','攻击','i','对所有敌人造成 5 点伤害 X 次。','8 点伤害'],
+
+/* ---- 静默猎手 ---- */
+"Accuracy":['精准',1,'能力','s','小刀的伤害 +4。','+6'],
+"Acrobatics":['杂技',1,'技能','s','抽 3 张牌，弃 1 张牌。','抽 4 张'],
+"Adrenaline":['肾上腺素',0,'技能','s','获得 1 能量，抽 2 张牌。消耗。','2 能量'],
+"After Image":['余像',1,'能力','s','每打出一张牌，获得 1 点格挡。','2 点格挡'],
+"Backflip":['后空翻',1,'技能','s','获得 5 点格挡，抽 2 张牌。','8 点格挡'],
+"Blade Dance":['刀刃之舞',1,'技能','s','将 3 张刀加入手牌。','4 张'],
+"Bouncing Flask":['弹跳药瓶',2,'技能','s','对随机敌人施加 3 层毒，共 3 次。','4 次'],
+"Burst":['爆发',1,'技能','s','本回合下一张技能牌会打出两次。','2 张'],
+"Calculated Gamble":['计算下注',0,'技能','s','弃掉所有手牌，然后抽等量的牌。消耗。','不再消耗'],
+"Catalyst":['催化剂',1,'技能','s','将目标身上的毒翻倍。消耗。','翻三倍'],
+"Cloak and Dagger":['斗篷与匕首',1,'技能','s','获得 6 点格挡，将 1 张刀加入手牌。','2 张刀'],
+"Corpse Explosion":['尸爆',2,'技能','s','施加 6 层毒；目标死亡时对所有敌人造成等于其最大生命的伤害。','9 层毒'],
+"Deadly Poison":['致命毒药',1,'技能','s','施加 5 层毒。','7 层'],
+"Envenom":['涂毒',1,'能力','s','攻击造成未被格挡的伤害时，施加 1 层毒。','费用 0'],
+"Eviscerate":['内脏切除',3,'攻击','s','造成 7 点伤害 3 次；本回合每弃一张牌，费用 -1。','9 点伤害'],
+"Finisher":['终结技',1,'攻击','s','本回合每打出一张攻击牌，造成 6 点伤害。','8 点伤害'],
+"Grand Finale":['华丽收场',0,'攻击','s','仅当抽牌堆为空时可打出，对所有敌人造成 50 点伤害。','60 点'],
+"Infinite Blades":['无限刀刃',1,'能力','s','每回合开始时将 1 张刀加入手牌。','固有'],
+"Noxious Fumes":['毒雾',1,'能力','s','每回合开始时对所有敌人施加 2 层毒。','3 层'],
+"Prepared":['早有准备',0,'技能','s','抽 1 张牌，弃 1 张牌。','抽 2 弃 2'],
+"Reflex":['本能反应',1,'技能','s','无法主动打出；被弃置时抽 2 张牌。','抽 3 张'],
+"Storm of Steel":['钢铁风暴',1,'技能','s','弃掉所有手牌，每弃一张将 1 张升级的刀加入手牌。','2 张'],
+"Tactician":['战术大师',1,'技能','s','无法主动打出；被弃置时获得 1 能量。','2 能量'],
+"Thousand Cuts":['凌迟',2,'能力','s','每打出一张牌，对所有敌人造成 1 点伤害。','2 点'],
+"Well-Laid Plans":['计划妥当',1,'能力','s','回合结束时保留 1 张手牌。','2 张'],
+"Wraith Form":['幽魂形态',3,'能力','s','获得 2 层无形；每回合开始时失去 1 点敏捷。','3 层'],
+
+/* ---- 故障机器人 ---- */
+"All For One":['万物一心',2,'攻击','d','造成 10 点伤害，将所有 0 费牌从弃牌堆移回手牌。','14 点'],
+"Ball Lightning":['球状闪电',1,'攻击','d','造成 7 点伤害，生成 1 个闪电球。','10 点'],
+"Biased Cognition":['偏差认知',1,'能力','d','获得 4 点集中；每回合开始时失去 1 点集中。','5 点集中'],
+"Blizzard":['暴雪',1,'攻击','d','对所有敌人造成等于本场已激发冰霜球数量 ×2 的伤害。','×3'],
+"Buffer":['缓冲',2,'能力','d','防止下一次受到的伤害。','2 次'],
+"Capacitor":['扩容',1,'能力','d','获得 2 个充能球位。','3 个'],
+"Charge Battery":['充电',1,'技能','d','获得 7 点格挡，下回合 +1 能量。','10 点格挡'],
+"Chill":['冰寒',0,'技能','d','为每个敌人生成 2 个冰霜球。消耗。','3 个'],
+"Claw":['爪击',0,'攻击','d','造成 3 点伤害；本场战斗中所有爪击 +2 伤害。','+3'],
+"Coolheaded":['冷静头脑',1,'技能','d','生成 1 个冰霜球，抽 1 张牌。','抽 2 张'],
+"Darkness":['漆黑',1,'技能','d','生成 1 个暗球。','所有暗球 +6 伤害'],
+"Defragment":['碎片整理',1,'能力','d','获得 1 点集中。','2 点'],
+"Echo Form":['回响形态',3,'能力','d','每回合打出的第一张牌会打出两次。','固有'],
+"Electrodynamics":['电动力学',2,'能力','d','闪电球改为攻击所有敌人，并生成 2 个闪电球。','3 个'],
+"Fusion":['聚变',2,'技能','d','生成 1 个等离子球。','费用 1'],
+"Glacier":['冰川',2,'技能','d','获得 7 点格挡，生成 2 个冰霜球。','10 点格挡'],
+"Heatsinks":['散热片',1,'能力','d','每打出一张能力牌，抽 1 张牌。','抽 2 张'],
+"Loop":['循环',1,'能力','d','每回合开始时，最右侧的球额外触发一次被动。','2 次'],
+"Machine Learning":['机器学习',1,'能力','d','每回合开始时抽 1 张牌。','固有'],
+"Multi-Cast":['多重释放','X','技能','d','激发最右侧的球 X 次。','X+1 次'],
+"Overclock":['超频',0,'技能','d','抽 2 张牌，将 1 张灼烧加入弃牌堆。','抽 3 张'],
+"Reboot":['重启',0,'技能','d','将手牌洗回抽牌堆，抽 4 张牌。消耗。','抽 6 张'],
+"Recursion":['递归',1,'技能','d','激发最右侧的球，然后重新生成同类型的球。','费用 0'],
+"Steam Barrier":['蒸汽护壁',0,'技能','d','获得 6 点格挡；本场每打出一次，格挡 -1。','8 点格挡'],
+"Storm":['雷暴',1,'能力','d','每打出一张能力牌，生成 1 个闪电球。','固有'],
+"Thunder Strike":['雷霆打击',3,'攻击','d','随机对敌人造成 7 点伤害，次数等于本场打出的闪电球数量。','9 点'],
+"Turbo":['内核加速',0,'技能','d','获得 2 能量，将 1 张虚空加入弃牌堆。','3 能量'],
+"Zap":['电击',1,'技能','d','生成 1 个闪电球。','费用 0'],
+"Creative AI":['创造性AI',3,'能力','d','每回合开始时，随机将一张能力牌加入手牌。','固有'],
+
+/* ---- 观者 ---- */
+"Blasphemy":['渎神',1,'技能','w','进入神格；回合结束时死亡。','保留'],
+"Brilliance":['光辉',1,'攻击','w','造成等于本场获得真言层数的伤害。','+7'],
+"Deva Form":['天人形态',3,'能力','w','每回合获得的能量 +1，且逐回合递增。','固有'],
+"Devotion":['虔信',1,'能力','w','每回合开始时获得 2 点真言。','3 点'],
+"Empty Fist":['化拳为空',1,'攻击','w','造成 9 点伤害，退出当前姿态。','14 点'],
+"Empty Mind":['化智为空',1,'技能','w','抽 2 张牌，退出当前姿态。','抽 3 张'],
+"Eruption":['暴怒',2,'攻击','w','造成 9 点伤害，进入愤怒姿态。','费用 1'],
+"Establishment":['确立基础',1,'能力','w','每当一张牌被保留，其费用 -1。','固有'],
+"Fear No Evil":['不惧妖邪',1,'攻击','w','造成 8 点伤害；若目标有攻击意图，进入平静姿态。','11 点'],
+"Flurry of Blows":['疾风连击',0,'攻击','w','造成 4 点伤害；每次切换姿态，将此牌从弃牌堆移回手牌。','6 点'],
+"Inner Peace":['内心宁静',1,'技能','w','若在平静则抽 3 张牌，否则进入平静。','抽 4 张'],
+"Like Water":['如水',1,'能力','w','在平静姿态下结束回合时，获得 5 点格挡。','7 点'],
+"Meditate":['冥想',1,'技能','w','将 1 张牌从弃牌堆移回手牌并保留，进入平静，然后结束回合。','2 张'],
+"Mental Fortress":['心灵堡垒',1,'能力','w','每次切换姿态，获得 4 点格挡。','6 点'],
+"Omniscience":['通晓万物',4,'技能','w','打出手中一张牌两次。消耗。','费用 3'],
+"Perseverance":['坚韧',1,'技能','w','获得 5 点格挡，保留；每保留一次格挡 +3。','7 点'],
+"Pray":['祈祷',1,'技能','w','获得 3 点真言。','4 点'],
+"Pressure Points":['点穴',1,'技能','w','施加 1 层印记；有印记的敌人每次受到等于印记层数的伤害。','2 层'],
+"Prostrate":['五体投地',0,'技能','w','获得 2 点真言和 4 点格挡。','3 点真言'],
+"Ragnarok":['诸神之黄昏',3,'攻击','w','随机对敌人造成 5 点伤害 5 次。','6 点'],
+"Rushdown":['猛虎下山',1,'能力','w','每次进入愤怒姿态，抽 2 张牌。','费用 0'],
+"Sands of Time":['时之沙',4,'攻击','w','造成 20 点伤害，保留；每保留一次费用 -1。','26 点'],
+"Scrawl":['潦草急就',1,'技能','w','抽牌直到手牌充满。消耗。','费用 0'],
+"Signature Move":['招牌技',2,'攻击','w','造成 30 点伤害；本场战斗中只能打出这一张攻击牌。','40 点'],
+"Tantrum":['发泄',1,'攻击','w','造成 3 点伤害 3 次，进入愤怒；本回合结束时回到抽牌堆。','4 次'],
+"Talk to the Hand":['以手拒之',1,'攻击','w','造成 5 点伤害；每当你攻击该敌人，获得 2 点格挡。消耗。','7 伤 / 3 格挡'],
+"Vault":['腾跃',3,'技能','w','结束本回合，然后立刻再进行一个回合。消耗。','费用 2'],
+"Vigilance":['警惕',2,'技能','w','获得 8 点格挡，进入平静姿态。','12 点格挡'],
+"Wallop":['当头棒喝',2,'攻击','w','造成 9 点伤害，获得等于造成伤害的格挡。','14 点'],
+"Wave of the Hand":['摆手',1,'技能','w','每当你获得格挡，对随机敌人施加 1 层虚弱。','2 层'],
+"Worship":['敬拜',2,'技能','w','获得 5 点真言。保留。','保留，真言 +5']
+};
+
+const RELIC_DB = {
+"Akabeko":['赤牛','普通','每场战斗的第一张攻击牌额外造成 8 点伤害。'],
+"Anchor":['锚','普通','战斗开始时获得 10 点格挡。'],
+"Bird-Faced Urn":['鸟面瓮','稀有','每打出一张能力牌，回复 2 点生命。'],
+"Blood Vial":['小血瓶','普通','战斗开始时回复 2 点生命。'],
+"Bronze Scales":['铜制鳞片','普通','战斗开始时获得 3 层荆棘。'],
+"Burning Blood":['燃烧之血','初始','战斗结束时回复 6 点生命。'],
+"Calipers":['外卡钳','稀有','回合开始时只失去 15 点格挡，而不是全部格挡。'],
+"Chemical X":['化学物X','商店','X 费牌的效果额外 +2。'],
+"Charon's Ashes":['卡戎之灰','稀有','每消耗一张牌，对所有敌人造成 3 点伤害。'],
+"Damaru":['手摇鼓','普通','每回合开始时获得 1 点真言。'],
+"Data Disk":['数据磁盘','普通','战斗开始时获得 1 点集中。'],
+"Dead Branch":['枯木树枝','稀有','每消耗一张牌，随机将一张牌加入手牌。'],
+"Empty Cage":['空鸟笼','Boss','获得时从卡组中删除 2 张牌。'],
+"Fossilized Helix":['螺类化石','稀有','防止每场战斗第一次失去生命。'],
+"Frozen Core":['冻结核心','Boss','回合结束时若有空充能球位，生成 1 个冰霜球。'],
+"Gold-Plated Cables":['镀金缆线','罕见','最右侧的充能球被动效果额外触发一次。'],
+"Horn Cleat":['船夹板','罕见','第 2 回合开始时获得 14 点格挡。'],
+"Hovering Kite":['悬浮风筝','Boss','每回合第一次弃牌时，获得 1 点能量。'],
+"Ice Cream":['冰淇淋','稀有','能量在回合结束时不会被清空。'],
+"Incense Burner":['香炉','稀有','每 6 回合获得 1 层无形。'],
+"Inserter":['机械臂','Boss','每 2 回合获得 1 个额外充能球位。'],
+"Kunai":['苦无','罕见','每在同一回合打出 3 张攻击牌，获得 1 点敏捷。'],
+"Meat on the Bone":['带骨肉','罕见','战斗结束时若生命不高于 50%，回复 12 点生命。'],
+"Medical Kit":['医药箱','商店','可以打出原本无法打出的状态牌，打出后将其消耗。'],
+"Mummified Hand":['干瘪之手','罕见','打出一张能力牌后，随机一张手牌本回合费用变为 0。'],
+"Mutagenic Strength":['突变之力','事件','战斗开始时获得 3 点力量，回合结束时失去。'],
+"Nuclear Battery":['核能电池','Boss','战斗开始时生成 1 个等离子球。'],
+"Ornamental Fan":['精致折扇','罕见','每在同一回合打出 3 张攻击牌，获得 4 点格挡。'],
+"Paper Krane":['纸鹤','罕见','敌人的虚弱减伤从 25% 提升到 40%。'],
+"Philosopher's Stone":['贤者之石','Boss','每回合 +1 能量；所有敌人战斗开始时获得 1 点力量。'],
+"Pocketwatch":['怀表','稀有','一回合打出 3 张或更少的牌，下回合额外抽 3 张。'],
+"Question Card":['问号牌','罕见','之后的卡牌奖励多 1 个选项。'],
+"Red Skull":['红头骨','普通','生命值低于或等于 50% 时，获得 3 点力量。'],
+"Runic Capacitor":['符文电容器','商店','战斗开始时获得 3 个额外充能球位。'],
+"Runic Cube":['符文立方体','Boss','每当你失去生命，抽 1 张牌。'],
+"Runic Dome":['符文圆顶','Boss','每回合 +1 能量，但看不到敌人的行动意图。'],
+"Runic Pyramid":['符文金字塔','Boss','回合结束时不再弃掉手牌。'],
+"Sacred Bark":['神圣树皮','Boss','药水效果翻倍。'],
+"Self-Forming Clay":['自成型黏土','罕见','战斗中每失去生命，下回合获得 3 点格挡。'],
+"Shuriken":['手里剑','罕见','每在同一回合打出 3 张攻击牌，获得 1 点力量。'],
+"Snecko Skull":['异蛇头骨','普通','每次对敌人施加毒，额外施加 1 层。'],
+"Symbiotic Virus":['共生病毒','罕见','战斗开始时生成 1 个暗球。'],
+"Teardrop Locket":['泪滴吊坠盒','罕见','战斗开始时进入平静姿态。'],
+"The Specimen":['生物样本','稀有','敌人死亡时，把它身上的毒转移给随机敌人。'],
+"Tingsha":['铜钹','稀有','在自己的回合每弃掉一张牌，对随机敌人造成 3 点伤害。'],
+"Tough Bandages":['结实绷带','稀有','在自己的回合每弃掉一张牌，获得 3 点格挡。'],
+"Tungsten Rod":['钨合金棍','稀有','每次受到的生命损失减少 1 点。'],
+"Twisted Funnel":['扭曲漏斗','商店','战斗开始时对所有敌人施加 4 层毒。'],
+"Unceasing Top":['不休陀螺','稀有','自己的回合中手牌为空时，抽 1 张牌。'],
+"Vajra":['金刚杵','普通','战斗开始时获得 1 点力量。'],
+"Violet Lotus":['紫色莲花','Boss','退出平静姿态时，额外获得 1 点能量。'],
+"Wrist Blade":['袖剑','Boss','0 费攻击牌造成的伤害 +4。'],
+/* 总榜补充条目（保证搜索与详情覆盖全部遗物） */
+"Snecko Eye":['异蛇之眼','Boss','每回合额外抽 2 张牌；每场战斗开始时获得混乱，卡牌费用随机变为 0–3。'],
+"Orange Pellets":['橙色药丸','商店','同一回合打出攻击、技能、能力各一张，清除自身所有负面状态。'],
+"Gambling Chip":['赌博筹码','稀有','战斗开始时，可弃掉任意张手牌并重抽等量。'],
+"Bag of Preparation":['准备背包','普通','战斗开始时额外抽 2 张牌。'],
+"Torii":['鸟居','稀有','受到 5 点或以下的未被格挡的攻击伤害时，改为 1 点。'],
+"Pandora's Box":['潘多拉魔盒','Boss','获得时转换卡组中所有的打击和防御。'],
+"Astrolabe":['星盘','Boss','获得时转换 3 张牌，并升级它们。'],
+"Orrery":['星系仪','商店','获得时选 5 张牌加入卡组。'],
+"Coffee Dripper":['咖啡滤杯','Boss','每回合 +1 能量，但不能在营火休息回血。'],
+"Fusion Hammer":['融合之锤','Boss','每回合 +1 能量，但不能在营火锻造。'],
+"Ring of the Serpent":['长蛇戒指','Boss','替换蛇之戒指；每回合额外抽 1 张牌。'],
+"Black Blood":['黑暗之血','Boss','替换燃烧之血；战斗结束时回复 12 点生命。'],
+"Bag of Marbles":['弹珠袋','普通','战斗开始时给所有敌人 1 层易伤。'],
+"Lantern":['灯笼','普通','第一回合额外 +1 能量。'],
+"Black Star":['黑星','Boss','精英战额外掉落 1 个遗物。'],
+"Calling Bell":['召唤铃铛','Boss','获得 3 个遗物（普通 / 罕见 / 稀有各一）和 1 张专属诅咒。'],
+"Preserved Insect":['昆虫标本','普通','精英战敌人血量 -25%。'],
+"White Beast Statue":['白兽雕像','罕见','战斗奖励必定出现药水。'],
+"Dolly's Mirror":['多利之镜','商店','获得时复制卡组中的一张牌。'],
+"Paper Phrog":['纸蛙','罕见','敌人的易伤从 +50% 提升到 +75% 伤害。'],
+"Bloody Idol":['鲜血神像','事件','每次获得金币时回复 5 点生命。'],
+"Singing Bowl":['颂钵','罕见','卡牌奖励时可选「+2 最大生命」代替拿牌。'],
+"Frozen Eye":['冻结之眼','商店','查看抽牌堆时按实际顺序显示卡牌。'],
+"Nunchaku":['双节棍','普通','每打出 10 张攻击牌，获得 1 能量。'],
+"Pen Nib":['钢笔尖','普通','每打出的第 10 张攻击牌伤害翻倍。'],
+"Happy Flower":['开心小花','普通','每 3 回合获得 1 能量。'],
+"Pantograph":['缩放仪','罕见','Boss 战开始时回复 25 点生命。'],
+"Prayer Wheel":['转经轮','稀有','普通战斗额外获得一次卡牌奖励。'],
+"Lizard Tail":['蜥蜴尾巴','稀有','死亡时以 50% 最大生命复活一次。'],
+"Ceramic Fish":['陶瓷小鱼','普通','每次将牌加入卡组，获得 9 金币。'],
+"The Boot":['发条靴','普通','将造成 4 点或以下的未被格挡的攻击伤害时，改为 5 点。'],
+"Darkstone Periapt":['黑石护符','罕见','每次获得诅咒，+6 最大生命。'],
+"Blue Candle":['蓝蜡烛','罕见','可以打出原本无法打出的诅咒牌；打出时失去 1 点生命并消耗。'],
+"Hand Drill":['手钻','商店','每当击破敌人的格挡，给予其 2 层易伤。'],
+"Ssserpent Head":['蛇的头','事件','进入 ? 房间时获得 50 金币。'],
+"Red Mask":['红面具','事件','战斗开始时给所有敌人 1 层虚弱。'],
+"Tiny House":['小屋子','Boss','获得 1 瓶药水、50 金币、1 张牌，+5 最大生命，并随机升级 1 张牌。'],
+"Mark of Pain":['痛楚印记','Boss','每回合 +1 能量；每场战斗开始将 2 张伤口洗入抽牌堆。'],
+"Busted Crown":['破碎金冠','Boss','+1 能量，但卡牌奖励少 2 个选项。'],
+"Sozu":['添水','Boss','+1 能量，但无法获得药水。'],
+"Velvet Choker":['天鹅绒颈圈','Boss','+1 能量，但每回合最多打出 6 张牌。'],
+"Cursed Key":['诅咒钥匙','Boss','+1 能量，但每次打开非 Boss 宝箱获得 1 张诅咒。'],
+"Ectoplasm":['灵体外质','Boss','+1 能量，但无法获得金币。'],
+"Prismatic Shard":['棱镜碎片','商店','战斗奖励可出现无色牌和其他职业的牌。'],
+"Brimstone":['硫磺','商店','每回合开始时你获得 2 点力量，所有敌人获得 1 点力量。'],
+"Necronomicon":['死灵之书','事件','每回合第一张 2 费以上的攻击牌打出两次。'],
+
+/* 全遗物补全（官方简中译名） */
+"Ring of the Snake":['蛇之戒指','初始','战斗开始时额外抽 2 张牌。'],
+"Pure Water":['至纯之水','初始','战斗开始时将 1 张奇迹加入手牌。'],
+"Cracked Core":['破损核心','初始','战斗开始时生成 1 个闪电球。'],
+"Centennial Puzzle":['百年积木','普通','每场战斗第一次失去生命时，抽 3 张牌。'],
+"Dream Catcher":['捕梦网','普通','在营火休息时，可从 3 张牌中选 1 张加入卡组。'],
+"Oddly Smooth Stone":['意外光滑的石头','普通','战斗开始时获得 1 点敏捷。'],
+"Omamori":['御守','普通','抵挡接下来 2 次诅咒。'],
+"Orichalcum":['奥利哈钢','普通','回合结束时若没有格挡，获得 6 点格挡。'],
+"Regal Pillow":['皇家枕头','普通','营火休息时额外回复 15 点生命。'],
+"Smiling Mask":['微笑面具','普通','商店删牌固定为 50 金币。'],
+"Strawberry":['草莓','普通','获得时 +7 最大生命。'],
+"Potion Belt":['药水腰带','普通','获得时 +2 个药水位。'],
+"Tiny Chest":['小宝箱','普通','每第 4 个 ? 房间变为宝箱房间。'],
+"Whetstone":['磨刀石','普通','获得时升级 2 张随机攻击牌。'],
+"Meal Ticket":['餐券','普通','进入商店时回复 15 点生命。'],
+"Maw Bank":['巨口储蓄罐','普通','每爬一层获得 12 金币，在商店消费后失效。'],
+"War Paint":['战纹涂料','普通','获得时升级 2 张随机技能牌。'],
+"Toy Ornithopter":['玩具扑翼飞机','普通','每次喝药水回复 5 点生命。'],
+"Juzu Bracelet":['佛珠手链','普通','? 房间中不再出现普通敌人战斗。'],
+"Ancient Tea Set":['古茶具套装','普通','进入营火后，下一场战斗开始时额外获得 2 能量。'],
+"Art of War":['孙子兵法','普通','一回合不打攻击牌，下回合 +1 能量。'],
+"Sling of Courage":['勇气投石索','商店','精英战开始时获得 2 点力量。'],
+"The Courier":['送货员','罕见','商人会补充卡牌、遗物和药水，所有价格降低 20%。'],
+"Bottled Flame":['瓶装火焰','罕见','获得时选择一张攻击牌，战斗开始时必定在起手。'],
+"Bottled Lightning":['瓶装闪电','罕见','获得时选择一张技能牌，战斗开始时必定在起手。'],
+"Bottled Tornado":['瓶装旋风','罕见','获得时选择一张能力牌，战斗开始时必定在起手。'],
+"Eternal Feather":['永恒羽毛','罕见','卡组每有 5 张牌，进入营火时回复 3 点生命。'],
+"Frozen Egg":['冻结之蛋','罕见','获得能力牌时自动升级。'],
+"Gremlin Horn":['地精之角','罕见','敌人死亡时获得 1 能量并抽 1 张牌。'],
+"Letter Opener":['开信刀','罕见','每在同一回合打出 3 张技能牌，对所有敌人造成 5 点伤害。'],
+"Matryoshka":['套娃','罕见','接下来 2 个非 Boss 宝箱包含 2 个遗物。'],
+"Mercury Hourglass":['水银沙漏','罕见','每回合开始时对所有敌人造成 3 点伤害。'],
+"Molten Egg":['熔火之蛋','罕见','获得攻击牌时自动升级。'],
+"Ninja Scroll":['忍术卷轴','罕见','战斗开始时将 3 张刀加入手牌。'],
+"Pear":['梨子','罕见','获得时 +10 最大生命。'],
+"Duality":['两仪','罕见','每打出一张攻击牌，获得 1 点临时敏捷。'],
+"Ink Bottle":['墨水瓶','罕见','每打出 10 张牌，抽 1 张牌。'],
+"Strike Dummy":['打击木偶','罕见','英文牌名含 Strike 的牌伤害 +3。'],
+"Sundial":['日晷','罕见','每洗牌 3 次，获得 2 能量。'],
+"Stone Calendar":['历石','稀有','第 7 回合结束时，对所有敌人造成 52 点伤害。'],
+"Wing Boots":['羽翼之靴','稀有','可以无视路径选择下一房间 3 次。'],
+"Cloak Clasp":['斗篷扣','稀有','回合结束时，每张手牌给予 1 点格挡。'],
+"Captain's Wheel":['舵盘','稀有','第 3 回合开始时获得 18 点格挡。'],
+"Champion Belt":['冠军腰带','稀有','施加易伤时，同时施加 1 层虚弱。'],
+"Ginger":['生姜','稀有','不再受到虚弱。'],
+"Girya":['壶铃','稀有','可在营火锻炼，每次永久 +1 力量（最多 3 次）。'],
+"Magic Flower":['魔法花','稀有','战斗中的回复生命效果 +50%。'],
+"Mango":['芒果','稀有','获得时 +14 最大生命。'],
+"Old Coin":['古钱币','稀有','获得时得到 300 金币。'],
+"Peace Pipe":['宁静烟斗','稀有','可在营火删牌。'],
+"Shovel":['铲子','稀有','可在营火挖掘遗物。'],
+"Turnip":['萝卜','稀有','不再受到脆弱。'],
+"Slaver's Collar":['奴隶贩子颈环','Boss','在 Boss 战与精英战中，每回合开始时获得 1 点能量。'],
+"Holy Water":['圣水','Boss','替换至纯之水；战斗开始时将 3 张奇迹加入手牌。'],
+"Nilry's Codex":['尼利的宝典','事件','每回合结束时，从 3 张随机牌中选 1 张加入手牌。'],
+"Golden Idol":['金神像','事件','敌人掉落的金币 +25%。'],
+"Neow's Lament":['涅奥的悲恸','事件','接下来 3 场战斗的敌人血量变为 1。'],
+"Enchiridion":['英雄宝典','事件','每场战斗开始将 1 张随机能力牌加入手牌，其费用在第一回合变为 0。'],
+"N'loth's Gift":['恩洛斯的礼物','事件','怪物奖励中出现稀有牌的概率变为 3 倍。'],
+"N'loth's Hungry Face":['恩洛斯的饥饿的脸','事件','你打开的下一个非 Boss 宝箱将是空的。'],
+"Odd Mushroom":['奇怪蘑菇','事件','处于易伤时，受到的伤害 -25%。'],
+"Lee's Waffle":['李家华夫饼','商店','获得时 +7 最大生命，并回复全部生命。'],
+"Mark of the Bloom":['绽放印记','事件','无法再回复生命。'],
+"Cauldron":['大锅','商店','获得时生成 5 瓶随机药水。'],
+"Membership Card":['会员卡','商店','商店所有商品半价。'],
+"Strange Spoon":['奇怪的勺子','商店','打出后会消耗的牌有 50% 概率改为弃置。'],
+"Toolbox":['工具箱','商店','战斗开始时获得 1 张随机无色牌。'],
+"The Abacus":['算盘','商店','每次洗牌获得 6 点格挡。'],
+"Toxic Egg":['毒素之蛋','罕见','获得技能牌时自动升级。'],
+"Golden Eye":['黄金眼','稀有','每次预见时，额外预见 2 张牌。'],
+"Du-Vu Doll":['毒巫娃娃','稀有','卡组中每有一张诅咒牌，战斗开始时获得 1 点力量。'],
+"Emotion Chip":['情感芯片','稀有','若上一回合失去过生命，回合开始时触发所有充能球的被动效果。'],
+"Thread and Needle":['针线','稀有','每场战斗开始时获得 4 层多层护甲。'],
+"Spirit Poop":['精灵便便','事件','没有战斗效果；结算分数 -1。'],
+"Face of Cleric":['牧师的脸','事件','每场战斗结束后，最大生命 +1。'],
+"Cultist Headpiece":['邪教徒头套','事件','没有实际战斗效果，只会在战斗开始时喊叫。'],
+"Gremlin Visage":['地精容貌','事件','每场战斗开始时获得 1 层虚弱。'],
+"Warped Tongs":['弯曲铁钳','事件','每回合开始时，随机升级一张手牌，仅本场战斗有效。'],
+"Clockwork Souvenir":['齿轮工艺品','商店','每场战斗开始时获得 1 层人工制品。'],
+"Melange":['美琅脂','商店','每次将抽牌堆洗牌时，预见 3。'],
+"Circlet":['头环','特殊','当某个稀有度的遗物已全部获得时出现，没有其他效果。'],
+
+};
+
+/* 梯队（T0 最强）：按跨流派的综合强度与核心度排序 */
+const CARD_TIER = {
+  "Accuracy":"T1", "Acrobatics":"T2", "Adrenaline":"T1", "After Image":"T0",
+  "All For One":"T2", "Backflip":"T1", "Ball Lightning":"T2", "Barricade":"T1",
+  "Battle Trance":"T1", "Berserk":"T3", "Biased Cognition":"T0", "Blade Dance":"T1",
+  "Blasphemy":"T3", "Blizzard":"T1", "Bloodletting":"T3", "Body Slam":"T1",
+  "Bouncing Flask":"T1", "Brilliance":"T1", "Buffer":"T1", "Burning Pact":"T2",
+  "Burst":"T2", "Calculated Gamble":"T2", "Capacitor":"T1", "Catalyst":"T0",
+  "Charge Battery":"T2", "Chill":"T2", "Claw":"T2", "Cloak and Dagger":"T2",
+  "Coolheaded":"T1", "Corpse Explosion":"T1", "Corruption":"T0", "Creative AI":"T1",
+  "Dark Embrace":"T0", "Darkness":"T2", "Deadly Poison":"T1", "Defragment":"T0",
+  "Demon Form":"T0", "Deva Form":"T3", "Devotion":"T1", "Echo Form":"T0",
+  "Electrodynamics":"T0", "Empty Fist":"T1", "Empty Mind":"T1", "Entrench":"T1",
+  "Envenom":"T2", "Eruption":"T0", "Establishment":"T2", "Eviscerate":"T3",
+  "Fear No Evil":"T1", "Feel No Pain":"T0", "Finisher":"T2", "Flame Barrier":"T2",
+  "Flex":"T2", "Flurry of Blows":"T2", "Fusion":"T2", "Glacier":"T1",
+  "Grand Finale":"T3", "Heatsinks":"T1", "Heavy Blade":"T1", "Infinite Blades":"T1",
+  "Inflame":"T1", "Inner Peace":"T1", "Juggernaut":"T2", "Like Water":"T2",
+  "Limit Break":"T0", "Loop":"T1", "Machine Learning":"T3", "Meditate":"T2",
+  "Mental Fortress":"T0", "Metallicize":"T2", "Multi-Cast":"T1", "Noxious Fumes":"T0",
+  "Offering":"T1", "Omniscience":"T1", "Overclock":"T3", "Perseverance":"T2",
+  "Pray":"T2", "Prepared":"T3", "Pressure Points":"T2", "Prostrate":"T3",
+  "Ragnarok":"T3", "Reaper":"T1", "Reboot":"T3", "Recursion":"T2",
+  "Reflex":"T2", "Rupture":"T3", "Rushdown":"T0", "Sands of Time":"T2",
+  "Scrawl":"T0", "Sentinel":"T2", "Shrug It Off":"T1", "Signature Move":"T3",
+  "Spot Weakness":"T1", "Steam Barrier":"T3", "Storm":"T2", "Storm of Steel":"T2",
+  "Sword Boomerang":"T3", "Tactician":"T1", "Talk to the Hand":"T0", "Tantrum":"T1",
+  "Thousand Cuts":"T1", "Thunder Strike":"T2", "True Grit":"T2", "Turbo":"T2",
+  "Twin Strike":"T2", "Vault":"T1", "Vigilance":"T0", "Wallop":"T2",
+  "Wave of the Hand":"T2", "Well-Laid Plans":"T1", "Whirlwind":"T1", "Worship":"T1",
+  "Wraith Form":"T0", "Zap":"T2",
+};
+const RELIC_TIER = {
+"Ring of the Snake":"T2",
+"Pure Water":"T2",
+"Cracked Core":"T2",
+"Centennial Puzzle":"T2",
+"Dream Catcher":"T2",
+"Oddly Smooth Stone":"T2",
+"Omamori":"T3",
+"Orichalcum":"T2",
+"Regal Pillow":"T3",
+"Smiling Mask":"T3",
+"Strawberry":"T3",
+"Potion Belt":"T2",
+"Tiny Chest":"T3",
+"Whetstone":"T3",
+"Meal Ticket":"T3",
+"Maw Bank":"T2",
+"War Paint":"T3",
+"Toy Ornithopter":"T2",
+"Juzu Bracelet":"T3",
+"Ancient Tea Set":"T2",
+"Art of War":"T2",
+"Sling of Courage":"T2",
+"The Courier":"T2",
+"Bottled Flame":"T2",
+"Bottled Lightning":"T2",
+"Bottled Tornado":"T2",
+"Eternal Feather":"T3",
+"Frozen Egg":"T2",
+"Gremlin Horn":"T2",
+"Letter Opener":"T3",
+"Matryoshka":"T3",
+"Mercury Hourglass":"T2",
+"Molten Egg":"T2",
+"Ninja Scroll":"T3",
+"Pear":"T3",
+"Duality":"T3",
+"Ink Bottle":"T2",
+"Strike Dummy":"T3",
+"Sundial":"T2",
+"Stone Calendar":"T3",
+"Wing Boots":"T2",
+"Cloak Clasp":"T2",
+"Captain's Wheel":"T3",
+"Champion Belt":"T3",
+"Ginger":"T2",
+"Girya":"T2",
+"Magic Flower":"T2",
+"Mango":"T3",
+"Old Coin":"T2",
+"Peace Pipe":"T2",
+"Shovel":"T2",
+"Turnip":"T2",
+"Slaver's Collar":"T1",
+"Holy Water":"T1",
+"Nilry's Codex":"T1",
+"Golden Idol":"T2",
+"Neow's Lament":"T2",
+"Enchiridion":"T2",
+"Odd Mushroom":"T2",
+"Lee's Waffle":"T3",
+"Mark of the Bloom":"T3",
+"Cauldron":"T2",
+"Membership Card":"T1",
+"Strange Spoon":"T2",
+"Toolbox":"T2",
+"The Abacus":"T2",
+  "Vajra":"T2",
+  "Akabeko":"T2", "Anchor":"T2", "Bag of Marbles":"T2", "Bird-Faced Urn":"T2",
+  "Black Star":"T2", "Blood Vial":"T2", "Bloody Idol":"T2", "Brimstone":"T3",
+  "Bronze Scales":"T2", "Burning Blood":"T2", "Calipers":"T2", "Calling Bell":"T2",
+  "Charon's Ashes":"T1", "Chemical X":"T1", "Damaru":"T2", "Data Disk":"T1",
+  "Dead Branch":"T0", "Dolly's Mirror":"T2", "Empty Cage":"T2", "Fossilized Helix":"T2",
+  "Frozen Core":"T2", "Frozen Eye":"T2", "Gold-Plated Cables":"T2", "Happy Flower":"T2",
+  "Horn Cleat":"T2", "Hovering Kite":"T2", "Ice Cream":"T1", "Incense Burner":"T1",
+  "Inserter":"T2", "Kunai":"T1", "Lantern":"T2", "Lizard Tail":"T2",
+  "Meat on the Bone":"T2", "Medical Kit":"T2", "Mummified Hand":"T1", "Mutagenic Strength":"T2",
+  "Nuclear Battery":"T2", "Nunchaku":"T2", "Ornamental Fan":"T2", "Pantograph":"T2",
+  "Paper Krane":"T2", "Paper Phrog":"T2", "Pen Nib":"T2", "Philosopher's Stone":"T3",
+  "Pocketwatch":"T0", "Prayer Wheel":"T2", "Preserved Insect":"T2", "Question Card":"T1",
+  "Red Skull":"T2", "Runic Capacitor":"T1", "Runic Cube":"T3", "Runic Dome":"T1",
+  "Runic Pyramid":"T0", "Sacred Bark":"T3", "Self-Forming Clay":"T2", "Shuriken":"T1",
+  "Singing Bowl":"T2", "Snecko Skull":"T2", "Symbiotic Virus":"T2", "Teardrop Locket":"T2",
+  "The Specimen":"T2", "Thread and Needle":"T2", "Tingsha":"T2", "Tough Bandages":"T1",
+  "Tungsten Rod":"T1", "Twisted Funnel":"T2", "Unceasing Top":"T2", "Violet Lotus":"T1",
+  "White Beast Statue":"T2", "Wrist Blade":"T2",
+  "Toxic Egg":"T2", "Golden Eye":"T2", "Du-Vu Doll":"T3", "Emotion Chip":"T2",
+  "N'loth's Gift":"T2", "N'loth's Hungry Face":"T3", "Spirit Poop":"T3", "Face of Cleric":"T2",
+  "Cultist Headpiece":"T3", "Gremlin Visage":"T3", "Warped Tongs":"T2", "Clockwork Souvenir":"T1",
+  "Melange":"T2", "Circlet":"T3",
+};
+
+const CHAR_NAME = { i:'铁甲战士', s:'静默猎手', d:'故障机器人', w:'观者' };
+
+/* 总榜里补充的稀有度（仅用于图标配色） */
+/* 稀有度唯一来源是 RELIC_DB（原 EXTRA_RAR 与其不一致且已永不命中，删除） */
+
+/* ---------- 遗物反查：遗物 → 流派 ---------- */
+const RELIC_MAP = [
+  {
+    key:'pivot', title:'一、定向件', hint:'拿到就值得围绕它改道',
+    desc:'这类遗物本身就是一套牌的地基。看到它，优先往括号里的流派走。',
+    items:[
+      {cn:'枯木树枝', en:'Dead Branch', rar:'rare',
+       eff:'每消耗一张牌，随机将一张牌加入手牌。',
+       builds:[['i','腐化消耗流']],
+       note:'<b>值得改道。</b>腐化流有没有枯木树枝是 T0 和 T1 的差别，但没它也能玩。'},
+      {cn:'紫色莲花', en:'Violet Lotus', rar:'boss',
+       eff:'退出平静姿态时，额外获得 1 点能量。',
+       builds:[['w','姿态循环无限流'],['w','姿态舞（常规）']],
+       note:'<b>观者最强 Boss 遗物。</b>有它才敢用 2 费的警惕去凑无限，没它必须删到 6 张以下。'},
+      {cn:'异蛇头骨', en:'Snecko Skull', rar:'common',
+       eff:'每次对敌人施加毒，额外施加 1 层。',
+       builds:[['s','毒流']],
+       note:'<b>毒流的乘数件。</b>只是普通品质，性价比全遗物最高之一。'},
+      {cn:'扭曲漏斗', en:'Twisted Funnel', rar:'shop',
+       eff:'战斗开始时，对所有敌人施加 4 层毒。',
+       builds:[['s','毒流']],
+       note:'省掉一张叠毒牌，第 1 幕直接质变，毒性越早铺越赚。'},
+      {cn:'生物样本', en:'The Specimen', rar:'rare',
+       eff:'中毒的敌人死亡时，把它的毒转移给随机敌人。',
+       builds:[['s','毒流']],
+       note:'单点毒变成群体毒，清群神件。'},
+      {cn:'数据磁盘', en:'Data Disk', rar:'common',
+       eff:'战斗开始时获得 1 点集中。',
+       builds:[['d','冰霜坦克流'],['d','闪电球流'],['d','暗球 / 爪击流']],
+       note:'<b>机器人所有球体系的地基</b>，普通品质，见到直接拿，不需要犹豫。'},
+      {cn:'符文电容器', en:'Runic Capacitor', rar:'shop',
+       eff:'战斗开始时获得 3 个额外充能球位。',
+       builds:[['d','冰霜坦克流'],['d','闪电球流']],
+       note:'球位就是机器人的上限，商店里看到优先于任何卡牌。'},
+      {cn:'冻结核心', en:'Frozen Core', rar:'boss',
+       eff:'充能球位为空时，自动生成 1 个冰霜球。',
+       builds:[['d','冰霜坦克流']],
+       note:'纯冰霜流的毕业件，格挡从此自动续，几乎不用再手动防。'},
+      {cn:'镀金缆线', en:'Gold-Plated Cables', rar:'uncommon',
+       eff:'最右侧的充能球被动效果额外触发一次。',
+       builds:[['d','冰霜坦克流'],['d','暗球 / 爪击流']],
+       note:'单球质量流的核心，配合大球（冰川 / 暗球）收益翻倍。'},
+      {cn:'手里剑', en:'Shuriken', rar:'uncommon',
+       eff:'每回合打出第 3 张攻击牌时，永久 +1 力量。',
+       builds:[['s','小刀流'],['i','力量流']],
+       note:'小刀流的核心成长件；战士的多段攻击也能稳定吃满。'},
+      {cn:'苦无', en:'Kunai', rar:'uncommon',
+       eff:'每回合打出第 3 张攻击牌时，永久 +1 敏捷。',
+       builds:[['s','小刀流'],['s','弃牌流']],
+       note:'和手里剑同源，一个走输出一个走防御，猎手见到都属于核心。'},
+      {cn:'袖剑', en:'Wrist Blade', rar:'boss',
+       eff:'0 费攻击牌造成的伤害 +4。',
+       builds:[['s','小刀流']],
+       note:'小刀全是 0 费，等于每刀白送 4 点，纯小刀流的最强单件。'},
+      {cn:'铜钹', en:'Tingsha', rar:'rare',
+       eff:'每弃掉一张牌，对随机敌人造成 3 点伤害。',
+       builds:[['s','弃牌流']],
+       note:'弃牌流的输出端，弃得越多打得越痛。'},
+      {cn:'结实绷带', en:'Tough Bandages', rar:'rare',
+       eff:'每弃掉一张牌，获得 3 点格挡。',
+       builds:[['s','弃牌流']],
+       note:'和铜钹互补，一个输出一个防御，两张一起就是完整体系。'},
+      {cn:'悬浮风筝', en:'Hovering Kite', rar:'boss',
+       eff:'每回合第一次弃牌时，获得 1 点能量。',
+       builds:[['s','弃牌流']],
+       note:'弃牌流的发动机，能量问题直接解决。'},
+      {cn:'泪滴吊坠盒', en:'Teardrop Locket', rar:'uncommon',
+       eff:'战斗开始时进入平静姿态。',
+       builds:[['w','姿态舞（常规）'],['w','姿态循环无限流']],
+       note:'第一回合就能吃平静回能，节奏快一整轮。'},
+      {cn:'手摇鼓', en:'Damaru', rar:'common',
+       eff:'每回合开始时获得 1 点真言。',
+       builds:[['w','神格真言流']],
+       note:'神格流唯一的直接遗物支持，单靠它偏慢，但方向明确。'},
+      {cn:'卡戎之灰', en:'Charon\'s Ashes', rar:'rare',
+       eff:'每消耗一张牌，对所有敌人造成 3 点伤害。',
+       builds:[['i','腐化消耗流']],
+       note:'腐化流的清场补丁，配枯木树枝时伤害会很夸张。'},
+      {cn:'红头骨', en:'Red Skull', rar:'common',
+       eff:'生命值低于或等于 50% 时，获得 3 点力量。',
+       builds:[['i','力量流'],['i','撕裂自伤流']],
+       note:'自伤流天然低血，等于常驻 +3 力量，和撕裂流是绝配。'},
+      {cn:'符文立方体', en:'Runic Cube', rar:'boss',
+       eff:'每当你失去生命，抽 1 张牌。',
+       builds:[['i','撕裂自伤流']],
+       note:'撕裂流的手牌引擎，自伤越频繁抽得越多。'},
+      {cn:'自成型黏土', en:'Self-Forming Clay', rar:'uncommon',
+       eff:'战斗中每失去生命，下回合获得 3 点格挡。',
+       builds:[['i','撕裂自伤流']],
+       note:'把「自伤」直接转成防御，撕裂流的安全带。'}
+    ]
+  },
+  {
+    key:'boost', title:'二、强化件', hint:'别为它改道，但手里有就顺着走',
+    desc:'它们不能单独撑起一套牌，但能让你正在走的方向明显更强。',
+    items:[
+      {cn:'香炉', en:'Incense Burner', rar:'rare',
+       eff:'每 6 回合获得 1 回合「无形」（几乎不受伤害）。',
+       builds:[['s','毒流'],['d','冰霜坦克流']],
+       note:'拖回合流派的保命符，毒流和冰霜流都是慢刀子。'},
+      {cn:'干瘪之手', en:'Mummified Hand', rar:'uncommon',
+       eff:'打出一张能力牌后，随机一张手牌变成 0 费。',
+       builds:[['d','能力流'],['i','腐化消耗流']],
+       note:'能力牌越多越强，机器人能力流的发动机。'},
+      {cn:'冰淇淋', en:'Ice Cream', rar:'rare',
+       eff:'能量在回合结束时不再清空，可以存起来。',
+       builds:[['w','神格真言流'],['i','力量流'],['d','冰霜坦克流']],
+       note:'蓄能打一波的流派倍增器，配合高费终结牌最好用。'},
+      {cn:'化学物X', en:'Chemical X', rar:'shop',
+       eff:'X 费牌的效果额外 +2。',
+       builds:[['i','力量流'],['d','暗球 / 爪击流']],
+       note:'只对 X 费牌生效（旋风斩、多重释放），卡组里没这类牌就别买。'},
+      {cn:'纸蛙', en:'Paper Phrog', rar:'uncommon',
+       eff:'敌人的易伤从 +50% 提升到 +75% 伤害。',
+       builds:[['i','力量流']],
+       note:'配痛击、上勾拳这类易伤来源，等于全队增伤。'},
+      {cn:'纸鹤', en:'Paper Krane', rar:'uncommon',
+       eff:'敌人的虚弱减伤从 25% 提升到 40%。',
+       builds:[['s','毒流'],['s','弃牌流']],
+       note:'虚弱来源够多时，防御端直接翻倍。'},
+      {cn:'赤牛', en:'Akabeko', rar:'common',
+       eff:'每场战斗第一张攻击牌额外造成 8 点伤害。',
+       builds:[['w','姿态舞（常规）'],['i','力量流']],
+       note:'开场爆发件，配愤怒姿态的第一次攻击很舒服。'},
+      {cn:'硫磺', en:'Brimstone', rar:'shop',
+       eff:'每回合开始 +2 力量，所有敌人 +1 力量。',
+       builds:[['i','力量流']],
+       note:'速攻专用，拖长了自己会被反杀，只适合能快速结束的战斗。'},
+      {cn:'机械臂', en:'Inserter', rar:'boss',
+       eff:'每 2 回合获得 1 个额外充能球位。',
+       builds:[['d','冰霜坦克流']],
+       note:'球位流的替代件，比符文电容器慢，但长战更强。'},
+      {cn:'核能电池', en:'Nuclear Battery', rar:'boss',
+       eff:'战斗开始时生成 1 个等离子球。',
+       builds:[['d','能力流'],['d','闪电球流']],
+       note:'白送能量，能力流开局会顺很多。'},
+      {cn:'共生病毒', en:'Symbiotic Virus', rar:'uncommon',
+       eff:'战斗开始时生成 1 个暗球。',
+       builds:[['d','暗球 / 爪击流']],
+       note:'暗球流的启动件，省去自己铺暗球的一回合。'}
+    ]
+  },
+  {
+    key:'neutral', title:'三、万能件', hint:'不改变方向，看到不用纠结',
+    desc:'这些不决定你走哪套牌，只决定你走得顺不顺。拿到它们不用重新规划流派。',
+    items:[
+      {cn:'异蛇之眼', en:'Snecko Eye', rar:'boss',
+       eff:'每回合抽 5 张牌，但所有牌费用随机变成 0–3。',
+       builds:[], tag:'通用 · 高费卡组',
+       note:'高费卡组（力量流、神格流、能力流）质变；<b>小刀流、无限流这类低费体系反而被坑</b>，拿之前想清楚。'},
+      {cn:'符文金字塔', en:'Runic Pyramid', rar:'boss',
+       eff:'回合结束时不再弃掉手牌。',
+       builds:[], tag:'通用 · 需要留牌',
+       note:'留 combo 件的流派更强（无限流、弃牌流）；手牌长期卡满时反而拖累抽牌。'},
+      {cn:'橙色药丸', en:'Orange Pellets', rar:'shop',
+       eff:'同一回合打出攻击、技能、能力各一张，清除自身所有负面状态。',
+       builds:[], tag:'通用 · 解负面',
+       note:'机器人「偏差认知」的最佳搭档，也克各种降力量 / 降集中的敌人。'},
+      {cn:'怀表', en:'Pocketwatch', rar:'rare',
+       eff:'一回合打出 3 张或更少的牌，下回合抽 3 张。',
+       builds:[], tag:'通用 · 低节奏',
+       note:'冰霜流、无限流这类每回合出牌少的卡组白嫖手牌。'},
+      {cn:'赌博筹码', en:'Gambling Chip', rar:'uncommon',
+       eff:'战斗开始时，可以弃掉任意张手牌并重抽等量。',
+       builds:[], tag:'通用 · 找关键牌',
+       note:'修手牌神器，冲无限、找核心件都靠它。'},
+      {cn:'准备背包', en:'Bag of Preparation', rar:'common',
+       eff:'战斗开始时额外抽 2 张牌。',
+       builds:[], tag:'通用',
+       note:'没有任何代价，纯赚。'},
+      {cn:'钨合金棍', en:'Tungsten Rod', rar:'rare',
+       eff:'每次受到的生命损失减少 1 点。',
+       builds:[], tag:'通用 · 防多段',
+       note:'多段攻击敌人的克星，心脏战价值极高。'},
+      {cn:'鸟居', en:'Torii', rar:'rare',
+       eff:'受到 5 点或以下的伤害时，改为 1 点。',
+       builds:[], tag:'通用 · 防小怪',
+       note:'和多段小伤害敌人对局时几乎免疫。'},
+      {cn:'潘多拉魔盒', en:"Pandora's Box", rar:'boss',
+       eff:'转换卡组中所有的打击和防御。',
+       builds:[], tag:'通用 · 重塑卡组',
+       note:'第 1 幕拿到最强，第 3 幕拿到可能直接毁掉成型卡组。'},
+      {cn:'星盘', en:'Astrolabe', rar:'boss',
+       eff:'转换 3 张牌，并升级它们。',
+       builds:[], tag:'通用 · 换血',
+       note:'比潘多拉温和，适合中期修卡组。'},
+      {cn:'星系仪', en:'Orrery', rar:'shop',
+       eff:'立即选 5 张牌加入卡组。',
+       builds:[], tag:'通用 · 补核心件',
+       note:'缺核心件时最直接的补强，也容易把卡组撑厚。'},
+      {cn:'问号牌', en:'Question Card', rar:'common',
+       eff:'卡牌奖励多一个选项。',
+       builds:[], tag:'通用 · 长期收益',
+       note:'越早拿到越值，是全遗物里长期收益最高的之一。'},
+      {cn:'空鸟笼', en:'Empty Cage', rar:'boss',
+       eff:'立即从卡组中删除 2 张牌。',
+       builds:[], tag:'通用 · 薄卡组',
+       note:'无限流、薄卡组流的最爱，等于白送两次商店删牌。'},
+      {cn:'黑星', en:'Black Star', rar:'boss',
+       eff:'精英战额外掉落 1 个遗物。',
+       builds:[], tag:'通用 · 打精英',
+       note:'路线敢打精英就血赚，前期拿到最香。'},
+      {cn:'咖啡滤杯', en:'Coffee Dripper', rar:'boss',
+       eff:'每回合 +1 能量，但不能在营火休息回血。',
+       builds:[], tag:'通用 · 能量',
+       note:'有回血手段（燃烧之血、药水、鸟面瓮）时最优，否则 A15+ 是硬伤。'},
+      {cn:'融合之锤', en:'Fusion Hammer', rar:'boss',
+       eff:'每回合 +1 能量，但不能在营火锻造。',
+       builds:[], tag:'通用 · 能量',
+       note:'卡组已经升级得差不多时再拿，否则会缺关键升级。'},
+      {cn:'符文圆顶', en:'Runic Dome', rar:'boss',
+       eff:'每回合 +1 能量，但看不到敌人的行动意图。',
+       builds:[], tag:'通用 · 高手向',
+       note:'需要熟记敌人行为，新手慎选；打不熟的 Boss 容易白给。'}
+    ]
+  }
+];
+
+/* 遗物 -> 适配流派（来自遗物反查表） */
+const RELIC_BUILDS = {};
+RELIC_MAP.forEach(g => g.items.forEach(it => {
+  if(it.builds && it.builds.length) RELIC_BUILDS[it.en] = it.builds;
+}));
+
+/* 卡牌 -> 出现在哪些流派 */
+const CARD_BUILDS = {};
+Object.entries(CHARS).forEach(([ck, c]) => {
+  c.builds.forEach(b => {
+    [...b.core, ...b.key].forEach(tag => {
+      const sp = tag.indexOf(' ');
+      if(sp < 0) return;
+      const en = tag.slice(sp + 1);
+      if(!CARD_DB[en]) return;
+      (CARD_BUILDS[en] = CARD_BUILDS[en] || []);
+      if(!CARD_BUILDS[en].some(x => x[1] === b.name)) CARD_BUILDS[en].push([ck, b.name]);
+    });
+  });
+});
+
+/* ---------- 遗物总榜（一代通用） ---------- */
+const RELICS = [
+  {
+    tier:'T0', name:'改命级', desc:'拿到就开始围绕它打，不是加分而是换一副牌',
+    items:[
+      ['异蛇之眼','Snecko Eye','每回合额外抽 2 张牌，但所有牌费用随机 0–3。高费卡组直接质变，也是最万能的 Boss 遗物。','a'],
+      ['符文金字塔','Runic Pyramid','回合结束不再弃手牌。保留关键 combo 件，配合保留 / 弃牌体系极强。','a'],
+      ['枯木树枝','Dead Branch','每消耗一张牌，随机加一张牌到手牌。腐化流的核心，全游戏最强 combo 之一。','i'],
+      ['橙色药丸','Orange Pellets','同一回合打出攻击 + 技能 + 能力各一张，清除自身所有负面状态。','a'],
+      ['怀表','Pocketwatch','一回合打出 3 张或更少的牌，下回合抽 3 张。控制节奏的卡组白嫖手牌。','a']
+    ]
+  },
+  {
+    tier:'T1', name:'强力核心', desc:'按流派选，选对了就是 T0 级作用',
+    items:[
+      ['香炉','Incense Burner','每 6 回合获得 1 层无形（受到的攻击伤害减为 1）。拖回合卡组的保命符。','a'],
+      ['干瘪之手','Mummified Hand','打出一张能力牌，随机一张手牌变 0 费。能力流发动机。','d'],
+      ['冰淇淋','Ice Cream','能量不再每回合清空，可以存起来打一波。','a'],
+      ['赌博筹码','Gambling Chip','开局可弃任意张手牌并重抽等量。修手牌、找 combo。','a'],
+      ['准备背包','Bag of Preparation','战斗开始额外抽 2 张。','a'],
+      ['手里剑 / 苦无','Shuriken / Kunai','每回合打出第 3 张攻击时，永久 +1 力量 / +1 敏捷。','a'],
+      ['钨合金棍','Tungsten Rod','每次受到的生命损失减 1。多段攻击的克星。','a'],
+      ['鸟居','Torii','受到 5 点或以下的未被格挡的攻击伤害时，减为 1 点。','a'],
+      ['化学物X','Chemical X','X 费牌的效果 +2。','a'],
+      ['潘多拉魔盒','Pandora\'s Box','转换所有打击和防御。开局直接重塑卡组。','a'],
+      ['星盘','Astrolabe','转换 3 张牌并升级它们。','a'],
+      ['星系仪','Orrery','立即选 5 张牌加入卡组。','a'],
+      ['问号牌','Question Card','卡牌奖励多一个选项。长期收益极高。','a'],
+      ['咖啡滤杯','Coffee Dripper','每回合 +1 能量，但不能在营火休息回血。','a'],
+      ['融合之锤','Fusion Hammer','每回合 +1 能量，但不能在营火锻造。','a'],
+      ['符文圆顶','Runic Dome','每回合 +1 能量，但看不到敌人意图。高手向。','a'],
+      ['长蛇戒指','Ring of the Serpent','每回合多抽 1 张（猎手初始遗物的强化版）。','s'],
+      ['黑暗之血','Black Blood','战斗结束回复 12 点生命（燃烧之血强化版）。','i']
+    ]
+  },
+  {
+    tier:'T2', name:'好用', desc:'没有体系也能拿，稳定提供资源',
+    items:[
+      ['锚','Anchor','战斗开始获得 10 点格挡。','a'],
+      ['金刚杵','Vajra','战斗开始 +1 力量。','i'],
+      ['赤牛','Akabeko','每场战斗第一张攻击牌额外造成 8 点伤害。','a'],
+      ['弹珠袋','Bag of Marbles','战斗开始给所有敌人 1 层易伤。','a'],
+      ['小血瓶','Blood Vial','战斗开始回复 2 点生命。','a'],
+      ['灯笼','Lantern','第一回合额外 +1 能量。','a'],
+      ['黑星','Black Star','精英战额外掉落 1 个遗物。','a'],
+      ['空鸟笼','Empty Cage','立即从卡组删除 2 张牌。','a'],
+      ['召唤铃铛','Calling Bell','获得 3 个遗物，但加入 1 张诅咒。','a'],
+      ['昆虫标本','Preserved Insect','精英战敌人血量 -25%。','a'],
+      ['白兽雕像','White Beast Statue','战斗必定掉落药水。','a'],
+      ['带骨肉','Meat on the Bone','战斗结束时若血量不高于 50%，回复 12 点。','a'],
+      ['铜制鳞片','Bronze Scales','每次受到攻击，对攻击者造成 3 点伤害。','i'],
+      ['精致折扇','Ornamental Fan','每回合打出第 3 张攻击时获得 4 点格挡。','s'],
+      ['医药箱','Medical Kit','可以打出状态牌。','a'],
+      ['多利之镜','Dolly\'s Mirror','复制卡组中的一张牌。','a'],
+      ['纸蛙','Paper Phrog','敌人的易伤从 +50% 提升到 +75% 伤害。','i'],
+      ['纸鹤','Paper Krane','敌人的虚弱减伤从 25% 提升到 40%。','s'],
+      ['鲜血神像','Bloody Idol','每次获得金币时回复 5 点生命。','a'],
+      ['颂钵','Singing Bowl','卡牌奖励时可选「+2 最大生命」代替拿牌。','a'],
+      ['冻结之眼','Frozen Eye','可以查看抽牌堆顺序。','a'],
+      ['双节棍','Nunchaku','每打出 10 张攻击牌，+1 能量。','a'],
+      ['钢笔尖','Pen Nib','每打出 10 张攻击牌，下一张攻击伤害翻倍。','a'],
+      ['开心小花','Happy Flower','每 3 回合 +1 能量。','a'],
+      ['船夹板','Horn Cleat','第 2 回合开始时获得 14 点格挡。','a'],
+      ['缩放仪','Pantograph','Boss 战开始时回复 25 点生命。','a'],
+      ['转经轮','Prayer Wheel','普通战斗额外获得一次卡牌奖励。','a'],
+      ['蜥蜴尾巴','Lizard Tail','死亡时以 50% 生命复活一次。','a']
+    ]
+  },
+  {
+    tier:'T3', name:'条件 / 有代价', desc:'能用，但要先算清楚代价',
+    items:[
+      ['陶瓷小鱼','Ceramic Fish','每次将牌加入卡组，获得 9 金币。','a'],
+      ['发条靴','The Boot','造成 4 点或以下伤害时，改为 5 点。','a'],
+      ['黑石护符','Darkstone Periapt','每次获得诅咒，+6 最大生命。','a'],
+      ['蓝蜡烛','Blue Candle','诅咒牌可以打出，代价是失去 1 点生命。','a'],
+      ['手钻','Hand Drill','每当击破敌人的格挡，给予其 2 层易伤。','a'],
+      ['蛇的头','Ssserpent Head','进入 ? 房间时获得 50 金币。','a'],
+      ['红面具','Red Mask','战斗开始给所有敌人 1 层虚弱。','a'],
+      ['小屋子','Tiny House','获得 1 瓶药水、50 金币、1 张牌，+5 最大生命，升级 1 张牌。','a'],
+      ['符文立方体','Runic Cube','每次失去生命时抽 1 张牌。','i'],
+      ['痛楚印记','Mark of Pain','+1 能量，但每场战斗开始将 2 张伤口洗入抽牌堆。','i'],
+      ['破碎金冠','Busted Crown','+1 能量，但卡牌奖励少 2 个选项。','a'],
+      ['添水','Sozu','+1 能量，但无法获得药水。','a'],
+      ['天鹅绒颈圈','Velvet Choker','+1 能量，但每回合最多打出 6 张牌。','a'],
+      ['贤者之石','Philosopher\'s Stone','+1 能量，但所有敌人 +1 力量。','a'],
+      ['诅咒钥匙','Cursed Key','+1 能量，但每次打开宝箱获得 1 张诅咒。','a'],
+      ['灵体外质','Ectoplasm','+1 能量，但无法获得金币。','a'],
+      ['神圣树皮','Sacred Bark','药水效果翻倍。','a'],
+      ['棱镜碎片','Prismatic Shard','战斗奖励可出现其他职业的牌。','a'],
+      ['硫磺','Brimstone','每回合 +2 力量，所有敌人 +1 力量。','i'],
+      ['死灵之书','Necronomicon','每回合第一张 2 费以上的攻击牌打出两次。','a']
+    ]
+  }
+];
+
+/* 总榜是已评级遗物的唯一梯队来源，避免列表与详情各自维护后漂移 */
+RELICS.forEach(g => g.items.forEach(([, en]) => {
+  const keys = en === 'Shuriken / Kunai' ? ['Shuriken', 'Kunai'] : [en];
+  keys.forEach(k => { if(RELIC_DB[k]) RELIC_TIER[k] = g.tier; });
+}));
+
+/* ============================================================
+   渲染
+   ============================================================ */
+const $ = s => document.querySelector(s);
+const el = (t, c) => { const e = document.createElement(t); if(c) e.className = c; return e; };
+
+/* ============================================================
+   卡牌 / 遗物 详情浮层
+   ============================================================ */
+const CLS_COLOR = { i:'#c8524a', s:'#4fa85f', d:'#4a9fd8', w:'#a878d8' };
+const RAR_COLOR = { '普通':'#8f8899', '罕见':'#6fb6e8', '稀有':'#e8c474', 'Boss':'#e2723f', '商店':'#79c9b6', '事件':'#a878d8', '初始':'#c08a3e' };
+const GLYPH = {
+  attack:'<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.8 21.2 20.4H2.8Z"/></svg>',
+  skill:'<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.4 21.6 12 12 21.6 2.4 12Z"/><path d="M12 8.4 15.6 12 12 15.6 8.4 12Z"/></svg>',
+  power:'<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.5 20 7.3v9.4L12 21.5 4 16.7V7.3Z"/><circle cx="12" cy="12" r="3" fill="none"/></svg>',
+  build:'<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.6"/><circle cx="12" cy="12" r="3.4" fill="currentColor" fill-opacity=".55" stroke="none"/></svg>',
+  relic:'<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20 9l-8 12.4L4 9Z"/><path d="M4.4 9h15.2" fill="none"/></svg>'
+};
+
+function splitTag(str){
+  const s = str.replace(/（[^）]*）/g, '').trim();
+  const i = s.indexOf(' ');
+  return i < 0 ? [s, ''] : [s.slice(0, i), s.slice(i + 1)];
+}
+
+function tagHTML(str, cls){
+  const en = splitTag(str)[1];
+  const hit = en && (CARD_DB[en] || RELIC_DB[en]);
+  return `<span class="tag ${cls}${hit ? ' tappable' : ''}"${hit ? ` data-k="${en}"` : ''}>${str}</span>`;
+}
+
+/* 图片素材：杀戮尖塔 wiki（一代卡图 / 遗物图标）。按需加载，失败自动降级为手绘图标 */
+const IMG_PREFIX = { i:'Red', s:'Green', d:'Blue', w:'Purple' };
+const CARD_IMG_FIX = {
+  'Thousand Cuts':'Green-AThousandCuts.png',
+  'All For One':'Blue-AllforOne.png',
+  'Turbo':'Blue-TURBO.png'
+};
+const RELIC_IMG_FIX = {
+  'Gold-Plated Cables':'Cables.png', 'Paper Krane':'PaperCrane.png',
+  'Cultist Headpiece':'CultistMask.png', 'Gremlin Visage':'GremlinMask.png',
+  "N'loth's Hungry Face":'NlothsMask.png', "N'loth's Gift":'NlothsGift.png',
+  'Face of Cleric':'FaceOfCleric.png'
+};
+const NO_IMG = { 'Snecko Skull':1 };
+
+function cardFile(en, cls){
+  return CARD_IMG_FIX[en] || (IMG_PREFIX[cls] + '-' + en.replace(/ /g, '') + '.png');
+}
+function relicFile(en){
+  return RELIC_IMG_FIX[en] || (en.replace(/ /g, '').replace(/'/g, '') + '.png');
+}
+function thumbURL(file, w){
+  const f = encodeURIComponent(file);
+  return 'https://slaythespire.wiki.gg/images/thumb/' + f + '/' + w + 'px-' + f;
+}
+
+function relicDot(rar){
+  const col = RAR_COLOR[rar] || '#8f8899';
+  return `<span class="rdot" style="--rc:${col}">${GLYPH.relic}</span>`;
+}
+
+/* 遗物小图标：优先加载游戏原图，失败回退到菱形 */
+function relicIcon(en, rar){
+  const col = RAR_COLOR[rar] || '#8f8899';
+  const usable = en && !NO_IMG[en] && en.indexOf(' / ') < 0;
+  const img = usable ? `<img src="${thumbURL(relicFile(en), 60)}" alt="" referrerpolicy="no-referrer" loading="lazy">` : '';
+  return `<span class="rdot" style="--rc:${col}"><span class="rdot-fb">${GLYPH.relic}</span>${img}</span>`;
+}
+
+function cardBuildChips(k){
+  const cb = CARD_BUILDS[k];
+  if(!cb || !cb.length) return '';
+  return `<div class="tip-builds">
+      <span class="tip-builds-k">所属流派</span>
+      ${cb.slice(0, 6).map(([c, n]) => {
+        const cc = { ironclad:'i', silent:'s', defect:'d', watcher:'w' }[c] || c;
+        return `<span class="blink ${cc}" data-jc="${cc}" data-jb="${n}">${SHORT[cc]} · ${n}</span>`;
+      }).join('')}
+    </div>`;
+}
+
+function buildChips(k){
+  const rb = RELIC_BUILDS[k];
+  if(!rb || !rb.length) return `<span class="blink any">通用件 · 任意流派可用</span>`;
+  return rb.map(([c, n]) =>
+    `<span class="blink ${c}" data-jc="${c}" data-jb="${n}">${SHORT[c]} · ${n}</span>`
+  ).join('');
+}
+
+function tipInner(k){
+  const c = CARD_DB[k];
+  if(c){
+    const [cn, cost, type, cls, eff, up] = c;
+    const col = CLS_COLOR[cls] || '#9a92ad';
+    const g = type === '攻击' ? GLYPH.attack : type === '技能' ? GLYPH.skill : GLYPH.power;
+    return `<button class="tip-close" aria-label="关闭">✕</button>
+      <div class="art" style="--tint:${col}30">
+        <div class="art-fb" style="--mc2:${col}">${g}</div>
+        <img src="${thumbURL(cardFile(k, cls), 240)}" alt="${cn}" referrerpolicy="no-referrer">
+      </div>
+      <div class="tip-name">${cn}<em>${k}</em></div>
+      <div class="tip-meta"><span class="ttier" style="--tc:${TIER_COLOR[CARD_TIER[k] || 'T2']}">${CARD_TIER[k] || 'T2'}</span><span class="hi">${cost} 费</span><span>${type}</span><span>${CHAR_NAME[cls]}</span></div>
+      <div class="tip-eff">${eff}</div>
+      ${up ? `<div class="tip-up"><span>升级</span>${up}</div>` : ''}
+      ${cardBuildChips(k)}`;
+  }
+  const r = RELIC_DB[k];
+  if(r){
+    const [cn, rar, eff] = r;
+    const col = RAR_COLOR[rar] || '#8f8899';
+    const img = NO_IMG[k] ? '' : `<img src="${thumbURL(relicFile(k), 160)}" alt="${cn}" referrerpolicy="no-referrer">`;
+    return `<button class="tip-close" aria-label="关闭">✕</button>
+      <div class="art relic" style="--glow:${col};--tint:${col}33">
+        <div class="art-fb" style="--mc2:${col}">${GLYPH.relic}</div>
+        ${img}
+      </div>
+      <div class="tip-name">${cn}<em>${k}</em></div>
+      <div class="tip-meta"><span class="ttier" style="--tc:${TIER_COLOR[RELIC_TIER[k] || 'T2']}">${RELIC_TIER[k] || 'T2'}</span><span class="hi">${rar}</span><span>遗物</span></div>
+      <div class="tip-eff">${eff}</div>
+      <div class="tip-builds">
+        <span class="tip-builds-k">适配流派</span>
+        ${buildChips(k)}
+      </div>`;
+  }
+  return `<div class="tip-eff">暂无详细数据</div>`;
+}
+
+const tipbox = document.getElementById('tipbox');
+const tipmask = document.getElementById('tipmask');
+let tipAnchor = null;
+let closeTimer = null;
+
+const isTouch = () => !window.matchMedia('(hover:hover)').matches && (('ontouchstart' in window) || navigator.maxTouchPoints > 0);
+
+function renderTip(k, anchor, lock){
+  if(!k) return;
+  tipAnchor = anchor || null;
+  const c = CARD_DB[k];
+  const col = c ? CLS_COLOR[c[3]] : (RAR_COLOR[(RELIC_DB[k] || [])[1]] || '#e8c474');
+  tipbox.style.setProperty('--glow', col);
+  tipbox.innerHTML = tipInner(k);
+  tipbox.scrollTop = 0;
+  tipbox.classList.add('on');
+  const img = tipbox.querySelector('.art img');
+  if(img){
+    const mark = () => img.classList.add('ready');
+    img.onerror = () => { img.style.display = 'none'; };
+    img.onload = mark;
+    if(img.complete && img.naturalWidth) mark();
+  }
+  const cl = tipbox.querySelector('.tip-close');
+  if(cl) cl.onclick = closeTip;
+  tipbox.querySelectorAll('[data-jc]').forEach(node => {
+    node.onclick = (ev) => {
+      ev.stopPropagation();
+      const c = node.dataset.jc, n = node.dataset.jb;
+      closeTip();
+      closeSearch();
+      jumpToBuild(c, n);
+    };
+  });
+  tipmask.classList.add('on');
+  if(lock && isTouch()) document.body.style.overflow = 'hidden';
+}
+
+function openTip(anchor, lock){
+  if(!anchor || !anchor.dataset.k) return;
+  renderTip(anchor.dataset.k, anchor, lock);
+}
+
+function closeTip(){
+  clearTimeout(closeTimer);
+  tipbox.classList.remove('on');
+  tipmask.classList.remove('on');
+  if(document.body.style.overflow === 'hidden' && !document.getElementById('searchLayer').classList.contains('on')){
+    document.body.style.overflow = '';
+  }
+  tipAnchor = null;
+}
+
+/* 悬停即出：不做触屏拦截 —— 带鼠标的设备（含触屏笔记本）一律响应 */
+document.addEventListener('mouseover', e=>{
+  const a = e.target.closest('.tappable');
+  if(a){
+    clearTimeout(closeTimer);
+    if(tipAnchor !== a) renderTip(a.dataset.k, a, false);
+    return;
+  }
+  if(tipbox.contains(e.target)){ clearTimeout(closeTimer); return; }
+  if(tipAnchor){
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(closeTip, 400);
+  }
+});
+
+document.addEventListener('click', e=>{
+  const a = e.target.closest('.tappable');
+  if(a){
+    e.stopPropagation();
+    if(tipAnchor !== a || !tipbox.classList.contains('on')) renderTip(a.dataset.k, a, true);
+    else if(isTouch()) document.body.style.overflow = 'hidden';
+    return;
+  }
+  if(tipbox.classList.contains('on') && !tipbox.contains(e.target)) closeTip();
+});
+
+tipmask.addEventListener('click', closeTip);
+document.addEventListener('keydown', e=>{
+  const tag = ((e.target && e.target.tagName) || '').toLowerCase();
+  const typing = tag === 'input' || tag === 'textarea';
+  if((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'K')){
+    e.preventDefault(); openSearch(); return;
+  }
+  if(!typing && e.key === '/'){ e.preventDefault(); openSearch(); return; }
+  if(e.key === 'Escape'){ closeTip(); closeSearch(); }
+});
+window.addEventListener('scroll', ()=>{ if(tipAnchor) closeTip(); }, {passive:true});
+window.addEventListener('resize', closeTip);
+
+let curChar = 'ironclad';
+let curView = 'build';
+let curFilter = 'ALL';
+
+const TIER_COLOR = { T0:'var(--t0)', T1:'var(--t1)', T2:'var(--t2)', T3:'var(--t3)' };
+
+function renderChars(){
+  const nav = $('#chars');
+  nav.innerHTML = '';
+  Object.entries(CHARS).forEach(([k,v])=>{
+    const d = el('div','char' + (k===curChar?' active':''));
+    d.style.setProperty('--c', v.color);
+    d.innerHTML = `<div class="cn">${v.cn}</div><div class="en">${v.en}</div>`;
+    d.onclick = ()=>{
+      curChar = k; curFilter = 'ALL';
+      if(curView !== 'build'){
+        curView = 'build';
+        document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active', x.dataset.view === 'build'));
+      }
+      renderChars(); render();
+      window.scrollTo({top:0, behavior:'smooth'});
+    };
+    nav.appendChild(d);
+  });
+}
+
+function render(){
+  const main = $('#main');
+  main.innerHTML = '';
+  main.classList.remove('fadein');
+  void main.offsetWidth;
+  main.classList.add('fadein');
+
+  if(curView === 'build') renderBuilds(main);
+  else if(curView === 'rmap') renderRelicMap(main);
+  else if(curView === 'relic') renderRelics(main);
+  else renderTips(main);
+}
+
+function renderBuilds(main){
+  const c = CHARS[curChar];
+
+  // 职业头
+  const head = el('div','chead');
+  head.style.setProperty('--c', c.color);
+  head.style.setProperty('--tint', c.tint);
+  head.innerHTML = `
+    <div class="row">
+      <div>
+        <h2>${c.cn}</h2>
+        <div class="cname-en">${c.en}</div>
+      </div>
+      <div class="power">${c.power}</div>
+    </div>
+    <p class="tagline">${c.tagline}</p>
+    <div class="start">${c.start.map(s=>'<span>· '+s+'</span>').join('')}</div>
+  `;
+  main.appendChild(head);
+
+  // 筛选
+  const f = el('div','filters');
+  ['ALL','T0','T1','T2','T3'].forEach(t=>{
+    const b = el('button','chip'+(curFilter===t?' on':''));
+    b.textContent = t === 'ALL' ? '全部 ' + c.builds.length : t;
+    if(t!=='ALL'){
+      b.style.setProperty('--tintc', 'rgba(255,255,255,.06)');
+      b.style.setProperty('--tintb', TIER_COLOR[t]);
+      b.style.setProperty('--tintt', TIER_COLOR[t]);
+    }else{
+      b.style.setProperty('--tintc','rgba(232,196,116,.12)');
+      b.style.setProperty('--tintb','var(--gold)');
+      b.style.setProperty('--tintt','var(--gold)');
+    }
+    b.onclick = ()=>{ curFilter = t; render(); };
+    f.appendChild(b);
+  });
+  main.appendChild(f);
+
+  // 卡片
+  c.builds.filter(b => curFilter === 'ALL' || b.tier === curFilter).forEach(b=>{
+    const card = el('div','card' + (b.tier === 'T0' ? '' : ' collapsed'));
+    card.dataset.bn = b.name;
+    card.style.setProperty('--tc', TIER_COLOR[b.tier]);
+
+    const top = el('div','card-top');
+    top.innerHTML = `
+      <div class="title-row">
+        <span class="tier">${b.tier}</span>
+        <div class="bname">${b.name}<small>${b.en}</small></div>
+      </div>
+      <span class="chev"></span>
+      <p class="role">${b.role}</p>
+    `;
+    top.onclick = ()=> card.classList.toggle('collapsed');
+
+    const body = el('div','card-body');
+    const inner = el('div','card-body-inner');
+    const spec = el('div','spec');
+
+    const row = (k, arr, cls) => `
+      <div class="spec-row">
+        <div class="spec-k">${k}</div>
+        <div class="spec-v">${arr.filter(Boolean).map(x=>tagHTML(x, cls)).join('')}</div>
+      </div>`;
+
+    spec.innerHTML =
+      row('核心卡', b.core, 'core') +
+      row('关键牌', b.key, '') +
+      row('核心遗物', b.rc, 'relic-core') +
+      row('可选遗物', b.rg, 'relic') +
+      `<div class="block">
+         <div class="mini-label">打法</div>
+         <div class="prose">${b.play}</div>
+       </div>
+       <div class="block">
+         <div class="mini-label">雷区</div>
+         <div class="prose warn">${b.trap}</div>
+       </div>`;
+
+    inner.appendChild(spec);
+    body.appendChild(inner);
+    card.appendChild(top);
+    card.appendChild(body);
+    main.appendChild(card);
+  });
+}
+
+function renderRelics(main){
+  const intro = el('div','tip');
+  intro.innerHTML = `<h3>怎么看这份榜</h3><p>遗物没有绝对强弱，只有「是否契合成型方向」。T0 基本可以围绕它重开一副牌，T1 是各流派的关键件，T2 稳定但普通，T3 带明确代价，拿之前先算账。右侧字母是主要受益职业：<b>战 / 猎 / 机 / 观 / 通</b>。</p>`;
+  main.appendChild(intro);
+
+  RELICS.forEach(g=>{
+    const box = el('div','tier-group');
+    box.style.setProperty('--tc', TIER_COLOR[g.tier]);
+    box.innerHTML = `<div class="tier-head"><span class="badge">${g.tier}</span><span class="desc">${g.name} · ${g.desc}</span></div>`;
+    g.items.forEach(([cn,en,d,who])=>{
+      const r = el('div','relic');
+      const rar = (RELIC_DB[en] || [])[1] || '稀有';
+      r.innerHTML = `
+        ${relicIcon(en, rar)}
+        <div class="rn">${cn}<em>${en}</em></div>
+        <div class="rd">${d}</div>
+        <div class="who ${who}">${{i:'战',s:'猎',d:'机',w:'观',a:'通'}[who]}</div>
+      `;
+      box.appendChild(r);
+    });
+    box.querySelectorAll('.rdot img').forEach(img => {
+      img.onerror = () => { img.remove(); };
+    });
+    main.appendChild(box);
+  });
+}
+
+const RAR = { common:'普通', uncommon:'罕见', rare:'稀有', boss:'Boss', shop:'商店' };
+const SHORT = { i:'铁甲', s:'猎手', d:'机器人', w:'观者' };
+const CHARKEY = { i:'ironclad', s:'silent', d:'defect', w:'watcher' };
+
+function renderRelicMap(main){
+  const intro = el('div','tip');
+  const jumps = RELIC_MAP.map(g=>
+    `<span class="blink" data-go="${g.key}">${g.title.split('、')[1]} ${g.items.length}</span>`
+  ).join('');
+  intro.innerHTML = `<h3>拿到遗物，往下翻找名字就行</h3>
+    <p><b>一、定向件</b>能决定你走哪套牌，看到就考虑改道；<b>二、强化件</b>只是加分项，已有方向时顺路拿；<b>三、万能件</b>不改变方向，不用重新规划。点流派标签可以直接跳到对应的 Build 卡片。</p>
+    <div class="blinks" style="margin-top:9px">${jumps}</div>`;
+  main.appendChild(intro);
+
+  RELIC_MAP.forEach(g=>{
+    const box = el('div','rmap-group');
+    box.id = 'grp-' + g.key;
+    box.innerHTML = `<div class="rmap-gtitle">
+        <h3>${g.title}</h3><span class="cnt">${g.items.length} 件</span>
+        <span class="hint">${g.hint}</span>
+      </div>`;
+
+    g.items.forEach(it=>{
+      const rm = el('div','rm');
+      const chips = it.builds.length
+        ? it.builds.map(([c,n])=>
+            `<span class="blink ${c}" data-c="${c}" data-b="${n}">${SHORT[c]} · ${n}</span>`
+          ).join('')
+        : `<span class="blink any">${it.tag || '通用'}</span>`;
+
+      const rarOf = (RELIC_DB[it.en] || [])[1] || it.rar || '稀有';
+      rm.innerHTML = `
+        ${relicIcon(it.en, rarOf)}
+        <div class="rm-body">
+          <div class="rm-top">
+            <span class="rm-name">${it.cn}<em>${it.en}</em></span>
+            <span class="rm-rar ${it.rar}">${RAR[it.rar] || ''}</span>
+          </div>
+          <div class="rm-eff">${it.eff}</div>
+          <div class="blinks">${chips}</div>
+          ${it.note ? `<div class="rm-verdict">${it.note}</div>` : ''}
+        </div>`;
+      box.appendChild(rm);
+    });
+    box.querySelectorAll('.rdot img').forEach(img => {
+      img.onerror = () => { img.remove(); };
+    });
+    main.appendChild(box);
+  });
+
+  main.querySelectorAll('.blink[data-b]').forEach(b=>{
+    b.onclick = ()=> jumpToBuild(b.dataset.c, b.dataset.b);
+  });
+  main.querySelectorAll('[data-go]').forEach(b=>{
+    b.onclick = ()=>{
+      const t = document.getElementById('grp-' + b.dataset.go);
+      if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+    };
+  });
+}
+
+function jumpToBuild(charKey, buildName){
+  curChar = CHARKEY[charKey] || charKey; curView = 'build'; curFilter = 'ALL';
+  document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active', x.dataset.view === 'build'));
+  renderChars(); render();
+  requestAnimationFrame(()=>{
+    const card = document.querySelector('.card[data-bn="' + buildName + '"]');
+    if(!card) return;
+    card.classList.remove('collapsed');
+    setTimeout(()=> card.scrollIntoView({behavior:'smooth', block:'center'}), 80);
+  });
+}
+
+function renderTips(main){
+  const tips = [
+    {h:'一、先搞懂「薄卡组」', p:'每场战斗后只抽 5 张，卡组 15 张时抽到核心牌的概率远高于 25 张。所以：<b>能删就删</b>，商店的删牌服务常常比买一张牌更值；卡牌奖励可以跳过（右下角 skip），不要三选一强迫自己拿。'},
+    {h:'二、第 1 幕路线', p:'第 1 幕精英掉的遗物会决定整局走向，值得为了精英绕路——但前提是你手里有至少 1 张能打的伤害牌。开场 2 个节点内就有精英时，优先拿过渡攻击而不是删牌。'},
+    {h:'三、Boss 遗物怎么选', p:'绝大多数 Boss 遗物是「+1 能量 + 一个代价」。判断标准是：这个代价会不会让我在接下来两幕死掉。比如不能喝药水（添水）、不能休息回血（咖啡滤杯）在 A15+ 是硬伤；看不到意图（符文圆顶）需要你已经熟记敌人行为。'},
+    {h:'四、药水不要囤', p:'药水的意义就是救精英和 Boss。留在手里到第三幕反而经常用不出去。能力药水 / 力量药水在斩杀回合打出，往往就是那几十点差额。'},
+    {h:'五、别用「无限」思路要求所有角色', p:'只有观者能靠两张牌稳定无限；猎手的无限需要极小卡组；战士和机器人靠的是引擎滚雪球。看到别人说「无限」先确认是哪个职业、什么版本。'},
+    {h:'六、进阶难度差异', p:'A1 起精英变多、A2 起普通敌人变强、A14 起最大生命下降、A17 起精英和 Boss 更强、A20 双 Boss。同一套牌在 A5 能过、A18 过不去是正常的，不要因此否定构筑。'},
+    {h:'七、常见误区', p:'<ul><li><b>混流派</b>：毒流里塞飞刀、冰霜流里塞闪电，看起来都能打，实际哪套都不成体系。</li><li><b>见到稀有牌就拿</b>：稀有牌未必契合，一张对的白牌胜过三张错的金牌。</li><li><b>愤怒姿态收尾</b>：观者最常见的死法，双倍伤害是双向的。</li><li><b>腐化流没腐化就硬玩</b>：没有关键牌时，那套牌的组件就是废牌。</li></ul>'}
+  ];
+  tips.forEach(t=>{
+    const d = el('div','tip');
+    d.innerHTML = `<h3>${t.h}</h3><p>${t.p}</p>`;
+    main.appendChild(d);
+  });
+}
+
+/* ---------- 事件 ---------- */
+document.querySelectorAll('.view').forEach(v=>{
+  v.onclick = ()=>{
+    document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));
+    v.classList.add('active');
+    curView = v.dataset.view;
+    render();
+  };
+});
+
+renderChars();
+render();
+
+/* 回顶 + 吸顶状态 */
+const toTopBtn = document.getElementById('toTop');
+const navEl = document.getElementById('chars');
+window.addEventListener('scroll', ()=>{
+  toTopBtn.classList.toggle('show', window.scrollY > 520);
+  navEl.classList.toggle('stuck', navEl.getBoundingClientRect().top <= 0.5);
+}, {passive:true});
+toTopBtn.onclick = ()=> window.scrollTo({top:0, behavior:'smooth'});
+
+/* ============================================================
+   搜索：卡牌 / 遗物 / 流派
+   ============================================================ */
+const searchBtn = document.getElementById('searchBarBtn');
+const searchLayer = document.getElementById('searchLayer');
+const sInput = document.getElementById('sInput');
+const sResults = document.getElementById('sResults');
+
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+const SEARCH_ALIAS = {
+  "Dead Branch":"枯枝", "Snecko Eye":"蛇眼", "Snecko Skull":"蛇骷髅",
+  "Blood Vial":"血瓶", "Bag of Marbles":"大理石袋", "Empty Cage":"空笼",
+  "Ectoplasm":"灵质", "Sozu":"苏苏", "Runic Dome":"符文穹顶",
+  "Runic Cube":"符文立方", "Ring of the Serpent":"巨蛇之戒", "Black Blood":"黑血",
+  "Busted Crown":"破碎王冠", "Velvet Choker":"天鹅绒项圈", "Tiny House":"小房子",
+  "Calling Bell":"召唤铃", "Frozen Core":"冰冻核心", "Frozen Eye":"冰冻之眼",
+  "Mummified Hand":"木乃伊之手", "Tungsten Rod":"钨棒", "Tough Bandages":"坚韧绷带",
+  "Unceasing Top":"陀螺", "Violet Lotus":"紫莲", "Orrery":"天球仪",
+  "Coffee Dripper":"咖啡滤壶", "Fusion Hammer":"聚变锤", "Ornamental Fan":"装饰折扇",
+  "Question Card":"问题卡", "Red Skull":"红骷髅", "Dolly's Mirror":"多莉的镜子",
+  "Bloody Idol":"血染偶像", "Happy Flower":"快乐花", "Ceramic Fish":"陶制鱼",
+  "The Boot":"靴子", "Prismatic Shard":"棱彩碎片", "Medical Kit":"医疗包",
+  "Preserved Insect":"保存昆虫", "Meat on the Bone":"带肉骨头", "Teardrop Locket":"泪滴吊坠",
+  "Nuclear Battery":"核电池", "Bag of Preparation":"准备袋", "Gold-Plated Cables":"镀金电缆",
+  "Pure Water":"纯水", "Ring of the Snake":"蛇之戒", "Fossilized Helix":"石化螺旋",
+  "Paper Krane":"纸鹤", "Barricade":"路障", "Feel No Pain":"无痛",
+  "Dark Embrace":"黑暗拥抱", "Juggernaut":"主宰", "Reaper":"收割",
+  "Offering":"献祭", "Sword Boomerang":"剑柄回旋镖", "Sentinel":"哨兵",
+  "Battle Trance":"战斗恍惚", "After Image":"残影", "Thousand Cuts":"千刀万剐",
+  "Tactician":"战术家", "Eviscerate":"开膛破肚", "Grand Finale":"华丽终章",
+  "Prepared":"准备就绪", "Reflex":"反射", "Wraith Form":"幽灵形态",
+  "Well-Laid Plans":"精心策划", "Bouncing Flask":"弹跳瓶", "Cloak and Dagger":"披风与匕首",
+  "All For One":"万物归一", "Defragment":"除垢", "Capacitor":"电容器",
+  "Biased Cognition":"偏执认知", "Multi-Cast":"多重施法", "Turbo":"涡轮",
+  "Thunder Strike":"雷霆一击", "Ball Lightning":"球形闪电", "Charge Battery":"充能电池",
+  "Chill":"寒意", "Darkness":"黑暗", "Storm":"风暴",
+  "Blizzard":"暴风雪", "Coolheaded":"冷静", "Steam Barrier":"蒸汽屏障",
+  "Creative AI":"创意AI", "Eruption":"爆发(观者)", "Fear No Evil":"无畏",
+  "Inner Peace":"内心平静", "Mental Fortress":"心之堡垒", "Omniscience":"全知",
+  "Perseverance":"坚持", "Pressure Points":"压力点", "Prostrate":"叩拜",
+  "Ragnarok":"诸神黄昏", "Rushdown":"突袭", "Scrawl":"涂鸦",
+  "Signature Move":"招牌动作", "Tantrum":"撒泼", "Talk to the Hand":"与手交谈",
+  "Vault":"穹顶", "Wallop":"痛击", "Wave of the Hand":"挥手",
+  "Worship":"膜拜", "Devotion":"虔诚", "Establishment":"建立",
+  "Empty Fist":"空拳", "Empty Mind":"空明", "Deva Form":"天神形态",
+  "Tingsha":"叮当", "Wrist Blade":"腕刃", "Ssserpent Head":"蛇头",
+  "N'loth's Hungry Face":"Nloths Mask Nloth's Mask 恩洛斯的面具",
+  "Cultist Headpiece":"Cultist Mask 邪教徒面具", "Gremlin Visage":"Gremlin Mask 地精面具",
+  "N'loth's Gift":"Nloths Gift",
+};
+
+const SEARCH_POOL = (() => {
+  const pool = [];
+  Object.entries(CARD_DB).forEach(([k, v]) => {
+    const cls = v[3];
+    pool.push({
+      type:'card', key:k, cn:v[0], sub:v[4], tp:v[2],
+      col:CLS_COLOR[cls] || '#9a92ad',
+      kind:'卡牌 · ' + (SHORT[cls] || ''),
+      meta: (CHAR_NAME[cls] || '') + ' ' + (SHORT[cls] || '') + ' ' + v[2] + ' 卡牌 ' + (SEARCH_ALIAS[k] || '')
+    });
+  });
+  Object.entries(RELIC_DB).forEach(([k, v]) => {
+    pool.push({
+      type:'relic', key:k, cn:v[0], sub:v[2],
+      col:RAR_COLOR[v[1]] || '#8f8899',
+      kind:'遗物 · ' + v[1],
+      meta: '遗物 ' + v[1] + ' relic ' + (SEARCH_ALIAS[k] || '')
+    });
+  });
+  Object.entries(CHARS).forEach(([ck, c]) => {
+    c.builds.forEach(b => {
+      pool.push({
+        type:'build', key:b.name, cn:b.name, sub:b.role,
+        col:CLS_COLOR[{ironclad:'i',silent:'s',defect:'d',watcher:'w'}[ck]] || '#e8c474', kind:'流派', char:ck, charName:c.cn,
+        meta: c.cn + ' ' + c.en + ' 流派 build ' + b.en
+      });
+    });
+  });
+  return pool;
+})();
+
+let searchHits = [];
+
+function kindIcon(it){
+  if(it.type === 'relic') return GLYPH.relic;
+  if(it.type === 'build') return GLYPH.build;
+  return it.tp === '攻击' ? GLYPH.attack : it.tp === '技能' ? GLYPH.skill : GLYPH.power;
+}
+
+const TYPE_W = { build:0, card:1, relic:2 };
+
+let sFilter = 'all';
+
+function runSearch(q){
+  q = (q || '').trim().toLowerCase();
+  const list = sFilter === 'all' ? SEARCH_POOL : SEARCH_POOL.filter(it => it.type === sFilter);
+  const TYPE_CN = { card:'卡牌', relic:'遗物', build:'流派' };
+
+  let hits;
+  if(!q){
+    if(sFilter === 'all'){
+      sResults.innerHTML = '<div class="s-empty">输入卡牌名、遗物名或流派名<br><span style="font-size:11px;opacity:.65">也可以点上面的分类直接浏览，或按 / 开始搜索</span></div>';
+      return;
+    }
+    hits = list.map(it => ({ it, s:0 }));
+    hits.sort((a, b) => a.it.cn.localeCompare(b.it.cn, 'zh'));
+  }else{
+    hits = [];
+    for(const it of list){
+      const nm = (it.cn + ' ' + it.key).toLowerCase();
+      if(nm.indexOf(q) >= 0) hits.push({ it, s:0 });
+      else if((it.meta || '').toLowerCase().indexOf(q) >= 0) hits.push({ it, s:1 });
+      else if((it.sub || '').toLowerCase().indexOf(q) >= 0) hits.push({ it, s:2 });
+    }
+    hits.sort((a, b) => (a.s - b.s) || (TYPE_W[a.it.type] - TYPE_W[b.it.type]));
+  }
+  searchHits = hits.slice(0, 200).map(h => h.it);
+
+  if(!hits.length){
+    sResults.innerHTML = '<div class="s-empty">没有找到「' + esc(q) + '」<br><span style="font-size:11px;opacity:.65">试试只输两个字，或换个说法</span></div>';
+    return;
+  }
+
+  const head = q
+    ? (hits.length > searchHits.length ? '共 ' + hits.length + ' 个，显示前 ' + searchHits.length + ' 条' : hits.length + ' 个结果')
+    : '全部' + (TYPE_CN[sFilter] || '') + ' · ' + hits.length + ' 项，按名称排序';
+
+  sResults.innerHTML = '<div class="s-count">' + head + '</div>' + searchHits.map((it, i) =>
+    '<div class="s-item" data-si="' + i + '">'
+    + '<div class="s-ico" style="color:' + it.col + ';border:1px solid ' + it.col + '55;background:' + it.col + '18">' + kindIcon(it) + '</div>'
+    + '<div style="flex:1;min-width:0">'
+    + '<div class="s-name">' + it.cn + '<span class="s-kind">' + it.kind + '</span></div>'
+    + '<div class="s-sub">' + (it.charName ? it.charName + ' · ' : '') + (it.sub || '') + '</div>'
+    + '</div></div>'
+  ).join('');
+
+  sResults.scrollTop = 0;
+
+  sResults.querySelectorAll('.s-item').forEach(node => {
+    node.onclick = (ev) => {
+      ev.stopPropagation();
+      const it = searchHits[Number(node.dataset.si)];
+      if(!it) return;
+      if(it.type === 'build'){
+        closeSearch();
+        jumpToBuild(it.char, it.name);
+      }else{
+        renderTip(it.key, null, true);
+      }
+    };
+  });
+}
+
+
+function openSearch(){
+  const already = searchLayer.classList.contains('on');
+  searchLayer.classList.add('on');
+  document.body.style.overflow = 'hidden';
+  if(!already){
+    sFilter = 'all';
+    document.querySelectorAll('.s-f').forEach(x => x.classList.toggle('on', x.dataset.f === 'all'));
+    sInput.value = '';
+    runSearch('');
+  }
+  try{ sInput.focus({ preventScroll: true }); }catch(e){}
+  requestAnimationFrame(() => { try{ sInput.focus({ preventScroll: true }); }catch(e){} });
+}
+
+function closeSearch(){
+  searchLayer.classList.remove('on');
+  if(!tipbox.classList.contains('on')) document.body.style.overflow = '';
+}
+
+document.getElementById('searchBarBtn').onclick = openSearch;
+document.getElementById('sCancel').onclick = closeSearch;
+sInput.addEventListener('input', e => runSearch(e.target.value));
+sInput.addEventListener('compositionend', e => runSearch(e.target.value));
+sInput.addEventListener('search', e => runSearch(e.target.value));
+
+document.querySelectorAll('.s-f').forEach(b => {
+  b.onclick = () => {
+    document.querySelectorAll('.s-f').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    sFilter = b.dataset.f;
+    runSearch(sInput.value);
+  };
+});
+
+</script>
+</body>
+</html>

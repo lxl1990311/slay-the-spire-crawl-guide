@@ -1,0 +1,2936 @@
+{
+  "builds": [
+    {
+      "key": "i|腐化消耗流",
+      "char": "i",
+      "tier": "T0",
+      "nameCn": "腐化消耗流",
+      "nameEn": "Corruption Exhaust",
+      "shortCn": "消耗",
+      "shortEn": "Exhaust",
+      "core": [
+        "Corruption",
+        "Dark Embrace",
+        "Feel No Pain"
+      ],
+      "keys": [
+        "Battle Trance",
+        "Burning Pact",
+        "Shrug It Off",
+        "True Grit",
+        "Sentinel"
+      ]
+    },
+    {
+      "key": "i|力量流",
+      "char": "i",
+      "tier": "T1",
+      "nameCn": "力量流",
+      "nameEn": "Strength Stack",
+      "shortCn": "力量",
+      "shortEn": "Strength",
+      "core": [
+        "Demon Form",
+        "Inflame",
+        "Spot Weakness",
+        "Limit Break"
+      ],
+      "keys": [
+        "Heavy Blade",
+        "Whirlwind",
+        "Sword Boomerang",
+        "Twin Strike",
+        "Flex"
+      ]
+    },
+    {
+      "key": "i|格挡堡垒流",
+      "char": "i",
+      "tier": "T2",
+      "nameCn": "格挡堡垒流",
+      "nameEn": "Barricade · Body Slam",
+      "shortCn": "格挡",
+      "shortEn": "Block",
+      "core": [
+        "Barricade",
+        "Entrench",
+        "Body Slam",
+        "Juggernaut"
+      ],
+      "keys": [
+        "Metallicize",
+        "True Grit",
+        "Shrug It Off",
+        "Flame Barrier"
+      ]
+    },
+    {
+      "key": "i|撕裂自伤流",
+      "char": "i",
+      "tier": "T3",
+      "nameCn": "撕裂自伤流",
+      "nameEn": "Rupture · Self-Damage",
+      "shortCn": "自伤",
+      "shortEn": "SelfDmg",
+      "core": [
+        "Rupture",
+        "Bloodletting",
+        "Offering",
+        "Berserk"
+      ],
+      "keys": [
+        "Reaper",
+        "Twin Strike"
+      ]
+    },
+    {
+      "key": "s|毒流",
+      "char": "s",
+      "tier": "T0",
+      "nameCn": "毒流",
+      "nameEn": "Poison",
+      "shortCn": "毒",
+      "shortEn": "Poison",
+      "core": [
+        "Noxious Fumes",
+        "Catalyst",
+        "Deadly Poison",
+        "Bouncing Flask"
+      ],
+      "keys": [
+        "Corpse Explosion",
+        "Envenom",
+        "Wraith Form v2",
+        "Backflip",
+        "Acrobatics",
+        "Burst"
+      ]
+    },
+    {
+      "key": "s|小刀流",
+      "char": "s",
+      "tier": "T1",
+      "nameCn": "小刀流",
+      "nameEn": "Shiv",
+      "shortCn": "小刀",
+      "shortEn": "Shiv",
+      "core": [
+        "Blade Dance",
+        "Infinite Blades",
+        "Accuracy",
+        "Finisher"
+      ],
+      "keys": [
+        "Cloak And Dagger",
+        "Storm of Steel",
+        "After Image",
+        "Envenom",
+        "A Thousand Cuts"
+      ]
+    },
+    {
+      "key": "s|弃牌流",
+      "char": "s",
+      "tier": "T1",
+      "nameCn": "弃牌流",
+      "nameEn": "Discard",
+      "shortCn": "弃牌",
+      "shortEn": "Discard",
+      "core": [
+        "Acrobatics",
+        "Calculated Gamble",
+        "Tactician",
+        "Reflex"
+      ],
+      "keys": [
+        "Eviscerate",
+        "Grand Finale",
+        "Well Laid Plans",
+        "Prepared",
+        "Adrenaline"
+      ]
+    },
+    {
+      "key": "s|无限流",
+      "char": "s",
+      "tier": "T2",
+      "nameCn": "无限流",
+      "nameEn": "Infinite Draw",
+      "shortCn": "无限",
+      "shortEn": "Infinite",
+      "core": [
+        "Acrobatics",
+        "Reflex",
+        "Tactician",
+        "Backflip"
+      ],
+      "keys": [
+        "Adrenaline",
+        "Well Laid Plans"
+      ]
+    },
+    {
+      "key": "d|冰霜坦克流",
+      "char": "d",
+      "tier": "T0",
+      "nameCn": "冰霜坦克流",
+      "nameEn": "Frost Orb",
+      "shortCn": "冰霜",
+      "shortEn": "Frost",
+      "core": [
+        "Glacier",
+        "Coolheaded",
+        "Blizzard",
+        "Capacitor",
+        "Defragment"
+      ],
+      "keys": [
+        "Chill",
+        "Echo Form",
+        "Buffer",
+        "Loop",
+        "Redo",
+        "Multi-Cast"
+      ]
+    },
+    {
+      "key": "d|闪电球流",
+      "char": "d",
+      "tier": "T1",
+      "nameCn": "闪电球流",
+      "nameEn": "Lightning Orb",
+      "shortCn": "闪电",
+      "shortEn": "Lightning",
+      "core": [
+        "Electrodynamics",
+        "Zap",
+        "Ball Lightning",
+        "Thunder Strike"
+      ],
+      "keys": [
+        "Storm",
+        "Defragment",
+        "Capacitor",
+        "Steam Power",
+        "Conserve Battery"
+      ]
+    },
+    {
+      "key": "d|能力流",
+      "char": "d",
+      "tier": "T2",
+      "nameCn": "能力流",
+      "nameEn": "Power / Creative AI",
+      "shortCn": "能力",
+      "shortEn": "Power",
+      "core": [
+        "Creative AI",
+        "Heatsinks",
+        "Echo Form",
+        "Buffer"
+      ],
+      "keys": [
+        "Biased Cognition",
+        "Capacitor",
+        "Machine Learning",
+        "Fusion"
+      ]
+    },
+    {
+      "key": "d|暗球 / 爪击流",
+      "char": "d",
+      "tier": "T3",
+      "nameCn": "暗球 / 爪击流",
+      "nameEn": "Dark Orb · Claw",
+      "shortCn": "暗球",
+      "shortEn": "Dark/Claw",
+      "core": [
+        "Darkness",
+        "Multi-Cast",
+        "Gash",
+        "All For One"
+      ],
+      "keys": [
+        "Redo",
+        "Loop",
+        "Steam",
+        "Reboot",
+        "Turbo"
+      ]
+    },
+    {
+      "key": "w|姿态循环无限流",
+      "char": "w",
+      "tier": "T0",
+      "nameCn": "姿态循环无限流",
+      "nameEn": "Stance Infinite",
+      "shortCn": "姿态无限",
+      "shortEn": "StanceLoop",
+      "core": [
+        "Eruption",
+        "InnerPeace",
+        "FearNoEvil",
+        "Adaptation"
+      ],
+      "keys": [
+        "MentalFortress",
+        "TalkToTheHand",
+        "EmptyMind",
+        "Vault",
+        "Scrawl"
+      ]
+    },
+    {
+      "key": "w|姿态舞（常规）",
+      "char": "w",
+      "tier": "T1",
+      "nameCn": "姿态舞（常规）",
+      "nameEn": "Stance Dance",
+      "shortCn": "姿态舞",
+      "shortEn": "StanceDance",
+      "core": [
+        "Eruption",
+        "Vigilance",
+        "Tantrum",
+        "EmptyFist"
+      ],
+      "keys": [
+        "FlurryOfBlows",
+        "TalkToTheHand",
+        "MentalFortress",
+        "Meditate",
+        "LikeWater"
+      ]
+    },
+    {
+      "key": "w|神格真言流",
+      "char": "w",
+      "tier": "T2",
+      "nameCn": "神格真言流",
+      "nameEn": "Divinity · Mantra",
+      "shortCn": "真言",
+      "shortEn": "Divinity",
+      "core": [
+        "Devotion",
+        "Worship",
+        "Pray",
+        "Prostrate",
+        "Brilliance"
+      ],
+      "keys": [
+        "Ragnarok",
+        "Blasphemy",
+        "DevaForm",
+        "Omniscience",
+        "Wallop"
+      ]
+    },
+    {
+      "key": "w|点穴 / 保留流",
+      "char": "w",
+      "tier": "T3",
+      "nameCn": "点穴 / 保留流",
+      "nameEn": "Pressure Points · Retain",
+      "shortCn": "点穴 / 保留流",
+      "shortEn": "Pressure Points · Retain",
+      "core": [
+        "PathToVictory",
+        "SandsOfTime",
+        "Meditate",
+        "Establishment"
+      ],
+      "keys": [
+        "Perseverance",
+        "SignatureMove",
+        "WaveOfTheHand",
+        "Omniscience"
+      ]
+    }
+  ],
+  "cards": {
+    "Barricade": {
+      "id": "Barricade",
+      "name": "Barricade",
+      "cn": "壁垒",
+      "tier": "T1",
+      "builds": [
+        "i|格挡堡垒流"
+      ]
+    },
+    "Battle Trance": {
+      "id": "Battle Trance",
+      "name": "Battle Trance",
+      "cn": "战斗专注",
+      "tier": "T1",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Berserk": {
+      "id": "Berserk",
+      "name": "Berserk",
+      "cn": "狂暴",
+      "tier": "T3",
+      "builds": [
+        "i|撕裂自伤流"
+      ]
+    },
+    "Bloodletting": {
+      "id": "Bloodletting",
+      "name": "Bloodletting",
+      "cn": "放血",
+      "tier": "T3",
+      "builds": [
+        "i|撕裂自伤流"
+      ]
+    },
+    "Body Slam": {
+      "id": "Body Slam",
+      "name": "Body Slam",
+      "cn": "全身撞击",
+      "tier": "T1",
+      "builds": [
+        "i|格挡堡垒流"
+      ]
+    },
+    "Burning Pact": {
+      "id": "Burning Pact",
+      "name": "Burning Pact",
+      "cn": "燃烧契约",
+      "tier": "T2",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Corruption": {
+      "id": "Corruption",
+      "name": "Corruption",
+      "cn": "腐化",
+      "tier": "T0",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Dark Embrace": {
+      "id": "Dark Embrace",
+      "name": "Dark Embrace",
+      "cn": "黑暗之拥",
+      "tier": "T0",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Demon Form": {
+      "id": "Demon Form",
+      "name": "Demon Form",
+      "cn": "恶魔形态",
+      "tier": "T0",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Entrench": {
+      "id": "Entrench",
+      "name": "Entrench",
+      "cn": "巩固",
+      "tier": "T1",
+      "builds": [
+        "i|格挡堡垒流"
+      ]
+    },
+    "Feel No Pain": {
+      "id": "Feel No Pain",
+      "name": "Feel No Pain",
+      "cn": "无惧疼痛",
+      "tier": "T0",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Flame Barrier": {
+      "id": "Flame Barrier",
+      "name": "Flame Barrier",
+      "cn": "火焰屏障",
+      "tier": "T2",
+      "builds": [
+        "i|格挡堡垒流"
+      ]
+    },
+    "Flex": {
+      "id": "Flex",
+      "name": "Flex",
+      "cn": "活动肌肉",
+      "tier": "T2",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Heavy Blade": {
+      "id": "Heavy Blade",
+      "name": "Heavy Blade",
+      "cn": "重刃",
+      "tier": "T1",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Inflame": {
+      "id": "Inflame",
+      "name": "Inflame",
+      "cn": "燃烧",
+      "tier": "T1",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Juggernaut": {
+      "id": "Juggernaut",
+      "name": "Juggernaut",
+      "cn": "势不可当",
+      "tier": "T2",
+      "builds": [
+        "i|格挡堡垒流"
+      ]
+    },
+    "Limit Break": {
+      "id": "Limit Break",
+      "name": "Limit Break",
+      "cn": "突破极限",
+      "tier": "T0",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Metallicize": {
+      "id": "Metallicize",
+      "name": "Metallicize",
+      "cn": "金属化",
+      "tier": "T2",
+      "builds": [
+        "i|格挡堡垒流"
+      ]
+    },
+    "Offering": {
+      "id": "Offering",
+      "name": "Offering",
+      "cn": "祭品",
+      "tier": "T1",
+      "builds": [
+        "i|撕裂自伤流"
+      ]
+    },
+    "Reaper": {
+      "id": "Reaper",
+      "name": "Reaper",
+      "cn": "死亡收割",
+      "tier": "T1",
+      "builds": [
+        "i|撕裂自伤流"
+      ]
+    },
+    "Rupture": {
+      "id": "Rupture",
+      "name": "Rupture",
+      "cn": "撕裂",
+      "tier": "T3",
+      "builds": [
+        "i|撕裂自伤流"
+      ]
+    },
+    "Sentinel": {
+      "id": "Sentinel",
+      "name": "Sentinel",
+      "cn": "哨卫",
+      "tier": "T2",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Shrug It Off": {
+      "id": "Shrug It Off",
+      "name": "Shrug It Off",
+      "cn": "耸肩无视",
+      "tier": "T1",
+      "builds": [
+        "i|腐化消耗流",
+        "i|格挡堡垒流"
+      ]
+    },
+    "Spot Weakness": {
+      "id": "Spot Weakness",
+      "name": "Spot Weakness",
+      "cn": "观察弱点",
+      "tier": "T1",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Sword Boomerang": {
+      "id": "Sword Boomerang",
+      "name": "Sword Boomerang",
+      "cn": "飞剑回旋镖",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "True Grit": {
+      "id": "True Grit",
+      "name": "True Grit",
+      "cn": "坚毅",
+      "tier": "T2",
+      "builds": [
+        "i|腐化消耗流",
+        "i|格挡堡垒流"
+      ]
+    },
+    "Twin Strike": {
+      "id": "Twin Strike",
+      "name": "Twin Strike",
+      "cn": "双重打击",
+      "tier": "T2",
+      "builds": [
+        "i|力量流",
+        "i|撕裂自伤流"
+      ]
+    },
+    "Whirlwind": {
+      "id": "Whirlwind",
+      "name": "Whirlwind",
+      "cn": "旋风斩",
+      "tier": "T1",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Accuracy": {
+      "id": "Accuracy",
+      "name": "Accuracy",
+      "cn": "精准",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Acrobatics": {
+      "id": "Acrobatics",
+      "name": "Acrobatics",
+      "cn": "杂技",
+      "tier": "T2",
+      "builds": [
+        "s|毒流",
+        "s|弃牌流",
+        "s|无限流"
+      ]
+    },
+    "Adrenaline": {
+      "id": "Adrenaline",
+      "name": "Adrenaline",
+      "cn": "肾上腺素",
+      "tier": "T1",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ]
+    },
+    "After Image": {
+      "id": "After Image",
+      "name": "After Image",
+      "cn": "余像",
+      "tier": "T0",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Backflip": {
+      "id": "Backflip",
+      "name": "Backflip",
+      "cn": "后空翻",
+      "tier": "T1",
+      "builds": [
+        "s|毒流",
+        "s|无限流"
+      ]
+    },
+    "Blade Dance": {
+      "id": "Blade Dance",
+      "name": "Blade Dance",
+      "cn": "刀刃之舞",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Bouncing Flask": {
+      "id": "Bouncing Flask",
+      "name": "Bouncing Flask",
+      "cn": "弹跳药瓶",
+      "tier": "T1",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Burst": {
+      "id": "Burst",
+      "name": "Burst",
+      "cn": "爆发",
+      "tier": "T2",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Calculated Gamble": {
+      "id": "Calculated Gamble",
+      "name": "Calculated Gamble",
+      "cn": "计算下注",
+      "tier": "T2",
+      "builds": [
+        "s|弃牌流"
+      ]
+    },
+    "Catalyst": {
+      "id": "Catalyst",
+      "name": "Catalyst",
+      "cn": "催化剂",
+      "tier": "T0",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Cloak And Dagger": {
+      "id": "Cloak And Dagger",
+      "name": "Cloak and Dagger",
+      "cn": "斗篷与匕首",
+      "tier": "T2",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Corpse Explosion": {
+      "id": "Corpse Explosion",
+      "name": "Corpse Explosion",
+      "cn": "尸爆",
+      "tier": "T1",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Deadly Poison": {
+      "id": "Deadly Poison",
+      "name": "Deadly Poison",
+      "cn": "致命毒药",
+      "tier": "T1",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Envenom": {
+      "id": "Envenom",
+      "name": "Envenom",
+      "cn": "涂毒",
+      "tier": "T2",
+      "builds": [
+        "s|毒流",
+        "s|小刀流"
+      ]
+    },
+    "Eviscerate": {
+      "id": "Eviscerate",
+      "name": "Eviscerate",
+      "cn": "内脏切除",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流"
+      ]
+    },
+    "Finisher": {
+      "id": "Finisher",
+      "name": "Finisher",
+      "cn": "终结技",
+      "tier": "T2",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Grand Finale": {
+      "id": "Grand Finale",
+      "name": "Grand Finale",
+      "cn": "华丽收场",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流"
+      ]
+    },
+    "Infinite Blades": {
+      "id": "Infinite Blades",
+      "name": "Infinite Blades",
+      "cn": "无限刀刃",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Noxious Fumes": {
+      "id": "Noxious Fumes",
+      "name": "Noxious Fumes",
+      "cn": "毒雾",
+      "tier": "T0",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Prepared": {
+      "id": "Prepared",
+      "name": "Prepared",
+      "cn": "早有准备",
+      "tier": "T3",
+      "builds": [
+        "s|弃牌流"
+      ]
+    },
+    "Reflex": {
+      "id": "Reflex",
+      "name": "Reflex",
+      "cn": "本能反应",
+      "tier": "T2",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ]
+    },
+    "Storm of Steel": {
+      "id": "Storm of Steel",
+      "name": "Storm of Steel",
+      "cn": "钢铁风暴",
+      "tier": "T2",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Tactician": {
+      "id": "Tactician",
+      "name": "Tactician",
+      "cn": "战术大师",
+      "tier": "T1",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ]
+    },
+    "A Thousand Cuts": {
+      "id": "A Thousand Cuts",
+      "name": "Thousand Cuts",
+      "cn": "凌迟",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Well Laid Plans": {
+      "id": "Well Laid Plans",
+      "name": "Well-Laid Plans",
+      "cn": "计划妥当",
+      "tier": "T1",
+      "builds": [
+        "s|弃牌流",
+        "s|无限流"
+      ]
+    },
+    "Wraith Form v2": {
+      "id": "Wraith Form v2",
+      "name": "Wraith Form",
+      "cn": "幽魂形态",
+      "tier": "T0",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "All For One": {
+      "id": "All For One",
+      "name": "All For One",
+      "cn": "万物一心",
+      "tier": "T2",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Ball Lightning": {
+      "id": "Ball Lightning",
+      "name": "Ball Lightning",
+      "cn": "球状闪电",
+      "tier": "T2",
+      "builds": [
+        "d|闪电球流"
+      ]
+    },
+    "Biased Cognition": {
+      "id": "Biased Cognition",
+      "name": "Biased Cognition",
+      "cn": "偏差认知",
+      "tier": "T0",
+      "builds": [
+        "d|能力流"
+      ]
+    },
+    "Blizzard": {
+      "id": "Blizzard",
+      "name": "Blizzard",
+      "cn": "暴雪",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流"
+      ]
+    },
+    "Buffer": {
+      "id": "Buffer",
+      "name": "Buffer",
+      "cn": "缓冲",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|能力流"
+      ]
+    },
+    "Capacitor": {
+      "id": "Capacitor",
+      "name": "Capacitor",
+      "cn": "扩容",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|闪电球流",
+        "d|能力流"
+      ]
+    },
+    "Conserve Battery": {
+      "id": "Conserve Battery",
+      "name": "Charge Battery",
+      "cn": "充电",
+      "tier": "T2",
+      "builds": [
+        "d|闪电球流"
+      ]
+    },
+    "Chill": {
+      "id": "Chill",
+      "name": "Chill",
+      "cn": "冰寒",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流"
+      ]
+    },
+    "Gash": {
+      "id": "Gash",
+      "name": "Claw",
+      "cn": "爪击",
+      "tier": "T2",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Coolheaded": {
+      "id": "Coolheaded",
+      "name": "Coolheaded",
+      "cn": "冷静头脑",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流"
+      ]
+    },
+    "Darkness": {
+      "id": "Darkness",
+      "name": "Darkness",
+      "cn": "漆黑",
+      "tier": "T2",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Defragment": {
+      "id": "Defragment",
+      "name": "Defragment",
+      "cn": "碎片整理",
+      "tier": "T0",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|闪电球流"
+      ]
+    },
+    "Echo Form": {
+      "id": "Echo Form",
+      "name": "Echo Form",
+      "cn": "回响形态",
+      "tier": "T0",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|能力流"
+      ]
+    },
+    "Electrodynamics": {
+      "id": "Electrodynamics",
+      "name": "Electrodynamics",
+      "cn": "电动力学",
+      "tier": "T0",
+      "builds": [
+        "d|闪电球流"
+      ]
+    },
+    "Fusion": {
+      "id": "Fusion",
+      "name": "Fusion",
+      "cn": "聚变",
+      "tier": "T2",
+      "builds": [
+        "d|能力流"
+      ]
+    },
+    "Glacier": {
+      "id": "Glacier",
+      "name": "Glacier",
+      "cn": "冰川",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流"
+      ]
+    },
+    "Heatsinks": {
+      "id": "Heatsinks",
+      "name": "Heatsinks",
+      "cn": "散热片",
+      "tier": "T1",
+      "builds": [
+        "d|能力流"
+      ]
+    },
+    "Loop": {
+      "id": "Loop",
+      "name": "Loop",
+      "cn": "循环",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Machine Learning": {
+      "id": "Machine Learning",
+      "name": "Machine Learning",
+      "cn": "机器学习",
+      "tier": "T3",
+      "builds": [
+        "d|能力流"
+      ]
+    },
+    "Multi-Cast": {
+      "id": "Multi-Cast",
+      "name": "Multi-Cast",
+      "cn": "多重释放",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Steam Power": {
+      "id": "Steam Power",
+      "name": "Overclock",
+      "cn": "超频",
+      "tier": "T3",
+      "builds": [
+        "d|闪电球流"
+      ]
+    },
+    "Reboot": {
+      "id": "Reboot",
+      "name": "Reboot",
+      "cn": "重启",
+      "tier": "T3",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Redo": {
+      "id": "Redo",
+      "name": "Recursion",
+      "cn": "递归",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Steam": {
+      "id": "Steam",
+      "name": "Steam Barrier",
+      "cn": "蒸汽护壁",
+      "tier": "T3",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Storm": {
+      "id": "Storm",
+      "name": "Storm",
+      "cn": "雷暴",
+      "tier": "T2",
+      "builds": [
+        "d|闪电球流"
+      ]
+    },
+    "Thunder Strike": {
+      "id": "Thunder Strike",
+      "name": "Thunder Strike",
+      "cn": "雷霆打击",
+      "tier": "T2",
+      "builds": [
+        "d|闪电球流"
+      ]
+    },
+    "Turbo": {
+      "id": "Turbo",
+      "name": "Turbo",
+      "cn": "内核加速",
+      "tier": "T2",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Zap": {
+      "id": "Zap",
+      "name": "Zap",
+      "cn": "电击",
+      "tier": "T2",
+      "builds": [
+        "d|闪电球流"
+      ]
+    },
+    "Creative AI": {
+      "id": "Creative AI",
+      "name": "Creative AI",
+      "cn": "创造性AI",
+      "tier": "T1",
+      "builds": [
+        "d|能力流"
+      ]
+    },
+    "Blasphemy": {
+      "id": "Blasphemy",
+      "name": "Blasphemy",
+      "cn": "渎神",
+      "tier": "T3",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "Brilliance": {
+      "id": "Brilliance",
+      "name": "Brilliance",
+      "cn": "光辉",
+      "tier": "T1",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "DevaForm": {
+      "id": "DevaForm",
+      "name": "Deva Form",
+      "cn": "天人形态",
+      "tier": "T3",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "Devotion": {
+      "id": "Devotion",
+      "name": "Devotion",
+      "cn": "虔信",
+      "tier": "T1",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "EmptyFist": {
+      "id": "EmptyFist",
+      "name": "Empty Fist",
+      "cn": "化拳为空",
+      "tier": "T1",
+      "builds": [
+        "w|姿态舞（常规）"
+      ]
+    },
+    "EmptyMind": {
+      "id": "EmptyMind",
+      "name": "Empty Mind",
+      "cn": "化智为空",
+      "tier": "T1",
+      "builds": [
+        "w|姿态循环无限流"
+      ]
+    },
+    "Eruption": {
+      "id": "Eruption",
+      "name": "Eruption",
+      "cn": "暴怒",
+      "tier": "T0",
+      "builds": [
+        "w|姿态循环无限流",
+        "w|姿态舞（常规）"
+      ]
+    },
+    "Establishment": {
+      "id": "Establishment",
+      "name": "Establishment",
+      "cn": "确立基础",
+      "tier": "T2",
+      "builds": [
+        "w|点穴 / 保留流"
+      ]
+    },
+    "FearNoEvil": {
+      "id": "FearNoEvil",
+      "name": "Fear No Evil",
+      "cn": "不惧妖邪",
+      "tier": "T1",
+      "builds": [
+        "w|姿态循环无限流"
+      ]
+    },
+    "FlurryOfBlows": {
+      "id": "FlurryOfBlows",
+      "name": "Flurry of Blows",
+      "cn": "疾风连击",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）"
+      ]
+    },
+    "InnerPeace": {
+      "id": "InnerPeace",
+      "name": "Inner Peace",
+      "cn": "内心宁静",
+      "tier": "T1",
+      "builds": [
+        "w|姿态循环无限流"
+      ]
+    },
+    "LikeWater": {
+      "id": "LikeWater",
+      "name": "Like Water",
+      "cn": "如水",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）"
+      ]
+    },
+    "Meditate": {
+      "id": "Meditate",
+      "name": "Meditate",
+      "cn": "冥想",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|点穴 / 保留流"
+      ]
+    },
+    "MentalFortress": {
+      "id": "MentalFortress",
+      "name": "Mental Fortress",
+      "cn": "心灵堡垒",
+      "tier": "T0",
+      "builds": [
+        "w|姿态循环无限流",
+        "w|姿态舞（常规）"
+      ]
+    },
+    "Omniscience": {
+      "id": "Omniscience",
+      "name": "Omniscience",
+      "cn": "通晓万物",
+      "tier": "T1",
+      "builds": [
+        "w|神格真言流",
+        "w|点穴 / 保留流"
+      ]
+    },
+    "Perseverance": {
+      "id": "Perseverance",
+      "name": "Perseverance",
+      "cn": "坚韧",
+      "tier": "T2",
+      "builds": [
+        "w|点穴 / 保留流"
+      ]
+    },
+    "Pray": {
+      "id": "Pray",
+      "name": "Pray",
+      "cn": "祈祷",
+      "tier": "T2",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "PathToVictory": {
+      "id": "PathToVictory",
+      "name": "Pressure Points",
+      "cn": "点穴",
+      "tier": "T2",
+      "builds": [
+        "w|点穴 / 保留流"
+      ]
+    },
+    "Prostrate": {
+      "id": "Prostrate",
+      "name": "Prostrate",
+      "cn": "五体投地",
+      "tier": "T3",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "Ragnarok": {
+      "id": "Ragnarok",
+      "name": "Ragnarok",
+      "cn": "诸神之黄昏",
+      "tier": "T3",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "Adaptation": {
+      "id": "Adaptation",
+      "name": "Rushdown",
+      "cn": "猛虎下山",
+      "tier": "T0",
+      "builds": [
+        "w|姿态循环无限流"
+      ]
+    },
+    "SandsOfTime": {
+      "id": "SandsOfTime",
+      "name": "Sands of Time",
+      "cn": "时之沙",
+      "tier": "T2",
+      "builds": [
+        "w|点穴 / 保留流"
+      ]
+    },
+    "Scrawl": {
+      "id": "Scrawl",
+      "name": "Scrawl",
+      "cn": "潦草急就",
+      "tier": "T0",
+      "builds": [
+        "w|姿态循环无限流"
+      ]
+    },
+    "SignatureMove": {
+      "id": "SignatureMove",
+      "name": "Signature Move",
+      "cn": "招牌技",
+      "tier": "T3",
+      "builds": [
+        "w|点穴 / 保留流"
+      ]
+    },
+    "Tantrum": {
+      "id": "Tantrum",
+      "name": "Tantrum",
+      "cn": "发泄",
+      "tier": "T1",
+      "builds": [
+        "w|姿态舞（常规）"
+      ]
+    },
+    "TalkToTheHand": {
+      "id": "TalkToTheHand",
+      "name": "Talk to the Hand",
+      "cn": "以手拒之",
+      "tier": "T0",
+      "builds": [
+        "w|姿态循环无限流",
+        "w|姿态舞（常规）"
+      ]
+    },
+    "Vault": {
+      "id": "Vault",
+      "name": "Vault",
+      "cn": "腾跃",
+      "tier": "T1",
+      "builds": [
+        "w|姿态循环无限流"
+      ]
+    },
+    "Vigilance": {
+      "id": "Vigilance",
+      "name": "Vigilance",
+      "cn": "警惕",
+      "tier": "T0",
+      "builds": [
+        "w|姿态舞（常规）"
+      ]
+    },
+    "Wallop": {
+      "id": "Wallop",
+      "name": "Wallop",
+      "cn": "当头棒喝",
+      "tier": "T2",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "WaveOfTheHand": {
+      "id": "WaveOfTheHand",
+      "name": "Wave of the Hand",
+      "cn": "摆手",
+      "tier": "T2",
+      "builds": [
+        "w|点穴 / 保留流"
+      ]
+    },
+    "Worship": {
+      "id": "Worship",
+      "name": "Worship",
+      "cn": "敬拜",
+      "tier": "T1",
+      "builds": [
+        "w|神格真言流"
+      ]
+    }
+  },
+  "relics": {
+    "Akabeko": {
+      "id": "Akabeko",
+      "name": "Akabeko",
+      "cn": "赤牛",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）",
+        "i|力量流"
+      ]
+    },
+    "Anchor": {
+      "id": "Anchor",
+      "name": "Anchor",
+      "cn": "锚",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Bird Faced Urn": {
+      "id": "Bird Faced Urn",
+      "name": "Bird-Faced Urn",
+      "cn": "鸟面瓮",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Blood Vial": {
+      "id": "Blood Vial",
+      "name": "Blood Vial",
+      "cn": "小血瓶",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Bronze Scales": {
+      "id": "Bronze Scales",
+      "name": "Bronze Scales",
+      "cn": "铜制鳞片",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Burning Blood": {
+      "id": "Burning Blood",
+      "name": "Burning Blood",
+      "cn": "燃烧之血",
+      "rarity": "初始",
+      "tier": "T2",
+      "builds": []
+    },
+    "Calipers": {
+      "id": "Calipers",
+      "name": "Calipers",
+      "cn": "外卡钳",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Chemical X": {
+      "id": "Chemical X",
+      "name": "Chemical X",
+      "cn": "化学物X",
+      "rarity": "商店",
+      "tier": "T1",
+      "builds": [
+        "i|力量流",
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Charon's Ashes": {
+      "id": "Charon's Ashes",
+      "name": "Charon's Ashes",
+      "cn": "卡戎之灰",
+      "rarity": "稀有",
+      "tier": "T1",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Damaru": {
+      "id": "Damaru",
+      "name": "Damaru",
+      "cn": "手摇鼓",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": [
+        "w|神格真言流"
+      ]
+    },
+    "DataDisk": {
+      "id": "DataDisk",
+      "name": "Data Disk",
+      "cn": "数据磁盘",
+      "rarity": "普通",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|闪电球流",
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "Dead Branch": {
+      "id": "Dead Branch",
+      "name": "Dead Branch",
+      "cn": "枯木树枝",
+      "rarity": "稀有",
+      "tier": "T0",
+      "builds": [
+        "i|腐化消耗流"
+      ]
+    },
+    "Empty Cage": {
+      "id": "Empty Cage",
+      "name": "Empty Cage",
+      "cn": "空鸟笼",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": []
+    },
+    "FossilizedHelix": {
+      "id": "FossilizedHelix",
+      "name": "Fossilized Helix",
+      "cn": "螺类化石",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "FrozenCore": {
+      "id": "FrozenCore",
+      "name": "Frozen Core",
+      "cn": "冻结核心",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流"
+      ]
+    },
+    "Cables": {
+      "id": "Cables",
+      "name": "Gold-Plated Cables",
+      "cn": "镀金缆线",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "HornCleat": {
+      "id": "HornCleat",
+      "name": "Horn Cleat",
+      "cn": "船夹板",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "HoveringKite": {
+      "id": "HoveringKite",
+      "name": "Hovering Kite",
+      "cn": "悬浮风筝",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": [
+        "s|弃牌流"
+      ]
+    },
+    "Ice Cream": {
+      "id": "Ice Cream",
+      "name": "Ice Cream",
+      "cn": "冰淇淋",
+      "rarity": "稀有",
+      "tier": "T1",
+      "builds": [
+        "w|神格真言流",
+        "i|力量流",
+        "d|冰霜坦克流"
+      ]
+    },
+    "Incense Burner": {
+      "id": "Incense Burner",
+      "name": "Incense Burner",
+      "cn": "香炉",
+      "rarity": "稀有",
+      "tier": "T1",
+      "builds": [
+        "s|毒流",
+        "d|冰霜坦克流"
+      ]
+    },
+    "Inserter": {
+      "id": "Inserter",
+      "name": "Inserter",
+      "cn": "机械臂",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": [
+        "d|冰霜坦克流"
+      ]
+    },
+    "Kunai": {
+      "id": "Kunai",
+      "name": "Kunai",
+      "cn": "苦无",
+      "rarity": "罕见",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流",
+        "s|弃牌流"
+      ]
+    },
+    "Meat on the Bone": {
+      "id": "Meat on the Bone",
+      "name": "Meat on the Bone",
+      "cn": "带骨肉",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Medical Kit": {
+      "id": "Medical Kit",
+      "name": "Medical Kit",
+      "cn": "医药箱",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "Mummified Hand": {
+      "id": "Mummified Hand",
+      "name": "Mummified Hand",
+      "cn": "干瘪之手",
+      "rarity": "罕见",
+      "tier": "T1",
+      "builds": [
+        "d|能力流",
+        "i|腐化消耗流"
+      ]
+    },
+    "MutagenicStrength": {
+      "id": "MutagenicStrength",
+      "name": "Mutagenic Strength",
+      "cn": "突变之力",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "Nuclear Battery": {
+      "id": "Nuclear Battery",
+      "name": "Nuclear Battery",
+      "cn": "核能电池",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": [
+        "d|能力流",
+        "d|闪电球流"
+      ]
+    },
+    "Ornamental Fan": {
+      "id": "Ornamental Fan",
+      "name": "Ornamental Fan",
+      "cn": "精致折扇",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Paper Crane": {
+      "id": "Paper Crane",
+      "name": "Paper Krane",
+      "cn": "纸鹤",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": [
+        "s|毒流",
+        "s|弃牌流"
+      ]
+    },
+    "Philosopher's Stone": {
+      "id": "Philosopher's Stone",
+      "name": "Philosopher's Stone",
+      "cn": "贤者之石",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Pocketwatch": {
+      "id": "Pocketwatch",
+      "name": "Pocketwatch",
+      "cn": "怀表",
+      "rarity": "稀有",
+      "tier": "T0",
+      "builds": []
+    },
+    "Question Card": {
+      "id": "Question Card",
+      "name": "Question Card",
+      "cn": "问号牌",
+      "rarity": "罕见",
+      "tier": "T1",
+      "builds": []
+    },
+    "Red Skull": {
+      "id": "Red Skull",
+      "name": "Red Skull",
+      "cn": "红头骨",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": [
+        "i|力量流",
+        "i|撕裂自伤流"
+      ]
+    },
+    "Runic Capacitor": {
+      "id": "Runic Capacitor",
+      "name": "Runic Capacitor",
+      "cn": "符文电容器",
+      "rarity": "商店",
+      "tier": "T1",
+      "builds": [
+        "d|冰霜坦克流",
+        "d|闪电球流"
+      ]
+    },
+    "Runic Cube": {
+      "id": "Runic Cube",
+      "name": "Runic Cube",
+      "cn": "符文立方体",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": [
+        "i|撕裂自伤流"
+      ]
+    },
+    "Runic Dome": {
+      "id": "Runic Dome",
+      "name": "Runic Dome",
+      "cn": "符文圆顶",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Runic Pyramid": {
+      "id": "Runic Pyramid",
+      "name": "Runic Pyramid",
+      "cn": "符文金字塔",
+      "rarity": "Boss",
+      "tier": "T0",
+      "builds": []
+    },
+    "SacredBark": {
+      "id": "SacredBark",
+      "name": "Sacred Bark",
+      "cn": "神圣树皮",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Self Forming Clay": {
+      "id": "Self Forming Clay",
+      "name": "Self-Forming Clay",
+      "cn": "自成型黏土",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": [
+        "i|撕裂自伤流"
+      ]
+    },
+    "Shuriken": {
+      "id": "Shuriken",
+      "name": "Shuriken",
+      "cn": "手里剑",
+      "rarity": "罕见",
+      "tier": "T1",
+      "builds": [
+        "s|小刀流",
+        "i|力量流"
+      ]
+    },
+    "Snake Skull": {
+      "id": "Snake Skull",
+      "name": "Snecko Skull",
+      "cn": "异蛇头骨",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Symbiotic Virus": {
+      "id": "Symbiotic Virus",
+      "name": "Symbiotic Virus",
+      "cn": "共生病毒",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": [
+        "d|暗球 / 爪击流"
+      ]
+    },
+    "TeardropLocket": {
+      "id": "TeardropLocket",
+      "name": "Teardrop Locket",
+      "cn": "泪滴吊坠盒",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": [
+        "w|姿态舞（常规）",
+        "w|姿态循环无限流"
+      ]
+    },
+    "The Specimen": {
+      "id": "The Specimen",
+      "name": "The Specimen",
+      "cn": "生物样本",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Tingsha": {
+      "id": "Tingsha",
+      "name": "Tingsha",
+      "cn": "铜钹",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": [
+        "s|弃牌流"
+      ]
+    },
+    "Tough Bandages": {
+      "id": "Tough Bandages",
+      "name": "Tough Bandages",
+      "cn": "结实绷带",
+      "rarity": "稀有",
+      "tier": "T1",
+      "builds": [
+        "s|弃牌流"
+      ]
+    },
+    "TungstenRod": {
+      "id": "TungstenRod",
+      "name": "Tungsten Rod",
+      "cn": "钨合金棍",
+      "rarity": "稀有",
+      "tier": "T1",
+      "builds": []
+    },
+    "TwistedFunnel": {
+      "id": "TwistedFunnel",
+      "name": "Twisted Funnel",
+      "cn": "扭曲漏斗",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": [
+        "s|毒流"
+      ]
+    },
+    "Unceasing Top": {
+      "id": "Unceasing Top",
+      "name": "Unceasing Top",
+      "cn": "不休陀螺",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Vajra": {
+      "id": "Vajra",
+      "name": "Vajra",
+      "cn": "金刚杵",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "VioletLotus": {
+      "id": "VioletLotus",
+      "name": "Violet Lotus",
+      "cn": "紫色莲花",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": [
+        "w|姿态循环无限流",
+        "w|姿态舞（常规）"
+      ]
+    },
+    "WristBlade": {
+      "id": "WristBlade",
+      "name": "Wrist Blade",
+      "cn": "袖剑",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": [
+        "s|小刀流"
+      ]
+    },
+    "Snecko Eye": {
+      "id": "Snecko Eye",
+      "name": "Snecko Eye",
+      "cn": "异蛇之眼",
+      "rarity": "Boss",
+      "tier": "T0",
+      "builds": []
+    },
+    "OrangePellets": {
+      "id": "OrangePellets",
+      "name": "Orange Pellets",
+      "cn": "橙色药丸",
+      "rarity": "商店",
+      "tier": "T0",
+      "builds": []
+    },
+    "Gambling Chip": {
+      "id": "Gambling Chip",
+      "name": "Gambling Chip",
+      "cn": "赌博筹码",
+      "rarity": "稀有",
+      "tier": "T1",
+      "builds": []
+    },
+    "Bag of Preparation": {
+      "id": "Bag of Preparation",
+      "name": "Bag of Preparation",
+      "cn": "准备背包",
+      "rarity": "普通",
+      "tier": "T1",
+      "builds": []
+    },
+    "Torii": {
+      "id": "Torii",
+      "name": "Torii",
+      "cn": "鸟居",
+      "rarity": "稀有",
+      "tier": "T1",
+      "builds": []
+    },
+    "Pandora's Box": {
+      "id": "Pandora's Box",
+      "name": "Pandora's Box",
+      "cn": "潘多拉魔盒",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Astrolabe": {
+      "id": "Astrolabe",
+      "name": "Astrolabe",
+      "cn": "星盘",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Orrery": {
+      "id": "Orrery",
+      "name": "Orrery",
+      "cn": "星系仪",
+      "rarity": "商店",
+      "tier": "T1",
+      "builds": []
+    },
+    "Coffee Dripper": {
+      "id": "Coffee Dripper",
+      "name": "Coffee Dripper",
+      "cn": "咖啡滤杯",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Fusion Hammer": {
+      "id": "Fusion Hammer",
+      "name": "Fusion Hammer",
+      "cn": "融合之锤",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Ring of the Serpent": {
+      "id": "Ring of the Serpent",
+      "name": "Ring of the Serpent",
+      "cn": "长蛇戒指",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Black Blood": {
+      "id": "Black Blood",
+      "name": "Black Blood",
+      "cn": "黑暗之血",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Bag of Marbles": {
+      "id": "Bag of Marbles",
+      "name": "Bag of Marbles",
+      "cn": "弹珠袋",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Lantern": {
+      "id": "Lantern",
+      "name": "Lantern",
+      "cn": "灯笼",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Black Star": {
+      "id": "Black Star",
+      "name": "Black Star",
+      "cn": "黑星",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": []
+    },
+    "Calling Bell": {
+      "id": "Calling Bell",
+      "name": "Calling Bell",
+      "cn": "召唤铃铛",
+      "rarity": "Boss",
+      "tier": "T2",
+      "builds": []
+    },
+    "PreservedInsect": {
+      "id": "PreservedInsect",
+      "name": "Preserved Insect",
+      "cn": "昆虫标本",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "White Beast Statue": {
+      "id": "White Beast Statue",
+      "name": "White Beast Statue",
+      "cn": "白兽雕像",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "DollysMirror": {
+      "id": "DollysMirror",
+      "name": "Dolly's Mirror",
+      "cn": "多利之镜",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "Paper Frog": {
+      "id": "Paper Frog",
+      "name": "Paper Phrog",
+      "cn": "纸蛙",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Bloody Idol": {
+      "id": "Bloody Idol",
+      "name": "Bloody Idol",
+      "cn": "鲜血神像",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "Singing Bowl": {
+      "id": "Singing Bowl",
+      "name": "Singing Bowl",
+      "cn": "颂钵",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Frozen Eye": {
+      "id": "Frozen Eye",
+      "name": "Frozen Eye",
+      "cn": "冻结之眼",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "Nunchaku": {
+      "id": "Nunchaku",
+      "name": "Nunchaku",
+      "cn": "双节棍",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Pen Nib": {
+      "id": "Pen Nib",
+      "name": "Pen Nib",
+      "cn": "钢笔尖",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Happy Flower": {
+      "id": "Happy Flower",
+      "name": "Happy Flower",
+      "cn": "开心小花",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Pantograph": {
+      "id": "Pantograph",
+      "name": "Pantograph",
+      "cn": "缩放仪",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Prayer Wheel": {
+      "id": "Prayer Wheel",
+      "name": "Prayer Wheel",
+      "cn": "转经轮",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Lizard Tail": {
+      "id": "Lizard Tail",
+      "name": "Lizard Tail",
+      "cn": "蜥蜴尾巴",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "CeramicFish": {
+      "id": "CeramicFish",
+      "name": "Ceramic Fish",
+      "cn": "陶瓷小鱼",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Boot": {
+      "id": "Boot",
+      "name": "The Boot",
+      "cn": "发条靴",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Darkstone Periapt": {
+      "id": "Darkstone Periapt",
+      "name": "Darkstone Periapt",
+      "cn": "黑石护符",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "Blue Candle": {
+      "id": "Blue Candle",
+      "name": "Blue Candle",
+      "cn": "蓝蜡烛",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "HandDrill": {
+      "id": "HandDrill",
+      "name": "Hand Drill",
+      "cn": "手钻",
+      "rarity": "商店",
+      "tier": "T3",
+      "builds": []
+    },
+    "SsserpentHead": {
+      "id": "SsserpentHead",
+      "name": "Ssserpent Head",
+      "cn": "蛇的头",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "Red Mask": {
+      "id": "Red Mask",
+      "name": "Red Mask",
+      "cn": "红面具",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "Tiny House": {
+      "id": "Tiny House",
+      "name": "Tiny House",
+      "cn": "小屋子",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Mark of Pain": {
+      "id": "Mark of Pain",
+      "name": "Mark of Pain",
+      "cn": "痛楚印记",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Busted Crown": {
+      "id": "Busted Crown",
+      "name": "Busted Crown",
+      "cn": "破碎金冠",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Sozu": {
+      "id": "Sozu",
+      "name": "Sozu",
+      "cn": "添水",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Velvet Choker": {
+      "id": "Velvet Choker",
+      "name": "Velvet Choker",
+      "cn": "天鹅绒颈圈",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Cursed Key": {
+      "id": "Cursed Key",
+      "name": "Cursed Key",
+      "cn": "诅咒钥匙",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "Ectoplasm": {
+      "id": "Ectoplasm",
+      "name": "Ectoplasm",
+      "cn": "灵体外质",
+      "rarity": "Boss",
+      "tier": "T3",
+      "builds": []
+    },
+    "PrismaticShard": {
+      "id": "PrismaticShard",
+      "name": "Prismatic Shard",
+      "cn": "棱镜碎片",
+      "rarity": "商店",
+      "tier": "T3",
+      "builds": []
+    },
+    "Brimstone": {
+      "id": "Brimstone",
+      "name": "Brimstone",
+      "cn": "硫磺",
+      "rarity": "商店",
+      "tier": "T3",
+      "builds": [
+        "i|力量流"
+      ]
+    },
+    "Necronomicon": {
+      "id": "Necronomicon",
+      "name": "Necronomicon",
+      "cn": "死灵之书",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "Ring of the Snake": {
+      "id": "Ring of the Snake",
+      "name": "Ring of the Snake",
+      "cn": "蛇之戒指",
+      "rarity": "初始",
+      "tier": "T2",
+      "builds": []
+    },
+    "PureWater": {
+      "id": "PureWater",
+      "name": "Pure Water",
+      "cn": "至纯之水",
+      "rarity": "初始",
+      "tier": "T2",
+      "builds": []
+    },
+    "Cracked Core": {
+      "id": "Cracked Core",
+      "name": "Cracked Core",
+      "cn": "破损核心",
+      "rarity": "初始",
+      "tier": "T2",
+      "builds": []
+    },
+    "Centennial Puzzle": {
+      "id": "Centennial Puzzle",
+      "name": "Centennial Puzzle",
+      "cn": "百年积木",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Dream Catcher": {
+      "id": "Dream Catcher",
+      "name": "Dream Catcher",
+      "cn": "捕梦网",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Oddly Smooth Stone": {
+      "id": "Oddly Smooth Stone",
+      "name": "Oddly Smooth Stone",
+      "cn": "意外光滑的石头",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Omamori": {
+      "id": "Omamori",
+      "name": "Omamori",
+      "cn": "御守",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Orichalcum": {
+      "id": "Orichalcum",
+      "name": "Orichalcum",
+      "cn": "奥利哈钢",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Regal Pillow": {
+      "id": "Regal Pillow",
+      "name": "Regal Pillow",
+      "cn": "皇家枕头",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Smiling Mask": {
+      "id": "Smiling Mask",
+      "name": "Smiling Mask",
+      "cn": "微笑面具",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Strawberry": {
+      "id": "Strawberry",
+      "name": "Strawberry",
+      "cn": "草莓",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Potion Belt": {
+      "id": "Potion Belt",
+      "name": "Potion Belt",
+      "cn": "药水腰带",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Tiny Chest": {
+      "id": "Tiny Chest",
+      "name": "Tiny Chest",
+      "cn": "小宝箱",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Whetstone": {
+      "id": "Whetstone",
+      "name": "Whetstone",
+      "cn": "磨刀石",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "MealTicket": {
+      "id": "MealTicket",
+      "name": "Meal Ticket",
+      "cn": "餐券",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "MawBank": {
+      "id": "MawBank",
+      "name": "Maw Bank",
+      "cn": "巨口储蓄罐",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "War Paint": {
+      "id": "War Paint",
+      "name": "War Paint",
+      "cn": "战纹涂料",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Toy Ornithopter": {
+      "id": "Toy Ornithopter",
+      "name": "Toy Ornithopter",
+      "cn": "玩具扑翼飞机",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Juzu Bracelet": {
+      "id": "Juzu Bracelet",
+      "name": "Juzu Bracelet",
+      "cn": "佛珠手链",
+      "rarity": "普通",
+      "tier": "T3",
+      "builds": []
+    },
+    "Ancient Tea Set": {
+      "id": "Ancient Tea Set",
+      "name": "Ancient Tea Set",
+      "cn": "古茶具套装",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Art of War": {
+      "id": "Art of War",
+      "name": "Art of War",
+      "cn": "孙子兵法",
+      "rarity": "普通",
+      "tier": "T2",
+      "builds": []
+    },
+    "Sling": {
+      "id": "Sling",
+      "name": "Sling of Courage",
+      "cn": "勇气投石索",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "The Courier": {
+      "id": "The Courier",
+      "name": "The Courier",
+      "cn": "送货员",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Bottled Flame": {
+      "id": "Bottled Flame",
+      "name": "Bottled Flame",
+      "cn": "瓶装火焰",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Bottled Lightning": {
+      "id": "Bottled Lightning",
+      "name": "Bottled Lightning",
+      "cn": "瓶装闪电",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Bottled Tornado": {
+      "id": "Bottled Tornado",
+      "name": "Bottled Tornado",
+      "cn": "瓶装旋风",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Eternal Feather": {
+      "id": "Eternal Feather",
+      "name": "Eternal Feather",
+      "cn": "永恒羽毛",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "Frozen Egg 2": {
+      "id": "Frozen Egg 2",
+      "name": "Frozen Egg",
+      "cn": "冻结之蛋",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Gremlin Horn": {
+      "id": "Gremlin Horn",
+      "name": "Gremlin Horn",
+      "cn": "地精之角",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Letter Opener": {
+      "id": "Letter Opener",
+      "name": "Letter Opener",
+      "cn": "开信刀",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "Matryoshka": {
+      "id": "Matryoshka",
+      "name": "Matryoshka",
+      "cn": "套娃",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "Mercury Hourglass": {
+      "id": "Mercury Hourglass",
+      "name": "Mercury Hourglass",
+      "cn": "水银沙漏",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Molten Egg 2": {
+      "id": "Molten Egg 2",
+      "name": "Molten Egg",
+      "cn": "熔火之蛋",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "Ninja Scroll": {
+      "id": "Ninja Scroll",
+      "name": "Ninja Scroll",
+      "cn": "忍术卷轴",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "Pear": {
+      "id": "Pear",
+      "name": "Pear",
+      "cn": "梨子",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "Yang": {
+      "id": "Yang",
+      "name": "Duality",
+      "cn": "两仪",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "InkBottle": {
+      "id": "InkBottle",
+      "name": "Ink Bottle",
+      "cn": "墨水瓶",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "StrikeDummy": {
+      "id": "StrikeDummy",
+      "name": "Strike Dummy",
+      "cn": "打击木偶",
+      "rarity": "罕见",
+      "tier": "T3",
+      "builds": []
+    },
+    "Sundial": {
+      "id": "Sundial",
+      "name": "Sundial",
+      "cn": "日晷",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "StoneCalendar": {
+      "id": "StoneCalendar",
+      "name": "Stone Calendar",
+      "cn": "历石",
+      "rarity": "稀有",
+      "tier": "T3",
+      "builds": []
+    },
+    "WingedGreaves": {
+      "id": "WingedGreaves",
+      "name": "Wing Boots",
+      "cn": "羽翼之靴",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "CloakClasp": {
+      "id": "CloakClasp",
+      "name": "Cloak Clasp",
+      "cn": "斗篷扣",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "CaptainsWheel": {
+      "id": "CaptainsWheel",
+      "name": "Captain's Wheel",
+      "cn": "舵盘",
+      "rarity": "稀有",
+      "tier": "T3",
+      "builds": []
+    },
+    "Champion Belt": {
+      "id": "Champion Belt",
+      "name": "Champion Belt",
+      "cn": "冠军腰带",
+      "rarity": "稀有",
+      "tier": "T3",
+      "builds": []
+    },
+    "Ginger": {
+      "id": "Ginger",
+      "name": "Ginger",
+      "cn": "生姜",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Girya": {
+      "id": "Girya",
+      "name": "Girya",
+      "cn": "壶铃",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Magic Flower": {
+      "id": "Magic Flower",
+      "name": "Magic Flower",
+      "cn": "魔法花",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Mango": {
+      "id": "Mango",
+      "name": "Mango",
+      "cn": "芒果",
+      "rarity": "稀有",
+      "tier": "T3",
+      "builds": []
+    },
+    "Old Coin": {
+      "id": "Old Coin",
+      "name": "Old Coin",
+      "cn": "古钱币",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Peace Pipe": {
+      "id": "Peace Pipe",
+      "name": "Peace Pipe",
+      "cn": "宁静烟斗",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Shovel": {
+      "id": "Shovel",
+      "name": "Shovel",
+      "cn": "铲子",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Turnip": {
+      "id": "Turnip",
+      "name": "Turnip",
+      "cn": "萝卜",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "SlaversCollar": {
+      "id": "SlaversCollar",
+      "name": "Slaver's Collar",
+      "cn": "奴隶贩子颈环",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "HolyWater": {
+      "id": "HolyWater",
+      "name": "Holy Water",
+      "cn": "圣水",
+      "rarity": "Boss",
+      "tier": "T1",
+      "builds": []
+    },
+    "Nilry's Codex": {
+      "id": "Nilry's Codex",
+      "name": "Nilry's Codex",
+      "cn": "尼利的宝典",
+      "rarity": "事件",
+      "tier": "T1",
+      "builds": []
+    },
+    "Golden Idol": {
+      "id": "Golden Idol",
+      "name": "Golden Idol",
+      "cn": "金神像",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "NeowsBlessing": {
+      "id": "NeowsBlessing",
+      "name": "Neow's Lament",
+      "cn": "涅奥的悲恸",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "Enchiridion": {
+      "id": "Enchiridion",
+      "name": "Enchiridion",
+      "cn": "英雄宝典",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "Nloth's Gift": {
+      "id": "Nloth's Gift",
+      "name": "N'loth's Gift",
+      "cn": "恩洛斯的礼物",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "NlothsMask": {
+      "id": "NlothsMask",
+      "name": "N'loth's Hungry Face",
+      "cn": "恩洛斯的饥饿的脸",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "Odd Mushroom": {
+      "id": "Odd Mushroom",
+      "name": "Odd Mushroom",
+      "cn": "奇怪蘑菇",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "Lee's Waffle": {
+      "id": "Lee's Waffle",
+      "name": "Lee's Waffle",
+      "cn": "李家华夫饼",
+      "rarity": "商店",
+      "tier": "T3",
+      "builds": []
+    },
+    "Mark of the Bloom": {
+      "id": "Mark of the Bloom",
+      "name": "Mark of the Bloom",
+      "cn": "绽放印记",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "Cauldron": {
+      "id": "Cauldron",
+      "name": "Cauldron",
+      "cn": "大锅",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "Membership Card": {
+      "id": "Membership Card",
+      "name": "Membership Card",
+      "cn": "会员卡",
+      "rarity": "商店",
+      "tier": "T1",
+      "builds": []
+    },
+    "Strange Spoon": {
+      "id": "Strange Spoon",
+      "name": "Strange Spoon",
+      "cn": "奇怪的勺子",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "Toolbox": {
+      "id": "Toolbox",
+      "name": "Toolbox",
+      "cn": "工具箱",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "TheAbacus": {
+      "id": "TheAbacus",
+      "name": "The Abacus",
+      "cn": "算盘",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "Toxic Egg 2": {
+      "id": "Toxic Egg 2",
+      "name": "Toxic Egg",
+      "cn": "毒素之蛋",
+      "rarity": "罕见",
+      "tier": "T2",
+      "builds": []
+    },
+    "GoldenEye": {
+      "id": "GoldenEye",
+      "name": "Golden Eye",
+      "cn": "黄金眼",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Du-Vu Doll": {
+      "id": "Du-Vu Doll",
+      "name": "Du-Vu Doll",
+      "cn": "毒巫娃娃",
+      "rarity": "稀有",
+      "tier": "T3",
+      "builds": []
+    },
+    "Emotion Chip": {
+      "id": "Emotion Chip",
+      "name": "Emotion Chip",
+      "cn": "情感芯片",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Thread and Needle": {
+      "id": "Thread and Needle",
+      "name": "Thread and Needle",
+      "cn": "针线",
+      "rarity": "稀有",
+      "tier": "T2",
+      "builds": []
+    },
+    "Spirit Poop": {
+      "id": "Spirit Poop",
+      "name": "Spirit Poop",
+      "cn": "精灵便便",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "FaceOfCleric": {
+      "id": "FaceOfCleric",
+      "name": "Face of Cleric",
+      "cn": "牧师的脸",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "CultistMask": {
+      "id": "CultistMask",
+      "name": "Cultist Headpiece",
+      "cn": "邪教徒头套",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "GremlinMask": {
+      "id": "GremlinMask",
+      "name": "Gremlin Visage",
+      "cn": "地精容貌",
+      "rarity": "事件",
+      "tier": "T3",
+      "builds": []
+    },
+    "WarpedTongs": {
+      "id": "WarpedTongs",
+      "name": "Warped Tongs",
+      "cn": "弯曲铁钳",
+      "rarity": "事件",
+      "tier": "T2",
+      "builds": []
+    },
+    "ClockworkSouvenir": {
+      "id": "ClockworkSouvenir",
+      "name": "Clockwork Souvenir",
+      "cn": "齿轮工艺品",
+      "rarity": "商店",
+      "tier": "T1",
+      "builds": []
+    },
+    "Melange": {
+      "id": "Melange",
+      "name": "Melange",
+      "cn": "美琅脂",
+      "rarity": "商店",
+      "tier": "T2",
+      "builds": []
+    },
+    "Circlet": {
+      "id": "Circlet",
+      "name": "Circlet",
+      "cn": "头环",
+      "rarity": "特殊",
+      "tier": "T3",
+      "builds": []
+    }
+  },
+  "stats": {
+    "builds": 16,
+    "cards": 114,
+    "cardsWithTier": 114,
+    "relics": 179,
+    "relicsWithTier": 179,
+    "relicMapGroups": 3,
+    "relicBuildKeys": 32,
+    "relicBuildSample": [
+      "Dead Branch",
+      "Violet Lotus",
+      "Snecko Skull",
+      "Twisted Funnel",
+      "The Specimen"
+    ],
+    "missingCardIds": [],
+    "missingRelicIds": [],
+    "missingBuildCardIds": []
+  }
+}
