@@ -61,7 +61,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "==> Expanding to the full Slay the Spire 1 card pool"
-& node "tools/build-full-data.js" "CrawlGuide/data.json" "guide/unduel-tiers.json" $locDir
+& node "tools/build-full-data.js" "CrawlGuide/data.json" "guide/unduel-tiers.json" $locDir "guide/unduel-relic-tiers.json"
 if ($LASTEXITCODE -ne 0) {
     throw "build-full-data.js failed"
 }

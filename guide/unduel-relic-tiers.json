@@ -1,0 +1,1849 @@
+{
+  "_source": "Unduel community relic tier list: The Best Slay the Spire Relics",
+  "_url": "https://unduel.com/t/slay-the-spire/the-best-slay-the-spire-relics-2CfPb2TVHz5wtNJ9NdZ8Nd/tier-list",
+  "_voters": 16,
+  "_votes": 1200,
+  "_updated": "9 months before 2026-10-27",
+  "_retrieved": "2026-10-27",
+  "_tiers": {
+    "1": "F",
+    "2": "D",
+    "3": "C",
+    "4": "B",
+    "5": "A",
+    "6": "S"
+  },
+  "_mapping": "S -> T0, A -> T1, B -> T2, C/D/F -> T3",
+  "relics": [
+    {
+      "name": "Coffee Dripper",
+      "tierValue": 6,
+      "rating": 100,
+      "consensus": 79,
+      "voterCount": 12,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Runic Pyramid",
+      "tierValue": 6,
+      "rating": 99,
+      "consensus": 74,
+      "voterCount": 14,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Fusion Hammer",
+      "tierValue": 6,
+      "rating": 97,
+      "consensus": 74,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Snecko Eye",
+      "tierValue": 6,
+      "rating": 97,
+      "consensus": 71,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Dead Branch",
+      "tierValue": 5,
+      "rating": 94,
+      "consensus": 75,
+      "voterCount": 5,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Pandora's Box",
+      "tierValue": 5,
+      "rating": 94,
+      "consensus": 67,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Orrery",
+      "tierValue": 5,
+      "rating": 93,
+      "consensus": 75,
+      "voterCount": 5,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Paper Krane",
+      "tierValue": 5,
+      "rating": 92,
+      "consensus": 73,
+      "voterCount": 6,
+      "tags": [
+        "Silent",
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Incense Burner",
+      "tierValue": 5,
+      "rating": 92,
+      "consensus": 71,
+      "voterCount": 6,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Mummified Hand",
+      "tierValue": 5,
+      "rating": 92,
+      "consensus": 72,
+      "voterCount": 8,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Tough Bandages",
+      "tierValue": 5,
+      "rating": 92,
+      "consensus": 70,
+      "voterCount": 7,
+      "tags": [
+        "Silent",
+        "Rare"
+      ]
+    },
+    {
+      "name": "Gambling Chip",
+      "tierValue": 5,
+      "rating": 91,
+      "consensus": 76,
+      "voterCount": 5,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Data Disk",
+      "tierValue": 5,
+      "rating": 89,
+      "consensus": 70,
+      "voterCount": 6,
+      "tags": [
+        "Common",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Membership Card",
+      "tierValue": 5,
+      "rating": 88,
+      "consensus": 69,
+      "voterCount": 7,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Cursed Key",
+      "tierValue": 5,
+      "rating": 87,
+      "consensus": 65,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Bird-Faced Urn",
+      "tierValue": 5,
+      "rating": 86,
+      "consensus": 67,
+      "voterCount": 6,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Orange Pellets",
+      "tierValue": 5,
+      "rating": 86,
+      "consensus": 62,
+      "voterCount": 7,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Bag of Preparation",
+      "tierValue": 5,
+      "rating": 85,
+      "consensus": 69,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Toxic Egg",
+      "tierValue": 5,
+      "rating": 85,
+      "consensus": 59,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Runic Capacitor",
+      "tierValue": 5,
+      "rating": 83,
+      "consensus": 60,
+      "voterCount": 6,
+      "tags": [
+        "Defect",
+        "Shop"
+      ]
+    },
+    {
+      "name": "Thread and Needle",
+      "tierValue": 5,
+      "rating": 82,
+      "consensus": 62,
+      "voterCount": 6,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Tungsten Rod",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 58,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Nuclear Battery",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 57,
+      "voterCount": 13,
+      "tags": [
+        "Boss",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Potion Belt",
+      "tierValue": 5,
+      "rating": 81,
+      "consensus": 60,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Preserved Insect",
+      "tierValue": 5,
+      "rating": 80,
+      "consensus": 62,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Clockwork Souvenir",
+      "tierValue": 5,
+      "rating": 80,
+      "consensus": 64,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Kunai",
+      "tierValue": 5,
+      "rating": 80,
+      "consensus": 53,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Lizard Tail",
+      "tierValue": 5,
+      "rating": 80,
+      "consensus": 67,
+      "voterCount": 5,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "White Beast Statue",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 53,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Gremlin Horn",
+      "tierValue": 5,
+      "rating": 79,
+      "consensus": 66,
+      "voterCount": 5,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Meat on the Bone",
+      "tierValue": 5,
+      "rating": 78,
+      "consensus": 64,
+      "voterCount": 5,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Philosopher's Stone",
+      "tierValue": 5,
+      "rating": 77,
+      "consensus": 53,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Art of War",
+      "tierValue": 5,
+      "rating": 76,
+      "consensus": 62,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Happy Flower",
+      "tierValue": 5,
+      "rating": 76,
+      "consensus": 63,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Horn Cleat",
+      "tierValue": 5,
+      "rating": 74,
+      "consensus": 56,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Prayer Wheel",
+      "tierValue": 5,
+      "rating": 74,
+      "consensus": 54,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Fossilized Helix",
+      "tierValue": 4,
+      "rating": 73,
+      "consensus": 41,
+      "voterCount": 5,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Dolly's Mirror",
+      "tierValue": 4,
+      "rating": 73,
+      "consensus": 59,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Violet Lotus",
+      "tierValue": 4,
+      "rating": 73,
+      "consensus": 43,
+      "voterCount": 12,
+      "tags": [
+        "Watcher",
+        "Boss"
+      ]
+    },
+    {
+      "name": "Nilry's Codex",
+      "tierValue": 4,
+      "rating": 72,
+      "consensus": 76,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Paper Phrog",
+      "tierValue": 4,
+      "rating": 71,
+      "consensus": 56,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Pocketwatch",
+      "tierValue": 4,
+      "rating": 71,
+      "consensus": 48,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Eternal Feather",
+      "tierValue": 4,
+      "rating": 70,
+      "consensus": 57,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Shuriken",
+      "tierValue": 4,
+      "rating": 70,
+      "consensus": 57,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Hovering Kite",
+      "tierValue": 4,
+      "rating": 70,
+      "consensus": 50,
+      "voterCount": 13,
+      "tags": [
+        "Silent",
+        "Boss"
+      ]
+    },
+    {
+      "name": "Torii",
+      "tierValue": 4,
+      "rating": 69,
+      "consensus": 48,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Slaver's Collar",
+      "tierValue": 4,
+      "rating": 69,
+      "consensus": 47,
+      "voterCount": 14,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Ice Cream",
+      "tierValue": 4,
+      "rating": 68,
+      "consensus": 48,
+      "voterCount": 5,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Teardrop Locket",
+      "tierValue": 4,
+      "rating": 68,
+      "consensus": 55,
+      "voterCount": 5,
+      "tags": [
+        "Watcher",
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Necronomicon",
+      "tierValue": 4,
+      "rating": 68,
+      "consensus": 72,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Emotion Chip",
+      "tierValue": 4,
+      "rating": 66,
+      "consensus": 70,
+      "voterCount": 3,
+      "tags": [
+        "Rare",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Medical Kit",
+      "tierValue": 4,
+      "rating": 66,
+      "consensus": 54,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Nunchaku",
+      "tierValue": 4,
+      "rating": 64,
+      "consensus": 55,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Bloody Idol",
+      "tierValue": 4,
+      "rating": 64,
+      "consensus": 61,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Bottled Tornado",
+      "tierValue": 4,
+      "rating": 64,
+      "consensus": 54,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Centennial Puzzle",
+      "tierValue": 4,
+      "rating": 64,
+      "consensus": 46,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Gold-Plated Cables",
+      "tierValue": 4,
+      "rating": 64,
+      "consensus": 53,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Pantograph",
+      "tierValue": 4,
+      "rating": 63,
+      "consensus": 54,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Question Card",
+      "tierValue": 4,
+      "rating": 63,
+      "consensus": 54,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Holy Water",
+      "tierValue": 4,
+      "rating": 63,
+      "consensus": 40,
+      "voterCount": 12,
+      "tags": [
+        "Watcher",
+        "Boss"
+      ]
+    },
+    {
+      "name": "Frozen Egg",
+      "tierValue": 4,
+      "rating": 63,
+      "consensus": 52,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Ring of the Snake",
+      "tierValue": 4,
+      "rating": 62,
+      "consensus": 75,
+      "voterCount": 2,
+      "tags": [
+        "Silent",
+        "Starter"
+      ]
+    },
+    {
+      "name": "Warped Tongs",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 57,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Anchor",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 52,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Ink Bottle",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 52,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "N'loth's Gift",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 70,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Burning Blood",
+      "tierValue": 4,
+      "rating": 61,
+      "consensus": 60,
+      "voterCount": 3,
+      "tags": [
+        "Starter",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Charon's Ashes",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 48,
+      "voterCount": 6,
+      "tags": [
+        "Rare",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Inserter",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 47,
+      "voterCount": 13,
+      "tags": [
+        "Boss",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Singing Bowl",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 42,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Frozen Eye",
+      "tierValue": 4,
+      "rating": 60,
+      "consensus": 51,
+      "voterCount": 7,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Tingsha",
+      "tierValue": 4,
+      "rating": 59,
+      "consensus": 42,
+      "voterCount": 6,
+      "tags": [
+        "Silent",
+        "Rare"
+      ]
+    },
+    {
+      "name": "Golden Idol (Relic)",
+      "tierValue": 4,
+      "rating": 59,
+      "consensus": 68,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Oddly Smooth Stone",
+      "tierValue": 4,
+      "rating": 58,
+      "consensus": 49,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Bottled Lightning",
+      "tierValue": 4,
+      "rating": 58,
+      "consensus": 51,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Toy Ornithopter",
+      "tierValue": 4,
+      "rating": 58,
+      "consensus": 48,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Wing Boots",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 47,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Old Coin",
+      "tierValue": 4,
+      "rating": 57,
+      "consensus": 42,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Lantern",
+      "tierValue": 4,
+      "rating": 56,
+      "consensus": 48,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Lee's Waffle",
+      "tierValue": 4,
+      "rating": 56,
+      "consensus": 52,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Bronze Scales",
+      "tierValue": 4,
+      "rating": 56,
+      "consensus": 51,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Twisted Funnel",
+      "tierValue": 4,
+      "rating": 56,
+      "consensus": 50,
+      "voterCount": 6,
+      "tags": [
+        "Silent",
+        "Shop"
+      ]
+    },
+    {
+      "name": "Du-Vu Doll",
+      "tierValue": 4,
+      "rating": 56,
+      "consensus": 57,
+      "voterCount": 6,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Snecko Skull",
+      "tierValue": 4,
+      "rating": 55,
+      "consensus": 49,
+      "voterCount": 6,
+      "tags": [
+        "Silent",
+        "Common"
+      ]
+    },
+    {
+      "name": "Self-Forming Clay",
+      "tierValue": 4,
+      "rating": 55,
+      "consensus": 42,
+      "voterCount": 7,
+      "tags": [
+        "Uncommon",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Ssserpent Head",
+      "tierValue": 4,
+      "rating": 54,
+      "consensus": 65,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Calipers",
+      "tierValue": 3,
+      "rating": 54,
+      "consensus": 37,
+      "voterCount": 6,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Cloak Clasp",
+      "tierValue": 3,
+      "rating": 53,
+      "consensus": 63,
+      "voterCount": 3,
+      "tags": [
+        "Watcher",
+        "Rare"
+      ]
+    },
+    {
+      "name": "Pure Water",
+      "tierValue": 3,
+      "rating": 53,
+      "consensus": 62,
+      "voterCount": 2,
+      "tags": [
+        "Watcher",
+        "Starter"
+      ]
+    },
+    {
+      "name": "Astrolabe",
+      "tierValue": 3,
+      "rating": 51,
+      "consensus": 44,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Red Skull",
+      "tierValue": 3,
+      "rating": 50,
+      "consensus": 48,
+      "voterCount": 7,
+      "tags": [
+        "Common",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Champion Belt",
+      "tierValue": 3,
+      "rating": 50,
+      "consensus": 48,
+      "voterCount": 4,
+      "tags": [
+        "Rare",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "The Courier",
+      "tierValue": 3,
+      "rating": 49,
+      "consensus": 44,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Calling Bell",
+      "tierValue": 3,
+      "rating": 49,
+      "consensus": 38,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Enchiridion",
+      "tierValue": 3,
+      "rating": 49,
+      "consensus": 58,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Chemical X",
+      "tierValue": 3,
+      "rating": 49,
+      "consensus": 48,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Molten Egg",
+      "tierValue": 3,
+      "rating": 48,
+      "consensus": 45,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Sling of Courage",
+      "tierValue": 3,
+      "rating": 48,
+      "consensus": 49,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Cracked Core",
+      "tierValue": 3,
+      "rating": 48,
+      "consensus": 56,
+      "voterCount": 3,
+      "tags": [
+        "Starter",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Turnip",
+      "tierValue": 3,
+      "rating": 48,
+      "consensus": 45,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Vajra",
+      "tierValue": 3,
+      "rating": 48,
+      "consensus": 45,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Ginger",
+      "tierValue": 3,
+      "rating": 47,
+      "consensus": 42,
+      "voterCount": 8,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Face of Cleric",
+      "tierValue": 3,
+      "rating": 47,
+      "consensus": 78,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Bag of Marbles",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 40,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Mutagenic Strength",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 77,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Pen Nib",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 47,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Neow's Lament",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 100,
+      "voterCount": 1,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Mango",
+      "tierValue": 3,
+      "rating": 46,
+      "consensus": 57,
+      "voterCount": 5,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Captain's Wheel",
+      "tierValue": 3,
+      "rating": 45,
+      "consensus": 53,
+      "voterCount": 5,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Duality",
+      "tierValue": 3,
+      "rating": 45,
+      "consensus": 52,
+      "voterCount": 4,
+      "tags": [
+        "Watcher",
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Odd Mushroom",
+      "tierValue": 3,
+      "rating": 45,
+      "consensus": 100,
+      "voterCount": 1,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Red Mask",
+      "tierValue": 3,
+      "rating": 44,
+      "consensus": 73,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Peace Pipe",
+      "tierValue": 3,
+      "rating": 44,
+      "consensus": 49,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Akabeko",
+      "tierValue": 3,
+      "rating": 44,
+      "consensus": 46,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Runic Dome",
+      "tierValue": 3,
+      "rating": 44,
+      "consensus": 44,
+      "voterCount": 12,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "War Paint",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 46,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Sundial",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 55,
+      "voterCount": 7,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Ornamental Fan",
+      "tierValue": 3,
+      "rating": 43,
+      "consensus": 52,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Wrist Blade",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 40,
+      "voterCount": 13,
+      "tags": [
+        "Silent",
+        "Boss"
+      ]
+    },
+    {
+      "name": "Symbiotic Virus",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 61,
+      "voterCount": 4,
+      "tags": [
+        "Uncommon",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Velvet Choker",
+      "tierValue": 3,
+      "rating": 42,
+      "consensus": 51,
+      "voterCount": 14,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Circlet",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 100,
+      "voterCount": 1,
+      "tags": [
+        "Special"
+      ]
+    },
+    {
+      "name": "Spirit Poop",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 72,
+      "voterCount": 2,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Cultist Headpiece",
+      "tierValue": 3,
+      "rating": 40,
+      "consensus": 56,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Girya",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 47,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Magic Flower",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 58,
+      "voterCount": 5,
+      "tags": [
+        "Rare",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Toolbox",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 53,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Smiling Mask",
+      "tierValue": 3,
+      "rating": 39,
+      "consensus": 61,
+      "voterCount": 5,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Strange Spoon",
+      "tierValue": 3,
+      "rating": 38,
+      "consensus": 65,
+      "voterCount": 5,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "The Specimen",
+      "tierValue": 3,
+      "rating": 36,
+      "consensus": 50,
+      "voterCount": 7,
+      "tags": [
+        "Silent",
+        "Rare"
+      ]
+    },
+    {
+      "name": "N'loth's Hungry Face",
+      "tierValue": 2,
+      "rating": 35,
+      "consensus": 52,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Omamori",
+      "tierValue": 2,
+      "rating": 34,
+      "consensus": 54,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Meal Ticket",
+      "tierValue": 2,
+      "rating": 34,
+      "consensus": 50,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Orichalcum",
+      "tierValue": 2,
+      "rating": 34,
+      "consensus": 58,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Pear",
+      "tierValue": 2,
+      "rating": 34,
+      "consensus": 51,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Black Star",
+      "tierValue": 2,
+      "rating": 34,
+      "consensus": 44,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Letter Opener",
+      "tierValue": 2,
+      "rating": 34,
+      "consensus": 59,
+      "voterCount": 5,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Sacred Bark",
+      "tierValue": 2,
+      "rating": 34,
+      "consensus": 50,
+      "voterCount": 12,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Mark of the Bloom",
+      "tierValue": 2,
+      "rating": 33,
+      "consensus": 67,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Ninja Scroll",
+      "tierValue": 2,
+      "rating": 33,
+      "consensus": 53,
+      "voterCount": 5,
+      "tags": [
+        "Silent",
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Maw Bank",
+      "tierValue": 2,
+      "rating": 33,
+      "consensus": 52,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Matryoshka",
+      "tierValue": 2,
+      "rating": 32,
+      "consensus": 55,
+      "voterCount": 5,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Runic Cube",
+      "tierValue": 2,
+      "rating": 32,
+      "consensus": 50,
+      "voterCount": 13,
+      "tags": [
+        "Boss",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Ancient Tea Set",
+      "tierValue": 2,
+      "rating": 32,
+      "consensus": 55,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Mercury Hourglass",
+      "tierValue": 2,
+      "rating": 31,
+      "consensus": 57,
+      "voterCount": 5,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Regal Pillow",
+      "tierValue": 2,
+      "rating": 31,
+      "consensus": 54,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Gremlin Visage",
+      "tierValue": 2,
+      "rating": 31,
+      "consensus": 57,
+      "voterCount": 3,
+      "tags": [
+        "Event"
+      ]
+    },
+    {
+      "name": "Stone Calendar",
+      "tierValue": 2,
+      "rating": 29,
+      "consensus": 58,
+      "voterCount": 6,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Strike Dummy",
+      "tierValue": 2,
+      "rating": 29,
+      "consensus": 58,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "The Boot",
+      "tierValue": 2,
+      "rating": 28,
+      "consensus": 53,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Damaru",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 58,
+      "voterCount": 4,
+      "tags": [
+        "Watcher",
+        "Common"
+      ]
+    },
+    {
+      "name": "Empty Cage",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 58,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Shovel",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 52,
+      "voterCount": 6,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Golden Eye",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 62,
+      "voterCount": 4,
+      "tags": [
+        "Watcher",
+        "Rare"
+      ]
+    },
+    {
+      "name": "Sozu",
+      "tierValue": 2,
+      "rating": 27,
+      "consensus": 51,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "The Abacus",
+      "tierValue": 2,
+      "rating": 26,
+      "consensus": 62,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Whetstone",
+      "tierValue": 2,
+      "rating": 26,
+      "consensus": 59,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Juzu Bracelet",
+      "tierValue": 2,
+      "rating": 26,
+      "consensus": 57,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Blood Vial",
+      "tierValue": 2,
+      "rating": 25,
+      "consensus": 62,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Unceasing Top",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 55,
+      "voterCount": 7,
+      "tags": [
+        "Rare"
+      ]
+    },
+    {
+      "name": "Dream Catcher",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 55,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Ectoplasm",
+      "tierValue": 2,
+      "rating": 24,
+      "consensus": 56,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Strawberry",
+      "tierValue": 2,
+      "rating": 23,
+      "consensus": 59,
+      "voterCount": 7,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Brimstone",
+      "tierValue": 2,
+      "rating": 22,
+      "consensus": 70,
+      "voterCount": 5,
+      "tags": [
+        "Ironclad",
+        "Shop"
+      ]
+    },
+    {
+      "name": "Blue Candle",
+      "tierValue": 2,
+      "rating": 22,
+      "consensus": 63,
+      "voterCount": 6,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Bottled Flame",
+      "tierValue": 2,
+      "rating": 21,
+      "consensus": 67,
+      "voterCount": 5,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Prismatic Shard",
+      "tierValue": 2,
+      "rating": 19,
+      "consensus": 61,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Melange",
+      "tierValue": 2,
+      "rating": 18,
+      "consensus": 62,
+      "voterCount": 6,
+      "tags": [
+        "Watcher",
+        "Shop"
+      ]
+    },
+    {
+      "name": "Frozen Core",
+      "tierValue": 2,
+      "rating": 18,
+      "consensus": 59,
+      "voterCount": 11,
+      "tags": [
+        "Boss",
+        "Defect"
+      ]
+    },
+    {
+      "name": "Darkstone Periapt",
+      "tierValue": 2,
+      "rating": 17,
+      "consensus": 63,
+      "voterCount": 7,
+      "tags": [
+        "Uncommon"
+      ]
+    },
+    {
+      "name": "Tiny Chest",
+      "tierValue": 2,
+      "rating": 16,
+      "consensus": 69,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Ceramic Fish",
+      "tierValue": 2,
+      "rating": 16,
+      "consensus": 70,
+      "voterCount": 6,
+      "tags": [
+        "Common"
+      ]
+    },
+    {
+      "name": "Cauldron",
+      "tierValue": 2,
+      "rating": 16,
+      "consensus": 69,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Mark of Pain",
+      "tierValue": 2,
+      "rating": 15,
+      "consensus": 62,
+      "voterCount": 13,
+      "tags": [
+        "Boss",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Black Blood",
+      "tierValue": 2,
+      "rating": 13,
+      "consensus": 64,
+      "voterCount": 14,
+      "tags": [
+        "Boss",
+        "Ironclad"
+      ]
+    },
+    {
+      "name": "Hand Drill",
+      "tierValue": 2,
+      "rating": 12,
+      "consensus": 70,
+      "voterCount": 6,
+      "tags": [
+        "Shop"
+      ]
+    },
+    {
+      "name": "Ring of the Serpent",
+      "tierValue": 1,
+      "rating": 4,
+      "consensus": 76,
+      "voterCount": 13,
+      "tags": [
+        "Silent",
+        "Boss"
+      ]
+    },
+    {
+      "name": "Busted Crown",
+      "tierValue": 1,
+      "rating": 4,
+      "consensus": 77,
+      "voterCount": 13,
+      "tags": [
+        "Boss"
+      ]
+    },
+    {
+      "name": "Tiny House",
+      "tierValue": 1,
+      "rating": 0,
+      "consensus": 84,
+      "voterCount": 12,
+      "tags": [
+        "Boss"
+      ]
+    }
+  ]
+}

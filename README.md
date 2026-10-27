@@ -27,8 +27,9 @@
 ### T 度与流派来源
 
 - 全部 320 张卡的 T 度统一来自 [Unduel 的《Slay the Spire》全卡社区共识榜](https://unduel.com/t/slay-the-spire/the-best-slay-the-spire-cards-2W3WSTcjk91rLIipyd0x3x/tier-list)：85 位投票者、约 9.3K 次评分，抓取于 2026-10-27。
+- 全部 179 件遗物的 T 度统一来自 [Unduel 的《Slay the Spire》遗物共识榜](https://unduel.com/t/slay-the-spire/the-best-slay-the-spire-relics-2CfPb2TVHz5wtNJ9NdZ8Nd/tier-list)：16 位投票者、约 1.2K 次评分。
 - 映射规则固定：`S→T0`、`A→T1`、`B→T2`、`C/D/F→T3`，不再混用其他榜单。
-- 所有卡的流派标签都由《杀戮尖塔 1》卡牌文本规则推导；无色牌通常只显示 T 度。
+- 所有卡的流派标签都由《杀戮尖塔 1》卡牌文本规则推导；遗物到流派的标签仍沿用速查表。
 - 没有使用《杀戮尖塔 2》的任何卡牌或评分数据。
 
 ## 从源码构建

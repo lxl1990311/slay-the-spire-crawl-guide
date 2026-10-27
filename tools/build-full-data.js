@@ -12,11 +12,14 @@ const path = require('path');
 const basePath = process.argv[2] || 'CrawlGuide/data.json';
 const tiersPath = process.argv[3] || 'guide/unduel-tiers.json';
 const locDir = process.argv[4] || '.build/localization';
+const relicTiersPath = process.argv[5] || 'guide/unduel-relic-tiers.json';
 
 const base = JSON.parse(fs.readFileSync(basePath, 'utf8'));
 const tiers = JSON.parse(fs.readFileSync(tiersPath, 'utf8'));
+const relicTiers = JSON.parse(fs.readFileSync(relicTiersPath, 'utf8'));
 const eng = JSON.parse(fs.readFileSync(path.join(locDir, 'cards.json.eng.json'), 'utf8'));
 const zhs = JSON.parse(fs.readFileSync(path.join(locDir, 'cards.json.zhs.json'), 'utf8'));
+const engRelics = JSON.parse(fs.readFileSync(path.join(locDir, 'relics.json.eng.json'), 'utf8'));
 
 const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
 const nameToId = {};
@@ -28,6 +31,13 @@ for (const [id, v] of Object.entries(eng)) {
 const officialName = id => (eng[id] && eng[id].NAME) || id;
 const cnName = id => (zhs[id] && zhs[id].NAME) || officialName(id);
 const description = id => (eng[id] && eng[id].DESCRIPTION) || '';
+
+const relicNameToId = {};
+const relicIdNorm = {};
+for (const [id, v] of Object.entries(engRelics)) {
+  relicNameToId[norm(v.NAME)] = id;
+  relicIdNorm[norm(id)] = id;
+}
 
 const buildKeys = new Set(base.builds.map(b => b.key));
 const charOfTag = { Ironclad: 'i', Silent: 's', Defect: 'd', Watcher: 'w', Colorless: 'c' };
@@ -185,6 +195,29 @@ for (const c of list) {
   }
 }
 
+const relics = {};
+const unmatchedRelics = [];
+for (const entry of relicTiers.relics) {
+  const key = norm(String(entry.name).replace(/\s*\(Relic\)\s*$/i, ''));
+  const id = relicNameToId[key] || relicIdNorm[key];
+  if (!id) {
+    unmatchedRelics.push(entry.name);
+    continue;
+  }
+  const old = base.relics[id] || {};
+  relics[id] = {
+    id,
+    name: old.name || (engRelics[id] && engRelics[id].NAME) || entry.name,
+    cn: old.cn || (engRelics[id] && engRelics[id].NAME) || entry.name,
+    rarity: old.rarity || '',
+    tier: mapTier(entry.tierValue),
+    builds: old.builds || [],
+    rating: entry.rating,
+    votes: entry.voterCount,
+  };
+}
+base.relics = relics;
+
 base.cards = cards;
 base.meta = {
   cardTierSource: 'Unduel community tier list: The Best Slay the Spire Cards',
@@ -195,15 +228,27 @@ base.meta = {
   cardTierRetrieved: tiers._retrieved,
   cardTierMapping: tiers._mapping,
   cardTierNote: '320 可获取卡牌；不包含不会出现在卡牌奖励/商店的基础牌、状态、诅咒和 token。',
+  relicTierSource: 'Unduel community relic tier list: The Best Slay the Spire Relics',
+  relicTierUrl: relicTiers._url,
+  relicTierVoters: relicTiers._voters,
+  relicTierVotes: relicTiers._votes,
+  relicTierUpdated: relicTiers._updated,
+  relicTierRetrieved: relicTiers._retrieved,
+  relicTierMapping: relicTiers._mapping,
+  relicTierNote: '遗物 T 度统一使用 Unduel；遗物到流派的标签仍沿用速查表。',
   archetypeNote: '所有卡牌流派标签均由杀戮尖塔一代卡牌文本规则推导；未使用二代数据。',
 };
 base.stats.cards = list.length;
 base.stats.cardsWithTier = list.filter(c => c.tier).length;
 base.stats.tiers = tierCounts;
 base.stats.unmappedUnduel = unmapped;
+base.stats.relics = Object.keys(relics).length;
+base.stats.relicsWithTier = Object.values(relics).filter(r => r.tier).length;
+base.stats.unmappedRelics = unmatchedRelics;
 
 fs.writeFileSync(basePath, JSON.stringify(base, null, 2), 'utf8');
 
 console.log('cards total=' + list.length + ' tiers=' + JSON.stringify(tierCounts));
 console.log('unmapped=' + (unmapped.length ? unmapped.join(', ') : 'none'));
+console.log('relics total=' + Object.keys(relics).length + ' unmatched=' + (unmatchedRelics.length ? unmatchedRelics.join(', ') : 'none'));
 console.log('tag counts=' + JSON.stringify(tagCounts));

@@ -3,7 +3,7 @@
   "name": "爬塔速查 CrawlGuide",
   "author_list": ["CrawlGuide"],
   "description": "在卡牌三选一、Boss 遗物与商店中显示 T 度、流派标签，并根据当前卡组给出契合度。",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.3",
   "dependencies": []
